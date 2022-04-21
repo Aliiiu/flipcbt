@@ -1,0 +1,39 @@
+import React from 'react';
+import Image from 'next/image';
+
+const Motor = () => {
+  return (
+    <section className='flex flex-col text-center md:px-20 py-20'>
+      <div className='mb-10'>
+        <h1 className='font-bold text-4xl mb-3'>Great for School,<br />Loved By Organizations </h1>
+        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam rem sunt quaerat sapiente. Quam cum maxime!</p>
+      </div>
+      <div className='flex md:space-x-5 mobile:flex-col mobile:space-y-5'>
+        <div className='flex flex-col items-center text-center bg-[#00BE7E] bg-opacity-20 rounded-3xl overflow-hidden'>
+          <div className='pt-5 md:px-[8rem]'>
+            <Image src='/students.png' alt='students illustration' width='150px' height='150px' />
+            <h1 className='font-bold text-lg'>Students</h1>
+            <p className='text-sm my-5'>Business and organisation of all size.</p>
+            <button className='text-white text-base py-4 px-10 mb-10 bg-[#00BE7E] rounded-md'>
+              LEARN MORE
+            </button>
+          </div>
+          <div className='bg-[#00BE7E] w-full h-2'></div>
+        </div>
+        <div className='flex flex-col items-center text-center bg-[#FFAD4A] bg-opacity-20 rounded-3xl overflow-hidden'>
+          <div className='pt-5 md:px-[8rem]'>
+            <Image src='/organizations.png' alt='Organisation Illustration' width='150px' height='150px' />
+            <h1 className='font-bold text-lg'>Organisation</h1>
+            <h4 className='text-sm my-5'>Business and organisation of all size.</h4>
+            <button className='text-white text-base py-4 px-10 mb-10 bg-[#FFAD4A] rounded-md'>
+              LEARN MORE
+            </button>
+          </div>
+          <div className='bg-[#FFAD4A] h-2 w-full'></div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Motor
