@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <title>Flip CBT</title>
       </Head>
       <main>
-        <section className="h-screen py-[10rem] px-5 md:px-20 md:py-[8rem] lg:py-20 mobile:mb-9 mobile:text-center homePage">
+        <section className="h-screen py-[10rem] px-5 md:px-20 md:py-[8rem] mobile:mb-9 mobile:text-center homePage">
           <div className='flex mobile:w-auto'>
             <div className='flex flex-col space-y-5 align-middle'>
               <h1 className='lg:text-[50px] md:text-[35px] font-bold mobile:text-[32px]'>
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
               </p>
               <div className='flex mobile:justify-center'>
                 <button className='py-3 text-base text-white bg-blue-500 rounded-md px-[4rem] md:py-5'>
-                  GET STARTED
+                  <a href="#">GET STARTED</a>
                 </button>
               </div>
             </div>
@@ -42,11 +42,11 @@ const Home: NextPage = () => {
         <Feature />
         <Benefit />
         <Motor />
-        <section className="flex flex-col space-y-7 md:px-20 py-20 text-center bg-[url('/FlipCbtBg.png')] bg-[length:30%] bg-[#0075FF]">
+        <section className="flex flex-col space-y-7 md:px-20 py-20 text-center bg-[url('/FlipCbtBg2.png')] bg-[length:30%] bg-[#0075FF] whyFlip bg-opacity-80">
           <h1 className='font-bold text-white md:text-5xl mobile:text-2xl'>Want to do marketing with Flip?</h1>
           <p className='text-white '>Marketing is the activity, institutions, and processes for creating, communicating, <br />
             delivering, and exchanging, offerings that have value.</p>
-          <div><button className='px-10 py-4 text-base text-white bg-black rounded-xl'>CLICK HERE</button></div>
+          <div><button className='px-10 py-4 text-base text-white bg-black rounded-xl'><a href="#">CLICK HERE</a></button></div>
         </section>
         <Guarantee />
         <Faqs />

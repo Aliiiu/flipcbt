@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { useState } from 'react'
 
 const QA = [
@@ -42,23 +43,23 @@ const Faqs = () => {
       <div className='grid grid-cols-1 gap-3 justify-items-center md:mx-20 mobile:mx-4'>
         {QA.map((item, index) => (
                 <div className="w-full py-4 bg-white rounded-md shadow-lg mobile:w-full mobile:shadow-md text-md" key={index}>
-                    <a href="javascript:void(0);" onClick={() => handleClick(index)}  className="flex items-center justify-between md:px-8 py-3 mobile:px-4">
-                        <h3 className="font-bold text-xl border-b-2 w-full border-[#E0E0E0] mobile:px-2" >{item.question}</h3>
+                    <a href="javascript:void(0);" onClick={() => handleClick(index)}  className="flex items-center justify-between py-3 md:px-8 mobile:px-4">
+                        <h3 className="font-bold text-xl pb-4 border-b-2 w-full border-[#E0E0E0] mobile:px-2 mobile:text-[20px] mobile:pb-3" >{item.question}</h3>
                         {
                             (active === index) ? (
                                 <button className="text-3xl font-bold bg-transparent border-none text-purple">
-                                    -
+                                    <Image src='/minus-icon.png' alt='minus icon' width='32px' height='32px' />
                                 </button>
                             ) : (
                                 <button className="text-3xl font-bold bg-transparent border-none text-purple">
-                                    +
+                                    <Image src='/Plus-icon.png' alt='plus icon' width='32px' height='32px' />
                                 </button>
                             )
                         }
                     </a>
                     {
                         (active === index) ? (
-                            <div className="flex flex-wrap md:px-8 py-3 mobile:text-gray-400 mobile:px-4" >
+                            <div className="flex flex-wrap py-3 md:px-8 mobile:text-gray-400 mobile:px-4" >
                                 <p className="text-xl mobile:text-base">{item.answer}</p>
                             </div>
                         ) : null

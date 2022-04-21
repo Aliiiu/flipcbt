@@ -8,13 +8,13 @@ const Benefit = () => {
     <section>
           <div className='flex md:px-20 bg-[#0075FF] py-[5rem] bg-opacity-5 mobile:px-5'>
             <div className='flex flex-col justify-between space-y-10 md:w-9/12 mobile:w-auto'>
-              <div className='flex jusitify-between mobile:space-x-6 mobile:w-[22rem] overflow-hidden border-2 border-indigo-300'>
+              <div className='flex justify-between w-[32rem] mobile:space-x-6 mobile:w-[22rem] mobile:overflow-hidden'>
                 <div>
-                  <h2 className='text-xl font-bold text-[#0075FF]'>What School Get</h2>
+                  <h2 className='text-xl font-bold text-[#0075FF]'><a href="#">What School Get</a></h2>
                   <div className='bg-[#0075FF] w-[12rem] h-1'></div>
                 </div>
                 <div>
-                  <h2 className='text-xl font-bold w-[20rem] text-[#BDBDBD]'>What Organization Get</h2>
+                  <h2 className='text-xl font-bold mobile:w-[20rem] text-[#BDBDBD]'><a href="#">What Organisation Get</a></h2>
                   <div className='bg-[#BDBDBD] w-full h-1'></div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Benefit = () => {
               </div>
               <Button />
             </div>
-            <div className='flex flex-col items-center justify-center mobile:hidden'>
+            <div className='pt-[10rem] lg:block md:hidden mobile:hidden'>
               <div>
                 <Image src='/image-benefit.png' alt='benefit illustration' width='625.75px' height='445px' />
               </div>
