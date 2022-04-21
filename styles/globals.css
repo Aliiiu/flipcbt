@@ -5,17 +5,31 @@
 html,
 body {
   padding: 0;
-  width: 95%;
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1380px;
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-.navbar {
+
+.navbar.fixed {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(34px);
+  backdrop-filter: blur(34px);
+  box-sizing: border-box;
   width: 100%;
-  max-width: 1220px;
 }
 
+.homePage {
+  background-image: url('/pattern2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.85);
+}
 .ForSchool {
   background-image: url('/ForSchoolBg.png');
   background-repeat: no-repeat;
