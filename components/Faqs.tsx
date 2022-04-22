@@ -29,11 +29,13 @@ const QA = [
   },
 ]
 const Faqs = () => {
-  const [active, setActive] = useState<number>(0)
-
-  const handleClick = (index: number) => {
-    setActive(index)
+  const [active, setActive] = useState<boolean>(false)
+  const [currQuestion, setCurrQuestion] = useState<number>(0)
+  const handleClick = (index:number) => {
+    setActive(prevState => !prevState)
+    setCurrQuestion(index)
   }
+  console.log(active)
   return (
     <section className='bg-[#E5E5E5] pb-[4rem]'>
       <div className='text-center pt-[5rem] mb-9 space-y-4 mobile:mx-5'>
@@ -46,7 +48,7 @@ const Faqs = () => {
                     <a href="javascript:void(0);" onClick={() => handleClick(index)}  className="flex items-center justify-between py-3 md:px-8 mobile:px-4">
                         <h3 className="font-bold text-xl pb-4 border-b-2 w-full border-[#E0E0E0] mobile:px-2 mobile:text-[20px] mobile:pb-3" >{item.question}</h3>
                         {
-                            (active === index) ? (
+                            (active && currQuestion === index) ? (
                                 <button className="text-3xl font-bold bg-transparent border-none text-purple">
                                     <Image src='/minus-icon.png' alt='minus icon' width='32px' height='32px' />
                                 </button>
@@ -58,7 +60,7 @@ const Faqs = () => {
                         }
                     </a>
                     {
-                        (active === index) ? (
+                        (active && currQuestion === index) ? (
                             <div className="flex flex-wrap py-3 md:px-8 mobile:text-gray-400 mobile:px-4" >
                                 <p className="text-xl mobile:text-base">{item.answer}</p>
                             </div>
