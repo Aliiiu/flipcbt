@@ -9,7 +9,7 @@ const Motor = () => {
         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam rem sunt quaerat sapiente. Quam cum maxime!</p>
       </div>
       <div>
-        <div className='flex justify-between md:mx-auto lg:w-10/12 mobile:flex-col mobile:space-y-5'>
+        <div className='flex justify-between md:mx-auto lg:w-9/12 mobile:flex-col mobile:space-y-5'>
           <div className='flex flex-col items-center text-center bg-[#00BE7E] bg-opacity-20 rounded-3xl overflow-hidden'>
             <div className='pt-5 md:px-[2rem] lg:px-[6rem]'>
               <Image src='/students.png' alt='students illustration' width='150px' height='150px' />

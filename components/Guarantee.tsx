@@ -37,31 +37,31 @@ const Guarantee = () => {
         </div>
       </div>
       <div>
-        <div className='flex md:space-x-9 mobile:flex-col mobile:space-y-7 lg:w-8/12 md:mx-auto'>
-          <div className='px-8 py-4 bg-white mobile:px-4 rounded-xl'>
-            <p>
+        <div className='flex md:space-x-9 mobile:flex-col mobile:space-y-7 lg:w-12/12 md:mx-auto'>
+          <div className='px-8 py-4 bg-white mobile:px-4 rounded-xl mobile:flex mobile:flex-col-reverse'>
+            <p className='md:text-[20px] text-[17px]'>
               Running a business can be demanding, having motivated
               employees is paramount to our success and with
               earnipay&#39;s flexible salary payment solutions,
               productivity isn&#39;t a demand anymore, it&#39;s a
               lifestyle.
             </p>
-            <div className='mt-2'>
-              <h2 className='font-bold'>Courtney Henry</h2>
-              <h4 className='text-sm'>Founder of Easy Secondary school</h4>
+            <div className='mb-8 md:mt-10'>
+              <h2 className='font-bold text-[20px]'>Courtney Henry</h2>
+              <h4 className='text-[16px]'>Founder of Easy Secondary school</h4>
             </div>
           </div>
-          <div className='px-8 py-4 bg-white mobile:px-4 rounded-xl'>
-            <p>
+          <div className='px-8 py-4 bg-white mobile:px-4 rounded-xl mobile:flex mobile:flex-col-reverse'>
+            <p className='md:text-[20px] text-[17px]'>
                 Running a business can be demanding, having motivated
                 employees is paramount to our success and with
                 earnipay&#39;s flexible salary payment solutions,
                 productivity isn&#39;t a demand anymore, it&#39;s a
                 lifestyle.
               </p>
-              <div className='mt-2'>
-                <h2 className='font-bold'>Courtney Henry</h2>
-                <h4 className='text-sm'>Founder of Easy Secondary school</h4>
+              <div className='mb-8 md:mt-10'>
+                <h2 className='font-bold text-[20px]'>Courtney Henry</h2>
+                <h4 className='text-[16px]'>Founder of Easy Secondary school</h4>
               </div>
           </div>
         </div>
