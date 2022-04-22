@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <main>
         <section className="h-screen px-5 md:px-20 mobile:mb-9 mobile:text-center homePage">
           <div className='flex mobile:w-auto'>
-            <div className='flex flex-col space-y-5 md:pt-[14rem] pt-[9rem]'>
+            <div className='flex flex-col space-y-5  pt-[9rem]'>
               <h1 className='lg:text-[50px] md:text-[35px] font-bold mobile:text-[32px]'>
                 We Design and Implement an online computer-based test system.
               </h1>
