@@ -94,7 +94,7 @@ const Benefit = () => {
           <div className='flex md:px-20 bg-[#0075FF] py-[5rem] bg-opacity-5 mobile:px-5'>
             
               <div className='flex flex-col justify-between space-y-10 md:w-9/12 mobile:w-auto'>
-                <div className={`flex md:justify-between w-[32rem] mobile:space-x-6 mobile:w-[22rem] mobile:overflow-hidden ${currTab === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                <div className={`flex md:justify-between w-[32rem] mobile:space-x-6 mobile:w-[22rem] mobile:overflow-hidden ${currTab === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   <div>
                     <h2 className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`}>
                       <a href="javascript:void(0);" onClick={ForSchool}>What School Get</a>
