@@ -4,7 +4,7 @@ const Guarantee = () => {
   return (
     <section className='flex flex-col md:px-20 py-20 space-y-8 bg-[#F7F8FA] mobile:px-5 '>
       <div className='flex items-center justify-between'>
-        <h1 className='font-bold md:text-[55px] mobile:text-xl'>Don&#39;t just take our word for it</h1>
+        <h1 className='font-bold md:text-[55px] mobile:text-[32px]'>Don&#39;t just take our word for it</h1>
         <div className='flex space-x-3'>
           <button className='px-3 bg-gray-300 rounded-full'>
             <svg

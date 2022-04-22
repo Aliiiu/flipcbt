@@ -11,19 +11,19 @@ const Feature = () => {
             adipiscing elit. Est sit donec sed vestibulum, rhoncus..</h3>
         </div>
         <div className='flex justify-between md:mb-[9rem] md:space-x-6 mobile:flex-col mobile:space-y-6 mobile:mb-8'>
-          <div className='flex flex-col items-center justify-between p-[30px] text-center bg-white shadow-xl rounded-2xl'>
+          <div className='flex flex-col items-center justify-between p-[30px] text-center bg-white shadow-[0px_20px_40px_rgba(0,117,255,0.1)] rounded-2xl'>
             <Image src='/Time management.png' alt='Time management illustration' width='150px' height='150px'/>
             <p className='mt-9 text-[20px] font-normal'>Flip is economical, accurate, time-bound
               and also have an effective security system.</p>
           </div>
-          <div className='flex flex-col items-center justify-between shadow-xl text-center p-[30px] bg-white rounded-2xl'>
+          <div className='flex flex-col items-center justify-between shadow-[0px_20px_40px_rgba(0,117,255,0.1)] text-center p-[30px] bg-white rounded-2xl'>
             <Image src='/Time management.png' alt='Time management illustration' width='150px' height='150px'/>
-            <p className='text-[20px] font-normal '>Flip is economical, accurate, time-bound
+            <p className='mt-9 text-[20px] font-normal '>Flip is economical, accurate, time-bound
               and also have an effective security system.</p>
           </div>
-          <div className='flex flex-col items-center justify-between shadow-xl text-center p-[30px] bg-white rounded-2xl'>
+          <div className='flex flex-col items-center justify-between shadow-[0px_20px_40px_rgba(0,117,255,0.1)] text-center p-[30px] bg-white rounded-2xl'>
             <Image src='/Time management.png' alt='Time management illustration' width='150px' height='150px'/>
-            <p className='text-[20px] font-normal'>Flip is economical, accurate, time-bound
+            <p className='mt-9 text-[20px] font-normal'>Flip is economical, accurate, time-bound
               and also have an effective security system.</p>
           </div>
         </div>

@@ -114,9 +114,9 @@ const Benefit = () => {
                       <div className='flex flex-col'>
                         <div className='flex'>
                           <Image src={tick} alt='tick' />
-                          <h2 className='mx-5 font-bold'>{item.title}</h2>
+                          <h2 className='mx-5 font-bold text-[18px]'>{item.title}</h2>
                         </div>
-                        <p>{item.content}
+                        <p className='mt-4'>{item.content}
                         </p>
                       </div>
                     </div>

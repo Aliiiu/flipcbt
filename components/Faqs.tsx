@@ -34,19 +34,20 @@ const Faqs = () => {
   const handleClick = (index:number) => {
     setActive(prevState => !prevState)
     setCurrQuestion(index)
+    console.log('done')
   }
-  console.log(active)
+  
   return (
-    <section className='bg-[#E5E5E5] pb-[4rem]'>
+    <section className='bg-white pb-[4rem]'>
       <div className='text-center pt-[5rem] mb-9 space-y-4 mobile:mx-5'>
         <h1 className='text-4xl font-bold'>FAQs</h1>
         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo beatae mollitia, placeat illum magni</p>
       </div>
       <div className='grid grid-cols-1 gap-3 justify-items-center md:mx-20 mobile:mx-4'>
         {QA.map((item, index) => (
-                <div className="w-full py-4 bg-white rounded-md shadow-lg mobile:w-full mobile:shadow-md text-md" key={index}>
+                <div className="w-full py-4 bg-white border rounded-md shadow-[0px_25px_50px_rgba(22,25,79,0.1)] mobile:w-full mobile:shadow-md text-md" key={index}>
                     <a href="javascript:void(0);" onClick={() => handleClick(index)}  className="flex items-center justify-between py-3 md:px-8 mobile:px-4">
-                        <h3 className="font-bold text-xl pb-4 border-b-2 w-full border-[#E0E0E0] mobile:px-2 mobile:text-[20px] mobile:pb-3" >{item.question}</h3>
+                        <h3 className={`font-bold text-xl w-full border-[#E0E0E0] mobile:px-2 mobile:text-[20px] ${(active && currQuestion === index) ? 'pb-4 mobile:pb-3 border-b-2': ''}`}>{item.question}</h3>
                         {
                             (active && currQuestion === index) ? (
                                 <button className="text-3xl font-bold bg-transparent border-none text-purple">
