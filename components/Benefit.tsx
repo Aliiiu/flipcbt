@@ -111,7 +111,7 @@ const Benefit = () => {
                 </div>
                 {
                   benefit[currTab].map((item, idx) => (
-                    <div className='flex flex-col justify-between pr-1 md:mb-12' key={idx}>
+                    <div className='flex flex-col justify-between pr-1 mb-6 md:mb-12' key={idx}>
                       <div className='flex flex-col'>
                         <div className='flex'>
                           <Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />

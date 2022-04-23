@@ -10,7 +10,7 @@ const Feature = () => {
           <h3 className='text-xl mb-[5rem] mobile:text-[14px]'>Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Est sit donec sed vestibulum, rhoncus..</h3>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-14 gap-y-8 md:gap-y-14 md:px-20 md:mb-[9rem] mobile:flex-col mobile:space-y-6 mobile:mb-8'>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-5  gap-y-8 md:gap-y-14 md:px-20 md:mb-[9rem] mobile:flex-col mobile:space-y-6 mobile:mb-8'>
           <div className='flex flex-col md:mr-4 items-center justify-between p-[30px] text-center bg-white shadow-[0px_20px_40px_rgba(0,117,255,0.1)] rounded-2xl'>
             <Image src='/Time management.png' alt='Time management illustration' width='150px' height='150px'/>
             <p className='mt-9 text-[20px] font-normal'>Flip is economical, accurate, time-bound
