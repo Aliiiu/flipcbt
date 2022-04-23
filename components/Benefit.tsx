@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from 'react'
 import Image from 'next/image'
 import tick from '../public/Tick-Square.svg'
+import celebration from '../public/benefit.svg'
 import Button from './Button'
 
 type ArrayObject = {
@@ -93,15 +94,15 @@ const Benefit = () => {
     <section>
           <div className='flex md:px-20 bg-[#0075FF] py-[5rem] bg-opacity-5 mobile:px-5'>
             
-              <div className='flex flex-col justify-between space-y-10 md:w-9/12 mobile:w-auto'>
-                <div className={`flex md:justify-between w-[32rem] mobile:space-x-6 mobile:w-[22rem] mobile:overflow-hidden ${currTab === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                  <div>
+              <div className='md:w-9/12 mobile:w-full'>
+                <div className='flex overflow-hidden md:mb-9'>
+                  <div className='py-5 whitespace-nowrap font-bold cursor-pointer'>
                     <h2 className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`}>
                       <a href="javascript:void(0);" onClick={ForSchool}>What School Get</a>
                     </h2>
-                    <div className={`${currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} w-[12rem] h-1`}></div>
+                    <div className={`${currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} h-1`}></div>
                   </div>
-                  <div>
+                  <div className='pl-[5rem] md:px-[10rem] py-5 whitespace-nowrap font-bold cursor-pointer'>
                     <h2 className={`text-xl font-bold mobile:w-[15rem] ${currTab === 1 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`}>
                       <a href="javascript:void(0);" onClick={ForOrganisation}>What Organisation Get</a>
                     </h2>
@@ -110,19 +111,22 @@ const Benefit = () => {
                 </div>
                 {
                   benefit[currTab].map((item, idx) => (
-                    <div className='flex flex-col justify-between pr-1 space-y-10' key={idx}>
+                    <div className='flex flex-col justify-between pr-1 md:mb-12' key={idx}>
                       <div className='flex flex-col'>
                         <div className='flex'>
-                          <Image src={tick} alt='tick' />
-                          <h2 className='mx-5 font-bold text-[18px]'>{item.title}</h2>
+                          <Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />
+                          <h2 className='ml-5 font-bold text-[16px] md:text-[20px]'>{item.title}</h2>
                         </div>
-                        <p className='mt-4'>{item.content}
+                        <p className='mt-4 text-[15px] md:text-[16px]'>{item.content}
                         </p>
                       </div>
                     </div>
                   ))
                 }
-              </div>            
+            </div>
+            <div className='mobile:hidden md:hidden lg:block md:pt-[18rem]'>
+              <Image src={celebration} alt='Celebration Illustration' />
+            </div>
           </div>
       </section>
   )
