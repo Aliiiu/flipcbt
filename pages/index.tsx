@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <section className="h-screen w-full px-5 md:px-20 mobile:text-center homePage">
-          <div className='flex flex-row mobile:w-auto pt-[10rem]'>
+          <div className='container flex flex-row mobile:w-auto pt-[10rem]'>
             <div className='flex md:w-6/12 mobile:w-full flex-col space-y-10'>
               <h1 className='lg:text-[50px] md:text-[35px] font-extrabold mobile:text-[32px]'>
                 Assessment streamline made more accurate and time-bound.
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
         <Benefit />
         <Motor />
         <section className="md:px-20 mobile:px-5 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
-          <div className='flex flex-col justify-center items-center space-y-7 px-56 mobile:px-3 text-center'>
+          <div className='container flex flex-col justify-center items-center space-y-7 px-56 mobile:px-3 text-center'>
             <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px] text-white'>Are you a marketer?</h2>
             <p className='text-white'>Marketing is the activity, institutions, and processes for creating, communicating,
               delivering, and exchanging, offerings that have value.</p>

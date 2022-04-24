@@ -89,7 +89,7 @@ const Benefit = () => {
   //   setCurrTab(index)
   // }
   return (
-      <section className='flex md:px-20 mobile:px-8 bg-[#0075FF] py-[5rem] bg-opacity-5'>
+        <section className='flex md:px-20 mobile:px-8 bg-[#0075FF] py-[5rem] bg-opacity-5'>
           <div className='md:w-9/12 mobile:w-full'>
             <div className='flex overflow-x-auto mb-9'>
               <div className='py-5 whitespace-nowrap font-bold cursor-pointer'>

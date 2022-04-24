@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <footer className='md:px-20 md:pt-20 bg-[#06042C] mobile:px-5'>
-      <div className='flex mobile:flex-col'>
+      <div className='container flex mobile:flex-col'>
         <div className='md:mr-[6rem] mobile:text-center mobile:py-10'>
           <Image src='/Flip Cbt.png' alt='Flip Cbt Logo' width='120px' height='60px' />
         </div>

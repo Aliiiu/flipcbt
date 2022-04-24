@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Feature = () => {
   return (
     <section className='md:pt-[6rem] bg-[#F7F8FA80] mobile:w-auto px-20 mobile:px-8 mobile:bg-[#F7F8FA] mobile:pt-[4rem]'>
-      <div className='flex flex-col w-full mobile:mx-0'>
+      <div className='container flex flex-col w-full mobile:mx-0'>
         <div className='text-center mb-[5rem]'>
           <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px]'>Why Flip?</h2>
           <p className='text-sm'>

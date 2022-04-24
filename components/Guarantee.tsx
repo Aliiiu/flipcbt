@@ -3,6 +3,7 @@ import React from 'react'
 const Guarantee = () => {
   return (
     <section className='flex flex-col md:px-20 py-20 mobile:px-8 space-y-8 bg-[#F7F8FA]'>
+      <div className="container">
       <div className='flex items-center justify-between mb-[4rem]'>
         <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
         <div className='flex space-x-3'>
@@ -65,6 +66,7 @@ const Guarantee = () => {
               </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   )

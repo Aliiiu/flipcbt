@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 const Navbar = () => {
   return (
     <nav className="navbar fixed top-0 left-0 w-full px-20 py-5 mobile:px-8 z-10">
-      <div className='flex justify-between items-center w-full'>
+      <div className='container flex justify-between items-center w-full'>
         <div className='flex items-center'>
           <Link href='/'>
             <a>
