@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const Feature = () => {
   return (
-    <section className='md:pt-[6rem] bg-[#F7F8FA80] mobile:w-auto mobile:px-5 mobile:bg-[#F7F8FA] mobile:pt-[4rem]'>
+    <section className='md:pt-[6rem] bg-[#F7F8FA80] mobile:w-auto px-20 mobile:px-8 mobile:bg-[#F7F8FA] mobile:pt-[4rem]'>
       <div className='flex flex-col w-full mobile:mx-0'>
-        <div className='text-center'>
-          <h2 className='font-semibold text-[50px] mb-4 mobile:text-[32px]'>Why Flip</h2>
-          <p className='text-sm mb-[5rem] text-[#4F4F4F]'>
+        <div className='text-center mb-[5rem]'>
+          <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px]'>Why Flip?</h2>
+          <p className='text-sm'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est sit donec sed vestibulum, rhoncus..
           </p>
         </div>

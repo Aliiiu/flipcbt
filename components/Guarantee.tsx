@@ -2,9 +2,9 @@ import React from 'react'
 
 const Guarantee = () => {
   return (
-    <section className='flex flex-col md:px-20 py-20 space-y-8 bg-[#F7F8FA] mobile:px-5 '>
-      <div className='flex items-center justify-between'>
-        <h1 className='font-bold md:text-[55px] mobile:text-[32px]'>Don&#39;t just take our word for it</h1>
+    <section className='flex flex-col md:px-20 py-20 mobile:px-8 space-y-8 bg-[#F7F8FA]'>
+      <div className='flex items-center justify-between mb-[4rem]'>
+        <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
         <div className='flex space-x-3'>
           <button className='px-3 bg-gray-300 rounded-full'>
             <svg
@@ -37,9 +37,9 @@ const Guarantee = () => {
         </div>
       </div>
       <div>
-        <div className='flex mobile:flex-col mobile:space-y-7 lg:w-12/12 md:mx-auto'>
-          <div className='px-8 md:mr-5 py-4 bg-white mobile:px-4 rounded-xl mobile:flex mobile:flex-col-reverse'>
-            <p className='md:text-[20px] text-[17px]'>
+        <div className='flex mobile:flex-col mobile:space-y-7 md:mx-auto'>
+          <div className='p-10 md:mr-5 bg-white rounded-[30px] mobile:flex mobile:flex-col-reverse'>
+            <p>
               Running a business can be demanding, having motivated
               employees is paramount to our success and with
               earnipay&#39;s flexible salary payment solutions,
@@ -51,8 +51,8 @@ const Guarantee = () => {
               <h4 className='text-[16px]'>Founder of Easy Secondary school</h4>
             </div>
           </div>
-          <div className='px-8 py-4 bg-white mobile:px-4 rounded-xl mobile:flex mobile:flex-col-reverse'>
-            <p className='md:text-[20px] text-[17px]'>
+          <div className='p-10 bg-white rounded-[30px] mobile:flex mobile:flex-col-reverse'>
+            <p>
                 Running a business can be demanding, having motivated
                 employees is paramount to our success and with
                 earnipay&#39;s flexible salary payment solutions,

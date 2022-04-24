@@ -89,43 +89,36 @@ const Benefit = () => {
   //   setCurrTab(index)
   // }
   return (
-    <section>
-          <div className='flex md:px-20 bg-[#0075FF] py-[5rem] bg-opacity-5 mobile:px-5'>
-            
-              <div className='md:w-9/12 mobile:w-full'>
-                <div className='flex overflow-hidden md:mb-9'>
-                  <div className='py-5 whitespace-nowrap font-bold cursor-pointer'>
-                    <h2 className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`}>
-                      <a href="javascript:void(0);" onClick={ForSchool}>What School Get</a>
-                    </h2>
-                    <div className={`${currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} h-1`}></div>
-                  </div>
-                  <div className='pl-[5rem] md:px-[10rem] py-5 whitespace-nowrap font-bold cursor-pointer'>
-                    <h2 className={`text-xl font-bold mobile:w-[15rem] ${currTab === 1 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`}>
-                      <a href="javascript:void(0);" onClick={ForOrganisation}>What Organisation Get</a>
-                    </h2>
-                    <div className={`${currTab === 1 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} w-full h-1`}></div>
+      <section className='flex md:px-20 mobile:px-8 bg-[#0075FF] py-[5rem] bg-opacity-5'>
+          <div className='md:w-9/12 mobile:w-full'>
+            <div className='flex overflow-x-auto mb-9'>
+              <div className='py-5 whitespace-nowrap font-bold cursor-pointer'>
+                <button className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForSchool}>What Schools Get</button>
+                <div className={`${currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} mt-3 h-1`}></div>
+              </div>
+              <div className='pl-[5rem] md:px-[10rem] py-5 whitespace-nowrap font-bold cursor-pointer'>
+                <button className={`text-xl font-bold mobile:w-[15rem] ${currTab === 1 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForOrganisation}>What Organizations Get</button>
+                <div className={`${currTab === 1 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} mt-3 w-full h-1`}></div>
+              </div>
+            </div>
+            {
+              benefit[currTab].map((item, idx) => (
+                <div className='flex flex-col justify-between pr-1 mb-6 md:mb-12' key={idx}>
+                  <div className='flex flex-col'>
+                    <div className='flex'>
+                      <Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />
+                      <h2 className='ml-5 font-semibold text-[16px] md:text-[20px]'>{item.title}</h2>
+                    </div>
+                    <p className='mt-4'>{item.content}
+                    </p>
                   </div>
                 </div>
-                {
-                  benefit[currTab].map((item, idx) => (
-                    <div className='flex flex-col justify-between pr-1 mb-6 md:mb-12' key={idx}>
-                      <div className='flex flex-col'>
-                        <div className='flex'>
-                          <Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />
-                          <h2 className='ml-5 font-bold text-[16px] md:text-[20px]'>{item.title}</h2>
-                        </div>
-                        <p className='mt-4 text-[15px] md:text-[16px]'>{item.content}
-                        </p>
-                      </div>
-                    </div>
-                  ))
-                }
-            </div>
-            <div className='mobile:hidden md:hidden lg:block md:pt-[18rem]'>
-              <Image src={celebration} alt='Celebration Illustration' />
-            </div>
-          </div>
+              ))
+            }
+        </div>
+        <div className='mobile:hidden md:hidden lg:block md:pt-[18rem]'>
+          <Image src={celebration} alt='Celebration Illustration' />
+        </div>
       </section>
   )
 }

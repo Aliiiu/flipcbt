@@ -57,11 +57,17 @@ const Home: NextPage = () => {
         <Feature />
         <Benefit />
         <Motor />
-        <section className="flex flex-col space-y-7 md:px-20 py-20 text-center bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-80 mobile:px-3">
-          <h1 className='font-bold text-white md:text-5xl mobile:text-[32px]'>Want to do marketing with Flip?</h1>
-          <p className='text-white mobile:text-[18px]'>Marketing is the activity, institutions, and processes for creating, communicating, <br />
-            delivering, and exchanging, offerings that have value.</p>
-          <div><button className='px-10 py-4 text-base text-white bg-black rounded-xl'><a href="#">CLICK HERE</a></button></div>
+        <section className="md:px-20 mobile:px-5 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
+          <div className='flex flex-col justify-center items-center space-y-7 px-72 mobile:px-3 text-center'>
+            <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px] text-white'>Are you a marketer?</h2>
+            <p className='text-white'>Marketing is the activity, institutions, and processes for creating, communicating,
+              delivering, and exchanging, offerings that have value.</p>
+            <Link href="#">
+              <a className='text-base text-white bg-black rounded-md px-12 py-4 text-[14px]'>
+                APPLY NOW
+              </a>
+            </Link>
+          </div>
         </section>
         <Guarantee />
         <Faqs />
