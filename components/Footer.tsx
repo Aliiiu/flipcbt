@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className='md:px-20 md:pt-20 bg-[#06042C] mobile:px-5'>
-      <div className='flex mobile:flex-col'>
-        <div className='md:mr-[6rem] mobile:text-center mobile:hidden'>
+    <footer className=' bg-[#06042C]'>
+      <div className='flex mobile:flex-col md:px-20 md:pt-20 mobile:px-5 container'>
+        <div className='md:mr-[6rem] mobile:hidden'>
           <Image src='/Flip Cbt.png' alt='Flip Cbt Logo' width='130px' height='80px' />
         </div>
-        <div className='md:mr-[6rem] mobile:text-center mobile:py-10'>
+        <div className='md:mr-[6rem] mobile:text-center mobile:py-10 md:hidden'>
           <Image src='/Flip Cbt.png' alt='Flip Cbt Logo' width='90px' height='50px' />
         </div>
         <div className='flex md:justify-between w-full md:mr-[6rem] mobile:flex-wrap'>

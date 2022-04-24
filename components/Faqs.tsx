@@ -38,7 +38,7 @@ const Faqs = () => {
   }
   
   return (
-    <section className='bg-white pb-[4rem]'>
+    <section className='bg-white pb-[4rem] container'>
       <div className='text-center pt-[5rem] mb-9 space-y-4 mobile:mx-5'>
         <h1 className='text-4xl font-bold'>FAQs</h1>
         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo beatae mollitia, placeat illum magni</p>

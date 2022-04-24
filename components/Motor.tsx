@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Motor = () => {
   return (
-    <section className='flex flex-col py-20 mx-5 text-center md:px-20'>
+    <section className='flex flex-col py-20 mx-5 text-center md:px-20 container'>
       <div className='mb-[5rem]'>
         <h1 className='mb-[1rem] mobile:text-[32px] text-[55px] font-bold'>Great for School,<br />Loved By Organizations </h1>
         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam rem sunt quaerat sapiente. Quam cum maxime!</p>

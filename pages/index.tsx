@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <title>Flip CBT</title>
       </Head>
       <main>
-        <div className='homePage'>
+        <div className='homePage container'>
           <section className="px-5 md:px-20 mobile:mb-9 mobile:text-center pageBody homePage2">
             <div className='flex mobile:w-auto pb-12'>
               <div className='flex flex-col space-y-5 mobile:pt-[8rem] md:pt-[12rem]  lg:pt-[8rem] md:w-11/12'>
@@ -35,19 +35,19 @@ const Home: NextPage = () => {
                   </button>
                 </div>
               </div>
-              <div className='relative lg:block mobile:hidden md:pt-[8rem] md:mt-[4rem] w-full'>              
-                <div className='absolute mobile:hidden left-0 flex px-8 py-2 bg-white border bottom-6 rounded-xl shadow-[0px_30px_60px_rgba(0,117,255,0.3)]'>
+              <div className='relative lg:block mobile:hidden md:pt-[10rem] md:mt-[6rem] w-full'>              
+                <div className='absolute mobile:hidden left-0 flex px-8 py-2 bg-white border bottom-0 rounded-xl shadow-[0px_30px_60px_rgba(0,117,255,0.3)]'>
                   <Image src={profile2} alt='profile badge' />
                   <div className='flex flex-col ml-3'>
-                    <h1 className='text-[30px] text-[#FFBC6C] font-bold'>50K</h1>
-                    <p className='text-[20px]'>Total Active Student</p>
+                    <h1 className='text-[25px] text-[#FFBC6C] font-bold'>50K</h1>
+                    <p className='text-[15px]'>Total Active Student</p>
                   </div>
                 </div>
-                <div className='absolute mobile:hidden right-0 flex px-8 py-2 bg-white border shadow-[0px_30px_60px_rgba(0,117,255,0.3)] bottom-[150px] rounded-xl'>
+                <div className='absolute mobile:hidden right-0 flex px-8 py-2 bg-white border shadow-[0px_30px_60px_rgba(0,117,255,0.3)] bottom-[180px] rounded-xl'>
                   <Image src={profile} alt='profile badge' />
                   <div className='flex flex-col ml-3'>
-                    <h1 className='text-[30px] text-[#00BE7E] font-bold'>7.5K</h1>
-                    <p className='text-[20px]'>Total Active Task</p>
+                    <h1 className='text-[25px] text-[#00BE7E] font-bold'>7.5K</h1>
+                    <p className='text-[15px]'>Total Active Task</p>
                   </div>
                 </div>
               </div>

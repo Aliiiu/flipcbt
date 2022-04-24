@@ -76,8 +76,6 @@ const benefit: ArrayObject[][] = [
   ],
 ]
 
-
-benefit[0].map((element, index) => console.log(element))
 const Benefit = () => {
   const [currTab, setCurrTab] = useState<number>(0)
   
@@ -87,12 +85,10 @@ const Benefit = () => {
   const ForOrganisation = (): void => {
     setCurrTab(1);
   };
-  // const tabHandler = (index: number) => {
-  //   setCurrTab(index)
-  // }
+ 
   return (
-    <section>
-          <div className='flex md:px-20 bg-[#0075FF] py-[5rem] bg-opacity-5 mobile:px-5'>
+    <section className='bg-[#0075FF] bg-opacity-5'>
+          <div className='flex md:px-20  py-[5rem] mobile:px-5 container'>
             
               <div className='md:w-9/12 mobile:w-full'>
                 <div className='flex overflow-hidden md:mb-9'>
