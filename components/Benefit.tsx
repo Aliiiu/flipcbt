@@ -75,8 +75,6 @@ const benefit: ArrayObject[][] = [
   ],
 ]
 
-
-benefit[0].map((element, index) => console.log(element))
 const Benefit = () => {
   const [currTab, setCurrTab] = useState<number>(0)
   

@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 const Navbar = () => {
   return (
-    <nav className='fixed top-0 left-0 flex justify-between bg-white w-full items-center px-[5rem] py-3 mobile:px-[2rem] z-10 shadow-2xl navbar'>
+    <nav className="navbar fixed top-0 left-0 w-full px-20 py-4 mobile:px-[2rem] z-10">
       <div className='flex items-center'>
         <div>
           <Link href='/'>
@@ -14,15 +14,15 @@ const Navbar = () => {
             </a>
           </Link>
         </div>
-        <div className='flex justify-between w-[30rem] ml-20 mobile:hidden'>
+        <div className='flex justify-between w-[30rem] ml-14 mobile:hidden'>
           <Link href='/ForOrganisation'>
             <a className='text-base font-semibold text-[#06042C]'>
-              For Organisation
+              For Organizations
             </a>
           </Link>
           <Link href='/ForSchool'>
             <a className='text-base font-semibold text-[#06042C]'>
-              For School
+              For Schools
             </a>
           </Link>
           <Link href='/GetStarted'>

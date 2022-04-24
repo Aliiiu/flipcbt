@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import React, {Fragment} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -18,36 +19,36 @@ const Home: NextPage = () => {
         <title>Flip CBT</title>
       </Head>
       <main>
-        <section className="h-screen px-5 md:px-20 mobile:mb-9 mobile:text-center homePage">
-          <div className='flex mobile:w-auto'>
-            <div className='flex flex-col space-y-5  pt-[9rem]'>
-              <h1 className='lg:text-[50px] md:text-[35px] font-bold mobile:text-[32px]'>
-                We Design and Implement an online computer-based test system.
+        <section className="h-screen w-full px-5 md:px-20 mobile:text-center homePage">
+          <div className='flex flex-row mobile:w-auto pt-[10rem]'>
+            <div className='flex md:w-6/12 mobile:w-full flex-col space-y-10'>
+              <h1 className='lg:text-[50px] md:text-[35px] font-extrabold mobile:text-[32px]'>
+                Assessment streamline made more accurate and time-bound.
               </h1>
-              <p className='md:text-[20px] lg:text-[24px] text-[18px]'>
+              <p>
                 Flip is a CBT software as a source to provide tests, examination management and
                 quick grading system and collation of results instead of the use of pen and paper.
               </p>
               <div className='flex mobile:justify-center'>
-                <button className='py-3 text-base text-white bg-blue-500 rounded-md px-[4rem] md:py-5'>
-                  <a href="#">GET STARTED</a>
-                </button>
+                <Link href="/">
+                  <a className='py-3 text-base text-white bg-[#0075FF] rounded-md px-[4rem] md:py-5'>GET STARTED</a>
+                </Link>
               </div>
             </div>
-            <div className='relative border lg:block md:hidden mobile:hidden md:pt-[10rem] md:mt-[4rem]'>
-              <Image src='/happyMan.png' alt='logo' width='1400px' height='1000px' />
-              <div className='absolute left-0 flex px-8 py-2 bg-white border bottom-20 rounded-xl'>
-                <Image src={profile2} alt='profile badge' />
+            <div className='relative w-6/12 lg:block md:hidden mobile:hidden'>
+              <Image src='/bg.png' className="img" alt='logo' width='650px' height='650px' />
+              <div className='absolute left-0 flex px-10 py-2 bg-white flip-border bottom-20 rounded-lg blue-glow'>
+                <Image src={profile2} alt='profile badge' width="55px" height="55px" />
                 <div className='flex flex-col ml-3'>
-                  <h1 className='text-[30px] text-[#FFBC6C] font-bold'>50K</h1>
-                  <p className='text-[20px]'>Total Active Student</p>
+                  <h1 className='text-[30px] text-[#FFBC6C] font-semibold'>50K</h1>
+                  <p>Total Active Student</p>
                 </div>
               </div>
-              <div className='absolute right-0 flex px-8 py-2 bg-white border bottom-[250px] rounded-xl'>
-                <Image src={profile} alt='profile badge' />
+              <div className='absolute right-0 flex px-10 py-2 bg-white flip-border bottom-[250px] rounded-lg blue-glow'>
+                <Image src={profile} alt='profile badge' width="55px" height="55px" />
                 <div className='flex flex-col ml-3'>
-                  <h1 className='text-[30px] text-[#FFBC6C] font-bold'>7.5K</h1>
-                  <p className='text-[20px]'>Total Active Task</p>
+                  <h1 className='text-[30px] text-[#00BE7E] font-semibold'>7.5K</h1>
+                  <p>Total Active Task</p>
                 </div>
               </div>
             </div>
