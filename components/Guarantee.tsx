@@ -37,8 +37,8 @@ const Guarantee = () => {
         </div>
       </div>
       <div>
-        <div className='flex md:space-x-9 mobile:flex-col mobile:space-y-7 lg:w-12/12 md:mx-auto'>
-          <div className='px-8 py-4 bg-white mobile:px-4 rounded-xl mobile:flex mobile:flex-col-reverse'>
+        <div className='flex mobile:flex-col mobile:space-y-7 lg:w-12/12 md:mx-auto'>
+          <div className='px-8 md:mr-5 py-4 bg-white mobile:px-4 rounded-xl mobile:flex mobile:flex-col-reverse'>
             <p className='md:text-[20px] text-[17px]'>
               Running a business can be demanding, having motivated
               employees is paramount to our success and with

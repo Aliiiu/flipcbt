@@ -6,7 +6,7 @@ import FeatureForSchool from '../components/FeatureForSchool';
 const ForSchool = () => {
   return (
     <Fragment>
-      <div className="h-screen ForSchool" >
+      <div className="ForSchool" >
         <div className='space-y-6 text-center py-[15rem] px-5 md:px-20 md:py-28 md:w-9/12 lg:w-7/12'>
           <h1 className='text-[40px] md:text-white md:text-[60px] font-bold'>Get Yourself Prepared For CBT Exams</h1>
           <p className='md:text-white'>Flip is a CBT software as a source to provide tests, examination management and quick grading
