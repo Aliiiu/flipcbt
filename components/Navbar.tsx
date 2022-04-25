@@ -5,41 +5,34 @@ import { useRouter } from 'next/router';
 
 const Navbar = () => {
   return (
-    <header className='fixed left-0 right-0 w-full bg-white z-10 shadow-[0px_4px_4px_rgba(0,117,255,0.2)] navbar'>
-      <div className='container flex items-center px-[5rem] py-3 mobile:px-[2rem]'>
-        <Link href='/'>
-          <a>
-            <Image src="/Flip Cbt.png" alt='flipcbt logo' width='80px' height='40px' className='px-0 py-0'/>
-          </a>
-        </Link>
-        <nav className='flex justify-between w-full items-center'>
-          <div className='flex justify-between items-center w-full'>
-            <div className='flex items-center'>
-        
-              <div className='ml-[7rem] w-full mobile:hidden  lg:block'>
-                <Link href='/ForOrganisation'>
-                  <a className='text-base font-semibold text-[#06042C] mr-[5rem]'>
-                    For Organisation
-                  </a>
-                </Link>
-                <Link href='/ForSchool'>
-                  <a className='text-base font-semibold text-[#06042C]'>
-                    For School
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className='mobile:hidden mr-[3rem]'>
-              <Link href='/GetStarted'>
-                <a href="">
-                  <button className='text-base text-white bg-blue-500 rounded-md px-[3rem] md:py-3 text-[14px]'>
-                    Get Started
-                  </button>
-                </a>
-              </Link>
-            </div>
+    <nav className="navbar fixed top-0 left-0 w-full px-20 py-5 mobile:py-3 mobile:px-8 z-10">
+      <div className='container flex justify-between items-center w-full'>
+        <div className='flex items-center'>
+          <Link href='/'>
+            <a>
+              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='80px' height='40px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0'/>
+            </a>
+          </Link>
+          <div className='ml-[7rem] w-full mobile:hidden  lg:block'>
+            <Link href='/ForOrganisation'>
+              <a className='text-base font-semibold text-[#06042C] mr-[5rem]'>
+                For Organisation
+              </a>
+            </Link>
+            <Link href='/ForSchool'>
+              <a className='text-base font-semibold text-[#06042C]'>
+                For School
+              </a>
+            </Link>
           </div>
-        </nav>
+        </div>
+        <div className='mobile:hidden'>
+          <Link href='/GetStarted'>
+            <a className='text-base text-white bg-blue-500 rounded-md px-12 py-3 text-[14px]'>
+                Get Started
+            </a>
+          </Link>
+        </div>
         <div className="hidden text-white mobile:block">
           <button>
               <svg
@@ -59,7 +52,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-    </header>
+    </nav>
   )
 }
 
