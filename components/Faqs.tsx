@@ -47,24 +47,28 @@ const Faqs = () => {
         {QA.map((item, index) => (
                 <div className="w-full py-4 bg-white border rounded-md shadow-[0px_25px_50px_rgba(22,25,79,0.1)] mobile:w-full mobile:shadow-md text-md" key={index}>
                     <a href="javascript:void(0);" onClick={() => handleClick(index)}  className="flex items-center justify-between py-3 md:px-8 mobile:px-4">
-                        <h3 className={`font-bold text-xl w-full border-[#E0E0E0] mobile:px-2 mobile:text-[20px] ${(active && currQuestion === index) ? 'pb-4 mobile:pb-3 border-b-2': ''}`}>{item.question}</h3>
+                        <h3 className={`font-bold text-xl w-full border-[#E0E0E0] mobile:px-2 mobile:text-[20px]`}>{item.question}</h3>
                         {
                             (active && currQuestion === index) ? (
                                 <button className="text-3xl font-bold bg-transparent border-none text-purple">
-                                    <Image src='/minus-icon.png' alt='minus icon' width='32px' height='32px' />
+                                    <Image src='/minus.svg' alt='minus icon' width='32px' height='32px' />
                                 </button>
                             ) : (
                                 <button className="text-3xl font-bold bg-transparent border-none text-purple">
-                                    <Image src='/Plus-icon.png' alt='plus icon' width='32px' height='32px' />
+                                    <Image src='/plus.svg' alt='plus icon' width='32px' height='32px' />
                                 </button>
                             )
                         }
                     </a>
                     {
-                        (active && currQuestion === index) ? (
-                            <div className="flex flex-wrap py-3 md:px-8 mobile:text-gray-400 mobile:px-4" >
-                                <p className="text-xl mobile:text-base">{item.answer}</p>
-                            </div>
+              (active && currQuestion === index) ? (
+                                <>
+                                  <hr />
+                                  <div className="flex flex-wrap py-3 md:px-8 mobile:text-gray-400 mobile:px-4" >
+                                      <p className="text-xl mobile:text-base">{item.answer}</p>
+                                  </div>
+                                </>
+                            
                         ) : null
                     }
                 </div>

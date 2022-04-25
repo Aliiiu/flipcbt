@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Feature from '../components/Feature'
 import profile from '../public/profile.svg'
 import profile2 from '../public/profile2.svg'
-import Button from '../components/Button'
+import Link from 'next/link'
 import Benefit from '../components/Benefit'
 import Motor from '../components/Motor'
 import Guarantee from '../components/Guarantee'
@@ -18,8 +18,8 @@ const Home: NextPage = () => {
         <title>Flip CBT</title>
       </Head>
       <main>
-        <div className='homePage container'>
-          <section className="px-5 md:px-20 mobile:mb-9 mobile:text-center pageBody homePage2">
+        <div className='homePage'>
+          <section className="px-5 md:px-20 mobile:mb-9 mobile:text-center pageBody homePage2 container">
             <div className='flex mobile:w-auto pb-12'>
               <div className='flex flex-col space-y-5 mobile:pt-[8rem] md:pt-[12rem]  lg:pt-[8rem] md:w-11/12'>
                 <h1 className='lg:text-[43px] md:text-[35px] font-bold mobile:text-[32px] md:w-12/12'>
@@ -30,20 +30,22 @@ const Home: NextPage = () => {
                   quick grading system and collation of results instead of the use of pen and paper.
                 </p>
                 <div className='flex mobile:justify-center'>
-                  <button className='py-3 text-base text-white bg-blue-500 rounded-md px-[4rem] md:py-5'>
-                    <a href="#">GET STARTED</a>
-                  </button>
+                  <Link href='/'>
+                    <a className='py-3 text-base text-white bg-blue-500 rounded-md px-[4rem] md:py-5'>
+                      GET STARTED
+                    </a>
+                  </Link>
                 </div>
               </div>
               <div className='relative lg:block mobile:hidden md:pt-[10rem] md:mt-[6rem] w-full'>              
-                <div className='absolute mobile:hidden left-0 flex px-8 py-2 bg-white border bottom-0 rounded-xl shadow-[0px_30px_60px_rgba(0,117,255,0.3)]'>
+                <div className='absolute mobile:hidden left-0 flex px-8 py-2 bg-white border bottom-0 rounded-xl blue-glow'>
                   <Image src={profile2} alt='profile badge' />
                   <div className='flex flex-col ml-3'>
                     <h1 className='text-[25px] text-[#FFBC6C] font-bold'>50K</h1>
                     <p className='text-[15px]'>Total Active Student</p>
                   </div>
                 </div>
-                <div className='absolute mobile:hidden right-0 flex px-8 py-2 bg-white border shadow-[0px_30px_60px_rgba(0,117,255,0.3)] bottom-[180px] rounded-xl'>
+                <div className='absolute mobile:hidden right-0 flex px-8 py-2 bg-white border blue-glow bottom-[180px] rounded-xl'>
                   <Image src={profile} alt='profile badge' />
                   <div className='flex flex-col ml-3'>
                     <h1 className='text-[25px] text-[#00BE7E] font-bold'>7.5K</h1>
@@ -61,7 +63,7 @@ const Home: NextPage = () => {
           <h1 className='font-bold text-white md:text-5xl mobile:text-[32px]'>Want to do marketing with Flip?</h1>
           <p className='text-white mobile:text-[18px]'>Marketing is the activity, institutions, and processes for creating, communicating, <br />
             delivering, and exchanging, offerings that have value.</p>
-          <div><button className='px-10 py-4 text-base text-white bg-black rounded-xl'><a href="#">CLICK HERE</a></button></div>
+          <div><Link href="/"><a className='px-10 py-4 text-base text-white bg-black rounded-xl'>CLICK HERE</a></Link></div>
         </section>
         <Guarantee />
         <Faqs />
