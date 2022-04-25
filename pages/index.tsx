@@ -34,7 +34,7 @@ const Home: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className='relative w-6/12 lg:block md:hidden mobile:hidden border'>
+            <div className='relative w-6/12 lg:block md:hidden mobile:hidden'>
               <Image src='/bg.png' className="img" alt='logo' width='650px' height='550px' />
               <div className='absolute left-0 flex px-10 py-2 bg-white flip-border bottom-[55px] rounded-lg blue-glow'>
                 <Image src={profile2} alt='profile badge' width="55px" height="55px" />
