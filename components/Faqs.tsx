@@ -32,7 +32,7 @@ const Faqs = () => {
   const [active, setActive] = useState<boolean>(false)
   const [currQuestion, setCurrQuestion] = useState<number>(0)
   
-  const handleClick = (e: Event, index:number) => {
+  const handleClick = (e: React.MouseEvent, index:number) => {
     e.preventDefault();
     setActive(prevState => !prevState)
     setCurrQuestion(index)
@@ -40,13 +40,13 @@ const Faqs = () => {
   }
   
   return (
-    <section className='bg-white pb-[4rem] md:px-20 mobile:px-5'>
+    <section className='bg-white pb-[4rem] md:px-20 mobile:px-4'>
       <div className="container">
       <div className='text-center pt-[5rem] mb-[4rem] space-y-4 mobile:mx-5'>
         <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>FAQs</h2>
         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo beatae mollitia, placeat illum magni</p>
       </div>
-      <div className='grid grid-cols-1 gap-3 justify-items-center md:mx-20 mobile:mx-4'>
+      <div className='grid grid-cols-1 gap-3 justify-items-center'>
         {QA.map((item, index) => (
                 <div className="w-full py-4 bg-white border rounded-[20px] shadow-[0px_25px_50px_rgba(22,25,79,0.1)] mobile:w-full mobile:shadow-md text-md" key={index}>
                     <a href="#" onClick={(e) => handleClick(e, index)}  className="flex items-center justify-between py-3 mobile:py-0 md:px-8 mobile:px-4">

@@ -1,16 +1,16 @@
-import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-import Image from 'next/image'
-import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [nav, ShowNav] = useState<boolean>(false);
   return (
-    <nav className="navbar fixed top-0 left-0 w-full px-20 py-5 mobile:py-3 mobile:px-8 z-10">
+    <nav className="navbar fixed top-0 left-0 w-full px-20 py-5 mobile:py-3 mobile:px-3 z-10">
       <div className='container flex justify-between items-center w-full'>
         <div className='flex items-center'>
           <Link href='/'>
             <a>
-              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='80px' height='40px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0'/>
+              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='60px' height='30px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0'/>
             </a>
           </Link>
           <div className='ml-[7rem] w-full mobile:hidden  lg:block'>
@@ -26,30 +26,46 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className='mobile:hidden'>
+        <div>
           <Link href='/GetStarted'>
-            <a className='text-base text-white bg-blue-500 rounded-md px-12 py-3 text-[14px]'>
+            <a className='text-base text-white bg-blue-500 rounded-md px-12 py-3 text-[14px] mobile:hidden'>
                 Get Started
             </a>
           </Link>
         </div>
         <div className="hidden text-white mobile:block">
-          <button>
-              <svg
-                  width="24"
-                  height="16"
-                  viewBox="0 0 24 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-              >
-                  <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
-                  fill="#0075FF"
-                  />
-              </svg>
-          </button>
+          {nav ?
+            (<button onClick={() => ShowNav(false)}>
+              <Image src='/x.svg' alt='close logo' width='30px' height='30px' />
+            </button>) :
+            (<button onClick={() => ShowNav(true)}>
+              <Image src='/menu.svg' alt='menu logo' width='30px' height='30px' />
+            </button>)}
+          {
+                nav && 
+                    <div className="flex flex-col items-center w-full mobile-nav bg-white h-100 p-7">
+                      <Link href="/" >
+                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
+                            Home
+                          </a>
+                      </Link>
+                      <Link href="/ForOrganisation">
+                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
+                            For Organisation
+                          </a>
+                      </Link>
+                      <Link href="/ForSchool">
+                          <a  onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
+                            For School
+                          </a>
+                      </Link>
+                      <Link href="/">
+                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
+                            Get Started
+                          </a>
+                      </Link>
+                    </div>
+                }
         </div>
       </div>
     </nav>

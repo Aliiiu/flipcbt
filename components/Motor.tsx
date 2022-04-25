@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Motor = () => {
   return (
-    <section className='flex flex-col py-20 mx-5 text-center md:px-20'>
+    <section className='flex flex-col py-20 mobile:px-3 text-center md:px-20'>
       <div className="container">
         <div className='mb-[4rem]'>
-          <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>Great for Schools,<br />Loved By Organizations.</h2>
+          <h2 className='font-bold text-[40px] mb-4 mobile:text-[28px]'>Great for Schools,<br />Loved By Organizations.</h2>
           <p className='text-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam rem sunt quaerat sapiente. Quam cum maxime!
           </p>
@@ -20,7 +20,7 @@ const Motor = () => {
                 <h2 className='text-xl font-bold mt-3'>Students</h2>
                 <p className='my-5'>Business and organisation of all size.</p>
                 <Link href="#">
-                  <a className='text-white text-base py-3 px-9 bg-[#00BE7E] rounded-md'>LEARN MORE</a>
+                  <a className='text-white text-base py-3 px-9 bg-[#00BE7E] btn-border'>LEARN MORE</a>
                 </Link>
               </div>
               <div className='bg-[#00BE7E] h-1 w-full'></div>
@@ -31,7 +31,7 @@ const Motor = () => {
                 <h2 className='text-xl font-bold mt-3'>Organizations</h2>
                 <p className='my-5'>Business and organisation of all size.</p>
                 <Link href="#">
-                  <a className='text-white text-base py-3 px-9 bg-[#FFAD4A] rounded-md'>LEARN MORE</a>
+                  <a className='text-white text-base py-3 px-9 bg-[#FFAD4A] btn-border'>LEARN MORE</a>
                 </Link>
               </div>
               <div className='bg-[#FFAD4A] h-1 w-full'></div>

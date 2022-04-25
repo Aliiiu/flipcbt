@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <section className="h-screen w-full px-5 md:px-20 mobile:text-center homePage">
-          <div className='container flex flex-row mobile:w-auto pt-[10rem]'>
+          <div className='container flex flex-row mobile:w-auto pt-[8rem]'>
             <div className='flex md:w-6/12 mobile:w-full flex-col space-y-10'>
               <h1 className='lg:text-[50px] md:text-[35px] font-extrabold mobile:text-[32px]'>
                 Assessment streamline made more accurate and time-bound.
@@ -30,20 +30,20 @@ const Home: NextPage = () => {
               </p>
               <div className='flex mobile:justify-center'>
                 <Link href="/">
-                  <a className='py-3 text-base text-white bg-[#0075FF] rounded-md px-[4rem] md:py-5'>GET STARTED</a>
+                  <a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>GET STARTED</a>
                 </Link>
               </div>
             </div>
-            <div className='relative w-6/12 lg:block md:hidden mobile:hidden'>
-              <Image src='/bg.png' className="img" alt='logo' width='650px' height='650px' />
-              <div className='absolute left-0 flex px-10 py-2 bg-white flip-border bottom-20 rounded-lg blue-glow'>
+            <div className='relative w-6/12 lg:block md:hidden mobile:hidden border'>
+              <Image src='/bg.png' className="img" alt='logo' width='650px' height='550px' />
+              <div className='absolute left-0 flex px-10 py-2 bg-white flip-border bottom-[55px] rounded-lg blue-glow'>
                 <Image src={profile2} alt='profile badge' width="55px" height="55px" />
                 <div className='flex flex-col ml-3'>
                   <h1 className='text-[30px] text-[#FFBC6C] font-semibold'>50K</h1>
                   <p>Total Active Student</p>
                 </div>
               </div>
-              <div className='absolute right-0 flex px-10 py-2 bg-white flip-border bottom-[250px] rounded-lg blue-glow'>
+              <div className='absolute right-0 flex px-10 py-2 bg-white flip-border bottom-[220px] rounded-lg blue-glow'>
                 <Image src={profile} alt='profile badge' width="55px" height="55px" />
                 <div className='flex flex-col ml-3'>
                   <h1 className='text-[30px] text-[#00BE7E] font-semibold'>7.5K</h1>
@@ -56,13 +56,13 @@ const Home: NextPage = () => {
         <Feature />
         <Benefit />
         <Motor />
-        <section className="md:px-20 mobile:px-5 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
-          <div className='container flex flex-col justify-center items-center space-y-7 px-56 mobile:px-3 text-center'>
-            <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px] text-white'>Are you a marketer?</h2>
+        <section className="md:px-20 mobile:px-4 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
+          <div className='container flex flex-col justify-center items-center space-y-7 text-center'>
+            <h2 className='font-bold text-[40px] mb-4 mobile:text-[28px] text-white'>Are you a marketer?</h2>
             <p className='text-white'>Marketing is the activity, institutions, and processes for creating, communicating,
               delivering, and exchanging, offerings that have value.</p>
             <Link href="#">
-              <a className='text-base text-white bg-black rounded-md px-12 py-4 text-[14px]'>
+              <a className='text-base text-white bg-black btn-border px-12 py-4 text-[14px]'>
                 APPLY NOW
               </a>
             </Link>
