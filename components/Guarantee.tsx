@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css'
 import 'swiper/css/navigation';
-import styles from '../styles/home.module.css';
 
 type dataObject = {
   content: string,
