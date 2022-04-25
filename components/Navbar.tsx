@@ -12,7 +12,7 @@ const Navbar = () => {
             <Image src="/Flip Cbt.png" alt='flipcbt logo' width='80px' height='40px' className='px-0 py-0'/>
           </a>
         </Link>
-        <nav className='flex justify-between w-full items-center'>
+        <nav className='flex justify-between bg-white w-full items-center navbar'>
           <div className='flex justify-between items-center w-full'>
             <div className='flex items-center'>
         
