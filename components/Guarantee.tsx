@@ -5,7 +5,7 @@ const Guarantee = () => {
     <section className='flex flex-col md:px-20 py-20 mobile:px-8 space-y-8 bg-[#F7F8FA]'>
       <div className="container">
       <div className='flex items-center justify-between mb-[4rem]'>
-        <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
+        <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
         <div className='flex space-x-3'>
           <button className='px-3 bg-gray-300 rounded-full'>
             <svg
@@ -64,9 +64,9 @@ const Guarantee = () => {
                 <h2 className='font-bold text-[20px]'>Courtney Henry</h2>
                 <h4 className='text-[16px]'>Founder of Easy Secondary school</h4>
               </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   )

@@ -1,8 +1,7 @@
 import React, { useState, Fragment } from 'react'
 import Image from 'next/image'
-import tick from '../public/Tick-Square.svg'
+import Link from 'next/link'
 import celebration from '../public/benefit.svg'
-import Button from './Button'
 
 type ArrayObject = {
   title: string;
@@ -85,13 +84,11 @@ const Benefit = () => {
   const ForOrganisation = (): void => {
     setCurrTab(1);
   };
-  // const tabHandler = (index: number) => {
-  //   setCurrTab(index)
-  // }
+ 
   return (
         <section className='flex md:px-20 mobile:px-8 bg-[#0075FF] py-[5rem] bg-opacity-5'>
           <div className='md:w-9/12 mobile:w-full'>
-            <div className='flex overflow-x-auto mb-9'>
+            <div className='flex overflow-x-hidden mb-9'>
               <div className='py-5 whitespace-nowrap font-bold cursor-pointer'>
                 <button className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForSchool}>What Schools Get</button>
                 <div className={`${currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} mt-3 h-1`}></div>

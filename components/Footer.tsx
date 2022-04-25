@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className='md:px-20 md:pt-20 bg-[#06042C] mobile:px-5'>
       <div className='container flex mobile:flex-col'>
         <div className='md:mr-[6rem] mobile:text-center mobile:py-10'>
-          <Image src='/Flip Cbt.png' alt='Flip Cbt Logo' width='120px' height='60px' />
+          <Image src='/Flip Cbt.png' alt='Flip Cbt Logo' width='100px' height='50px' />
         </div>
         <div className='flex md:justify-between w-full md:mr-[6rem] mobile:flex-wrap'>
           <div className='space-y-8 mobile:mb-8 mobile:mx-[3rem]'>

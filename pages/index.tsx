@@ -6,7 +6,6 @@ import Image from 'next/image'
 import Feature from '../components/Feature'
 import profile from '../public/profile.svg'
 import profile2 from '../public/profile2.svg'
-import Button from '../components/Button'
 import Benefit from '../components/Benefit'
 import Motor from '../components/Motor'
 import Guarantee from '../components/Guarantee'
@@ -59,7 +58,7 @@ const Home: NextPage = () => {
         <Motor />
         <section className="md:px-20 mobile:px-5 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
           <div className='container flex flex-col justify-center items-center space-y-7 px-56 mobile:px-3 text-center'>
-            <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px] text-white'>Are you a marketer?</h2>
+            <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px] text-white'>Are you a marketer?</h2>
             <p className='text-white'>Marketing is the activity, institutions, and processes for creating, communicating,
               delivering, and exchanging, offerings that have value.</p>
             <Link href="#">

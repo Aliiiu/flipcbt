@@ -7,7 +7,7 @@ const Motor = () => {
     <section className='flex flex-col py-20 mx-5 text-center md:px-20'>
       <div className="container">
         <div className='mb-[4rem]'>
-          <h2 className='font-semibold text-[50px] mb-4 mobile:text-[28px]'>Great for Schools,<br />Loved By Organizations.</h2>
+          <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>Great for Schools,<br />Loved By Organizations.</h2>
           <p className='text-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam rem sunt quaerat sapiente. Quam cum maxime!
           </p>

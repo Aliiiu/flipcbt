@@ -5,12 +5,12 @@ import { useRouter } from 'next/router';
 
 const Navbar = () => {
   return (
-    <nav className="navbar fixed top-0 left-0 w-full px-20 py-5 mobile:px-8 z-10">
+    <nav className="navbar fixed top-0 left-0 w-full px-20 py-5 mobile:py-3 mobile:px-8 z-10">
       <div className='container flex justify-between items-center w-full'>
         <div className='flex items-center'>
           <Link href='/'>
             <a>
-              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='120px' height='60px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0'/>
+              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='80px' height='40px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0'/>
             </a>
           </Link>
           <div className='ml-[7rem] w-full mobile:hidden  lg:block'>
@@ -32,6 +32,24 @@ const Navbar = () => {
                 Get Started
             </a>
           </Link>
+        </div>
+        <div className="hidden text-white mobile:block">
+          <button>
+              <svg
+                  width="24"
+                  height="16"
+                  viewBox="0 0 24 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                  <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
+                  fill="#0075FF"
+                  />
+              </svg>
+          </button>
         </div>
       </div>
     </nav>
