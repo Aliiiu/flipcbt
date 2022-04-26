@@ -18,7 +18,7 @@ const Motor = () => {
               <div className='flex flex-col items-center py-10  md:px-[4rem] lg:px-[6rem]'>
                 <Image src='/students.png' alt='students illustration' width='150px' height='150px' />
                 <h2 className='text-xl font-bold mt-3'>Students</h2>
-                <p className='my-5'>Business and organisation of all size.</p>
+                <p className='my-5'>It is economical, fast and accurate.</p>
                 <Link href="#">
                   <a className='text-white text-base py-3 px-9 bg-[#00BE7E] btn-border'>LEARN MORE</a>
                 </Link>
@@ -28,8 +28,8 @@ const Motor = () => {
             <div className='flex flex-col items-center text-center bg-[#FFAD4A] bg-opacity-20 rounded-3xl overflow-hidden'>
               <div className='flex flex-col items-center py-10 md:px-[4rem] lg:px-[6rem]'>
                 <Image src='/organizations.png' alt='Organisation Illustration' width='150px' height='150px' />
-                <h2 className='text-xl font-bold mt-3'>Organizations</h2>
-                <p className='my-5'>It is economical, fast and accurate.</p>
+                <h2 className='text-xl font-bold mt-3'>Organisations</h2>
+                <p className='my-5'>Guaranteed benefits for your organisation.</p>
                 <Link href="#">
                   <a className='text-white text-base py-3 px-9 bg-[#FFAD4A] btn-border'>LEARN MORE</a>
                 </Link>

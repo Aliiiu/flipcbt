@@ -14,7 +14,7 @@ const Navbar = () => {
             </a>
           </Link>
           <Link href='/'>
-            <a className='flex'>
+            <a className='flex mobile:hidden'>
               <Image src="/Flip Cbt.png" alt='flipcbt logo' width='90px' height='50px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0 mobile:hidden'/>
             </a>
           </Link>
