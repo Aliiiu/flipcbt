@@ -115,21 +115,18 @@ p {
 @media only screen and (max-width: 768px){
   .ForSchool {
     background-image: url('/pattern2.png');
-    /* background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-position: center;
-    min-height: 100vh;
-    width: 100%; */
-    box-shadow: inset 0 0 0 2000px rgba(248, 245, 245, 0.824);
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
   }
   
   .homePage {
     background-image: url('/pattern2.png');
-    background-repeat: repeat;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-position: center;
-    width: 100%;
-    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.92);
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
   }
 
   .navbar.fixed{
@@ -152,15 +149,7 @@ p {
     display: inherit;
   }
 }
-@media only screen and (min-width: 788px){
-  .homePage2{
-  background-image: url('/happyMan.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 900px 550px
-  }
 
-}
 @media only screen and (max-width: 1024px){
   .homePage {
     background-image: url('/pattern2.png');
