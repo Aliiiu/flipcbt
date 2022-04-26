@@ -3,29 +3,21 @@ import React, { useState } from 'react'
 
 const QA = [
   {
-    question: "What is Flip?",
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nunc, sit phasellus nulla at.
-     Praesent dolor eget quis volutpat, nisi a, tristique. Nisl aliquam dignissim odio quisque. Ut aliquam tristique gravida porta.`
+    question: "Why should I use the flip app?",
+    answer: `The flip app is economical and accurate and gives the best results possible.`
   },
   {
-    question: "What is the benefits of using Flip?",
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nunc, sit phasellus nulla at.
-     Praesent dolor eget quis volutpat, nisi a, tristique. Nisl aliquam dignissim odio quisque. Ut aliquam tristique gravida porta.`
+    question: "Is my data secure?",
+    answer: `Yes, your data is secure, and provisions have been made to enable confidentiality and security.`
   },
   {
-    question: "Can I be a marketer for Flip?",
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nunc, sit phasellus nulla at.
-     Praesent dolor eget quis volutpat, nisi a, tristique. Nisl aliquam dignissim odio quisque. Ut aliquam tristique gravida porta.`
+    question: "How accessible is it?",
+    answer: `The FLIP app is very accessible and can be used by both secondary schools and organisations.`
   },
   {
-    question: "What is Flip all about?",
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nunc, sit phasellus nulla at.
-     Praesent dolor eget quis volutpat, nisi a, tristique. Nisl aliquam dignissim odio quisque. Ut aliquam tristique gravida porta.`
-  },
-  {
-    question: "How can i be a part of the beneficiary of flip?",
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nunc, sit phasellus nulla at.
-     Praesent dolor eget quis volutpat, nisi a, tristique. Nisl aliquam dignissim odio quisque. Ut aliquam tristique gravida porta.`
+    question: "Do I need the internet to use the app?",
+    answer: `The app has been designed with free internet software for fair usage for secondary
+     schools while organizations need to engage the use of internet internet.`
   },
 ]
 const Faqs = () => {
@@ -36,7 +28,6 @@ const Faqs = () => {
     e.preventDefault();
     setActive(prevState => !prevState)
     setCurrQuestion(index)
-    console.log('done')
   }
   
   return (
@@ -44,7 +35,8 @@ const Faqs = () => {
       <div className="container">
       <div className='text-center pt-[5rem] mb-[4rem] space-y-4 mobile:mx-5'>
         <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>FAQs</h2>
-        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo beatae mollitia, placeat illum magni</p>
+          <p className='text-sm'>We have carefully prepared a list of most frequent inquiries for you.
+            This will give you more knowledge and insights into the app</p>
       </div>
       <div className='grid grid-cols-1 gap-3 justify-items-center'>
         {QA.map((item, index) => (

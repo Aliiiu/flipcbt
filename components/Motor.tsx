@@ -15,8 +15,8 @@ const Motor = () => {
         <div>
           <div className='flex justify-between lg:mx-auto md:w-full lg:w-9/12 mobile:flex-col mobile:space-y-5'>
             <div className='flex flex-col items-center text-center bg-[#00BE7E] bg-opacity-20 rounded-3xl overflow-hidden md:mr-5'>
-              <div className='flex flex-col items-center py-10  md:px-[4rem] lg:px-[6rem]'>
-                <Image src='/students.png' alt='students illustration' width='150px' height='150px' />
+              <div className='py-10  md:px-[4rem] lg:px-[6rem] w-full max-w-xl'>
+                <Image src='/students.png' alt='students illustration' width='200px' height='200px' />
                 <h2 className='text-xl font-bold mt-3'>Students</h2>
                 <p className='my-5'>It is economical, fast and accurate.</p>
                 <Link href="#">
@@ -26,8 +26,8 @@ const Motor = () => {
               <div className='bg-[#00BE7E] h-1 w-full'></div>
             </div>
             <div className='flex flex-col items-center text-center bg-[#FFAD4A] bg-opacity-20 rounded-3xl overflow-hidden'>
-              <div className='flex flex-col items-center py-10 md:px-[4rem] lg:px-[6rem]'>
-                <Image src='/organizations.png' alt='Organisation Illustration' width='150px' height='150px' />
+              <div className='py-10 md:px-[3rem] lg:px-[4rem] w-full max-w-xl relative'>
+                <Image src='/organizations.png' alt='Organisation Illustration' width='200px' height='200px' />
                 <h2 className='text-xl font-bold mt-3'>Organisations</h2>
                 <p className='my-5'>Guaranteed benefits for your organisation.</p>
                 <Link href="#">
