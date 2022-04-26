@@ -1,8 +1,9 @@
-import React,{useRef, useState, useCallback} from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation } from 'swiper';
 import 'swiper/css'
 import 'swiper/css/navigation';
+import useSwiperRef from '../hook/useSwiperRef';
 
 type dataObject = {
   content: string,
@@ -11,9 +12,8 @@ type dataObject = {
 }
 
 const Guarantee = () => {
-  const [prevEl, setPrevEl]= useState<HTMLElement | null>(null);
-  const[nextEl, setNextEl] = useState<HTMLElement | null>(null);
-  const swiper = useSwiper();
+  const [prevEl, prevElRef]= useSwiperRef<HTMLButtonElement>()
+  const[nextEl, nextElRef] = useSwiperRef<HTMLButtonElement>()
   
   const data: dataObject[] = [
   {
@@ -54,12 +54,12 @@ const Guarantee = () => {
   },
 ]
   return (
-    <section className='flex flex-col md:px-20 py-20 mobile:px-4 space-y-8 bg-[#F7F8FA]'>
+    <section className='flex flex-col md:px-20 py-20 mobile:px-5 space-y-8 bg-[#F7F8FA]'>
       <div className="container">
         <div className='flex items-center justify-between mb-[4rem]'>
           <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
           <div className='flex space-x-3'>
-            <button className='px-3 bg-gray-300 rounded-full' ref={(node) => setPrevEl(node)}>
+            <button className='px-3 bg-gray-300 rounded-full' ref={prevElRef}>
               <svg
                 width="8"
                 height="28"
@@ -73,7 +73,7 @@ const Guarantee = () => {
                 />
               </svg>
             </button>
-            <button className='px-3 bg-blue-400 rounded-full' ref={(node) => setNextEl(node)}>
+            <button className='px-3 bg-blue-400 rounded-full' ref={nextElRef}>
               <svg
                 width="8"
                 height="28"
@@ -95,7 +95,7 @@ const Guarantee = () => {
               modules={[Navigation]}
               navigation={{
                 prevEl,
-                nextEl
+                nextEl,
               }}
               spaceBetween={30}
               slidesPerView={2}

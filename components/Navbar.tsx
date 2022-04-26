@@ -5,12 +5,17 @@ import { useState } from 'react';
 const Navbar = () => {
   const [nav, ShowNav] = useState<boolean>(false);
   return (
-    <nav className="navbar fixed top-0 left-0 w-full px-20 py-5 mobile:py-3 mobile:px-3 z-10">
+    <nav className="navbar fixed top-0 left-0 w-full px-20 py-3 mobile:py-3 mobile:px-5 z-10">
       <div className='container flex justify-between items-center w-full'>
         <div className='flex items-center'>
           <Link href='/'>
-            <a>
-              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='60px' height='30px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0'/>
+            <a className='md:hidden'>
+              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='60px' height='30px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0n'/>
+            </a>
+          </Link>
+          <Link href='/'>
+            <a className='flex'>
+              <Image src="/Flip Cbt.png" alt='flipcbt logo' width='90px' height='50px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0 mobile:hidden'/>
             </a>
           </Link>
           <div className='ml-[7rem] w-full mobile:hidden  lg:block'>

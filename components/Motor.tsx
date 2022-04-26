@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 const Motor = () => {
   return (
-    <section className='flex flex-col py-20 mobile:px-3 text-center md:px-20'>
+    <section className='flex flex-col py-20 mobile:px-5 text-center md:px-20'>
       <div className="container">
         <div className='mb-[4rem]'>
           <h2 className='font-bold text-[40px] mb-4 mobile:text-[28px]'>Great for Schools,<br />Loved By Organizations.</h2>
           <p className='text-sm'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam rem sunt quaerat sapiente. Quam cum maxime!
+            Essential in secondary schools, universities and even organizations for assessment of all kinds.  
           </p>
         </div>
         <div>
@@ -29,7 +29,7 @@ const Motor = () => {
               <div className='flex flex-col items-center py-10 md:px-[4rem] lg:px-[6rem]'>
                 <Image src='/organizations.png' alt='Organisation Illustration' width='150px' height='150px' />
                 <h2 className='text-xl font-bold mt-3'>Organizations</h2>
-                <p className='my-5'>Business and organisation of all size.</p>
+                <p className='my-5'>It is economical, fast and accurate.</p>
                 <Link href="#">
                   <a className='text-white text-base py-3 px-9 bg-[#FFAD4A] btn-border'>LEARN MORE</a>
                 </Link>

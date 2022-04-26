@@ -12,66 +12,58 @@ const benefit: ArrayObject[][] = [
   [
     {
       title: 'Automatically generates exam numbers for students',
-      content: `It involves the conduct of examinations using computer
-              networks, and questions are set in such a way that
-              they can be formally and easily processed by the computer.`
+      content: `You don't have to give out exam numbers  separately
+                 as the app has been designed to immediately initiate
+                 random numbers to students.`
     },
     {
       title: 'Randomly assigns generated questions for each student.',
-      content: `It involves the conduct of examinations using computer
-              networks, and questions are set in such a way that
-              they can be formally and easily processed by the computer.`
+      content: ` It distributes shuffled questions to students thereby
+                 making sure that each student has completely different questions.`
     },
     {
       title: 'Enhanced security features to avoid exam malpractice.',
-      content: `It involves the conduct of examinations using computer
-              networks, and questions are set in such a way that
-              they can be formally and easily processed by the computer.`
+      content: `There are various security features inherent in the 
+                app to ensure that the assessment integrity is maintained. `
     },
     {
-      title: 'Real-time processing of results for candidates.',
-      content: `It involves the conduct of examinations using computer
-              networks, and questions are set in such a way that
-              they can be formally and easily processed by the computer.`
+      title: 'Retains Data for future use.',
+      content: `It helps to save reports/data which includes scores of 
+                assessment of students for easy accessibility in the future. This
+                means when this report is needed for reference purpose, the app provides it at a go.`
     },
     {
-      title: 'Easy collation of results.',
-      content: `It involves the conduct of examinations using computer
-              networks, and questions are set in such a way that
-              they can be formally and easily processed by the computer.`
+      title: 'Easy grading and collation of results.',
+      content: `FLIP helps to eliminate the scope of human error and 
+      the hassle of allotting evaluation responsibilities to teachers.
+      In addition, multiple-choice questions can also be graded easily.`
     },
   ],
   [
     {
-      title: 'Real-time processing of results for candidates.',
+      title: 'Remote Friendly.',
       content: `It involves the conduct of examinations using computer
               networks, and questions are set in such a way that
               they can be formally and easily processed by the computer.`
     },
     {
-      title: 'Randomly assigns generated questions for each student.',
+      title: 'Easy examination streamlining.',
       content: `It involves the conduct of examinations using computer
               networks, and questions are set in such a way that
               they can be formally and easily processed by the computer.`
     },
     {
-      title: 'Enhanced security features to avoid exam malpractice.',
+      title: 'Real-time processing of results for candidates',
       content: `It involves the conduct of examinations using computer
               networks, and questions are set in such a way that
               they can be formally and easily processed by the computer.`
     },
     {
-      title: 'Automatically generates exam numbers for students',
+      title: 'Operational and Reliable',
       content: `It involves the conduct of examinations using computer
               networks, and questions are set in such a way that
               they can be formally and easily processed by the computer.`
-    },
-    {
-      title: 'Easy collation of results.',
-      content: `It involves the conduct of examinations using computer
-              networks, and questions are set in such a way that
-              they can be formally and easily processed by the computer.`
-    },
+    }
   ],
 ]
 
@@ -86,7 +78,7 @@ const Benefit = () => {
   };
  
   return (
-        <section className='flex md:px-20 mobile:px-3 bg-[#0075FF] py-[5rem] bg-opacity-5'>
+        <section className='flex md:px-20 mobile:px-5 bg-[#0075FF] py-[5rem] bg-opacity-5'>
           <div className='md:w-9/12 mobile:w-full'>
             <div className='flex overflow-x-hidden mb-9'>
               <div className='py-5 whitespace-nowrap font-bold cursor-pointer'>

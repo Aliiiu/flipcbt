@@ -40,7 +40,7 @@ const Faqs = () => {
   }
   
   return (
-    <section className='bg-white pb-[4rem] md:px-20 mobile:px-4'>
+    <section className='bg-white pb-[4rem] md:px-20 mobile:px-5'>
       <div className="container">
       <div className='text-center pt-[5rem] mb-[4rem] space-y-4 mobile:mx-5'>
         <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>FAQs</h2>
