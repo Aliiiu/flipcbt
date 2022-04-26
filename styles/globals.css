@@ -108,6 +108,10 @@ p {
   display: none;
 }
 
+.mobile-slider{
+  display: none;
+}
+
 @media only screen and (max-width: 768px){
   .ForSchool {
     background-image: url('/pattern2.png');
@@ -142,6 +146,10 @@ p {
     left: 0;
     overflow-y: scroll;
     /* z-index: 9; */
+  }
+
+  .mobile-slider{
+    display: inherit;
   }
 }
 @media only screen and (min-width: 788px){

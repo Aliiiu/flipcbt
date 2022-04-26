@@ -1,5 +1,5 @@
-import React,{useRef} from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React,{useRef, useState, useCallback} from 'react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css'
 import 'swiper/css/navigation';
@@ -10,11 +10,10 @@ type dataObject = {
   role: string,
 }
 
-
-
 const Guarantee = () => {
-  const swiperNavPrevRef = useRef(null);
-  const swiperNavNextRef = useRef(null);
+  const [prevEl, setPrevEl]= useState<HTMLElement | null>(null);
+  const[nextEl, setNextEl] = useState<HTMLElement | null>(null);
+  const swiper = useSwiper();
   
   const data: dataObject[] = [
   {
@@ -60,7 +59,7 @@ const Guarantee = () => {
         <div className='flex items-center justify-between mb-[4rem]'>
           <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
           <div className='flex space-x-3'>
-            <button className='px-3 bg-gray-300 rounded-full' ref={swiperNavPrevRef}>
+            <button className='px-3 bg-gray-300 rounded-full' ref={(node) => setPrevEl(node)}>
               <svg
                 width="8"
                 height="28"
@@ -74,7 +73,7 @@ const Guarantee = () => {
                 />
               </svg>
             </button>
-            <button className='px-3 bg-blue-400 rounded-full' ref={swiperNavNextRef}>
+            <button className='px-3 bg-blue-400 rounded-full' ref={(node) => setNextEl(node)}>
               <svg
                 width="8"
                 height="28"
@@ -95,8 +94,8 @@ const Guarantee = () => {
             <Swiper
               modules={[Navigation]}
               navigation={{
-                prevEl: swiperNavPrevRef.current,
-                nextEl: swiperNavNextRef.current,
+                prevEl,
+                nextEl
               }}
               spaceBetween={30}
               slidesPerView={2}
@@ -120,12 +119,12 @@ const Guarantee = () => {
               }
               </Swiper>
             </div>
-            <div className='flex md:hidden mobile:space-y-7 md:mx-auto'>
+            <div className='flex mobile-slider mobile:space-y-7 md:mx-auto'>
             <Swiper
               modules={[Navigation]}
               navigation={{
-                prevEl: swiperNavPrevRef.current,
-                nextEl: swiperNavNextRef.current,
+                prevEl,
+                nextEl
               }}
               spaceBetween={30}
               slidesPerView={1}
