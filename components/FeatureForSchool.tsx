@@ -44,16 +44,16 @@ const FeatureForSchool = () => {
           <section key={index}
               className={`${
               index % 2 === 0 ? styles.bigfeatleft : styles.bigfeatright
-              } w-full mobile:w-auto flex flex-row justify-around ${index % 2 === 0 && "flex-row-reverse"} px-20`}
+              } w-full mobile:w-auto flex flex-row mb-9 md:mb-[7em] justify-around ${index % 2 === 0 && "flex-row-reverse"}`}
         >
-          <div className={`w-4/12 mobile:w-full mobile:m-0 ${index % 2 === 0 && "-ml-4"} `}>
+          <div className={`w-4/12 mobile:w-full mobile:text-center mobile:m-0 ${index % 2 === 0 && "-ml-4"} `}>
             
                   <img
                       src={item.image} 
                       alt={item.alt}
-                      width="80%"
-                      height="80%"
-                      className="hidden mobile:block mb-10"
+                      width="300px"
+                      height="300px"
+                      className="hidden mx-auto mb-10 mobile:block"
                   />
 
                   <h1 className="font-bold md:pt-[8rem]">{item.heading}</h1>
@@ -64,8 +64,8 @@ const FeatureForSchool = () => {
               <img
                   src={item.image} 
                   alt={item.alt}
-                  width="50%"
-                  height="50%"
+                  width="551px"
+                  height="551px"
                   style={{margin: 0}}
                   className="mobile:hidden"
               />

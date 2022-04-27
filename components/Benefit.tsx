@@ -81,7 +81,7 @@ const Benefit = () => {
         <section className='flex md:px-20 mobile:px-5 bg-[#0075FF] py-[5rem] bg-opacity-5'>
           <div className='md:w-9/12 mobile:w-full'>
             <div className='flex overflow-x-hidden mb-9'>
-              <div className='py-5 whitespace-nowrap font-bold cursor-pointer'>
+              <div className='py-5 font-bold cursor-pointer whitespace-nowrap'>
                 <button className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForSchool}>What Schools Get</button>
                 <div className={`${currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} mt-3 h-1`}></div>
               </div>
@@ -106,9 +106,11 @@ const Benefit = () => {
               ))
             }
             
-            <Link href=''>
-              <a className='py-3 text-white bg-blue-500 px-[4rem] md:py-5 btn-border'> GET STARTED</a>
-            </Link>
+            <div className='mobile:pt-9'>
+              <Link href=''>
+                <a className='py-3 text-white bg-blue-500 px-[4rem] md:py-5 btn-border'> GET STARTED</a>
+              </Link>
+            </div>
           </div>
         <div className='mobile:hidden md:hidden lg:block md:pt-[18rem]'>
           <Image src={celebration} alt='Celebration Illustration' />

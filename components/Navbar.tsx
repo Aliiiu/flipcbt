@@ -5,11 +5,11 @@ import { useState } from 'react';
 const Navbar = () => {
   const [nav, ShowNav] = useState<boolean>(false);
   return (
-    <nav className="navbar fixed top-0 left-0 w-full px-20 py-3 mobile:py-3 mobile:px-5 z-10">
-      <div className='container flex justify-between items-center w-full'>
+    <nav className="fixed top-0 left-0 z-10 w-full px-20 py-5 navbar mobile:py-3 mobile:px-5">
+      <div className='container flex items-center justify-between w-full'>
         <div className='flex items-center'>
           <Link href='/'>
-            <a className='md:hidden'>
+            <a className='md:hidden '>
               <Image src="/Flip Cbt.png" alt='flipcbt logo' width='60px' height='30px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0n'/>
             </a>
           </Link>
@@ -20,12 +20,12 @@ const Navbar = () => {
           </Link>
           <div className='ml-[7rem] w-full mobile:hidden  lg:block'>
             <Link href='/ForOrganisation'>
-              <a className='text-base font-semibold text-[#06042C] mr-[5rem]'>
+              <a className='text-base font-semibold text-[#06042C] mr-[5rem] visited:text-blue-500 hover:text-blue-500 active:text-blue-500'>
                 For Organisation
               </a>
             </Link>
             <Link href='/ForSchool'>
-              <a className='text-base font-semibold text-[#06042C]'>
+              <a className='text-base font-semibold text-[#06042C] visited:text-blue-500 hover:text-blue-500 active:text-blue-500'>
                 For School
               </a>
             </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
             </button>)}
           {
                 nav && 
-                    <div className="flex flex-col items-center w-full mobile-nav bg-white h-100 p-7">
+                    <div className="flex flex-col items-center w-full bg-white mobile-nav h-100 p-7">
                       <Link href="/" >
                           <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
                             Home

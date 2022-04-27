@@ -35,7 +35,7 @@ const Faqs = () => {
       <div className="container">
       <div className='text-center pt-[5rem] mb-[4rem] space-y-4 mobile:mx-5'>
         <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>FAQs</h2>
-          <p className='text-sm'>We have carefully prepared a list of most frequent inquiries for you.
+          <p className='mx-auto text-sm md:w-7/12'>We have carefully prepared a list of most frequent inquiries for you.
             This will give you more knowledge and insights into the app</p>
       </div>
       <div className='grid grid-cols-1 gap-3 justify-items-center'>
