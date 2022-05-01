@@ -5,7 +5,7 @@ import { useState } from 'react';
 const Navbar = () => {
   const [nav, ShowNav] = useState<boolean>(false);
   return (
-    <nav className="fixed top-0 left-0 z-10 w-full px-20 py-5 navbar mobile:py-3 mobile:px-5">
+    <nav className="fixed top-0 left-0 z-10 w-full px-20 py-5 navbar mobile:py-5 mobile:px-4">
       <div className='container flex items-center justify-between w-full'>
         <div className='flex items-center'>
           <Link href='/'>
@@ -20,20 +20,20 @@ const Navbar = () => {
           </Link>
           <div className='ml-[7rem] w-full mobile:hidden  lg:block'>
             <Link href='/ForOrganisation'>
-              <a className='text-base font-semibold text-[#06042C] mr-[5rem] visited:text-blue-500 hover:text-blue-500 active:text-blue-500'>
+              <a className='text-base font-semibold text-[#06042C] mr-[5rem] hover:text-blue-500 active:text-blue-500'>
                 For Organisation
               </a>
             </Link>
             <Link href='/ForSchool'>
-              <a className='text-base font-semibold text-[#06042C] visited:text-blue-500 hover:text-blue-500 active:text-blue-500'>
+              <a className='text-base font-semibold text-[#06042C] hover:text-blue-500 active:text-blue-500'>
                 For School
               </a>
             </Link>
           </div>
         </div>
-        <div>
+        <div className='lg:mr-[5em]'>
           <Link href='/GetStarted'>
-            <a className='text-base text-white bg-blue-500 rounded-md px-12 py-3 text-[14px] mobile:hidden'>
+            <a className='text-base text-white bg-blue-500 rounded-md px-12 py-4 text-[14px] mobile:hidden'>
                 Get Started
             </a>
           </Link>

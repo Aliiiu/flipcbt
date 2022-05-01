@@ -10,43 +10,42 @@ import Guarantee from '../components/Guarantee';
 const ForOrganisation = () => {
   return (
     <Fragment>
-      <div className='homePage'>
-        <section className="relative w-full h-screen px-5 md:px-20 mobile:text-center ForOrganisation">
-            <div className='container flex flex-row mobile:w-auto pt-[5em]'>
-              <div className='flex flex-col space-y-10 md:w-6/12 mobile:w-full'>
-                <h1 className='lg:text-[50px] md:text-[35px] font-extrabold mobile:text-[32px]'>
-                  We Design and Implement an online computer-based test system.
+      <div className='homePage md:px-20 px-4 mt-[78px] mobile:mt-[83px]'>
+          <section className="relative mobile:text-center lg:pb-[5em] ForOrganisation container">
+            <div className='lg:flex mobile:w-auto w-full md:pb-[8em] md:pt-[4em] lg:py-0'>
+              <div className='flex lg:w-1/2 mobile:w-full flex-col mt-14 mobile:py-[5em] '>
+                <h1 className='lg:text-[52px] md:text-[45px] mobile:text-[28px] header lg:w-10/12 mb-[20px] lg:text-left text-center'>
+                  We Design and Implement an online computer-based test system. 
                 </h1>
-                <p>
-                  Flip is a CBT software as a source to provide tests, examination management and
-                  quick grading system and collation of results instead of the use of pen and paper.
+                <p className='lg:w-10/12 text-[20px] mb-[1em] mobile:text-[18px]'>
+                  FLIP serves as a source to provide tests, examination management,
+                  quick grading of systems and collation of results instead of the use of pen and paper.
                 </p>
-                <div className='flex mobile:justify-center'>
+                <div className='flex mobile:justify-center md:justify-center lg:justify-start'>
                   <Link href="/">
-                    <a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>GET STARTED</a>
+                    <a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-6'>GET STARTED</a>
                   </Link>
                 </div>
               </div>
               <div className='w-6/12 lg:block md:hidden mobile:hidden'>
-                {/* <Image src='/bg.png' className="img" alt='logo' width='650px' height='550px' /> */}
-                <div className='absolute right-[25em] flex px-10 py-2 bg-white flip-border bottom-[2em] rounded-lg blue-glow'>
-                  <Image src={profile2} alt='profile badge' width="55px" height="55px" />
-                  <div className='flex flex-col ml-3'>
-                    <h1 className='text-[30px] text-[#FFBC6C] font-semibold'>50K</h1>
-                    <p>Total Active Student</p>
-                  </div>
-                </div>
-                <div className='absolute right-5 flex px-10 py-2 bg-white flip-border bottom-[150px] rounded-lg blue-glow'>
-                  <Image src={profile} alt='profile badge' width="55px" height="55px" />
-                  <div className='flex flex-col ml-3'>
-                    <h1 className='text-[30px] text-[#00BE7E] font-semibold'>7.5K</h1>
-                    <p>Total Active Task</p>
-                  </div>
-                </div>
+              </div>
+            </div>
+            <div className='absolute right-[320px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[55px] rounded-lg blue-glow'>
+              <Image src={profile2} alt='profile badge' width="55px" height="55px" />
+              <div className='flex flex-col ml-3'>
+                <h1 className='text-[30px] text-[#FFBC6C] font-semibold'>50K</h1>
+                <p>Total Active Student</p>
+              </div>
+            </div>
+            <div className='absolute right-[0px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[160px] rounded-lg blue-glow'>
+              <Image src={profile} alt='profile badge' width="55px" height="55px" />
+              <div className='flex flex-col ml-3'>
+                <h1 className='text-[30px] text-[#00BE7E] font-semibold'>7.5K</h1>
+                <p>Total Active Task</p>
               </div>
             </div>
           </section>
-      </div>
+        </div>
       <FeatureOrganisation />
       <BenefitOrganisation />
       <section className="md:px-20 mobile:px-4 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">

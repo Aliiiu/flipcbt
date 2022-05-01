@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css'
@@ -12,8 +12,19 @@ type dataObject = {
 }
 
 const Guarantee = () => {
+  const [next, setNext] = useState(false)
+  const [prev, setPrev] = useState(false)
   const [prevEl, prevElRef]= useSwiperRef<HTMLButtonElement>()
-  const[nextEl, nextElRef] = useSwiperRef<HTMLButtonElement>()
+  const [nextEl, nextElRef] = useSwiperRef<HTMLButtonElement>()
+  
+  const nextPageHandler = () => {
+    setNext(true)
+    setPrev(false)
+  }
+  const prevPageHandler = () => {
+    setNext(false)
+    setPrev(true)
+  }
   
   const data: dataObject[] = [
   {
@@ -59,7 +70,7 @@ const Guarantee = () => {
         <div className='flex items-center justify-between mb-[4rem]'>
           <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
           <div className='flex space-x-3'>
-            <button className='px-3 bg-gray-300 rounded-full' ref={prevElRef}>
+            <button className={`px-3 ${prev ? 'bg-blue-400' : 'bg-gray-300'} rounded-full`} ref={prevElRef} onClick={prevPageHandler}>
               <svg
                 width="8"
                 height="28"
@@ -73,7 +84,7 @@ const Guarantee = () => {
                 />
               </svg>
             </button>
-            <button className='px-3 bg-blue-400 rounded-full' ref={nextElRef}>
+            <button className={`px-3 ${next ? 'bg-blue-400' : 'bg-gray-300'} rounded-full`} ref={nextElRef} onClick={nextPageHandler}>
               <svg
                 width="8"
                 height="28"
@@ -155,30 +166,3 @@ const Guarantee = () => {
 }
 
 export default Guarantee;
-
-{/* <div className='p-10 md:mr-5 bg-white rounded-[30px] mobile:flex mobile:flex-col-reverse'>
-                <p>
-                  Running a business can be demanding, having motivated
-                  employees is paramount to our success and with
-                  earnipay&#39;s flexible salary payment solutions,
-                  productivity isn&#39;t a demand anymore, it&#39;s a
-                  lifestyle.
-                </p>
-                <div className='mb-8 md:mt-10'>
-                  <h2 className='font-bold text-[20px]'>Courtney Henry</h2>
-                  <h4 className='text-[16px]'>Founder of Easy Secondary school</h4>
-                </div>
-              </div>
-              <div className='p-10 bg-white rounded-[30px] mobile:flex mobile:flex-col-reverse'>
-                <p>
-                  Running a business can be demanding, having motivated
-                  employees is paramount to our success and with
-                  earnipay&#39;s flexible salary payment solutions,
-                  productivity isn&#39;t a demand anymore, it&#39;s a
-                  lifestyle.
-                </p>
-                <div className='mb-8 md:mt-10'>
-                  <h2 className='font-bold text-[20px]'>Courtney Henry</h2>
-                  <h4 className='text-[16px]'>Founder of Easy Secondary school</h4>
-                </div>
-              </div> */}

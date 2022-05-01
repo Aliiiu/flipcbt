@@ -36,17 +36,17 @@ const BenefitOrganisation = () => {
   return (
     <section className='md:px-20 mobile:px-5 bg-[#0075FF] py-[5rem] bg-opacity-5 container'>
           
-          <h1 className='text-center font-bold text-[55px] md:pb-8'>Your Journey on Flip</h1>
+          <h1 className='text-center font-bold mobile:text-[32px] md:text-[45px] lg:text-[55px] pb-8'>Your Journey on Flip</h1>
           <div className='flex '>
             <div className='md:w-9/12 mobile:w-full'>
               
               {
                 benefit.map((item, idx) => (
-                  <div className='flex flex-col justify-between pr-1 mb-6 md:mb-12' key={idx}>
+                  <div className='flex flex-col pr-1 mb-6 md:mb-10' key={idx}>
                     <div className='flex flex-col'>
                       <div className='flex'>
                         <Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />
-                        <h2 className='ml-5 font-bold text-[16px] md:text-[20px]'>{item.title}</h2>
+                        <h2 className='ml-5 font-bold text-[18px] md:text-[20px]'>{item.title}</h2>
                       </div>
                       <p className='mt-4'>{item.content}
                       </p>
@@ -56,9 +56,11 @@ const BenefitOrganisation = () => {
                 ))
               }
             
-              <Link href=''>
-                <a className='py-3 text-white bg-blue-500 px-[4rem] md:py-5 btn-border'>CONTACT US</a>
-              </Link>
+              <div className='md:pt-8 pt-8'>
+                <Link href=''>
+                  <a className='py-3 text-white bg-blue-500 px-[3em] md:px-[4em] md:py-5 btn-border'>CONTACT US</a>
+                </Link>
+              </div>
             </div>
             <div className='mobile:hidden md:hidden lg:block md:pt-[8rem]'>
               <Image src='/in-progress.png' alt='Celebration Illustration' width={'671px'} height='447.33px' />

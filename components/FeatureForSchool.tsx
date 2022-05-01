@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Image from 'next/image';
 import styles from "../styles/home.module.css";
 
 const Data = [
@@ -39,38 +40,43 @@ const Data = [
 const FeatureForSchool = () => {
   return (
     <Fragment>
-      <h1 className='md:text-[55px] text-[32px] text-center font-bold md:px-20 pt-9'>90% of students who use Flip report higher grades</h1>
-      {Data.map((item, index) => (
-          <section key={index}
-              className={`${
-              index % 2 === 0 ? styles.bigfeatleft : styles.bigfeatright
-              } w-full mobile:w-auto flex flex-row mb-9 md:mb-[7em] justify-around ${index % 2 === 0 && "flex-row-reverse"}`}
-        >
-          <div className={`w-4/12 mobile:w-full mobile:text-center mobile:m-0 ${index % 2 === 0 && "-ml-4"} `}>
-            
-                  <img
-                      src={item.image} 
-                      alt={item.alt}
-                      width="300px"
-                      height="300px"
-                      className="hidden mx-auto mb-10 mobile:block"
-                  />
-
-                  <h1 className="font-bold md:pt-[8rem]">{item.heading}</h1>
-                  <p className="mt-3">
-                      {item.content}
-                  </p>
-              </div>
-              <img
-                  src={item.image} 
-                  alt={item.alt}
-                  width="551px"
-                  height="551px"
-                  style={{margin: 0}}
-                  className="mobile:hidden"
-              />
-          </section>
-      ))}
+      <section className='container md:px-20 pt-9 px-3'>
+          <h1 className='md:text-[55px] text-[32px] text-center font-bold md:px-20 pt-9 mobile:pt-5 mb-[2em]'>90% of students who use Flip report higher grades</h1>
+          {Data.map((item, index) => (
+              <section key={index}
+                  className={`${
+                  index % 2 === 0 ? styles.bigfeatleft : styles.bigfeatright
+                  } w-full mobile:w-auto flex flex-row mb-9 md:mb-[2em] justify-between ${(index + 1) % 2 === 0 && "flex-row-reverse"}`}
+            >
+              <div className={`w-6/12 mobile:w-full mobile:text-center`}>
+          
+                      <div className="hidden mx-auto mb-10 mobile:block">
+                          <Image
+                              src={item.image}
+                              alt={item.alt}
+                              width="300px"
+                              height="300px"
+                            
+                          />
+                      </div>
+                      <h1 className="font-bold md:pt-[2em] lg:pt-[4em]">{item.heading}</h1>
+                      <p className="mt-6">
+                          {item.content}
+                      </p>
+                  </div>
+                  <div className="mobile:hidden w-1/2">
+                      <Image
+                          src={item.image}
+                          alt={item.alt}
+                          width="551px"
+                          height="551px"
+                          style={{margin: 0}}
+                          
+                      />
+                  </div>
+              </section>
+          ))}
+      </section>
       </Fragment>
   )
 }

@@ -18,42 +18,43 @@ const Home: NextPage = () => {
       <Head>
         <title>Flip CBT</title>
       </Head>
-      <main>
-        <section className="h-screen w-full px-5 md:px-20 mobile:text-center homePage">
-          <div className='container flex flex-row mobile:w-auto pt-[8rem]'>
-            <div className='flex md:w-6/12 mobile:w-full flex-col space-y-10'>
-              <h1 className='lg:text-[50px] md:text-[35px] font-extrabold mobile:text-[32px]'>
-                Assessment streamline made more accurate and time-bound.
-              </h1>
-              <p>
-                Flip is a CBT software as a source to provide tests, examination management and
-                quick grading system and collation of results instead of the use of pen and paper.
-              </p>
-              <div className='flex mobile:justify-center'>
-                <Link href="/">
-                  <a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>GET STARTED</a>
-                </Link>
-              </div>
-            </div>
-            <div className='relative w-6/12 lg:block md:hidden mobile:hidden'>
-              <Image src='/bg.png' className="img" alt='logo' width='650px' height='550px' />
-              <div className='absolute left-0 flex px-10 py-2 bg-white flip-border bottom-[55px] rounded-lg blue-glow'>
-                <Image src={profile2} alt='profile badge' width="55px" height="55px" />
-                <div className='flex flex-col ml-3'>
-                  <h1 className='text-[30px] text-[#FFBC6C] font-semibold'>50K</h1>
-                  <p>Total Active Student</p>
+      <main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>
+        <div className='homePage md:px-20 px-4'>
+          <section className="relative mobile:text-center lg:pb-[4em] homePage2 container">
+            <div className='lg:flex mobile:w-auto w-full md:pb-[8em] md:pt-[4em] lg:py-0'>
+              <div className='flex lg:w-1/2 mobile:w-full flex-col mt-14 mobile:py-[5em] '>
+                <h1 className='lg:text-[58px] md:text-[45px] mobile:text-[28px] header lg:w-11/12 mb-[20px] lg:text-left text-center'>
+                  Assessment streamline made more accurate and time-bound.
+                </h1>
+                <p className='lg:w-10/12 text-[23px] mb-[2em] mobile:text-[18px]'>
+                  FLIP serves as a source to provide tests, examination management,
+                  quick grading of systems and collation of results instead of the use of pen and paper.
+                </p>
+                <div className='flex mobile:justify-center md:justify-center lg:justify-start'>
+                  <Link href="/">
+                    <a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>GET STARTED</a>
+                  </Link>
                 </div>
               </div>
-              <div className='absolute right-0 flex px-10 py-2 bg-white flip-border bottom-[220px] rounded-lg blue-glow'>
-                <Image src={profile} alt='profile badge' width="55px" height="55px" />
-                <div className='flex flex-col ml-3'>
-                  <h1 className='text-[30px] text-[#00BE7E] font-semibold'>7.5K</h1>
-                  <p>Total Active Task</p>
-                </div>
+              <div className='w-6/12 lg:block md:hidden mobile:hidden'>
               </div>
             </div>
-          </div>
-        </section>
+            <div className='absolute right-[400px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[85px] rounded-lg blue-glow'>
+              <Image src={profile2} alt='profile badge' width="55px" height="55px" />
+              <div className='flex flex-col ml-3'>
+                <h1 className='text-[30px] text-[#FFBC6C] font-semibold'>50K</h1>
+                <p>Total Active Student</p>
+              </div>
+            </div>
+            <div className='absolute right-[40px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[180px] rounded-lg blue-glow'>
+              <Image src={profile} alt='profile badge' width="55px" height="55px" />
+              <div className='flex flex-col ml-3'>
+                <h1 className='text-[30px] text-[#00BE7E] font-semibold'>7.5K</h1>
+                <p>Total Active Task</p>
+              </div>
+            </div>
+          </section>
+        </div>
         <Feature />
         <Benefit />
         <Motor />

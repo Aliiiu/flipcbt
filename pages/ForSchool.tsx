@@ -19,14 +19,16 @@ const ForSchool = () => {
           <Button />
         </div>
       </div>
-      <section className='pt-5 md:px-20 text-center'>
-        <h1 className='font-bold text-xl'>Trusted By</h1>
-        <div className='flex justify-between items-center mobile:justify-center flex-wrap'>
-          <div className='mobile:mx-3'>
+      <section className='md:pt-[5em] mobile:pt-[1em] md:px-20 text-center'>
+        <h1 className='font-bold text-xl mb-9 md:mb-9'>Trusted By</h1>
+        <div className='flex justify-between items-center mobile:justify-center flex-wrap md:w-10/12 md:mx-20'>
+          <div className='mobile:mx-3 mobile:mb-7'>
             <Image src='/Coindesk 2.png' alt='Coindesk Logo 1' width='31.53px' height='29px'/>
             <Image src='/Coindesk 1.png' alt='Coindesk Logo 2' width='114.96px' height='29px'/>
           </div>
-          <Image src='/reuters-logo 1.png' alt='reuters logo' width='154px' height='45.58px' />
+          <div className='mobile:mb-7'>
+            <Image src='/reuters-logo 1.png' alt='reuters logo' width='154px' height='45.58px' />
+          </div>
           <Image src='/coinTracker.png' alt='cointracker logo' width='148px' height='55.84px' />
         </div>
       </section>

@@ -1,7 +1,9 @@
-.bigfeatright {
+/* .bigfeatright {
   padding-left: 30px !important;
   padding-right: 0 !important;
-}
+  background-color: aquamarine;
+  border: 1px solid red;
+} */
 .bigfeatleft p,
 .bigfeatleft p,
 .bigfeatright p,
@@ -16,12 +18,12 @@
   line-height: normal;
 }
 @media only screen and (max-width: 768px) {
-  .bigfeatleft,
+  /* .bigfeatleft,
   .bigfeatright {
     padding-left: 10px !important; 
     padding-right: 10px !important;
     margin-left: 0px;
-  }
+  } */
   .bigfeatleft p,
   .bigfeatright p {
     font-size: 18px;
