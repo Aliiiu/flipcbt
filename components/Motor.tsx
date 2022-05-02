@@ -7,7 +7,13 @@ const Motor = () => {
     <section className='flex flex-col py-20 mobile:px-5 text-center md:px-20'>
       <div className="container">
         <div className='mb-[4rem]'>
-          <h2 className='font-bold text-[40px] mb-4 mobile:text-[28px]'>Great for Schools,<br />Loved By Organizations.</h2>
+          <div className='flex justify-center'>
+            <div className='relative'>
+              <h2 className='inline-block z-10 font-bold text-[40px] mb-4 mobile:text-[28px]'>Great for Schools,<br />Loved By Organizations.</h2>
+              <span className='inline-block absolute top-[18px] md:top-[25px] right-[54px] md:right-[75px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[100px] md:w-[145px] mobile:h-[14px] md:h-[20px]'></span>
+              <span className='inline-block absolute top-[102px] md:top-[85px] right-[73px] md:right-[13px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[190px] md:w-[270px] mobile:h-[14px] md:h-[20px]'></span>
+            </div>
+          </div>
           <p className='text-sm'>
             Essential in secondary schools, universities and even organizations for assessment of all kinds.  
           </p>

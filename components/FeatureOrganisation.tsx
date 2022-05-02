@@ -34,12 +34,12 @@ const FeatureOrganisation = () => {
     <Fragment>
       <section className='container px-5 md:px-20 pt-9'>
           
-            <h1 className='md:text-[55px] text-[32px] text-center font-bold'>Guaranteed benefits <br /> to your business</h1>
+            <h1 className='md:text-[55px] text-[32px] text-center font-bold mobile:pt-9'>Guaranteed benefits <br /> to your business</h1>
             {Data.map((item, index) => (
                 <div key={index}
                     className={`${
                     index % 2 === 0 ? styles.bigfeatleft : styles.bigfeatright
-                    } w-full mobile:w-auto flex flex-row mb-9 md:mb-[7em] justify-between ${index === 1 && "flex-row-reverse"}`}
+                    } w-full mobile:w-auto flex flex-row mb-9 md:mb-[2em] justify-between ${index === 1 && "flex-row-reverse"}`}
             >
                 <div className={`w-6/12 mobile:w-full mobile:text-center `}>
             

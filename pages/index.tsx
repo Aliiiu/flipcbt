@@ -11,6 +11,8 @@ import Motor from '../components/Motor'
 import Guarantee from '../components/Guarantee'
 import Faqs from '../components/Faqs'
 import Marketing from '../components/Marketing'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -18,15 +20,16 @@ const Home: NextPage = () => {
       <Head>
         <title>Flip CBT</title>
       </Head>
+      <Navbar />
       <main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>
         <div className='homePage md:px-20 px-4'>
           <section className="relative mobile:text-center lg:pb-[4em] homePage2 container">
             <div className='lg:flex mobile:w-auto w-full md:pb-[8em] md:pt-[4em] lg:py-0'>
               <div className='flex lg:w-1/2 mobile:w-full flex-col mt-14 mobile:py-[5em] '>
-                <h1 className='lg:text-[58px] md:text-[45px] mobile:text-[28px] header lg:w-11/12 mb-[20px] lg:text-left text-center'>
+                <h1 className='lg:text-[50px] md:text-[45px] mobile:text-[28px] header lg:w-11/12 mb-[20px] lg:text-left text-center '>
                   Assessment streamline made more accurate and time-bound.
                 </h1>
-                <p className='lg:w-10/12 text-[23px] mb-[2em] mobile:text-[18px]'>
+                <p className='lg:w-10/12 text-[20px] mb-[2em] mobile:text-[18px]'>
                   FLIP serves as a source to provide tests, examination management,
                   quick grading of systems and collation of results instead of the use of pen and paper.
                 </p>
@@ -39,14 +42,14 @@ const Home: NextPage = () => {
               <div className='w-6/12 lg:block md:hidden mobile:hidden'>
               </div>
             </div>
-            <div className='absolute right-[400px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[85px] rounded-lg blue-glow'>
+            <div className='absolute right-[380px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[55px] rounded-lg blue-glow'>
               <Image src={profile2} alt='profile badge' width="55px" height="55px" />
               <div className='flex flex-col ml-3'>
                 <h1 className='text-[30px] text-[#FFBC6C] font-semibold'>50K</h1>
                 <p>Total Active Student</p>
               </div>
             </div>
-            <div className='absolute right-[40px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[180px] rounded-lg blue-glow'>
+            <div className='absolute right-[0px] mobile:invisible md:invisible lg:visible flex px-10 py-2 bg-white flip-border bottom-[150px] rounded-lg blue-glow'>
               <Image src={profile} alt='profile badge' width="55px" height="55px" />
               <div className='flex flex-col ml-3'>
                 <h1 className='text-[30px] text-[#00BE7E] font-semibold'>7.5K</h1>
@@ -62,6 +65,7 @@ const Home: NextPage = () => {
         <Guarantee />
         <Faqs />
       </main>
+      <Footer />
     </Fragment>
   )
 }

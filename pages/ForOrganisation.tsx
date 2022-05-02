@@ -6,10 +6,13 @@ import profile2 from '../public/profile2.svg'
 import FeatureOrganisation from '../components/FeatureOrganisation';
 import BenefitOrganisation from '../components/BenefitOrganisation';
 import Guarantee from '../components/Guarantee';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const ForOrganisation = () => {
   return (
     <Fragment>
+      <Navbar />
       <div className='homePage md:px-20 px-4 mt-[78px] mobile:mt-[83px]'>
           <section className="relative mobile:text-center lg:pb-[5em] ForOrganisation container">
             <div className='lg:flex mobile:w-auto w-full md:pb-[8em] md:pt-[4em] lg:py-0'>
@@ -61,6 +64,7 @@ const ForOrganisation = () => {
       </div>
       </section>
       <Guarantee />
+      <Footer />
     </Fragment>
   )
 }

@@ -64,7 +64,7 @@ const Navbar = () => {
                             For School
                           </a>
                       </Link>
-                      <Link href="/">
+                      <Link href="/GetStarted">
                           <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
                             Get Started
                           </a>

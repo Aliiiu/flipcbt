@@ -6,7 +6,12 @@ const Feature = () => {
     <section className='md:pt-[6rem] bg-[#F7F8FA80] mobile:w-auto px-20 mobile:px-5 mobile:bg-[#F7F8FA] mobile:pt-[4rem]'>
       <div className='container flex flex-col w-full mobile:mx-0'>
         <div className='text-center mb-[5rem]'>
-          <h2 className='font-bold text-[40px] mb-4 mobile:text-[28px]'>Why <span className=''>Flip</span>?</h2>
+          <div className='flex justify-center'>
+            <div className='pr-[4em]'>
+              <h2 className='inline-block z-10 relative mobile:left-[60px]  md:left-[88px] font-bold text-[40px] mb-4 mobile:text-[28px]'>Why Flip?</h2>
+              <span className='inline-block bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[45px] md:w-[80px] mobile:h-[14px] md:h-[20px]'></span>
+            </div>
+          </div>
           <p className='text-sm'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est sit donec sed vestibulum, rhoncus..
           </p>

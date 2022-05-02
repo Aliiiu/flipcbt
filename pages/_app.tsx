@@ -48,9 +48,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet" 
         />
       </Head>
-      <Navbar />
+      
       <Component {...pageProps} />
-      <Footer />
+      
     </div>
   )
 }

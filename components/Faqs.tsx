@@ -34,7 +34,12 @@ const Faqs = () => {
     <section className='bg-white pb-[4rem] md:px-20 mobile:px-5'>
       <div className="container">
       <div className='text-center pt-[5rem] mb-[4rem] space-y-4 mobile:mx-5'>
-        <h2 className='font-semibold text-[40px] mb-4 mobile:text-[28px]'>FAQs</h2>
+        <div className='flex justify-center'>
+          <div className='relative'>
+              <h2 className='inline-block z-10 font-semibold text-[40px] mb-4 mobile:text-[28px]'>FAQs</h2>
+              <span className='inline-block absolute top-[18px] md:top-[24px] right-[3px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[65px] md:w-[90px] mobile:h-[12px] md:h-[20px]'></span>
+          </div>
+        </div>
           <p className='mx-auto text-sm md:w-7/12'>We have carefully prepared a list of most frequent inquiries for you.
             This will give you more knowledge and insights into the app</p>
       </div>

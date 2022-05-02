@@ -6,14 +6,17 @@ import Button from '../components/Button';
 import FeatureForSchool from '../components/FeatureForSchool';
 import GettingStartedForSchool from '../components/GettingStartedForSchool';
 import Marketing from '../components/Marketing';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const ForSchool = () => {
   return (
     <Fragment>
-      <div className="ForSchool mobile:ForSchool" >
-        <div className='space-y-6 text-center py-[10rem] px-5 md:px-20 md:py-28 md:w-9/12 lg:w-7/12'>
-          <h1 className='text-[40px] md:text-white md:text-[60px] font-bold'>Get Yourself Prepared For CBT Exams</h1>
-          <p className='md:text-white'>Flip is a CBT software as a source to provide tests, examination management and quick grading
+      <Navbar />
+      <div className="ForSchool mt-[75px] mobile:ForSchool " >
+        <div className='space-y-6 mobile:text-center py-[5em] px-5 md:px-20 md:py-15 md:w-9/12 lg:w-7/12 pb-[5em]'>
+          <h1 className='text-[40px] md:text-white md:text-[60px] font-bold leading-[65px]'>Get Yourself Prepared For CBT Exams</h1>
+          <p className='md:text-white md:w-8/12'>Flip is a CBT software as a source to provide tests, examination management and quick grading
             system and collation of results instead of the use of pen and paper.
           </p>
           <Button />
@@ -36,6 +39,7 @@ const ForSchool = () => {
       <GettingStartedForSchool />
       <Marketing />
       <Guarantee />
+      <Footer />
     </Fragment>
   )
 }
