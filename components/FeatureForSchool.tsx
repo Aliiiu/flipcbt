@@ -41,7 +41,7 @@ const FeatureForSchool = () => {
   return (
     <Fragment>
       <section className='container md:px-20 pt-12 px-3'>
-          <div className='relative border'>
+          <div className='relative'>
                   <h1
                       className='inline-block md:text-[55px] text-[32px] text-center font-bold md:px-20 pt-9 mobile:pt-5 mb-[2em]'>
                       90% of students who use Flip report higher grades</h1>
