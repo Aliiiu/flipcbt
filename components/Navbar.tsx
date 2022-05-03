@@ -18,7 +18,7 @@ const Navbar = () => {
               <Image src="/Flip Cbt.png" alt='flipcbt logo' width='90px' height='50px' className='mobile:w-[80px] mobile:h-[40px] px-0 py-0 mobile:hidden'/>
             </a>
           </Link>
-          <div className='ml-[7rem] w-full mobile:hidden  lg:block'>
+          <div className='lg:ml-[7rem] md:ml-[4rem] w-full mobile:hidden  lg:block'>
             <Link href='/ForOrganisation'>
               <a className='text-base font-semibold text-[#06042C] mr-[5rem] hover:text-blue-500 active:text-blue-500'>
                 For Organisation

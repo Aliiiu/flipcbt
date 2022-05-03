@@ -40,8 +40,14 @@ const Data = [
 const FeatureForSchool = () => {
   return (
     <Fragment>
-      <section className='container md:px-20 pt-9 px-3'>
-          <h1 className='md:text-[55px] text-[32px] text-center font-bold md:px-20 pt-9 mobile:pt-5 mb-[2em]'>90% of students who use Flip report higher grades</h1>
+      <section className='container md:px-20 pt-12 px-3'>
+          <div className='relative border'>
+                  <h1
+                      className='inline-block md:text-[55px] text-[32px] text-center font-bold md:px-20 pt-9 mobile:pt-5 mb-[2em]'>
+                      90% of students who use Flip report higher grades</h1>
+                  <span
+                      className='inline-block absolute top-[42px] md:top-[75px] left-[130px] md:left-[303px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[140px] md:w-[230px] mobile:h-[14px] md:h-[20px]'></span>
+          </div>
           {Data.map((item, index) => (
               <section key={index}
                   className={`${

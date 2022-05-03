@@ -80,7 +80,7 @@ const Benefit = () => {
   return (
         <section className='md:px-20 mobile:px-5 bg-[#0075FF] py-[5rem] bg-opacity-5'>
           <div className='flex container'>
-            <div className='md:w-9/12 mobile:w-full'>
+            <div className='md:w-6/12 mobile:w-full'>
               <div className='flex overflow-x-hidden mb-9'>
                 <div className='py-5 font-bold cursor-pointer whitespace-nowrap'>
                   <button className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForSchool}>What Schools Get</button>
@@ -113,8 +113,8 @@ const Benefit = () => {
                 </Link>
               </div> */}
             </div>
-            <div className='mobile:hidden md:hidden lg:block md:pt-[15rem] lg:w-1/2'>
-              <Image src={celebration} alt='Celebration Illustration' />
+            <div className='mobile:hidden md:hidden lg:block md:pt-[15rem] lg:w-full'>
+              <Image src={'/benefit.png'} alt='Celebration Illustration' width={'900px'} height='700px'/>
             </div>
           </div>
       </section>
