@@ -32,14 +32,14 @@ const GetStarted = () => {
           </div>
         </div>
 
-        <div className='mt-[7em] mobile:mt-[4em] mobile:text-center lg:ml-[3em]'>
+        <div className='mt-[7em] flex flex-col items-start mobile:items-center mobile:text-center'>
           <div>
             <Link href="/Register">
               <a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[12em] md:px-[9em] mobile:px-[6em] md:py-5'>Register</a>
             </Link>
           </div>
-          <div className='mt-8 lg:w-[28em] md:w-[20em] text-center mobile:w-full'>
-            <p>Alreadly have an account? <span className='text-[#0075FF]'>Sign in</span> </p>
+          <div className='mt-8 md:ml-[3em] text-center mobile:w-full'>
+            <p>Alreadly have an account? <span className='text-[#0075FF] font-bold'>Sign in</span> </p>
           </div>
         </div>
       </div>

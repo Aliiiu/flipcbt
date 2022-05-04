@@ -52,7 +52,7 @@ const FeatureForSchool = () => {
               <section key={index}
                   className={`${
                   index % 2 === 0 ? styles.bigfeatleft : styles.bigfeatright
-                  } w-full mobile:w-auto flex flex-row mb-9 md:mb-[2em] justify-between ${(index + 1) % 2 === 0 && "flex-row-reverse"}`}
+                  } w-full mobile:w-auto flex flex-row mb-9 md:mb-[7em] mobile:mb-[7em] justify-between ${(index + 1) % 2 === 0 && "flex-row-reverse"}`}
             >
               <div className={`w-6/12 mobile:w-full mobile:text-center`}>
           

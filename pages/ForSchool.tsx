@@ -23,7 +23,7 @@ const ForSchool = () => {
         </div>
       </div>
       <section className='md:pt-[7em] mobile:pt-[1em] md:px-20 text-center'>
-        <h1 className='font-bold text-xl mb-9 md:mb-[3em]'>Trusted By</h1>
+        <h1 className='font-bold text-xl mt-9 mb-9 md:mb-[3em]'>Trusted By</h1>
         <div className='flex justify-between items-center mobile:justify-center flex-wrap md:w-10/12 md:mx-20'>
           <div className='mobile:mx-3 mobile:mb-7'>
             <Image src='/Coindesk 2.png' alt='Coindesk Logo 1' width='31.53px' height='29px'/>

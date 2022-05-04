@@ -32,9 +32,9 @@ const Data = [
 const FeatureOrganisation = () => {
   return (
     <Fragment>
-      <section className='container px-5 md:px-20 pt-9'>
+      <section className='container px-5 md:px-20 pt-[4em]'>
           
-            <div className='relative flex justify-center'>
+            <div className='relative flex justify-center md:mb-[6em] mobile:mb-[4em]'>
                   <h1 className='inline-block md:text-[55px] text-[32px] text-center font-bold mobile:pt-9'>Guaranteed benefits <br /> to your business</h1>
                   <span className='inline-block absolute top-[58px] md:top-[40px] right-[13px] md:right-[50px] lg:right-[313px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[120px] md:w-[220px] mobile:h-[14px] md:h-[20px]'></span>
                   <span className='inline-block absolute top-[107px] md:top-[125px] right-[50px] md:right-[173px] lg:right-[433px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[130px] md:w-[170px] mobile:h-[14px] md:h-[20px]'></span>
@@ -43,7 +43,7 @@ const FeatureOrganisation = () => {
                 <div key={index}
                     className={`${
                     index % 2 === 0 ? styles.bigfeatleft : styles.bigfeatright
-                    } w-full mobile:w-auto flex flex-row mb-9 md:mb-[2em] justify-between ${index === 1 && "flex-row-reverse"}`}
+                    } w-full mobile:w-auto flex flex-row mb-9 md:mb-[9em] mobile:mb-[8em] justify-between ${index === 1 && "flex-row-reverse"}`}
             >
                 <div className={`w-6/12 mobile:w-full mobile:text-center `}>
             
