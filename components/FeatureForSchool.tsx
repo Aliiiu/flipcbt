@@ -40,13 +40,13 @@ const Data = [
 const FeatureForSchool = () => {
   return (
     <Fragment>
-      <section className='container md:px-20 pt-12 px-3'>
+      <section className='container md:px-20 pt-[6em] px-3'>
           <div className='relative'>
                   <h1
-                      className='inline-block md:text-[55px] text-[32px] text-center font-bold md:px-20 pt-9 mobile:pt-5 mb-[2em]'>
+                      className='inline-block md:text-[45px] text-[32px] text-center font-semibold md:px-20 pt-9 mobile:pt-5 mb-[2em]'>
                       90% of students who use Flip report higher grades</h1>
                   <span
-                      className='inline-block absolute top-[42px] md:top-[75px] left-[130px] md:left-[303px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[140px] md:w-[230px] mobile:h-[14px] md:h-[20px]'></span>
+                      className='inline-block absolute top-[42px] md:top-[65px] left-[130px] md:left-[263px] lg:left-[293px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[140px] md:w-[180px] mobile:h-[14px] md:h-[20px]'></span>
           </div>
           {Data.map((item, index) => (
               <section key={index}
@@ -65,7 +65,7 @@ const FeatureForSchool = () => {
                             
                           />
                       </div>
-                      <h1 className="font-bold md:pt-[2em] lg:pt-[4em]">{item.heading}</h1>
+                      <h1 className="font-semibold md:pt-[2em] lg:pt-[4em]">{item.heading}</h1>
                       <p className="mt-6">
                           {item.content}
                       </p>

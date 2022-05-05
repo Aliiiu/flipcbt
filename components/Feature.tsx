@@ -8,25 +8,25 @@ const Feature = () => {
         <div className='text-center mb-[5rem]'>
           <div className='flex justify-center'>
             <div className='pr-[4em]'>
-              <h2 className='inline-block z-10 relative mobile:left-[60px]  md:left-[88px] font-bold text-[40px] mb-4 mobile:text-[28px]'>Why Flip?</h2>
-              <span className='inline-block bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[45px] md:w-[80px] mobile:h-[14px] md:h-[20px]'></span>
+              <h2 className='inline-block z-10 relative mobile:left-[60px]  md:left-[98px] font-semibold text-[45px] mb-4 mobile:text-[28px]'>Why Flip?</h2>
+              <span className='inline-block bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[45px] md:w-[95px] mobile:h-[14px] md:h-[26px]'></span>
             </div>
           </div>
-          <p className='text-sm'>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est sit donec sed vestibulum, rhoncus..
           </p>
         </div>
         <div className='grid md:grid-cols-3 mobile:grid-cols-1 md:mb-[9rem] md:space-x-6 mobile:flex-col mobile:space-y-6 mobile:mb-8'>
           <div className='flip-border flex flex-col items-center pt-10 px-3 mobile:pb-8 text-center bg-white semi-blue-glow rounded-[30px]'>
             
-            <Image src='/time_management.png' alt='Time management illustration' width='250px' height='250px' />
+            <Image src='/time_management.png' alt='Time management illustration' width='200px' height='200px' />
             <h3 className='text-[15px] font-semibold text-[#0075FF] mt-6 md:uppercase'>Time Saving</h3>
             <p className='mt-6'>The time consumed in having to create question papers, arranging supplies and
               evaluating scripts can be totally avoided as it automates the entire process. </p>
           </div>
           <div className='flip-border flex flex-col items-center pt-10 pb-8 px-3 text-center bg-white semi-blue-glow rounded-[30px]'>
             
-            <Image src='/convenience2.png' alt='convenience illustration' width='250px' height='250px' />
+            <Image src='/convenience2.png' alt='convenience illustration' width='200px' height='200px' />
             <h3 className='text-[15px] font-semibold text-[#0075FF] mobile:mt-6 md:mt-12 lg:mt-6 md:uppercase'>Convenience</h3>
             <p className='mt-6'>Candidates can take tests at a time and place of their choosing.
               They do not need to travel to a particular physical location to write an exam,
@@ -34,7 +34,7 @@ const Feature = () => {
           </div>
           <div className='flip-border flex flex-col items-center pt-10 px-3 mobile:pb-8 text-center bg-white semi-blue-glow rounded-[30px]'>
             
-            <Image src='/speed.png' alt='speed illustration' width='250px' height='250px' />
+            <Image src='/speed.png' alt='speed illustration' width='200px' height='200px' />
             <h3 className='text-[15px] font-semibold text-[#0075FF] md:mt-12 mobile:mt-6 lg:mt-6 md:uppercase'>Speed and Accuracy</h3>
             <p className='mt-6'>Unlike the PPT exams that most often contain errors in grading,
               FLIP has been designed to enable efficiency in giving out results..</p>

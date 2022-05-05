@@ -4,17 +4,17 @@ import Link from 'next/link';
 
 const Motor = () => {
   return (
-    <section className='flex flex-col py-20 mobile:px-5 text-center md:px-20'>
+    <section className='flex flex-col py-[6em] mobile:px-5 text-center md:px-20'>
       <div className="container">
         <div className='mb-[4rem]'>
           <div className='flex justify-center'>
             <div className='relative'>
-              <h2 className='inline-block z-10 font-bold text-[40px] mb-4 mobile:text-[25px]'>Great for Schools,<br />Loved By Organizations.</h2>
-              <span className='inline-block absolute top-[14px] md:top-[25px] right-[54px] md:right-[75px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[80px] md:w-[145px] mobile:h-[14px] md:h-[20px]'></span>
-              <span className='inline-block absolute top-[52px] md:top-[85px] right-[13px] md:right-[13px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[160px] md:w-[270px] mobile:h-[14px] md:h-[20px]'></span>
+              <h2 className='inline-block z-10 font-semibold text-[45px] mb-4 mobile:text-[25px]'>Great for Schools,<br />Loved By Organizations.</h2>
+              <span className='inline-block absolute top-[14px] md:top-[30px] right-[54px] md:right-[85px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[80px] md:w-[155px] mobile:h-[14px] md:h-[20px]'></span>
+              <span className='inline-block absolute top-[52px] md:top-[98px] right-[13px] md:right-[13px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[160px] md:w-[300px] mobile:h-[14px] md:h-[20px]'></span>
             </div>
           </div>
-          <p className='text-sm'>
+          <p>
             Essential in secondary schools, universities and even organizations for assessment of all kinds.  
           </p>
         </div>

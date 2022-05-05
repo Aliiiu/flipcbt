@@ -4,8 +4,20 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const [nav, ShowNav] = useState<boolean>(false);
+
+  const showNavHandler = () => {
+    const html = document.getElementById("mainHtml") as HTMLElement
+    // html.style.overflow = "hidden";
+    ShowNav(true)
+  }
+
+  const closeNavHandler = () => {
+    const html = document.getElementById("mainHtml") as HTMLElement
+    // html.style.overflow = "auto";
+    ShowNav(false)
+  }
   return (
-    <nav className="fixed top-0 left-0 z-10 w-full px-20 py-5 navbar mobile:py-5 mobile:px-4">
+    <nav className="fixed top-0 left-0 z-50 w-full px-20 py-5 navbar mobile:py-5 mobile:px-4">
       <div className='container flex items-center justify-between w-full'>
         <div className='flex items-center'>
           <Link href='/'>
@@ -19,12 +31,12 @@ const Navbar = () => {
             </a>
           </Link>
           <div className='lg:ml-[7rem] md:ml-[4rem] w-full mobile:hidden  lg:block'>
-            <Link href='/ForOrganisation'>
+            <Link href='/fororganisation'>
               <a className='text-base font-semibold text-[#06042C] mr-[5rem] hover:text-blue-500 active:text-blue-500'>
                 For Organisation
               </a>
             </Link>
-            <Link href='/ForSchool'>
+            <Link href='/forschool'>
               <a className='text-base font-semibold text-[#06042C] hover:text-blue-500 active:text-blue-500'>
                 For School
               </a>
@@ -32,7 +44,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='lg:mr-[5em]'>
-          <Link href='/GetStarted'>
+          <Link href='/getstarted'>
             <a className='text-base text-white bg-blue-500 rounded-md px-12 py-4 text-[14px] mobile:hidden'>
                 Get Started
             </a>
@@ -40,31 +52,31 @@ const Navbar = () => {
         </div>
         <div className="hidden text-white mobile:block">
           {nav ?
-            (<button onClick={() => ShowNav(false)}>
+            (<button onClick={closeNavHandler}>
               <Image src='/x.svg' alt='close logo' width='30px' height='30px' />
             </button>) :
-            (<button onClick={() => ShowNav(true)}>
+            (<button onClick={showNavHandler}>
               <Image src='/menu.svg' alt='menu logo' width='30px' height='30px' />
             </button>)}
           {
                 nav && 
-                    <div className="flex flex-col items-center w-full bg-white mobile-nav h-100 p-7">
+                    <div className="flex flex-col items-center w-full bg-white mobile-nav h-full p-7 inset-0">
                       <Link href="/" >
                           <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
                             Home
                           </a>
                       </Link>
-                      <Link href="/ForOrganisation">
+                      <Link href="/fororganisation">
                           <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
                             For Organisation
                           </a>
                       </Link>
-                      <Link href="/ForSchool">
+                      <Link href="/forschool">
                           <a  onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
                             For School
                           </a>
                       </Link>
-                      <Link href="/GetStarted">
+                      <Link href="/getstarted">
                           <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-bold no-underline text-black">
                             Get Started
                           </a>

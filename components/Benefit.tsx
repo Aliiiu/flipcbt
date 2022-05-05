@@ -78,16 +78,16 @@ const Benefit = () => {
   };
  
   return (
-        <section className='md:px-20 mobile:px-5 bg-[#0075FF] py-[5rem] bg-opacity-5'>
+        <section className='md:px-20 mobile:px-5 bg-[#0075FF] py-[6rem] bg-opacity-5'>
           <div className='flex container'>
             <div className='md:w-6/12 mobile:w-full'>
               <div className='flex overflow-x-hidden mb-9'>
-                <div className='py-5 font-bold cursor-pointer whitespace-nowrap'>
-                  <button className={`text-xl font-bold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForSchool}>What Schools Get</button>
+                <div className='py-5 cursor-pointer whitespace-nowrap'>
+                  <button className={`text-xl font-semibold ${currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForSchool}>What Schools Get</button>
                   <div className={`${currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} mt-3 h-1`}></div>
                 </div>
-                <div className='mobile:pl-[3rem] md:px-[10rem] py-5 whitespace-nowrap font-bold cursor-pointer'>
-                  <button className={`text-xl font-bold mobile:w-[15rem] ${currTab === 1 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForOrganisation}>What Organizations Get</button>
+                <div className='mobile:pl-[3rem] md:px-[10rem] py-5 whitespace-nowrap cursor-pointer'>
+                  <button className={`text-xl font-semibold mobile:w-[15rem] ${currTab === 1 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'}`} type='button' onClick={ForOrganisation}>What Organizations Get</button>
                   <div className={`${currTab === 1 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'} mt-3 w-full h-1`}></div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const Benefit = () => {
                     <div className='flex flex-col'>
                       <div className='flex'>
                         <Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />
-                        <h2 className='ml-5 font-bold text-[16px] md:text-[20px]'>{item.title}</h2>
+                        <h2 className='ml-5 font-semibold text-[16px] md:text-[20px]'>{item.title}</h2>
                       </div>
                       <p className='mt-4'>{item.content}
                       </p>

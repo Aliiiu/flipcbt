@@ -65,12 +65,12 @@ const Guarantee = () => {
   },
 ]
   return (
-    <section className='flex flex-col md:px-20 py-20 mobile:px-5 space-y-8 bg-[#F7F8FA]'>
+    <section className='flex flex-col md:px-20 py-[6em] mobile:px-5 space-y-8 bg-[#F7F8FA]'>
       <div className="container">
         <div className='flex items-center justify-between mb-[4rem]'>
           <h2 className='font-semibold text-[40px] mb-2 mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
           <div className='flex space-x-3'>
-            <button className={`px-5 py-2 ${prev ? 'bg-blue-400' : 'bg-gray-300'} rounded-full`} ref={prevElRef} onClick={prevPageHandler}>
+            <button className={`px-5 py-2 ${prev ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%]`} ref={prevElRef} onClick={prevPageHandler}>
               <svg
                 width="8"
                 height="28"
@@ -84,7 +84,7 @@ const Guarantee = () => {
                 />
               </svg>
             </button>
-            <button className={`px-5 py-2 ${next ? 'bg-blue-400' : 'bg-gray-300'} rounded-full`} ref={nextElRef} onClick={nextPageHandler}>
+            <button className={`px-5 py-2 ${next ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%]`} ref={nextElRef} onClick={nextPageHandler}>
               <svg
                 width="8"
                 height="28"
@@ -115,7 +115,7 @@ const Guarantee = () => {
               {
                 data.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className='p-10 bg-white rounded-[30px] mobile:flex mobile:flex-col-reverse shadow-[0px_8px_16px_rgba(0,0,0,0.08)]'>
+                    <div className='p-10 bg-white m-4 rounded-[30px] mobile:flex mobile:flex-col-reverse shadow-[0px_8px_16px_rgba(0,0,0,0.08)]'>
                       <p>
                         {item.content}
                       </p>
