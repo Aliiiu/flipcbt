@@ -70,8 +70,8 @@ const Guarantee = () => {
         <div className='flex items-center justify-between mb-[3rem]'>
           <h2 className='font-semibold text-[40px] mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
           <div className='flex space-x-3'>
-            <button className={`w-[50px] h-[50px] ${prev ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400`} ref={prevElRef} onClick={prevPageHandler}>
-              {/* <svg
+            <button className={`w-[50px] h-[50px] px-5 ${prev ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400`} ref={prevElRef} onClick={prevPageHandler}>
+              <svg
                 width="8"
                 height="28"
                 viewBox="0 0 16 28"
@@ -82,10 +82,10 @@ const Guarantee = () => {
                   d="M16 4L6 14L16 24L14 28L0 14L14 0L16 4Z"
                   fill='white'
                 />
-              </svg> */}
+              </svg>
             </button>
-            <button className={`w-[50px] h-[50px] ${next ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400 `} ref={nextElRef} onClick={nextPageHandler}>
-              {/* <svg
+            <button className={`w-[50px] h-[50px] px-5 ${next ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400 `} ref={nextElRef} onClick={nextPageHandler}>
+              <svg
                 width="8"
                 height="28"
                 viewBox="0 0 16 28"
@@ -96,7 +96,7 @@ const Guarantee = () => {
                   d="M0 24L10 14L0 4L2 0L16 14L2 28L0 24Z"
                   fill='white'
                 />
-              </svg> */}
+              </svg>
             </button>
           </div>
         </div>
