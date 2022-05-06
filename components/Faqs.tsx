@@ -33,10 +33,10 @@ const Faqs = () => {
   return (
     <section className='bg-white pb-[4rem] md:px-20 mobile:px-5'>
       <div className="container">
-      <div className='text-center pt-[5rem] mb-[4rem] space-y-4 mobile:mx-5'>
+      <div className='text-center pt-[5rem] mb-[3rem] space-y-4 mobile:mx-5'>
         <div className='flex justify-center'>
           <div className='relative'>
-              <h2 className='inline-block z-10 font-semibold text-[45px] mb-4 mobile:text-[28px]'>FAQs</h2>
+              <h2 className='inline-block z-10 font-semibold text-[45px] mobile:text-[28px]'>FAQs</h2>
               <span className='inline-block absolute top-[18px] md:top-[28px] right-[3px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[65px] md:w-[105px] mobile:h-[12px] md:h-[25px]'></span>
           </div>
         </div>

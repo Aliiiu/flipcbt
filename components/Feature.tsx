@@ -5,10 +5,10 @@ const Feature = () => {
   return (
     <section className='md:pt-[6rem] bg-[#F7F8FA80] mobile:w-auto px-20 mobile:px-5 mobile:bg-[#F7F8FA] mobile:pt-[4rem]'>
       <div className='container flex flex-col w-full mobile:mx-0'>
-        <div className='text-center mb-[5rem]'>
+        <div className='text-center mb-[3rem]'>
           <div className='flex justify-center'>
             <div className='pr-[4em]'>
-              <h2 className='inline-block z-10 relative mobile:left-[60px]  md:left-[98px] font-semibold text-[45px] mb-4 mobile:text-[28px]'>Why Flip?</h2>
+              <h2 className='inline-block z-10 relative mobile:left-[60px]  md:left-[98px] font-semibold text-[45px] mb-2 mobile:text-[28px]'>Why Flip?</h2>
               <span className='inline-block bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[45px] md:w-[95px] mobile:h-[14px] md:h-[26px]'></span>
             </div>
           </div>

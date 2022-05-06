@@ -138,6 +138,9 @@ p {
   border: 2px solid #0075FF;
 }
 
+.input_border{
+  border: 1px solid #828282
+}
 @media only screen and (max-width: 768px){
   .ForSchool {
     background-image: url('/pattern2.png');

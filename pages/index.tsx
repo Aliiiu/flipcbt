@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import React, {Fragment} from 'react'
+import React, {Fragment, useEffect} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Feature from '../components/Feature'
@@ -15,6 +15,10 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    const html = document.getElementById("mainHtml") as HTMLElement
+    html.style.overflow = "auto";
+  })
   return (
     <Fragment>
       <Head>

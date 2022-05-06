@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import profile from '../public/profile.svg'
@@ -10,6 +10,10 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const ForOrganisation = () => {
+  useEffect(() => {
+    const html = document.getElementById("mainHtml") as HTMLElement
+    html.style.overflow = "auto";
+  })
   return (
     <Fragment>
       <Navbar />

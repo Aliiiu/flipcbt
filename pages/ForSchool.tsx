@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import Link from 'next/link';
 import Guarantee from '../components/Guarantee';
 import Button from '../components/Button';
@@ -10,6 +10,10 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const ForSchool = () => {
+  useEffect(() => {
+    const html = document.getElementById("mainHtml") as HTMLElement
+    html.style.overflow = "auto";
+  })
   return (
     <Fragment>
       <Navbar />
