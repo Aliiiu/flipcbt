@@ -65,7 +65,7 @@ const ForOrganisation = () => {
           <p className='text-white w-7/12'>Marketing is the activity, institutions, and processes for creating, communicating,
             delivering, and exchanging, offerings that have value.</p>
           <Link href="#">
-            <a className='text-base text-white bg-black btn-border px-12 py-4 text-[14px]'>
+            <a className='text-white bg-black btn-border px-12 py-4 text-[14px]'>
               APPLY NOW
             </a>
           </Link>
