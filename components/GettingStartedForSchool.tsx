@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 const GettingStartedForSchool = () => {
   return (
-    <section className='flex md:px-20 pt-[6em] bg-[#F7F8FA80] mobile:w-auto mobile:px-5'>
+    <section className='flex md:px-20 xl:px-0 pt-[6em] bg-[#F7F8FA80] mobile:w-auto mobile:px-5'>
       <div className='mx-auto mobile:mx-0'>
         <div className='text-center'>
-          <h2 className='font-semibold text-[32px] md:text-[45px] mb-[2rem]'>Getting started is free and easy</h2>
+          <h2 className='font-semibold text-[32px] md:text-[40px] mb-[2rem]'>Getting started is free and easy</h2>
         </div>
         <div className='grid grid-cols-3 mobile:grid-cols-1 gap-x-[3em] md:mb-[10rem] mobile:space-y-6 mobile:mb-8'>
           <div className='flex flex-col items-center text-center lg:px-[3em] mobile:py-[2em] md:py-[2rem] lg:py-[2rem] bg-white card'>

@@ -36,8 +36,8 @@ const BenefitOrganisation = () => {
   return (
     <section className='bg-[#0075FF] bg-opacity-5'>
           
-          <div className='md:px-20 mobile:px-5 py-[6rem]  container'>
-            <h1 className='text-center font-semibold mobile:text-[32px] md:text-[45px] pb-8'>Your Journey on Flip</h1>
+          <div className='md:px-20 xl:px-0 mobile:px-5 py-[6rem]  container'>
+            <h1 className='text-center font-semibold mobile:text-[32px] md:text-[40px] pb-8'>Your Journey on Flip</h1>
             <div className='flex '>
               <div className='md:w-9/12 mobile:w-full'>
             

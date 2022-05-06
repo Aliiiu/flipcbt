@@ -40,7 +40,7 @@ const Data = [
 const FeatureForSchool = () => {
   return (
     <Fragment>
-      <section className='container md:px-20 pt-[6em] px-3'>
+      <section className='container md:px-20 xl:px-0 pt-[6em] px-3'>
           <div className='relative'>
                   <h1
                       className='inline-block md:text-[45px] text-[32px] text-center font-semibold md:px-20 pt-9 mobile:pt-5 mb-[2em]'>
@@ -65,8 +65,8 @@ const FeatureForSchool = () => {
                             
                           />
                       </div>
-                      <h1 className="font-semibold md:pt-[2em] lg:pt-[4em]">{item.heading}</h1>
-                      <p className="mt-6">
+                      <h1 className="font-semibold md:pt-[2em] lg:pt-[10em] text-[18px] md:text-[20px]">{item.heading}</h1>
+                      <p className="mt-6 xl:w-9/12">
                           {item.content}
                       </p>
                   </div>

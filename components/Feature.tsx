@@ -8,8 +8,8 @@ const Feature = () => {
         <div className='text-center mb-[3rem]'>
           <div className='flex justify-center'>
             <div className='pr-[4em]'>
-              <h2 className='inline-block z-10 relative mobile:left-[60px]  md:left-[98px] font-semibold text-[45px] mb-2 mobile:text-[28px]'>Why Flip?</h2>
-              <span className='inline-block bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[45px] md:w-[95px] mobile:h-[14px] md:h-[26px]'></span>
+              <h2 className='inline-block z-10 relative mobile:left-[60px]  md:left-[84px] font-semibold text-[40px] mb-2 mobile:text-[28px]'>Why Flip?</h2>
+              <span className='inline-block bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[45px] md:w-[75px] mobile:h-[14px] md:h-[20px]'></span>
             </div>
           </div>
           <p>

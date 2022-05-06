@@ -36,8 +36,8 @@ const Faqs = () => {
       <div className='text-center pt-[5rem] mb-[3rem] space-y-4 mobile:mx-5'>
         <div className='flex justify-center'>
           <div className='relative'>
-              <h2 className='inline-block z-10 font-semibold text-[45px] mobile:text-[28px]'>FAQs</h2>
-              <span className='inline-block absolute top-[18px] md:top-[28px] right-[3px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[65px] md:w-[105px] mobile:h-[12px] md:h-[25px]'></span>
+              <h2 className='inline-block z-10 font-semibold text-[40px] mobile:text-[28px]'>FAQs</h2>
+              <span className='inline-block absolute top-[18px] md:top-[20px] right-[3px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[65px] md:w-[95px] mobile:h-[12px] md:h-[25px]'></span>
           </div>
         </div>
           <p className='mx-auto text-sm md:w-7/12'>We have carefully prepared a list of most frequent inquiries for you.

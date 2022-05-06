@@ -9,9 +9,9 @@ const Motor = () => {
         <div className='mb-[3rem]'>
           <div className='flex justify-center'>
             <div className='relative'>
-              <h2 className='inline-block z-10 font-semibold text-[45px] mb-4 mobile:text-[25px]'>Great for Schools,<br />Loved By Organizations.</h2>
-              <span className='inline-block absolute top-[14px] md:top-[30px] right-[54px] md:right-[85px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[80px] md:w-[155px] mobile:h-[14px] md:h-[20px]'></span>
-              <span className='inline-block absolute top-[52px] md:top-[98px] right-[13px] md:right-[13px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[160px] md:w-[300px] mobile:h-[14px] md:h-[20px]'></span>
+              <h2 className='inline-block z-10 font-semibold text-[40px] mb-4 mobile:text-[25px]'>Great for Schools,<br />Loved By Organizations.</h2>
+              <span className='inline-block absolute top-[14px] md:top-[24px] right-[54px] md:right-[75px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[80px] md:w-[140px] mobile:h-[14px] md:h-[20px]'></span>
+              <span className='inline-block absolute top-[52px] md:top-[84px] right-[13px] md:right-[13px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[160px] md:w-[260px] mobile:h-[14px] md:h-[20px]'></span>
             </div>
           </div>
           <p className='text-[#000000]'>
