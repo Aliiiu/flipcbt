@@ -31,14 +31,14 @@ const Navbar = () => {
             </a>
           </Link>
           <div className='lg:ml-[7rem] md:ml-[4rem] w-full mobile:hidden  lg:block'>
-            <Link href='/Fororganisation'>
+            <Link href='/fororganisation'>
               <a
                 id='navLink'
                 className={`text-base font-semibold mr-[5rem] hover:text-blue-500 active:text-blue-500 `}>
                 For Organisation
               </a>
             </Link>
-            <Link href='/Forschool'>
+            <Link href='/forschool'>
               <a
                 id='navLink'
                 className={`text-base font-semibold hover:text-blue-500 active:text-blue-500`}>
@@ -70,12 +70,12 @@ const Navbar = () => {
                             Home
                           </a>
                       </Link>
-                      <Link href="/Fororganisation">
+                      <Link href="/fororganisation">
                           <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]">
                             For Organisation
                           </a>
                       </Link>
-                      <Link href="/Forschool">
+                      <Link href="/forschool">
                           <a  onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]">
                             For School
                           </a>
