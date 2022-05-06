@@ -69,8 +69,8 @@ const Guarantee = () => {
       <div className="container">
         <div className='flex items-center justify-between mb-[3rem]'>
           <h2 className='font-semibold text-[40px] mobile:text-[28px]'>Don&#39;t just take our word for it.</h2>
-          <div className='flex space-x-3'>
-            <button className={`w-[50px] h-[50px] px-5 ${prev ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400`} ref={prevElRef} onClick={prevPageHandler}>
+          <div className='flex items-center space-x-3'>
+            <button className={`w-[50px] h-[50px] px-[21px] ${prev ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400`} ref={prevElRef} onClick={prevPageHandler}>
               <svg
                 width="8"
                 height="28"
@@ -84,7 +84,7 @@ const Guarantee = () => {
                 />
               </svg>
             </button>
-            <button className={`w-[50px] h-[50px] px-5 ${next ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400 `} ref={nextElRef} onClick={nextPageHandler}>
+            <button className={`w-[50px] h-[50px] px-[21px] ${next ? 'bg-blue-400' : 'bg-gray-300'} rounded-[100%] hover:bg-blue-400 `} ref={nextElRef} onClick={nextPageHandler}>
               <svg
                 width="8"
                 height="28"
