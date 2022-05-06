@@ -43,7 +43,7 @@ const BenefitOrganisation = () => {
             
                 {
                   benefit.map((item, idx) => (
-                    <div className='flex flex-col pr-1 mb-6 md:mb-10' key={idx}>
+                    <div className='flex flex-col pr-1 mb-6 md:mb-8' key={idx}>
                       <div className='flex flex-col'>
                         <div className='flex'>
                           <Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />

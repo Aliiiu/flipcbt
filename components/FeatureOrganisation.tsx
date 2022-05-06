@@ -34,7 +34,7 @@ const FeatureOrganisation = () => {
     <Fragment>
       <section className='container px-5 md:px-20 pt-[6em]'>
           
-            <div className='relative flex justify-center md:mb-[6em] mobile:mb-[4em]'>
+            <div className='relative flex justify-center mb-[4em]'>
                   <h1 className='inline-block md:text-[45px] text-[32px] text-center font-semibold mobile:pt-9'>Guaranteed benefits <br /> to your business</h1>
                   <span className='inline-block absolute top-[58px] md:top-[30px] right-[19px] md:right-[148px] lg:right-[373px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[120px] md:w-[170px] mobile:h-[14px] md:h-[20px]'></span>
                   <span className='inline-block absolute top-[107px] md:top-[98px] right-[50px] md:right-[199px] lg:right-[433px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[130px] md:w-[170px] mobile:h-[14px] md:h-[20px]'></span>

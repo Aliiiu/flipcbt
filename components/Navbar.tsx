@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
-  const [nav, ShowNav] = useState<boolean>(false);
+  const [nav, ShowNav] = useState<boolean>(false); 
 
   const showNavHandler = () => {
     const html = document.getElementById("mainHtml") as HTMLElement
@@ -31,13 +31,17 @@ const Navbar = () => {
             </a>
           </Link>
           <div className='lg:ml-[7rem] md:ml-[4rem] w-full mobile:hidden  lg:block'>
-            <Link href='/fororganisation'>
-              <a className='text-base font-semibold text-[#06042C] mr-[5rem] hover:text-blue-500 active:text-blue-500'>
+            <Link href='/Fororganisation'>
+              <a
+                id='navLink'
+                className={`text-base font-semibold mr-[5rem] hover:text-blue-500 active:text-blue-500 `}>
                 For Organisation
               </a>
             </Link>
-            <Link href='/forschool'>
-              <a className='text-base font-semibold text-[#06042C] hover:text-blue-500 active:text-blue-500'>
+            <Link href='/Forschool'>
+              <a
+                id='navLink'
+                className={`text-base font-semibold hover:text-blue-500 active:text-blue-500`}>
                 For School
               </a>
             </Link>
@@ -62,22 +66,22 @@ const Navbar = () => {
                 nav && 
                     <div className="flex flex-col items-center w-full bg-white mobile-nav h-full p-7 inset-0 overflow-hidden">
                       <Link href="/" >
-                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-black">
+                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]">
                             Home
                           </a>
                       </Link>
-                      <Link href="/fororganisation">
-                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-black">
+                      <Link href="/Fororganisation">
+                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]">
                             For Organisation
                           </a>
                       </Link>
-                      <Link href="/forschool">
-                          <a  onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-black">
+                      <Link href="/Forschool">
+                          <a  onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]">
                             For School
                           </a>
                       </Link>
                       <Link href="/getstarted">
-                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-black">
+                          <a onClick={() => ShowNav(false)} className="mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]">
                             Get Started
                           </a>
                       </Link>

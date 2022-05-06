@@ -60,16 +60,16 @@ const ForOrganisation = () => {
       <FeatureOrganisation />
       <BenefitOrganisation />
       <section className="md:px-20 mobile:px-4 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
-      <div className='container flex flex-col items-center justify-center text-center space-y-7'>
-        <h2 className='font-bold text-[40px] mb-4 mobile:text-[28px] text-white'>Ready to get started?</h2>
-        <p className='text-white'>Marketing is the activity, institutions, and processes for creating, communicating,
-          delivering, and exchanging, offerings that have value.</p>
-        <Link href="#">
-          <a className='text-base text-white bg-black btn-border px-12 py-4 text-[14px]'>
-            APPLY NOW
-          </a>
-        </Link>
-      </div>
+        <div className='container flex flex-col items-center justify-center text-center space-y-7'>
+          <h2 className='font-bold text-[40px] mobile:text-[28px] text-white'>Ready to get started?</h2>
+          <p className='text-white w-7/12'>Marketing is the activity, institutions, and processes for creating, communicating,
+            delivering, and exchanging, offerings that have value.</p>
+          <Link href="#">
+            <a className='text-base text-white bg-black btn-border px-12 py-4 text-[14px]'>
+              APPLY NOW
+            </a>
+          </Link>
+        </div>
       </section>
       <Guarantee />
       <Footer />
