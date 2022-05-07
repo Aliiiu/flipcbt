@@ -39,7 +39,7 @@ const ForOrganisation = () => {
                   </div>
                 </div>
                 <div className='w-1/2 lg:block md:flex justify-end mobile:hidden'>
-                  <div className='px-auto md:mt-[7em] lg:mt-[5em]'>
+                  <div className='px-auto md:mt-[7em] lg:mt-[5em] xl:mt-0'>
                     <div>
                       <img src="/OrganisationBg.png" alt="customer" className='bg-image-boy' />
                     </div>
