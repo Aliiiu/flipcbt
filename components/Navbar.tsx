@@ -18,7 +18,7 @@ const Navbar = () => {
   }
   return (
     <nav className="fixed top-0 left-0 z-50 w-full navbar mobile:py-5 mobile:px-4">
-      <div className='container lg:px-20 xl:px-0 py-5  flex items-center justify-between w-full'>
+      <div className='container lg:px-20 xl:px-0 md:py-5  flex items-center justify-between w-full'>
         <div className='flex items-center'>
           <Link href='/'>
             <a className='md:hidden '>

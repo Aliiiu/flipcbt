@@ -39,7 +39,6 @@ p {
 }
 
 img{
-  max-width: 100%;
   height: auto;
 }
 
@@ -152,7 +151,13 @@ img{
 }
 
 .input_border{
-  border: 1px solid #828282
+  border: 1px solid #828282;
+  border-radius: 10px;
+}
+
+.cover_border {
+  border: 1px dashed #828282;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 768px){
   .ForSchool {
@@ -160,6 +165,7 @@ img{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    height: 80vh;
     box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
   }
   .GetStarted {
@@ -174,6 +180,7 @@ img{
     background-image: url('/pattern2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 80vh;
     background-position: center;
     box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
   }
@@ -231,6 +238,11 @@ img{
     height: 450px;
   }
 
+  .get-started-img {
+    height: 700px;
+    width: auto;
+  }
+
 }
 
 @media only screen and (max-width: 1024px){
@@ -245,6 +257,8 @@ img{
   .pagebody {
     height: 100vh;
   }
+
+  
   
 }
 @media only screen and (min-width: 1024px){

@@ -39,7 +39,6 @@ const Register = () => {
                   py-2
                   bg-transparent bg-clip-padding
                   input_border
-                  rounded-[10px]
                   transition
                   ease-in-out
                   m-0'
