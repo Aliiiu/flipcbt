@@ -24,7 +24,7 @@ const ForOrganisation = () => {
               <div className='flex justify-between'>
                 <div className='mt-0 md:mt-5 w-full md:w-1/2 main-page'>
                   <div className='flex mobile:w-full flex-col md:mt-14 mobile:py-[5em] '>
-                    <h1 className='lg:text-[50px] xl:text-[65px] md:text-[35px] lg:mb-[19px] mobile:text-[28px] font-bold lg:leading-[60px] xl:leading-[80px] main-header'>
+                    <h1 className='lg:text-[50px] xl:text-[65px] md:text-[35px] lg:mb-[19px] mobile:text-[28px] font-bold lg:leading-[60px] main-header'>
                       We Design and Implement an online computer-based test system.
                     </h1>
                     <p className='mt-6 mb-[2em] lg:mb-[3em] main-paragraph'>
