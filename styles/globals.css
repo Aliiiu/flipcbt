@@ -221,7 +221,15 @@ img{
     color: #333333;
   }
 }
+@media only screen and (max-width: 800px) {
+  .bg-image-boy{
+    display: none;
+  }
 
+  .bg-image-girl{
+    display: none;
+  }
+}
 @media only screen and (min-width: 800px){
   .register {
     background-image: url('/register.png');
@@ -279,7 +287,7 @@ img{
     height: 100vh;
   }
 
-  .ForOrganisation {
+  /* .ForOrganisation {
     background-image: url('/OrganisationBg.png');
     background-repeat: no-repeat;
     background-size: 800px 650px;
@@ -292,9 +300,9 @@ img{
     background-repeat: no-repeat;
     background-size: 850px 700px;
     background-position: right bottom;
-  }
+  } */
   .bg-image-boy{
-    height: 620px;
+    height: 550px;
   }
   .bg-image-girl {
     height: 500px;
@@ -319,7 +327,7 @@ img{
   }
 
   .bg-image-boy{
-    height: 800px;
+    height: 700px;
   }
   .student-card {
     right: 420px;

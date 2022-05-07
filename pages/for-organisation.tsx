@@ -31,7 +31,7 @@ const ForOrganisation = () => {
                       FLIP serves as a source to provide tests, examination  <br className='mobile:hidden md:hidden lg:block xl:hidden' />management,
                       quick grading of systems and collation of  <br className='mobile:hidden md:hidden lg:block xl:hidden' /> results instead of the use of pen and paper.
                     </p>
-                    <div className='flex mobile:mt-10 mobile:justify-center md:justify-start lg:justify-start'>
+                    <div className='flex mobile:mt-10 mobile:justify-center md:justify-start md:mb-[4em] lg:mb-0 lg:justify-start'>
                       <Link href="/">
                         <a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>GET STARTED</a>
                       </Link>
@@ -39,7 +39,7 @@ const ForOrganisation = () => {
                   </div>
                 </div>
                 <div className='w-1/2 lg:block md:flex justify-end mobile:hidden'>
-                  <div className='px-auto md:mt-[5em] lg:mt-0'>
+                  <div className='px-auto md:mt-[7em] lg:mt-[5em]'>
                     <div>
                       <img src="/OrganisationBg.png" alt="customer" className='bg-image-boy' />
                     </div>

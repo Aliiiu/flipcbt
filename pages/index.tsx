@@ -47,7 +47,7 @@ const Home: NextPage = () => {
                   </div>
                 </div>
                 <div className='w-1/2 lg:block md:flex justify-end mobile:hidden'>
-                  <div className='px-auto md:mt-[5em] lg:mt-[8em]'>
+                  <div className='px-auto md:mt-[5em] lg:mt-[6em]'>
                     <div>
                       <img src="/bg2.png" alt="customer" className='bg-image-girl' />
                     </div>
