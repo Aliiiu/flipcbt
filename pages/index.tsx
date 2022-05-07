@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             <section className="mobile:text-center">
               <div className='flex justify-between'>
                 <div className='mt-0 md:mt-5 w-full md:w-1/2 main-page'>
-                  <div className='flex mobile:w-full flex-col mt-14 mobile:py-[5em] '>
+                  <div className='flex mobile:w-full flex-col md:mt-14 mobile:py-[5em] '>
                     <h1 className='lg:text-[50px] md:text-[35px] lg:mb-[19px] mobile:text-[28px] font-bold lg:leading-[60px] main-header'>
                       Assessment <br className='mobile:hidden md:hidden lg:block'/> streamline made <br className='mobile:hidden md:hidden lg:block'/> more accurate and <br className='mobile:hidden md:hidden lg:block'/> time-bound.
                     </h1>
