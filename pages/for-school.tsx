@@ -19,7 +19,7 @@ const ForSchool = () => {
       <Navbar />
       <div className="ForSchool mt-[75px] md:px-20 xl:px-0 px-5" >
         <div className='container'>
-          <div className='mobile:text-center py-[5em] md:py-15 pb-[5em] mobile:pt-[8em]'>
+          <div className='mobile:text-center py-[5em] md:py-15 pb-[5em] mobile:mt-3'>
             <h1 className='text-[40px] md:text-white md:text-[60px] xl:text-[85px] font-bold leading-[75px] xl:leading-[120px]'>Get Yourself <br className='mobile:hidden md:hidden lg:block'/> Prepared For <br className='mobile:hidden md:hidden lg:block'/> CBT Exams</h1>
             <p className='md:text-white md:mb-[2em] md:mt-[2em] lg:mb-[2em] lg:mt-[1em] xl:mb-[4em] xl:mt-[2em]'>Flip is a CBT software as a source to provide tests, <br className='mobile:hidden md:hidden lg:block' />
               examination management and quick grading
