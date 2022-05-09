@@ -17,13 +17,13 @@ const ForSchool = () => {
 			<Navbar />
 			<div className='ForSchool mt-[75px] md:px-20 xl:px-0 px-5'>
 				<div className='container'>
-					<div className='mobile:text-center py-[5em] md:py-15 pb-[5em] mobile:mt-0'>
+					<div className='mobile:text-center py-[5em] md:pb-[5em] mobile:mt-0'>
 						<h1 className='mobile:text-[28px] md:text-white md:text-[35px] lg:text-[50px] xl:text-[60px] font-bold lg:leading-[75px] xl:leading-normal'>
 							Get Yourself <br className='mobile:hidden md:hidden lg:block' />{' '}
 							Prepared For <br className='mobile:hidden md:hidden lg:block' />{' '}
 							CBT Exams
 						</h1>
-						<p className='md:text-white md:mb-[2em] md:mt-[2em] lg:mb-[2em] lg:mt-[1em] xl:mb-[4opx] xl:mt-[2em]'>
+						<p className='md:text-white mobile:mt-6 mobile:mb-[5em] mb-[2em] md:mt-[2em] lg:mb-[2em] lg:mt-[1em] xl:mb-[4opx] xl:mt-[2em]'>
 							Flip is a CBT software as a source to provide tests,{' '}
 							<br className='mobile:hidden md:hidden lg:block' />
 							examination management and quick grading system and{' '}
