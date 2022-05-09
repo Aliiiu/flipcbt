@@ -50,7 +50,7 @@ const FeatureOrganisation = () => {
 						}`}
 					>
 						<div
-							className={`w-6/12 mobile:w-full mobile:text-center md:pt-[4em] `}
+							className={`w-5/12 mobile:w-full mobile:text-center md:pt-[4em] `}
 						>
 							<div className='hidden mx-auto mb-10 mobile:block'>
 								<Image
@@ -60,11 +60,11 @@ const FeatureOrganisation = () => {
 									height='300px'
 								/>
 							</div>
-							<div className={`${index === 1 ? 'md:pl-[6em]' : null}`}>
-								<h1 className='font-semibold lg:pt-[6em] md:pt-[3em] text-[18px] md:text-[20px]'>
+							<div>
+								<h1 className='font-semibold lg:pt-[6em] md:pt-[3em]'>
 									{item.heading}
 								</h1>
-								<p className='mt-3 lg:w-9/12'>{item.content}</p>
+								<p className='mt-3'>{item.content}</p>
 							</div>
 						</div>
 						<div className='mobile:hidden m-0'>

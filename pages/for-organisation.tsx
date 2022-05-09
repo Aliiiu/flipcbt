@@ -24,11 +24,16 @@ const ForOrganisation = () => {
 							<div className='flex justify-between'>
 								<div className='mt-0 md:mt-5 w-full md:w-1/2 main-page'>
 									<div className='flex mobile:w-full flex-col md:mt-14 mobile:py-[5em] '>
-										<h1 className='lg:text-[50px] xl:text-[65px] md:text-[35px] lg:mb-[19px] xl:mb-[5px] mobile:text-[28px] font-bold lg:leading-[60px] xl:leading-[70px] main-header'>
-											We Design and Implement an online computer-based test
-											system.
+										<h1 className='lg:text-[50px] md:text-[35px] xl:text-[60px] lg:mb-[0px] xl:mb-[5px] mobile:text-[28px] font-bold xl:leading-normal'>
+											We Design and{' '}
+											<br className='mobile:hidden md:hidden lg:block' />{' '}
+											Implement an{' '}
+											<br className='mobile:hidden md:hidden lg:block' /> online
+											computer-{' '}
+											<br className='mobile:hidden md:hidden lg:block' /> based
+											test system.
 										</h1>
-										<p className='mt-6 mb-[2em] lg:mb-[3em] xl:mb-[40px] main-paragraph'>
+										<p className='md:mt-3 mobile:mt-6 mb-[2em] lg:mb-[30px] xl:mb-[40px] main-paragraph'>
 											FLIP serves as a source to provide tests, examination{' '}
 											<br className='mobile:hidden md:hidden lg:block xl:hidden' />
 											management, quick grading of systems and collation of{' '}
@@ -45,7 +50,7 @@ const ForOrganisation = () => {
 									</div>
 								</div>
 								<div className='w-1/2 lg:block md:flex justify-end mobile:hidden'>
-									<div className='px-auto md:mt-[7em] lg:mt-[5em] xl:mt-[5em]'>
+									<div className='px-auto md:mt-[7em] lg:mt-[5em] xl:mt-[7em]'>
 										<div>
 											<img
 												src='/OrganisationBg.png'

@@ -18,12 +18,12 @@ const ForSchool = () => {
 			<div className='ForSchool mt-[75px] md:px-20 xl:px-0 px-5'>
 				<div className='container'>
 					<div className='mobile:text-center py-[5em] md:py-15 pb-[5em] mobile:mt-0'>
-						<h1 className='mobile:text-[28px] text-[40px] md:text-white md:text-[60px] xl:text-[85px] font-bold lg:leading-[75px] xl:leading-[120px]'>
+						<h1 className='mobile:text-[28px] md:text-white md:text-[35px] lg:text-[50px] xl:text-[60px] font-bold lg:leading-[75px] xl:leading-normal'>
 							Get Yourself <br className='mobile:hidden md:hidden lg:block' />{' '}
 							Prepared For <br className='mobile:hidden md:hidden lg:block' />{' '}
 							CBT Exams
 						</h1>
-						<p className='md:text-white md:mb-[2em] md:mt-[2em] lg:mb-[2em] lg:mt-[1em] xl:mb-[4em] xl:mt-[2em]'>
+						<p className='md:text-white md:mb-[2em] md:mt-[2em] lg:mb-[2em] lg:mt-[1em] xl:mb-[4opx] xl:mt-[2em]'>
 							Flip is a CBT software as a source to provide tests,{' '}
 							<br className='mobile:hidden md:hidden lg:block' />
 							examination management and quick grading system and{' '}
@@ -45,35 +45,37 @@ const ForSchool = () => {
 					<h1 className='font-bold text-[24px] mt-9 mb-9 md:mb-[3em]'>
 						Trusted By
 					</h1>
-					<div className='flex justify-between items-center mobile:justify-center flex-wrap md:px-20 xl:px-0'>
-						<div className='mobile:mx-3 mobile:mb-7'>
+					<div className='md:px-20 xl:px-0'>
+						<div className='flex justify-between items-center mobile:justify-center  flex-wrap md:w-10/12 md:mx-auto'>
+							<div className='mobile:mx-3 mobile:mb-7'>
+								<Image
+									src='/Coindesk 2.png'
+									alt='Coindesk Logo 1'
+									width='31.53px'
+									height='29px'
+								/>
+								<Image
+									src='/Coindesk 1.png'
+									alt='Coindesk Logo 2'
+									width='114.96px'
+									height='29px'
+								/>
+							</div>
+							<div className='mobile:mb-7'>
+								<Image
+									src='/reuters-logo 1.png'
+									alt='reuters logo'
+									width='154px'
+									height='45.58px'
+								/>
+							</div>
 							<Image
-								src='/Coindesk 2.png'
-								alt='Coindesk Logo 1'
-								width='31.53px'
-								height='29px'
-							/>
-							<Image
-								src='/Coindesk 1.png'
-								alt='Coindesk Logo 2'
-								width='114.96px'
-								height='29px'
+								src='/coinTracker.png'
+								alt='cointracker logo'
+								width='148px'
+								height='55.84px'
 							/>
 						</div>
-						<div className='mobile:mb-7'>
-							<Image
-								src='/reuters-logo 1.png'
-								alt='reuters logo'
-								width='154px'
-								height='45.58px'
-							/>
-						</div>
-						<Image
-							src='/coinTracker.png'
-							alt='cointracker logo'
-							width='148px'
-							height='55.84px'
-						/>
 					</div>
 				</div>
 			</section>
