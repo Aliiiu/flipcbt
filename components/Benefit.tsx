@@ -76,7 +76,7 @@ const Benefit = () => {
 	};
 
 	return (
-		<section className='md:px-20 mobile:px-5 bg-[#0075FF] py-[6rem] bg-opacity-5'>
+		<section className='md:px-[8em] mobile:px-5 bg-[#0075FF] py-[6rem] bg-opacity-5'>
 			<div className='flex container'>
 				<div className='md:w-6/12 mobile:w-full'>
 					<div className='flex overflow-x-hidden mb-9'>

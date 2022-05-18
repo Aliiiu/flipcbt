@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 			</Head>
 			<Navbar />
 			<main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>
-				<div className='homePage md:px-20 px-4'>
+				<div className='homePage md:px-[8em] px-4'>
 					<div className='relative container'>
 						<section className='mobile:text-center'>
 							<div className='flex justify-between'>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
 											results instead of the use of pen and paper.
 										</p>
 										<div className='flex mobile:mt-10 mobile:justify-center md:justify-start lg:justify-start'>
-											<Link href='/'>
+											<Link href='/get-started'>
 												<a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>
 													GET STARTED
 												</a>
