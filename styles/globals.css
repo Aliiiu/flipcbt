@@ -21,8 +21,9 @@ body {
 	font-size: 16px;
 }
 
-h2 {
-	color: #333333;
+h2,
+h5 {
+	color: #06042c;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
 }
 
 p {
-	color: #4f4f4f;
+	color: #06042c;
 }
 
 img {
@@ -110,6 +111,11 @@ img {
 	min-height: 500px;
 }
 
+.bg-image-girl {
+	height: auto;
+	width: 100%;
+	object-fit: contain;
+}
 .btn-border {
 	border-radius: 15px;
 	border: 2px solid #fff;
@@ -163,18 +169,32 @@ img {
 
 .motor-forStudent {
 	background-image: url('/forSchool.png');
-	background-size: 100% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
 .motor-forOrganisation {
-	background-image: url('/forSchool.png');
-	background-size: 100% 100%;
+	background-image: url('/forOrganisation.png');
+	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
+
+.header-card {
+	border-radius: 10px;
+	box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+	border: 1px solid #fff;
+	padding: 15px 25px;
+}
+
 @media only screen and (max-width: 768px) {
+	h2 {
+		font-size: 24px;
+	}
+	p {
+		font-size: 18px;
+	}
 	.ForSchool {
 		background-image: url('/pattern2.png');
 		background-repeat: no-repeat;
@@ -253,9 +273,9 @@ img {
 		background-position: right bottom;
 	}
 
-	.bg-image-girl {
+	/* .bg-image-girl {
 		height: 500px;
-	}
+	} */
 
 	.bg-image-boy {
 		height: 450px;
@@ -287,6 +307,21 @@ img {
 	.vector-4 {
 		background-image: url(/vector-2.png);
 		background-position: center right;
+		background-repeat: no-repeat;
+	}
+	.vector-5 {
+		background-image: url(/vector-5.png);
+		background-position: top left;
+		background-repeat: no-repeat;
+	}
+	.vector-6 {
+		background-image: url(/vector-6.png);
+		background-position: top right;
+		background-repeat: no-repeat;
+	}
+	.vector-7 {
+		background-image: url(/vector-7.png);
+		background-position: bottom center;
 		background-repeat: no-repeat;
 	}
 }
@@ -339,9 +374,9 @@ img {
 	.bg-image-boy {
 		height: 550px;
 	}
-	.bg-image-girl {
+	/* .bg-image-girl {
 		height: 500px;
-	}
+	} */
 }
 
 @media only screen and (min-width: 1380px) {
@@ -357,10 +392,10 @@ img {
 		font-size: 25px;
 	}
 
-	.bg-image-girl {
+	/* .bg-image-girl {
 		height: auto;
 		width: auto;
-	}
+	} */
 
 	.bg-image-boy {
 		height: auto;

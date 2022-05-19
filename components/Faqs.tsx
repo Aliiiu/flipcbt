@@ -36,14 +36,13 @@ const Faqs = () => {
 				<div className='vector-2 md:px-[8em] mobile:px-5'>
 					<div className='text-center pt-[5rem] mb-[3rem] space-y-4 mobile:mx-5'>
 						<div className='flex justify-center'>
-							<div className='relative'>
-								<h2 className='inline-block z-10 font-semibold text-[40px] mobile:text-[28px]'>
+							<div className=''>
+								<h2 className='font-semibold text-[40px] text-[#06042C] mobile:text-[28px]'>
 									FAQs
 								</h2>
-								<span className='inline-block absolute top-[18px] md:top-[20px] right-[3px] bg-[rgba(0,117,255,0.5)] rounded-[8px] w-[65px] md:w-[95px] mobile:h-[12px] md:h-[25px]'></span>
 							</div>
 						</div>
-						<p className='mx-auto text-sm md:w-7/12'>
+						<p className='mx-auto text-sm md:w-7/12 text-[#06042C]'>
 							We have carefully prepared a list of most frequent inquiries for
 							you. This will give you more knowledge and insights into the app
 						</p>
@@ -60,7 +59,7 @@ const Faqs = () => {
 									className='flex items-center justify-between py-3 mobile:py-0 md:px-8 mobile:px-4'
 								>
 									<h3
-										className={`font-semibold w-full border-[#E0E0E0] mobile:px-2`}
+										className={`font-semibold w-full border-[#E0E0E0] text-[#06042C] mobile:px-2`}
 									>
 										{item.question}
 									</h3>
@@ -88,7 +87,7 @@ const Faqs = () => {
 									<>
 										<hr />
 										<div className='flex flex-wrap py-3 md:px-8 mobile:text-gray-400 mobile:px-4'>
-											<p>{item.answer}</p>
+											<p className=' text-[#06042C]'>{item.answer}</p>
 										</div>
 									</>
 								) : null}
