@@ -80,48 +80,103 @@ const Benefit = () => {
 	};
 
 	return (
-		<section className='container md:bg-[#0075FF] vector-5'>
-			<div className='vector-6'>
-				<div className='vector-7'>
-					<div className='md:px-[8em] mobile:px-5 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
-						<div className='flex justify-between mobile:hidden'>
-							<div className='bg-white w-[45%] rounded-[30px] p-[3em]'>
-								<div className='text-center text-[30px] font-semibold mb-7'>
-									What School Get
-								</div>
-								{benefit[0].map((item, idx) => (
-									<div
-										className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
-										key={idx}
-									>
-										<div className='flex flex-col'>
-											<div className='inline-flex items-center'>
-												<CustomImage
-													className='w-[35px] h-[35px] '
-													src={'/tick.png'}
-													alt=''
-												/>
-												<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
-													{item.title}
-												</h5>
-											</div>
-											<p className='mt-3	'>{item.content}</p>
-										</div>
+		<section className=' md:bg-[#0075FF]'>
+			<div className='container vector-5'>
+				<div className='vector-6'>
+					<div className='vector-7'>
+						<div className='md:px-[8em] mobile:px-5 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
+							<div className='flex justify-between mobile:hidden'>
+								<div className='bg-white w-[45%] rounded-[30px] p-[3em]'>
+									<div className='text-center text-[30px] font-semibold mb-7'>
+										What School Get
 									</div>
-								))}
-								<div className='text-center'>
-									<Button
-										href={'/for-school'}
-										bgColor='bg-[#FFAD4A]'
-										content={'Get Started'}
-									/>
+									{benefit[0].map((item, idx) => (
+										<div
+											className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
+											key={idx}
+										>
+											<div className='flex flex-col'>
+												<div className='inline-flex items-center'>
+													<CustomImage
+														className='w-[35px] h-[35px] '
+														src={'/tick.png'}
+														alt=''
+													/>
+													<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
+														{item.title}
+													</h5>
+												</div>
+												<p className='mt-3	'>{item.content}</p>
+											</div>
+										</div>
+									))}
+									<div className='text-center'>
+										<Button
+											href={'/for-school'}
+											bgColor='bg-[#FFAD4A]'
+											content={'Get Started'}
+										/>
+									</div>
+								</div>
+								<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col'>
+									<div className='text-center text-[30px] font-semibold mb-7'>
+										What Organisation Get
+									</div>
+									{benefit[1].map((item, idx) => (
+										<div
+											className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
+											key={idx}
+										>
+											<div className='flex flex-col'>
+												<div className='inline-flex items-center'>
+													<CustomImage
+														className='w-[35px] h-[35px] '
+														src={'/tick.png'}
+														alt=''
+													/>
+													<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
+														{item.title}
+													</h5>
+												</div>
+												<p className='mt-3'>{item.content}</p>
+											</div>
+										</div>
+									))}
+									<div className='text-center justify-end mt-[3em]'>
+										<Button
+											href={'/for-organisation'}
+											bgColor='bg-[#0075FF]'
+											content={'Get Started'}
+										/>
+									</div>
 								</div>
 							</div>
-							<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col'>
-								<div className='text-center text-[30px] font-semibold mb-7'>
-									What Organisation Get
+							<div className='md:hidden mobile:w-full'>
+								<div className='flex justify-between w-full mb-9'>
+									<div className='py-5 header-card cursor-pointer whitespace-nowrap'>
+										<button
+											className={`text-xl text-left font-semibold ${
+												currTab === 0 ? 'text-[#06042C]' : 'text-[#BABABA]'
+											}`}
+											type='button'
+											onClick={ForSchool}
+										>
+											What <br /> Schools <br /> Get
+										</button>
+									</div>
+									<div className='header-card py-5 whitespace-nowrap cursor-pointer'>
+										<button
+											className={`text-xl text-left font-semibold ${
+												currTab === 1 ? 'text-[#06042C]' : 'text-[#BABABA]'
+											}`}
+											type='button'
+											onClick={ForOrganisation}
+										>
+											What <br /> Organisations <br /> Get
+										</button>
+									</div>
 								</div>
-								{benefit[1].map((item, idx) => (
+								{benefit[currTab].map((item, idx) => (
 									<div
 										className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
 										key={idx}
@@ -143,76 +198,13 @@ const Benefit = () => {
 								))}
 								<div className='text-center justify-end mt-[3em]'>
 									<Button
-										href={'/for-organisation'}
+										href={`${
+											currTab == 0 ? '/school/register' : '/school/register'
+										}`}
 										bgColor='bg-[#0075FF]'
 										content={'Get Started'}
 									/>
 								</div>
-							</div>
-						</div>
-						<div className='md:hidden mobile:w-full'>
-							<div className='flex justify-between w-full mb-9'>
-								<div className='py-5 header-card cursor-pointer whitespace-nowrap'>
-									<button
-										className={`text-xl text-left font-semibold ${
-											currTab === 0 ? 'text-[#06042C]' : 'text-[#BABABA]'
-										}`}
-										type='button'
-										onClick={ForSchool}
-									>
-										What <br /> Schools <br /> Get
-									</button>
-								</div>
-								<div className='header-card py-5 whitespace-nowrap cursor-pointer'>
-									<button
-										className={`text-xl text-left font-semibold ${
-											currTab === 1 ? 'text-[#06042C]' : 'text-[#BABABA]'
-										}`}
-										type='button'
-										onClick={ForOrganisation}
-									>
-										What <br /> Organisations <br /> Get
-									</button>
-								</div>
-							</div>
-							{benefit[currTab].map((item, idx) => (
-								<div
-									className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
-									key={idx}
-								>
-									<div className='flex flex-col'>
-										<div className='inline-flex items-center'>
-											<CustomImage
-												className='w-[35px] h-[35px] '
-												src={'/tick.png'}
-												alt=''
-											/>
-											<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
-												{item.title}
-											</h5>
-										</div>
-										<p className='mt-3'>{item.content}</p>
-									</div>
-								</div>
-							))}
-							<div className='text-center justify-end mt-[3em]'>
-								<Button
-									href={`${
-										currTab == 0 ? '/school/register' : '/school/register'
-									}`}
-									bgColor='bg-[#0075FF]'
-									content={'Get Started'}
-								/>
-								{/* <Link
-									href={`${
-										currTab == 0 ? '/school/register' : '/school/register'
-									}`}
-									passHref
-								>
-									<button className='py-3	text-white bg-[#0075FF] btn-border px-[2em]'>
-										Get Started
-									</button>
-								</Link> */}
 							</div>
 						</div>
 					</div>

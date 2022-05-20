@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import Button from './Button';
 
 const Navbar = () => {
 	const [nav, ShowNav] = useState<boolean>(false);
@@ -19,10 +20,10 @@ const Navbar = () => {
 		ShowNav(false);
 	};
 	return (
-		<nav className='fixed top-0 left-0 z-50 w-full navbar mobile:py-5 mobile:px-4'>
+		<nav className='fixed top-0 left-0 z-50 navbar'>
 			<div className='container md:py-5'>
-				<div className='md:px-[8em] xl:px-0 flex items-center justify-between w-full'>
-					<div className='flex items-center'>
+				<div className='md:px-[8em] w-full mobile:py-5 mobile:px-4'>
+					<div className='flex justify-between items-center'>
 						<Link href='/'>
 							<a className='md:hidden '>
 								<Image
@@ -45,37 +46,47 @@ const Navbar = () => {
 								/>
 							</a>
 						</Link>
-						<div className='lg:ml-[7rem] md:ml-[4rem] w-full mobile:hidden  lg:block'>
-							<Link href='/for-organisation'>
+						<div className='mobile:hidden flex justify-between w-[40%]'>
+							<Link href='/'>
 								<a
 									id='navLink'
-									className={`text-base font-semibold mr-[5rem] ${
+									className={`text-[#06042C] inline-flex ${
 										router.pathname === '/for-organisation'
 											? 'text-blue-400'
 											: null
 									} hover:text-blue-500 active:text-blue-500 `}
 								>
-									For Organisation
+									Home
+								</a>
+							</Link>
+							<Link href='/for-organisation'>
+								<a
+									id='navLink'
+									className={`text-[#06042C] inline-flex ${
+										router.pathname === '/for-organisation'
+											? 'text-blue-400'
+											: null
+									} hover:text-blue-500 active:text-blue-500 `}
+								>
+									Organisation
 								</a>
 							</Link>
 							<Link href='/for-school'>
 								<a
 									id='navLink'
-									className={`text-base font-semibold ${
+									className={`text-[#06042C] inline-flex ${
 										router.pathname === '/for-school' ? 'text-blue-400' : null
 									} hover:text-blue-500 active:text-blue-500`}
 								>
-									For School
+									Student
 								</a>
 							</Link>
 						</div>
-					</div>
-					<div>
-						<Link href='/get-started'>
-							<a className='text-base text-white bg-blue-500 rounded-md px-12 py-4 text-[14px] mobile:hidden'>
-								Get Started
-							</a>
-						</Link>
+						<Button
+							href={'get-started'}
+							content='Get Started'
+							bgColor={'bg-[#0075ff] mobile:hidden'}
+						/>
 					</div>
 					<div className='hidden text-white mobile:block overflow-hidden'>
 						{nav ? (
