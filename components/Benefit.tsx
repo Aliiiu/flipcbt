@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { useState } from 'react';
+import Button from './Button';
 import CustomImage from './Image';
 
 type ArrayObject = {
@@ -110,11 +110,11 @@ const Benefit = () => {
 									</div>
 								))}
 								<div className='text-center'>
-									<Link href='/school' passHref>
-										<button className='py-3 text-base text-white bg-[#FFAD4A] btn-border px-[3em] md:py-4'>
-											Get Started
-										</button>
-									</Link>
+									<Button
+										href={'/for-school'}
+										bgColor='bg-[#FFAD4A]'
+										content={'Get Started'}
+									/>
 								</div>
 							</div>
 							<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col'>
@@ -142,11 +142,11 @@ const Benefit = () => {
 									</div>
 								))}
 								<div className='text-center justify-end mt-[3em]'>
-									<Link href='/school' passHref>
-										<button className='py-3 text-base text-white bg-[#0075FF] btn-border px-[3em] md:py-4'>
-											Get Started
-										</button>
-									</Link>
+									<Button
+										href={'/for-organisation'}
+										bgColor='bg-[#0075FF]'
+										content={'Get Started'}
+									/>
 								</div>
 							</div>
 						</div>
@@ -196,7 +196,14 @@ const Benefit = () => {
 								</div>
 							))}
 							<div className='text-center justify-end mt-[3em]'>
-								<Link
+								<Button
+									href={`${
+										currTab == 0 ? '/school/register' : '/school/register'
+									}`}
+									bgColor='bg-[#0075FF]'
+									content={'Get Started'}
+								/>
+								{/* <Link
 									href={`${
 										currTab == 0 ? '/school/register' : '/school/register'
 									}`}
@@ -205,7 +212,7 @@ const Benefit = () => {
 									<button className='py-3	text-white bg-[#0075FF] btn-border px-[2em]'>
 										Get Started
 									</button>
-								</Link>
+								</Link> */}
 							</div>
 						</div>
 					</div>

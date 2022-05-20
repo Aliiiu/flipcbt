@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import { Fragment, useEffect } from 'react';
 import Benefit from '../components/Benefit';
+import Button from '../components/Button';
 import Faqs from '../components/Faqs';
 import Feature from '../components/Feature';
 import Footer from '../components/Footer';
@@ -41,11 +41,11 @@ const Home: NextPage = () => {
 											results instead of the use of pen and paper.
 										</p>
 										<div className='flex mobile:mt-10 mobile:justify-center md:justify-start lg:justify-start'>
-											<Link href='/get-started'>
-												<a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>
-													GET STARTED
-												</a>
-											</Link>
+											<Button
+												href={'/get-started'}
+												content='Get Started'
+												bgColor='bg-[#0075FF]'
+											/>
 										</div>
 									</div>
 								</div>
@@ -61,34 +61,6 @@ const Home: NextPage = () => {
 									</div>
 								</div>
 							</div>
-							{/* <div className='absolute right-[380px] mobile:hidden md:hidden lg:hidden xl:inline-flex flex px-10 py-2 bg-white flip-border bottom-[50px] rounded-lg blue-glow student-card'>
-								<Image
-									src={profile2}
-									alt='profile badge'
-									width='55px'
-									height='55px'
-								/>
-								<div className='flex flex-col ml-3'>
-									<h1 className='text-[30px] text-[#FFBC6C] font-semibold'>
-										50K
-									</h1>
-									<p>Total Active Student</p>
-								</div>
-							</div>
-							<div className='absolute right-[50px] mobile:hidden md:hidden lg:hidden xl:inline-flex flex lg:px-10 xl:px-10 py-2 bg-white flip-border bottom-[150px] rounded-lg blue-glow task-card'>
-								<Image
-									src={profile}
-									alt='profile badge'
-									width='55px'
-									height='55px'
-								/>
-								<div className='flex flex-col ml-3'>
-									<h1 className='text-[30px] text-[#00BE7E] font-semibold'>
-										7.5K
-									</h1>
-									<p>Total Active Task</p>
-								</div>
-							</div> */}
 						</section>
 					</div>
 				</div>

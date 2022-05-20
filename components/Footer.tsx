@@ -7,10 +7,10 @@ const Footer = () => {
 				<div className='md:px-[8em] mobile:px-5 flex mobile:flex-col'>
 					<div className='md:mr-[8em] lg:mr-[12em] mobile:text-center mobile:py-10'>
 						<Image
-							src='/Flip Cbt.png'
+							src='/Flip_Cbt-logo.png'
 							alt='Flip Cbt Logo'
-							width='100px'
-							height='50px'
+							width='150px'
+							height='80px'
 						/>
 					</div>
 					<div className='flex md:justify-between w-full md:mr-[6rem] mobile:flex-wrap'>
@@ -50,29 +50,29 @@ const Footer = () => {
 									hello@flipcbt.com
 								</a>
 							</p>
-							<div className='flex space-x-8'>
+							<div className='flex space-x-6'>
 								<a href='https://www.linkedin.com/company/flipcbt/'>
 									<Image
-										src='/facebook-icon.png'
+										src='/fb-icon.png'
 										alt='Facebook icon'
 										width='20px'
-										height='20px'
-									/>
-								</a>
-								<a href='https://instagram.com/flipcbt/'>
-									<Image
-										src='/instagram-icon.png'
-										alt='Instagram icon'
-										width='20px'
-										height='20px'
+										height='30px'
 									/>
 								</a>
 								<a href='https://twitter.com/flipcbt'>
 									<Image
-										src='/twitter-icon.png'
+										src='/twitter.png'
 										alt='Twitter icon'
-										width='20px'
-										height='20px'
+										width='35px'
+										height='35px'
+									/>
+								</a>
+								<a href='https://instagram.com/flipcbt/'>
+									<Image
+										src='/IG.png'
+										alt='Instagram icon'
+										width='35px'
+										height='35px'
 									/>
 								</a>
 							</div>

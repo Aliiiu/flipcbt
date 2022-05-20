@@ -103,8 +103,11 @@ img {
 	box-shadow: 0px 30px 60px rgba(0, 117, 255, 0.3);
 }
 
-.semi-blue-glow {
-	box-shadow: 0px 20px 40px rgba(0, 117, 255, 0.1);
+.feature-card {
+	border-radius: 24px;
+	padding: 90px 40px 60px;
+	background-color: #fff;
+	box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 }
 
 .pageBody {
@@ -117,8 +120,15 @@ img {
 	object-fit: contain;
 }
 .btn-border {
-	border-radius: 15px;
 	border: 2px solid #fff;
+}
+
+.faq-border {
+	padding: 20px;
+	background: #ffffff;
+	border: 1px solid rgba(189, 189, 189, 0.5);
+	box-shadow: 0px 25px 50px rgba(6, 4, 44, 0.1);
+	border-radius: 20px;
 }
 
 .flip-bg {

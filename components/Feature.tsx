@@ -17,7 +17,7 @@ const Feature = () => {
 							</p>
 						</div>
 						<div className='grid md:grid-cols-3 mobile:grid-cols-1 md:mb-[9rem] md:space-x-6 mobile:flex-col mobile:mb-8'>
-							<div className='relative flip-border flex flex-col items-center pt-10 px-3 mobile:pb-8 mobile:mb-[5em] text-center bg-white semi-blue-glow rounded-[30px]'>
+							<div className='relative feature-card flip-border flex flex-col items-center text-center mobile:mb-[5em]'>
 								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
 									<Image
 										src='/time.png'
@@ -26,7 +26,7 @@ const Feature = () => {
 										height={100}
 									/>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] my-6 md:uppercase'>
+								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6 md:uppercase'>
 									Time Saving
 								</h3>
 								<p>
@@ -35,7 +35,7 @@ const Feature = () => {
 									avoided as it automates the entire process.{' '}
 								</p>
 							</div>
-							<div className='relative flip-border flex flex-col items-center pt-10 pb-8 px-3 text-center mobile:mb-[5em] bg-white semi-blue-glow rounded-[30px]'>
+							<div className='relative feature-card flip-border flex flex-col items-center text-center mobile:mb-[5em]'>
 								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
 									<Image
 										src='/convenience.png'
@@ -44,7 +44,7 @@ const Feature = () => {
 										height={100}
 									/>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] my-6 md:uppercase'>
+								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6 md:uppercase'>
 									Convenience
 								</h3>
 								<p>
@@ -54,7 +54,7 @@ const Feature = () => {
 									areas to attempt the test.{' '}
 								</p>
 							</div>
-							<div className='relative flip-border flex flex-col items-center pt-10 px-3 mobile:pb-8 text-center bg-white semi-blue-glow rounded-[30px]'>
+							<div className='relative flip-border flex flex-col items-center feature-card text-center mobile:mb-[5em]'>
 								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
 									<Image
 										src='/speed.png'
@@ -63,7 +63,7 @@ const Feature = () => {
 										height={100}
 									/>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] my-6 md:uppercase'>
+								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6 md:uppercase'>
 									Speed and Accuracy
 								</h3>
 								<p>

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import Button from './Button';
 const Motor = () => {
 	return (
 		<section className='flex flex-col container mobile:py-[6em] py-[10em] text-center'>
@@ -35,19 +35,14 @@ const Motor = () => {
 												Management of resources and cost-{' '}
 												<br className='mobile:hidden' /> effectiveness.
 											</p>
-											<Link href='#'>
-												<a className='text-white text-base py-3 px-9 btn-border hover:bg-blue-500'>
-													LEARN MORE
-												</a>
-											</Link>
+											<Button
+												href={'/for-school'}
+												content='Learn More'
+												bgColor={'btn-border hover:bg-[#0075FF] hover:border-0'}
+											/>
 										</div>
 									</div>
 									<div className='text-center motor-forOrganisation bg-opacity-20 rounded-3xl py-[5em] overflow-hidden'>
-										{/* <Image
-											src={'/forOrganisation.png'}
-											layout='fill'
-											alt='Organisation Illustration'
-										/> */}
 										<div className=''>
 											<h2 className='text-[32px] text-white font-bold mt-3'>
 												For Organisations
@@ -56,11 +51,11 @@ const Motor = () => {
 												Guaranteed advantages for your{' '}
 												<br className='mobile:hidden' /> organization.
 											</p>
-											<Link href='#'>
-												<a className='text-white text-base py-3 px-9 btn-border hover:bg-blue-500'>
-													LEARN MORE
-												</a>
-											</Link>
+											<Button
+												href={'/for-organisation'}
+												content='Learn More'
+												bgColor={'btn-border hover:bg-[#0075FF] hover:border-0'}
+											/>
 										</div>
 									</div>
 								</div>
@@ -85,11 +80,16 @@ const Motor = () => {
 									that have value.
 								</p>
 								<div className='flex mobile:mt-10 justify-start'>
-									<Link href='/get-started'>
+									<Button
+										href={'/school'}
+										content='Get Started'
+										bgColor={'btn-border bg-[#0075FF]'}
+									/>
+									{/* <Link href='/get-started'>
 										<a className='py-3 text-white bg-[#0075FF] btn-border px-[3rem] md:py-5'>
 											GET STARTED
 										</a>
-									</Link>
+									</Link> */}
 								</div>
 							</div>
 						</div>

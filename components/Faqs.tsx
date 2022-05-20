@@ -3,15 +3,19 @@ import React, { useState } from 'react';
 
 const QA = [
 	{
-		question: 'Why should I use the flip app?',
+		question: 'What is flip?',
 		answer: `The flip app is economical and accurate and gives the best results possible.`,
 	},
 	{
-		question: 'Is my data secure?',
+		question: 'Is my data secured?',
 		answer: `Yes, your data is secure, and provisions have been made to enable confidentiality and security.`,
 	},
 	{
-		question: 'How accessible is it?',
+		question: 'Can I be a marketer for Flip?',
+		answer: `The FLIP app is very accessible and can be used by both secondary schools and organisations.`,
+	},
+	{
+		question: 'Why should I use FLIP?',
 		answer: `The FLIP app is very accessible and can be used by both secondary schools and organisations.`,
 	},
 	{
@@ -26,6 +30,7 @@ const Faqs = () => {
 
 	const handleClick = (e: React.MouseEvent, index: number) => {
 		e.preventDefault();
+		// setActive(true);
 		setActive((prevState) => !prevState);
 		setCurrQuestion(index);
 	};
@@ -34,7 +39,7 @@ const Faqs = () => {
 		<section className='bg-white container pb-[4rem] md:pt-3'>
 			<div className='vector-1'>
 				<div className='vector-2 md:px-[8em] mobile:px-5'>
-					<div className='text-center pt-[5rem] mb-[3rem] space-y-4 mobile:mx-5'>
+					<div className='text-center pt-[5rem] mb-[2em] mobile:mx-5'>
 						<div className='flex justify-center'>
 							<div className=''>
 								<h2 className='font-semibold text-[40px] text-[#06042C] mobile:text-[28px]'>
@@ -42,15 +47,15 @@ const Faqs = () => {
 								</h2>
 							</div>
 						</div>
-						<p className='mx-auto text-sm md:w-7/12 text-[#06042C]'>
+						<p className='mx-auto md:w-7/12 text-[#06042C]'>
 							We have carefully prepared a list of most frequent inquiries for
 							you. This will give you more knowledge and insights into the app
 						</p>
 					</div>
-					<div className='grid grid-cols-1 gap-3 justify-items-center'>
+					<div className='grid grid-cols-1 gap-7 justify-items-center'>
 						{QA.map((item, index) => (
 							<div
-								className='w-10/12 md:mx-auto py-4 bg-white border rounded-[20px] shadow-[0px_25px_50px_rgba(22,25,79,0.1)] mobile:w-full mobile:shadow-md text-md'
+								className='w-10/12 md:mx-auto faq-border mobile:w-full'
 								key={index}
 							>
 								<a
@@ -75,7 +80,7 @@ const Faqs = () => {
 									) : (
 										<button className='text-3xl font-bold bg-transparent border-none text-purple'>
 											<Image
-												src='/plus.svg'
+												src='/plus.png'
 												alt='plus icon'
 												width='28px'
 												height='28px'
@@ -83,10 +88,11 @@ const Faqs = () => {
 										</button>
 									)}
 								</a>
+
 								{active && currQuestion === index ? (
 									<>
-										<hr />
-										<div className='flex flex-wrap py-3 md:px-8 mobile:text-gray-400 mobile:px-4'>
+										<hr className='w-[92%] mx-auto' />
+										<div className='flex flex-wrap py-3 md:px-8 mobile:px-4'>
 											<p className=' text-[#06042C]'>{item.answer}</p>
 										</div>
 									</>
