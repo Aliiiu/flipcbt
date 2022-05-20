@@ -77,6 +77,10 @@ img {
 	width: 100%;
 }
 
+.footer-logo {
+	display: none !important;
+}
+
 .homePage {
 	background-image: url('/pattern2.png');
 	background-repeat: no-repeat;
@@ -121,7 +125,7 @@ img {
 }
 
 .faq-border {
-	padding: 20px;
+	padding: 40px;
 	background: #ffffff;
 	border: 1px solid rgba(189, 189, 189, 0.5);
 	box-shadow: 0px 25px 50px rgba(6, 4, 44, 0.1);
@@ -192,7 +196,7 @@ img {
 	border-radius: 10px;
 	box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 	border: 1px solid #fff;
-	padding: 15px 25px;
+	padding: 15px 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -200,7 +204,11 @@ img {
 		font-size: 24px;
 	}
 	p {
-		font-size: 18px;
+		font-size: 16px;
+	}
+
+	.faq-border {
+		padding: 20px;
 	}
 	.ForSchool {
 		background-image: url('/pattern2.png');
@@ -232,9 +240,9 @@ img {
 	}
 	.mobile-nav {
 		position: fixed;
-		height: 100vh;
+		height: 95vh;
 		width: 100%;
-		margin-top: 62px;
+		margin-top: 82px;
 		top: 0;
 		right: 0;
 		bottom: 0;
@@ -393,10 +401,6 @@ img {
 
 	.main-header {
 		font-size: 60px;
-	}
-
-	.main-paragraph {
-		font-size: 25px;
 	}
 
 	/* .bg-image-girl {

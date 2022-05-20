@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 const QA = [
 	{
 		question: 'What is flip?',
-		answer: `The flip app is economical and accurate and gives the best results possible.`,
+		answer: `Flip is a CBT software as a source to provide tests, examination management and a quick grading
+						 system and collation of results instead of the use of pen and paper.`,
 	},
 	{
 		question: 'Is my data secured?',
@@ -38,8 +39,8 @@ const Faqs = () => {
 	return (
 		<section className='bg-white container pb-[4rem] md:pt-3'>
 			<div className='vector-1'>
-				<div className='vector-2 md:px-[8em] mobile:px-5'>
-					<div className='text-center pt-[5rem] mb-[2em] mobile:mx-5'>
+				<div className='vector-2 md:px-[8em] mobile:px-7'>
+					<div className='text-center pt-[6rem] mb-[2em] mobile:mx-5'>
 						<div className='flex justify-center'>
 							<div className=''>
 								<h2 className='font-semibold text-[40px] text-[#06042C] mobile:text-[28px]'>
@@ -47,9 +48,9 @@ const Faqs = () => {
 								</h2>
 							</div>
 						</div>
-						<p className='mx-auto md:w-7/12 text-[#06042C]'>
-							We have carefully prepared a list of most frequent inquiries for
-							you. This will give you more knowledge and insights into the app
+						<p className='mx-auto md:w-7/12 mobile:mt-2'>
+							We have carefully prepared a list of the most frequent inquiries
+							for you. This will give you more insights on how to use FLIP
 						</p>
 					</div>
 					<div className='grid grid-cols-1 gap-7 justify-items-center'>
@@ -61,10 +62,10 @@ const Faqs = () => {
 								<a
 									href='#'
 									onClick={(e) => handleClick(e, index)}
-									className='flex items-center justify-between py-3 mobile:py-0 md:px-8 mobile:px-4'
+									className='flex items-center justify-between'
 								>
 									<h3
-										className={`font-semibold w-full border-[#E0E0E0] text-[#06042C] mobile:px-2`}
+										className={`font-semibold w-full border-[#E0E0E0] text-[#06042C]`}
 									>
 										{item.question}
 									</h3>
@@ -80,7 +81,7 @@ const Faqs = () => {
 									) : (
 										<button className='text-3xl font-bold bg-transparent border-none text-purple'>
 											<Image
-												src='/plus.png'
+												src='/plus.svg'
 												alt='plus icon'
 												width='28px'
 												height='28px'
@@ -91,9 +92,9 @@ const Faqs = () => {
 
 								{active && currQuestion === index ? (
 									<>
-										<hr className='w-[92%] mx-auto' />
-										<div className='flex flex-wrap py-3 md:px-8 mobile:px-4'>
-											<p className=' text-[#06042C]'>{item.answer}</p>
+										<hr className='mt-7 mobile:mt-4' />
+										<div className='flex flex-wrap pt-7 mobile:pt-4'>
+											<p className='text-[#06042C]'>{item.answer}</p>
 										</div>
 									</>
 								) : null}

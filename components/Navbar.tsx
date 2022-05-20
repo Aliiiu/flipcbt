@@ -22,15 +22,15 @@ const Navbar = () => {
 	return (
 		<nav className='fixed top-0 left-0 z-50 navbar'>
 			<div className='container md:py-5'>
-				<div className='md:px-[8em] w-full mobile:py-5 mobile:px-4'>
+				<div className='md:px-[8em] mobile:flex mobile:justify-between mobile:py-5 mobile:px-7'>
 					<div className='flex justify-between items-center'>
 						<Link href='/'>
 							<a className='md:hidden '>
 								<Image
 									src='/Flip Cbt.png'
 									alt='flipcbt logo'
-									width='60px'
-									height='30px'
+									width='80px'
+									height='50px'
 									className='mobile:w-[80px] mobile:h-[40px] px-0 py-0n'
 								/>
 							</a>
@@ -92,56 +92,59 @@ const Navbar = () => {
 						{nav ? (
 							<button onClick={closeNavHandler}>
 								<Image
-									src='/x.svg'
+									src='/hamburger.png'
 									alt='close logo'
-									width='30px'
-									height='30px'
+									width='40px'
+									height='40px'
 								/>
 							</button>
 						) : (
 							<button onClick={showNavHandler}>
 								<Image
-									src='/menu.svg'
+									src='/hamburger.png'
 									alt='menu logo'
-									width='30px'
-									height='30px'
+									width='40px'
+									height='40px'
 								/>
 							</button>
 						)}
 						{nav && (
-							<div className='flex flex-col w-full bg-white mobile-nav h-full px-4 py-7 inset-0 overflow-hidden'>
-								<Link href='/'>
-									<a
-										onClick={() => ShowNav(false)}
-										className='mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]'
-									>
-										Home
-									</a>
-								</Link>
-								<Link href='/for-organisation'>
-									<a
-										onClick={() => ShowNav(false)}
-										className='mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]'
-									>
-										For Organisation
-									</a>
-								</Link>
-								<Link href='/for-school'>
-									<a
-										onClick={() => ShowNav(false)}
-										className='mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]'
-									>
-										For School
-									</a>
-								</Link>
-								<Link href='/get-started'>
-									<a
-										onClick={() => ShowNav(false)}
-										className='mt-5 mb-5 text-[24px] font-semibold no-underline text-[#333333]'
-									>
-										Get Started
-									</a>
-								</Link>
+							<div className=' bg-white mobile-nav px-7 py-9 inset-0 overflow-hidden'>
+								<div className='flex flex-col justify-between h-[90%]'>
+									<div className='flex flex-col justify-between'>
+										<Link href='/'>
+											<a
+												onClick={() => ShowNav(false)}
+												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
+											>
+												Home
+											</a>
+										</Link>
+										<Link href='/for-organisation'>
+											<a
+												onClick={() => ShowNav(false)}
+												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
+											>
+												For Organisation
+											</a>
+										</Link>
+										<Link href='/for-school'>
+											<a
+												onClick={() => ShowNav(false)}
+												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
+											>
+												For School
+											</a>
+										</Link>
+									</div>
+									<div className='text-center'>
+										<Button
+											href={'/get-started'}
+											content='Get Started'
+											bgColor='bg-[#0075FF]'
+										/>
+									</div>
+								</div>
 							</div>
 						)}
 					</div>

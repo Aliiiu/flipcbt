@@ -5,7 +5,7 @@ const Motor = () => {
 		<section className='flex flex-col container mobile:py-[6em] py-[10em] text-center'>
 			<div className='vector-3'>
 				<div className='vector-4'>
-					<div className='mobile:px-5 md:px-[8em]'>
+					<div className='mobile:px-7 md:px-[8em]'>
 						<div>
 							<div className='mb-[3rem]'>
 								<div className='flex justify-center'>

@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 const Feature = () => {
 	return (
-		<section className='md:pt-[6rem] bg-[#F7F8FA80] mobile:bg-[#F7F8FA] mobile:pt-[4rem]'>
+		<section className='md:pt-[6rem] mobile:pt-[4rem]'>
 			<div className='vector-1 container'>
 				<div className='vector-2'>
-					<div className='mobile:w-auto px-[8em] mobile:px-5 flex flex-col w-full mobile:mx-0'>
+					<div className='mobile:w-auto px-[8em] mobile:px-7 flex flex-col w-full mobile:mx-0'>
 						<div className='text-center md:pt-9 md:mb-[8em] mb-[5rem]'>
 							<h2 className='font-semibold text-[40px] mb-2 md:mb-6 mobile:text-[28px]'>
 								Why <span className='text-blue-400'>Flip</span>

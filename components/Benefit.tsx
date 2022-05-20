@@ -84,7 +84,7 @@ const Benefit = () => {
 			<div className='container vector-5'>
 				<div className='vector-6'>
 					<div className='vector-7'>
-						<div className='md:px-[8em] mobile:px-5 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
+						<div className='md:px-[8em] mobile:px-7 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
 							<div className='flex justify-between mobile:hidden'>
 								<div className='bg-white w-[45%] rounded-[30px] p-[3em]'>
 									<div className='text-center text-[30px] font-semibold mb-7'>
