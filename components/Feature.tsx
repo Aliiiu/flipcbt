@@ -18,7 +18,7 @@ const Feature = () => {
 						</div>
 						<div className='grid md:grid-cols-3 mobile:grid-cols-1 md:mb-[9rem] md:space-x-6 mobile:flex-col mobile:mb-2'>
 							<div className='relative feature-card flex flex-col items-center text-center mobile:mb-[5em]'>
-								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
+								<div className='absolute top-[-50px] mobile:top-[-40px] right-0 left-0 m-auto'>
 									<div className='mobile:hidden'>
 										<Image
 											src='/time.png'
@@ -46,7 +46,7 @@ const Feature = () => {
 								</p>
 							</div>
 							<div className='relative feature-card flex flex-col items-center text-center mobile:mb-[5em]'>
-								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
+								<div className='absolute top-[-50px] mobile:top-[-40px] right-0 left-0 m-auto'>
 									<div className='mobile:hidden'>
 										<Image
 											src='/convenience.png'
@@ -75,7 +75,7 @@ const Feature = () => {
 								</p>
 							</div>
 							<div className='relative flex flex-col items-center feature-card text-center mobile:mb-[0em]'>
-								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
+								<div className='absolute top-[-50px] mobile:top-[-40px] right-0 left-0 m-auto'>
 									<div className='mobile:hidden'>
 										<Image
 											src='/speed.png'
