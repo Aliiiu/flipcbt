@@ -8,7 +8,7 @@ const Feature = () => {
 					<div className='mobile:w-auto px-[8em] mobile:px-7 flex flex-col w-full mobile:mx-0'>
 						<div className='text-center md:pt-9 md:mb-[8em] mb-[5rem]'>
 							<h2 className='font-semibold text-[40px] mb-2 md:mb-6 mobile:text-[28px]'>
-								Why <span className='text-blue-400'>Flip</span>
+								Why <span className='text-[#0075FF]'>Flip</span>
 							</h2>
 							<p>
 								Preparing for exams, tests or interviews is very tedious
@@ -16,17 +16,27 @@ const Feature = () => {
 								But writing assessments should be comfortable.
 							</p>
 						</div>
-						<div className='grid md:grid-cols-3 mobile:grid-cols-1 md:mb-[9rem] md:space-x-6 mobile:flex-col mobile:mb-8'>
-							<div className='relative feature-card flip-border flex flex-col items-center text-center mobile:mb-[5em]'>
+						<div className='grid md:grid-cols-3 mobile:grid-cols-1 md:mb-[9rem] md:space-x-6 mobile:flex-col mobile:mb-2'>
+							<div className='relative feature-card flex flex-col items-center text-center mobile:mb-[5em]'>
 								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
-									<Image
-										src='/time.png'
-										alt='Time management illustration'
-										width={100}
-										height={100}
-									/>
+									<div className='mobile:hidden'>
+										<Image
+											src='/time.png'
+											alt='Time management illustration'
+											width={100}
+											height={100}
+										/>
+									</div>
+									<div className='md:hidden'>
+										<Image
+											src='/time.png'
+											alt='Time management illustration'
+											width={80}
+											height={80}
+										/>
+									</div>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6 md:uppercase'>
+								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6'>
 									Time Saving
 								</h3>
 								<p>
@@ -35,16 +45,26 @@ const Feature = () => {
 									avoided as it automates the entire process.{' '}
 								</p>
 							</div>
-							<div className='relative feature-card flip-border flex flex-col items-center text-center mobile:mb-[5em]'>
+							<div className='relative feature-card flex flex-col items-center text-center mobile:mb-[5em]'>
 								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
-									<Image
-										src='/convenience.png'
-										alt='Time management illustration'
-										width={100}
-										height={100}
-									/>
+									<div className='mobile:hidden'>
+										<Image
+											src='/convenience.png'
+											alt='convenience illustration'
+											width={100}
+											height={100}
+										/>
+									</div>
+									<div className='md:hidden'>
+										<Image
+											src='/convenience.png'
+											alt='convenience illustration'
+											width={80}
+											height={80}
+										/>
+									</div>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6 md:uppercase'>
+								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6'>
 									Convenience
 								</h3>
 								<p>
@@ -54,16 +74,26 @@ const Feature = () => {
 									areas to attempt the test.{' '}
 								</p>
 							</div>
-							<div className='relative flip-border flex flex-col items-center feature-card text-center mobile:mb-[5em]'>
+							<div className='relative flex flex-col items-center feature-card text-center mobile:mb-[0em]'>
 								<div className='absolute top-[-50px] right-0 left-0 m-auto'>
-									<Image
-										src='/speed.png'
-										alt='Speed illustration'
-										width={100}
-										height={100}
-									/>
+									<div className='mobile:hidden'>
+										<Image
+											src='/speed.png'
+											alt='Speed illustration'
+											width={100}
+											height={100}
+										/>
+									</div>
+									<div className='md:hidden'>
+										<Image
+											src='/speed.png'
+											alt='Speed illustration'
+											width={80}
+											height={80}
+										/>
+									</div>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6 md:uppercase'>
+								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6'>
 									Speed and Accuracy
 								</h3>
 								<p>

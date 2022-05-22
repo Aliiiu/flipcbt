@@ -152,7 +152,7 @@ const Benefit = () => {
 								</div>
 							</div>
 							<div className='md:hidden mobile:w-full'>
-								<div className='flex justify-between w-full mb-9'>
+								<div className='flex justify-between w-full'>
 									<div className='py-5 header-card cursor-pointer whitespace-nowrap'>
 										<button
 											className={`text-xl text-left font-semibold ${

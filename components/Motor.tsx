@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Button from './Button';
 const Motor = () => {
 	return (
-		<section className='flex flex-col container mobile:py-[6em] py-[10em] text-center'>
+		<section className='flex flex-col container mobile:pt-0 mobile:pb-[8em] py-[10em] text-center'>
 			<div className='vector-3'>
 				<div className='vector-4'>
 					<div className='mobile:px-7 md:px-[8em]'>

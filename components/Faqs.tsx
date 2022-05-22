@@ -12,11 +12,7 @@ const QA = [
 		answer: `Yes, your data is secure, and provisions have been made to enable confidentiality and security.`,
 	},
 	{
-		question: 'Can I be a marketer for Flip?',
-		answer: `The FLIP app is very accessible and can be used by both secondary schools and organisations.`,
-	},
-	{
-		question: 'Why should I use FLIP?',
+		question: 'How accesible is FLIP?',
 		answer: `The FLIP app is very accessible and can be used by both secondary schools and organisations.`,
 	},
 	{
@@ -37,7 +33,7 @@ const Faqs = () => {
 	};
 
 	return (
-		<section className='bg-white container pb-[4rem] md:pt-3'>
+		<section className='bg-white container pb-[8em] md:pb-[10em] md:pt-3'>
 			<div className='vector-1'>
 				<div className='vector-2 md:px-[8em] mobile:px-7'>
 					<div className='text-center pt-[6rem] mb-[2em] mobile:mx-5'>
