@@ -188,6 +188,13 @@ img {
 	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
+.marketing {
+	background-image: url('/marketing.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: contain;
+}
+
 .header-card {
 	border-radius: 10px;
 	box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
@@ -333,6 +340,16 @@ img {
 	.vector-7 {
 		background-image: url(/vector-7.png);
 		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.vector-8 {
+		background-image: url(/vector-8.png);
+		background-position: top left;
+		background-repeat: no-repeat;
+	}
+	.vector-9 {
+		background-image: url(/vector-9.png);
+		background-position: top right;
 		background-repeat: no-repeat;
 	}
 }

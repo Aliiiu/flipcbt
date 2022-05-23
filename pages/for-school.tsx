@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useEffect } from 'react';
+import Button from '../components/Button';
 import FeatureForSchool from '../components/FeatureForSchool';
 import Footer from '../components/Footer';
 import GettingStartedForSchool from '../components/GettingStartedForSchool';
@@ -18,7 +18,7 @@ const ForSchool = () => {
 			<div className='ForSchool mt-[75px] md:px-20 xl:px-0 px-5'>
 				<div className='container'>
 					<div className='mobile:text-center py-[5em] md:pb-[5em] mobile:mt-0'>
-						<h1 className='mobile:text-[28px] md:text-white md:text-[35px] lg:text-[50px] xl:text-[60px] font-bold lg:leading-[75px] xl:leading-normal'>
+						<h1 className='mobile:text-[28px] md:text-white md:text-[35px] lg:text-[50px] font-bold lg:leading-[62px]'>
 							Get Yourself <br className='mobile:hidden md:hidden lg:block' />{' '}
 							Prepared For <br className='mobile:hidden md:hidden lg:block' />{' '}
 							CBT Exams
@@ -31,54 +31,16 @@ const ForSchool = () => {
 							collation of results instead of the use of pen and paper.
 						</p>
 						<div className='flex mobile:mt-10 mobile:justify-center md:justify-start lg:justify-start'>
-							<Link href='/'>
-								<a className='py-3 text-base text-white bg-[#0075FF] btn-border px-[4rem] md:py-5'>
-									GET STARTED
-								</a>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</div>
-			<section className='md:pt-[6em] mobile:pt-[1em]  text-center container'>
-				<div>
-					<h1 className='font-bold text-[24px] mt-9 mb-9 md:mb-[3em]'>
-						Trusted By
-					</h1>
-					<div className='md:px-20 xl:px-0'>
-						<div className='flex justify-between items-center mobile:justify-center  flex-wrap md:w-10/12 md:mx-auto'>
-							<div className='mobile:mx-3 mobile:mb-7'>
-								<Image
-									src='/Coindesk 2.png'
-									alt='Coindesk Logo 1'
-									width='31.53px'
-									height='29px'
-								/>
-								<Image
-									src='/Coindesk 1.png'
-									alt='Coindesk Logo 2'
-									width='114.96px'
-									height='29px'
-								/>
-							</div>
-							<div className='mobile:mb-7'>
-								<Image
-									src='/reuters-logo 1.png'
-									alt='reuters logo'
-									width='154px'
-									height='45.58px'
-								/>
-							</div>
-							<Image
-								src='/coinTracker.png'
-								alt='cointracker logo'
-								width='148px'
-								height='55.84px'
+							<Button
+								href={'/get-started'}
+								content='Get Started'
+								bgColor='bg-[#0075FF]'
 							/>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+			<section className='md:pt-[8em] mobile:pt-[1em]  text-center container'></section>
 			<FeatureForSchool />
 			<GettingStartedForSchool />
 			<section className="md:px-20 mobile:px-4 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">

@@ -39,9 +39,7 @@ const Navbar = () => {
 								<a
 									id='navLink'
 									className={`text-[#06042C] inline-flex ${
-										router.pathname === '/for-organisation'
-											? 'text-blue-400'
-											: null
+										router.pathname === '/' ? 'text-blue-400' : null
 									} hover:text-blue-500 active:text-blue-500 `}
 								>
 									Home
