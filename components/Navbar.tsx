@@ -24,28 +24,16 @@ const Navbar = () => {
 			<div className='container md:py-5'>
 				<div className='md:px-[8em] mobile:flex mobile:justify-between mobile:py-5 mobile:px-7'>
 					<div className='flex justify-between items-center'>
-						<Link href='/'>
-							<a className='md:hidden '>
+						<div className='relative w-[82px] h-[58px] mobile:w-[70px] mobile:h-[40px]'>
+							<Link href='/' passHref>
 								<Image
 									src='/Flip Cbt.png'
 									alt='flipcbt logo'
-									width='80px'
-									height='50px'
-									className='mobile:w-[80px] mobile:h-[40px] px-0 py-0n'
+									layout='fill'
+									objectFit='contain'
 								/>
-							</a>
-						</Link>
-						<Link href='/'>
-							<a className='flex mobile:hidden'>
-								<Image
-									src='/Flip Cbt.png'
-									alt='flipcbt logo'
-									width='90px'
-									height='50px'
-									className='mobile:w-[80px] mobile:h-[40px] px-0 py-0 mobile:hidden'
-								/>
-							</a>
-						</Link>
+							</Link>
+						</div>
 						<div className='mobile:hidden flex justify-between w-[40%]'>
 							<Link href='/'>
 								<a

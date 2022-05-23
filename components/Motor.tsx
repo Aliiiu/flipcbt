@@ -67,14 +67,15 @@ const Motor = () => {
 									src='/marketing.png'
 									layout='fill'
 									alt='marketing illustration'
+									objectFit='contain'
 								/>
 							</div>
-							<div className='md:w-[43%] mobile:w-full text-left md:py-[4em]'>
+							<div className='md:w-[43%] mobile:w-full text-left md:py-[4em] md:my-auto'>
 								<h2 className='text-[40px] mobile:text-[24px] font-semibold leading-[125%]'>
 									Want to do <br className='mobile:hidden' /> marketing with{' '}
 									<br className='mobile:hidden' /> Flip?
 								</h2>
-								<p className='my-8'>
+								<p className='mb-5 mt-3'>
 									Marketing is the activity, institutions, and processes for
 									creating, communicating, delivering, and exchanging offerings
 									that have value.

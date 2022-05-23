@@ -7,26 +7,16 @@ const Footer = () => {
 			<div className='container'>
 				<div className='md:px-[8em] mobile:px-7 flex justify-between mobile:flex-col'>
 					<div className='mobile:pt-[4em] mobile:pb-[3em] md:mr-[8em]'>
-						<Link href={'/'}>
-							<a className='mobile:hidden'>
+						<div className='relative w-[130px] h-[70px] mobile:w-[95px] mobile:h-[60px]'>
+							<Link href='/' passHref>
 								<Image
-									src='/Flip_Cbt-logo.png'
-									alt='Flip Cbt Logo'
-									width='150px'
-									height='80px'
+									src='/Flip Cbt.png'
+									alt='flipcbt logo'
+									layout='fill'
+									objectFit='contain'
 								/>
-							</a>
-						</Link>
-						<Link href={'/'}>
-							<a className='md:hidden'>
-								<Image
-									src='/Flip_Cbt-logo.png'
-									alt='Flip Cbt Logo'
-									width='110px'
-									height='60px'
-								/>
-							</a>
-						</Link>
+							</Link>
+						</div>
 					</div>
 					<div className='mobile:grid flex justify-between w-full mobile:grid-cols-2'>
 						<div className='space-y-8 mobile:mb-8'>
