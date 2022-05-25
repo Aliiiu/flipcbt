@@ -48,15 +48,6 @@ img {
 	max-width: 1350px;
 	margin: 0 auto;
 }
-.header {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: 700;
-	line-height: 62px;
-
-	/* Gray 1 */
-	color: #333333;
-}
 
 .blue-glow {
 	box-shadow: 0px 30px 60px rgba(0, 117, 255, 0.3);
@@ -100,6 +91,21 @@ img {
 .bg-image-boy {
 	height: auto;
 	width: 100%;
+	object-fit: contain;
+}
+
+.gs_Bg {
+	background-image: url('/gsBg.png');
+	background-size: contain;
+	background-repeat: repeat-x;
+}
+
+.gs_register {
+	background-image: url('/bg_behind.png');
+	background-size: contain;
+}
+
+.get-started-img {
 	object-fit: contain;
 }
 
@@ -150,6 +156,13 @@ img {
 
 .card_select {
 	border: 2px solid #0075ff;
+}
+
+.gs_card {
+	padding: 30px;
+	border-radius: 25px;
+	box-shadow: 0px 8px 30px rgba(149, 157, 165, 0.3);
+	background-color: #ffffff;
 }
 
 .input_border {
@@ -222,14 +235,8 @@ img {
 		display: block;
 	}
 
-	.header {
-		font-family: 'Open Sans';
-		font-style: normal;
-		font-weight: 700;
-		line-height: 42px;
-
-		/* Gray 1 */
-		color: #333333;
+	.gs_Bg {
+		background: #ffffff;
 	}
 }
 @media only screen and (max-width: 1100px) {

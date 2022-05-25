@@ -13,12 +13,12 @@ const QA = [
 	},
 	{
 		question: 'How accesible is FLIP?',
-		answer: `The FLIP app is very accessible and can be used by both secondary schools and organisations.`,
+		answer: `FLIP is very accessible and can be used by both secondary schools and organizations.`,
 	},
 	{
 		question: 'Do I need the internet to use the app?',
-		answer: `The app has been designed with free internet software for fair usage for secondary
-     schools while organizations need to engage the use of internet internet.`,
+		answer: `FLIP has been designed with free internet software for fair usage for secondary
+							schools while organizations need to use the internet.`,
 	},
 ];
 const Faqs = () => {

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Fragment, useEffect } from 'react';
 import Button from '../components/Button';
 import FeatureForSchool from '../components/FeatureForSchool';
@@ -75,15 +74,20 @@ const ForSchool = () => {
 						Ready to get started?
 					</h2>
 					<p className='text-white w-7/12 mobile:w-full'>
-						Marketing is the activity, institutions, and processes for creating,
-						communicating, delivering, and exchanging, offerings that have
-						value.
+						Greater Efficiency Is Undeniable. All Reports are{' '}
+						<br className='mobile:hidden' /> Saved and Can Be Accessed At Any
+						Time.
 					</p>
-					<Link href='#'>
+					{/* <Link href='#'>
 						<a className='text-white bg-black btn-border px-12 py-4 text-[14px]'>
 							CLICK HERE
 						</a>
-					</Link>
+					</Link> */}
+					<Button
+						href={'/marketing/register'}
+						content='Get Started'
+						bgColor='bg-[#06042C]'
+					/>
 				</div>
 			</section>
 			<Guarantee />

@@ -71,18 +71,16 @@ const Motor = () => {
 							</div>
 							<div className='md:w-[43%] mobile:w-full text-left md:py-[4em] md:my-auto'>
 								<h2 className='text-[40px] mobile:text-[24px] font-semibold leading-[125%]'>
-									Want to do <br className='mobile:hidden' /> marketing with{' '}
-									<br className='mobile:hidden' /> Flip?
+									EARN 10% AS AN AFFILIATE MARKETER WITH FLIP.
 								</h2>
 								<p className='mb-5 mt-3'>
-									Marketing is the activity, institutions, and processes for
-									creating, communicating, delivering, and exchanging offerings
-									that have value.
+									Are you a marketer? Would you like to earn some funds while
+									telling people about FLIP, turning prospects into clients?
 								</p>
 								<div className='flex mobile:mt-10 justify-start'>
 									<Button
 										href={'/school'}
-										content='Get Started'
+										content='Yes, I Want to Earn'
 										bgColor={'btn-border bg-[#0075FF]'}
 									/>
 									{/* <Link href='/get-started'>

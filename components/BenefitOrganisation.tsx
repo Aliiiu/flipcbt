@@ -42,7 +42,7 @@ const BenefitOrganisation = () => {
 		<section className='container'>
 			<div className='md:px-[8em] mobile:px-5 md:pt-[60px] mobile:pt-[40px] pb-[95px]'>
 				<h1 className='text-center font-semibold mobile:text-[32px] md:text-[40px] mobile:mb-[33px] mb-[90px]'>
-					Your Journey on Flip
+					Start Your FLIP Journey In Four Steps
 				</h1>
 				<div className=''>
 					<div className='grid md:grid-cols-2 grid-cols-1 gap-y-[30px] md:gap-x-[103px] md:gap-y-[47px]'>
@@ -55,10 +55,16 @@ const BenefitOrganisation = () => {
 								/>
 
 								<div className='ml-[20px] mobile:ml-[10px]'>
-									<h2 className='font-semibold text-[20px] md:text-[32px]'>
+									<h2 className='font-semibold text-[20px] md:text-[32px] leading-[41.6px]'>
 										{item.title}
 									</h2>
-									<p className='md:mt-4 mt-1'>{item.content}</p>
+									<p
+										className={`md:mt-4 mt-1 ${
+											idx === 0 ? 'md:w-[85%]' : 'md:w-full'
+										}`}
+									>
+										{item.content}
+									</p>
 								</div>
 							</div>
 						))}

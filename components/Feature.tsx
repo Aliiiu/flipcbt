@@ -40,9 +40,10 @@ const Feature = () => {
 									Time Saving
 								</h3>
 								<p>
-									The time consumed in having to create question papers,
-									arranging supplies and evaluating scripts can be totally
-									avoided as it automates the entire process.{' '}
+									The amount of time consumed in curating question papers,
+									arranging supplies, and evaluating scripts can be avoided as
+									FLIP automates the entire process, increasing your
+									productivity 100% better.{' '}
 								</p>
 							</div>
 							<div className='relative feature-card flex flex-col items-center text-center mobile:mb-[5em]'>
@@ -65,13 +66,13 @@ const Feature = () => {
 									</div>
 								</div>
 								<h3 className='text-[25px] font-semibold text-[#06042C] mb-6'>
-									Convenience
+									Stress-Free
 								</h3>
 								<p>
-									Candidates can take tests at a time and place of their
-									choosing. They do not need to travel to a particular physical
-									location to write an exam, enabling candidates from far-off
-									areas to attempt the test.{' '}
+									Assessments can be conducted all year round, at any time
+									without breaking an arm. Assessment takers do not need to
+									travel far distances to a particular physical location before
+									taking an assessment.
 								</p>
 							</div>
 							<div className='relative flex flex-col items-center feature-card text-center mobile:mb-[0em]'>
@@ -94,12 +95,11 @@ const Feature = () => {
 									</div>
 								</div>
 								<h3 className='text-[25px] font-semibold text-[#06042C] mb-6'>
-									Speed & Accuracy
+									Cost-Effective
 								</h3>
 								<p>
-									Unlike the PPT exams that most often contain errors in
-									grading, FLIP has been designed to enable efficiency in giving
-									out results..
+									You don’t need to break the bank before you can use FLIP. Save
+									up to 60% of your expenditures while using FLIP.
 								</p>
 							</div>
 						</div>

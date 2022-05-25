@@ -62,7 +62,13 @@ const FeatureOrganisation = () => {
 										</div>
 										<div>
 											<h3 className='font-semibold'>{item.heading}</h3>
-											<p className='mt-[18px] md:w-[95%]'>{item.content}</p>
+											<p
+												className={`mt-[18px]  ${
+													index !== 1 ? 'md:w-[85%]' : 'md:w-[95%]'
+												}`}
+											>
+												{item.content}
+											</p>
 										</div>
 									</div>
 									<div className='mobile:hidden'>

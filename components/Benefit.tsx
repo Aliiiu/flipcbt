@@ -17,24 +17,25 @@ const benefit: ArrayObject[][] = [
 		},
 		{
 			title: 'Randomly assigns generated questions for each student.',
-			content: ` Flip distributes shuffled questions to students thereby
-                 making sure that each student has completely different questions.`,
+			content: ` FLIP distributes shuffled questions for each student
+									with a completely different question arrangement.`,
 		},
 		{
-			title: 'Enhanced security features to avoid exam malpractice.',
-			content: `There are various security features inherent in the 
-                app to ensure that the assessment integrity is maintained. `,
+			title: 'Advanced Security Features To Avoid Examination Malpractices.',
+			content: `There are standard security protocols inherent in FLIP to 
+								ensure that the assessment integrity is maintained. `,
 		},
 		{
-			title: 'Real-time processing of results for candidates.',
-			content: `It helps to save reports/data which includes scores of 
-                assessment of students for easy accessibility in the future. This
-                means when this report is needed for reference purpose, the app provides it at a go.`,
+			title: 'Retains Data For Future Use.',
+			content: `FLIP helps to save academic records including scores of assessment
+								of students for easy accessibility in the future.This implies that
+								FLIP provides these records instantly when needed for reference purposes.`,
 		},
 		{
-			title: 'Easy collation of results.',
-			content: `It involves the conduct of examinations using computer networks, and questions are
-								set in such a way that they can be formally and easily processed by the computer.`,
+			title: 'Easy Grading And  Collation Of Results.',
+			content: `FLIP helps eliminate the scope of human error and the hassle of assigning
+								script marking responsibilities to teachers. In addition, multiple-choice
+								questions can also be graded easily.`,
 		},
 	],
 	[

@@ -39,9 +39,10 @@ const FeatureForSchool = () => {
 						<div className='px-7 md:px-[8em]'>
 							<div className='flex justify-center md:mb-[120px] mobile:mb-[65px]'>
 								<h2 className='inline-block md:text-[40px] text-[24px] text-center font-semibold md:leading-[52px] mobile:leading-[32.68px]'>
-									90% of students who use Flip{' '}
-									<br className='mobile:hidden md:hidden lg:block' /> report
-									higher grades
+									FLIP has recorded over 80% success{' '}
+									<br className='mobile:hidden' /> rate in schools for
+									conducting <br className='mobile:hidden' /> and taking
+									assessments.
 								</h2>
 							</div>
 							{Data.map((item, index) => (
@@ -65,7 +66,7 @@ const FeatureForSchool = () => {
 											/>
 										</div>
 										<div>
-											<h3 className='font-semibold leading-[52px]'>
+											<h3 className='font-semibold md:leading-[52px]'>
 												{item.heading}
 											</h3>
 											<p className='mt-[18px] md:w-[95%]'>{item.content}</p>

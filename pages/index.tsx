@@ -34,10 +34,13 @@ const Home: NextPage = () => {
 											<br className='mobile:hidden md' /> Stress.
 										</h1>
 										<p className='md:mt-3 mobile:mt-6 mb-[2em] lg:mb-[30px]'>
-											FLIP is an enhanced assessment platform that provides
-											computerized tests, examination management, quick grading
-											systems, and collation of results instead of the use of
-											pen and paper.
+											FLIP is an enhanced assessment platform that{' '}
+											<br className='mobile:hidden' /> provides computerized
+											tests, examination <br className='mobile:hidden' />{' '}
+											management, quick grading systems, and{' '}
+											<br className='mobile:hidden' /> collation of results
+											instead of the use of pen and{' '}
+											<br className='mobile:hidden' /> paper.
 										</p>
 										<div className='flex mobile:mt-1 justify-start'>
 											<Button

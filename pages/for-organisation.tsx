@@ -21,21 +21,20 @@ const ForOrganisation = () => {
 							<div className='flex justify-between'>
 								<div className='mt-0 md:mt-5 w-full md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
-										<h1 className='lg:text-[50px] md:text-[40px] lg:mb-[0px] xl:mb-[5px] mobile:text-[32px] font-bold leading-[62px] mobile:leading-[40px]'>
-											We Design and{' '}
-											<br className='mobile:hidden md:hidden lg:block' />{' '}
-											Implement an{' '}
-											<br className='mobile:hidden md:hidden lg:block' /> online
-											computer-{' '}
-											<br className='mobile:hidden md:hidden lg:block' /> based
-											test system.
+										<h1 className='lg:text-[50px] md:text-[40px] lg:mb-[0px] xl:mb-[5px] mobile:text-[32px] font-bold leading-[55px] mobile:leading-[40px]'>
+											You Don’t Need <br className='mobile:hidden' /> To Sweat
+											Up <br className='mobile:hidden' /> While Setting{' '}
+											<br className='mobile:hidden' /> Up Assessments
 										</h1>
 										<p className='md:mt-3 mobile:my-[24px]'>
-											FLIP serves as a source to provide tests, examination{' '}
-											<br className='mobile:hidden md:hidden lg:block xl:hidden' />
-											management, quick grading of systems and collation of{' '}
-											<br className='mobile:hidden md:hidden lg:block xl:hidden' />{' '}
-											results instead of the use of pen and paper.
+											FlipCBT for organizations allows potential individuals{' '}
+											<br className='mobile:hidden' /> to take their respective
+											assessments remotely. We <br className='mobile:hidden' />{' '}
+											believe that taking an assessment, interview, or test{' '}
+											<br className='mobile:hidden' /> with zero stress
+											contributes to the success rate of{' '}
+											<br className='mobile:hidden' /> such individuals and
+											organizations.
 										</p>
 										<div className='flex justify-start md:mt-[24px] '>
 											<Button
