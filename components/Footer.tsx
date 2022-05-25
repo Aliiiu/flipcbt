@@ -19,7 +19,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className='mobile:grid flex justify-between w-full mobile:grid-cols-2'>
-						<div className='space-y-8 mobile:mb-8'>
+						<div className='space-y-5 mobile:mb-8'>
 							<p className='text-white font-semibold'>Company</p>
 							<p className='font-thin'>
 								<a className='text-white' href='#'>
@@ -32,7 +32,7 @@ const Footer = () => {
 								</a>
 							</p>
 						</div>
-						<div className='space-y-8'>
+						<div className='space-y-5'>
 							<p className='text-white font-semibold'>Resources</p>
 							<p className='font-thin'>
 								<a className='text-white' href='#'>
@@ -45,7 +45,7 @@ const Footer = () => {
 								</a>
 							</p>
 						</div>
-						<div className='mb-[5rem] space-y-8'>
+						<div className='mb-[5rem] space-y-5 mobile:mt-5'>
 							<p className='text-white font-semibold'>Contact</p>
 							<p className='font-thin'>
 								<a

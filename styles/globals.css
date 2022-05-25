@@ -81,21 +81,6 @@ img {
 	display: none !important;
 }
 
-.homePage {
-	background-image: url('/pattern2.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-position: center;
-	box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
-}
-.GetStarted {
-	background-image: url('/pattern2.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-position: center;
-	box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.94);
-}
-
 .blue-glow {
 	box-shadow: 0px 30px 60px rgba(0, 117, 255, 0.3);
 }
@@ -107,21 +92,23 @@ img {
 	box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 }
 
-.pageBody {
-	min-height: 500px;
+.bg-image-girl {
+	width: 100%;
+	object-fit: cover;
 }
 
-.bg-image-girl {
+.bg-image-boy {
 	height: auto;
 	width: 100%;
 	object-fit: contain;
 }
+
 .btn-border {
 	border: 2px solid #fff;
 }
 
 .faq-border {
-	padding: 40px;
+	padding: 30px;
 	background: #ffffff;
 	border: 1px solid rgba(189, 189, 189, 0.5);
 	box-shadow: 0px 25px 50px rgba(6, 4, 44, 0.1);
@@ -154,10 +141,11 @@ img {
 .mobile-slider {
 	display: none;
 }
+
 .card {
-	border: 1px solid #e2e4e8;
-	box-shadow: 0px 20px 40px rgba(0, 117, 255, 0.1);
-	border-radius: 30px;
+	padding: 40px 40px 60px;
+	box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+	border-radius: 24px;
 }
 
 .card_select {
@@ -213,30 +201,6 @@ img {
 	.faq-border {
 		padding: 20px;
 	}
-	.ForSchool {
-		background-image: url('/pattern2.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-position: center;
-		height: 80vh;
-		box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
-	}
-	.GetStarted {
-		background-image: url('/pattern2.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-position: center;
-		box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
-	}
-
-	.homePage {
-		background-image: url('/pattern2.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		height: 80vh;
-		background-position: center;
-		box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
-	}
 
 	.navbar.fixed {
 		z-index: 999;
@@ -254,12 +218,6 @@ img {
 		overscroll-behavior: none;
 	}
 
-	.card {
-		border: 1px solid #e2e4e8;
-		box-shadow: 0px 20px 40px rgba(0, 117, 255, 0.1);
-		border-radius: 16px;
-	}
-
 	.mobile-slider {
 		display: block;
 	}
@@ -274,7 +232,7 @@ img {
 		color: #333333;
 	}
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
 	.bg-image-boy {
 		display: none;
 	}
@@ -283,27 +241,7 @@ img {
 		display: none;
 	}
 }
-@media only screen and (min-width: 800px) {
-	.register {
-		background-image: url('/register.png');
-		background-repeat: no-repeat;
-		background-size: 600px 650px;
-		background-position: right bottom;
-	}
-
-	/* .bg-image-girl {
-		height: 500px;
-	} */
-
-	.bg-image-boy {
-		height: 450px;
-	}
-
-	.get-started-img {
-		height: 700px;
-		width: auto;
-	}
-
+@media only screen and (min-width: 1110px) {
 	.vector-1 {
 		background-image: url(/vector-1.png);
 		background-position: top left;
@@ -351,88 +289,5 @@ img {
 		background-image: url(/vector-9.png);
 		background-position: top right;
 		background-repeat: no-repeat;
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	.homePage {
-		background-image: url('/pattern2.png');
-		background-repeat: repeat;
-		background-size: 100% 100%;
-		background-position: center;
-		box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.92);
-	}
-
-	.pagebody {
-		height: 100vh;
-	}
-}
-@media only screen and (min-width: 1024px) {
-	.homePage {
-		background-image: url('/pattern2.png');
-		background-repeat: repeat;
-		background-size: 100% 100%;
-		background-position: center;
-		height: 100vh;
-		box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.92);
-	}
-
-	.homePage2 {
-		background-image: url('/bg2_homepage.png');
-		background-repeat: no-repeat;
-		background-size: 580px 550px;
-		background-position: right bottom;
-		height: 100vh;
-	}
-
-	/* .ForOrganisation {
-    background-image: url('/OrganisationBg.png');
-    background-repeat: no-repeat;
-    background-size: 800px 650px;
-    background-position: right bottom;
-    height: 100vh;
-  }
-
-  .register {
-    background-image: url('/register.png');
-    background-repeat: no-repeat;
-    background-size: 850px 700px;
-    background-position: right bottom;
-  } */
-	.bg-image-boy {
-		height: 550px;
-	}
-	/* .bg-image-girl {
-		height: 500px;
-	} */
-}
-
-@media only screen and (min-width: 1380px) {
-	.main-page {
-		margin-top: 7em;
-	}
-
-	.main-header {
-		font-size: 60px;
-	}
-
-	/* .bg-image-girl {
-		height: auto;
-		width: auto;
-	} */
-
-	.bg-image-boy {
-		height: auto;
-		object-fit: contain;
-		width: auto;
-	}
-	.student-card {
-		right: 420px;
-		bottom: 100px;
-	}
-
-	.task-card {
-		right: 30px;
-		bottom: 210px;
 	}
 }

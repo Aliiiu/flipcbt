@@ -36,7 +36,7 @@ const Feature = () => {
 										/>
 									</div>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6'>
+								<h3 className='text-[25px] font-semibold text-[#06042C] mb-6'>
 									Time Saving
 								</h3>
 								<p>
@@ -64,7 +64,7 @@ const Feature = () => {
 										/>
 									</div>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6'>
+								<h3 className='text-[25px] font-semibold text-[#06042C] mb-6'>
 									Convenience
 								</h3>
 								<p>
@@ -93,8 +93,8 @@ const Feature = () => {
 										/>
 									</div>
 								</div>
-								<h3 className='text-[20px] font-semibold text-[#06042C] mb-6'>
-									Speed and Accuracy
+								<h3 className='text-[25px] font-semibold text-[#06042C] mb-6'>
+									Speed & Accuracy
 								</h3>
 								<p>
 									Unlike the PPT exams that most often contain errors in

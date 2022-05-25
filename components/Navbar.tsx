@@ -78,7 +78,7 @@ const Navbar = () => {
 						{nav ? (
 							<button onClick={closeNavHandler}>
 								<Image
-									src='/hamburger.png'
+									src='/x.svg'
 									alt='close logo'
 									width='40px'
 									height='40px'

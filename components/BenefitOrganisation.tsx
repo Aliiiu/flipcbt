@@ -1,78 +1,74 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import { ImageProps } from 'next/image';
+import Button from './Button';
+import CustomImage from './Image';
 
 type BenefitObject = {
 	title: string;
 	content: string;
+	alt: string;
+	image: ImageProps['src'];
 };
 const BenefitOrganisation = () => {
 	const benefit: BenefitObject[] = [
 		{
 			title: 'Sign up in 5 minutes',
-			content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Viverra pretium et commodo posuere arcu lectus. A vitae 
-                libero feugiat commodo aliquam pharetra risus nunc at. `,
+			content: `Input your details and sign up for free`,
+			alt: 'sign up time illustration',
+			image: '/sign-up.png',
 		},
 		{
-			title: 'Customize for your business needs.',
-			content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Viverra pretium et commodo posuere arcu lectus. A vitae 
-                libero feugiat commodo aliquam pharetra risus nunc at. `,
+			title: 'Set-up Questions and Instructions For Assessment',
+			content: `Input the candidate's assessment questions, guidelines,
+								and other necessary data while FLIP processes the rest. `,
+			alt: 'questions and instruction illustration',
+			image: '/questions.png',
 		},
 		{
-			title: 'Pay Access and  Have full transparency',
-			content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Viverra pretium et commodo posuere arcu lectus. A vitae 
-                libero feugiat commodo aliquam pharetra risus nunc at. `,
+			title: 'Easy Access and Full Transparency',
+			content: `FLIP allows free access to your admin portal, 
+								ensuring complete honesty and stringent security.`,
+			alt: 'easy access illustration',
+			image: '/easy-access.png',
 		},
 		{
-			title: 'Get  resources and support',
-			content: `It helps to save reports/data which includes scores of 
-                assessment of students for easy accessibility in the future. This
-                means when this report is needed for reference purpose, the app provides it at a go.`,
+			title: 'Get Resources and Support',
+			content: `Our support team is always available to assist 
+								you and provide answers to your inquiries.`,
+			alt: 'support illustration',
+			image: '/support.png',
 		},
 	];
 	return (
-		<section className='bg-[#0075FF] bg-opacity-5'>
-			<div className='md:px-20 xl:px-0 mobile:px-5 py-[6rem]  container'>
-				<h1 className='text-center font-semibold mobile:text-[32px] md:text-[40px] pb-8'>
+		<section className='container'>
+			<div className='md:px-[8em] mobile:px-5 md:pt-[60px] mobile:pt-[40px] pb-[95px]'>
+				<h1 className='text-center font-semibold mobile:text-[32px] md:text-[40px] mobile:mb-[33px] mb-[90px]'>
 					Your Journey on Flip
 				</h1>
-				<div className='flex '>
-					<div className='md:w-9/12 mobile:w-full'>
+				<div className=''>
+					<div className='grid md:grid-cols-2 grid-cols-1 gap-y-[30px] md:gap-x-[103px] md:gap-y-[47px]'>
 						{benefit.map((item, idx) => (
-							<div className='flex flex-col pr-1 mb-6 md:mb-8' key={idx}>
-								<div className='flex flex-col'>
-									<div className='flex'>
-										<Image
-											src='/Tick-Square.svg'
-											alt='tick'
-											width='20px'
-											height='20px'
-										/>
-										<h2 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
-											{item.title}
-										</h2>
-									</div>
-									<p className='mt-4'>{item.content}</p>
+							<div className='flex' key={idx}>
+								<CustomImage
+									src={item.image}
+									alt={item.alt}
+									className='w-[135px] h-[125px] mobile:w-[55px] mobile:h-[51px]'
+								/>
+
+								<div className='ml-[20px] mobile:ml-[10px]'>
+									<h2 className='font-semibold text-[20px] md:text-[32px]'>
+										{item.title}
+									</h2>
+									<p className='md:mt-4 mt-1'>{item.content}</p>
 								</div>
 							</div>
 						))}
-
-						<div className='md:pt-8 pt-8'>
-							<Link href=''>
-								<a className='py-3 text-white bg-blue-500 px-[3em] md:px-[4em] md:py-5 btn-border'>
-									CONTACT US
-								</a>
-							</Link>
-						</div>
 					</div>
-					<div className='lg:flex flex-col justify-center mobile:hidden md:hidden'>
-						<Image
-							src='/in-progress.png'
-							alt='Celebration Illustration'
-							width={'671px'}
-							height='447.33px'
+
+					<div className='md:mt-[89px] mt-[30px] text-center'>
+						<Button
+							href={'/get-started'}
+							content='Contact Us'
+							bgColor='bg-[#0075FF]'
 						/>
 					</div>
 				</div>

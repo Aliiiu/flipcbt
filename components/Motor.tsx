@@ -27,7 +27,7 @@ const Motor = () => {
 									<div className='text-center bg-opacity-20 rounded-3xl motor-forStudent py-[5em]'>
 										{/* <Image src='/forSchool.png' alt='student image' layout='fill' /> */}
 										<div className=''>
-											<h2 className='text-[32px] font-bold mt-3 text-white'>
+											<h2 className='text-[32px] font-semibold mt-3 text-white'>
 												For Students
 											</h2>
 											<p className='mb-8 text-white'>
@@ -43,7 +43,7 @@ const Motor = () => {
 									</div>
 									<div className='text-center motor-forOrganisation bg-opacity-20 rounded-3xl py-[5em] overflow-hidden'>
 										<div className=''>
-											<h2 className='text-[32px] text-white font-bold mt-3'>
+											<h2 className='text-[32px] text-white font-semibold mt-3'>
 												For Organisations
 											</h2>
 											<p className='mb-8 text-white'>

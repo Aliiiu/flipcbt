@@ -86,30 +86,32 @@ const Benefit = () => {
 					<div className='vector-7'>
 						<div className='md:px-[8em] mobile:px-7 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
 							<div className='flex justify-between mobile:hidden'>
-								<div className='bg-white w-[45%] rounded-[30px] p-[3em]'>
-									<div className='text-center text-[30px] font-semibold mb-7'>
-										What School Get
-									</div>
-									{benefit[0].map((item, idx) => (
-										<div
-											className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
-											key={idx}
-										>
-											<div className='flex flex-col'>
-												<div className='inline-flex items-center'>
-													<CustomImage
-														className='w-[35px] h-[35px] '
-														src={'/tick.png'}
-														alt=''
-													/>
-													<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
-														{item.title}
-													</h5>
-												</div>
-												<p className='mt-3	'>{item.content}</p>
-											</div>
+								<div className='bg-white flex flex-col justify-between w-[45%] rounded-[30px] p-[3em]'>
+									<div>
+										<div className='text-center text-[30px] font-semibold mb-7'>
+											What School Get
 										</div>
-									))}
+										{benefit[0].map((item, idx) => (
+											<div
+												className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
+												key={idx}
+											>
+												<div className='flex flex-col'>
+													<div className='inline-flex items-center'>
+														<CustomImage
+															className='w-[35px] h-[35px] '
+															src={'/tick.png'}
+															alt=''
+														/>
+														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
+															{item.title}
+														</h5>
+													</div>
+													<p className='mt-3	'>{item.content}</p>
+												</div>
+											</div>
+										))}
+									</div>
 									<div className='text-center'>
 										<Button
 											href={'/for-school'}
@@ -118,31 +120,33 @@ const Benefit = () => {
 										/>
 									</div>
 								</div>
-								<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col'>
-									<div className='text-center text-[30px] font-semibold mb-7'>
-										What Organisation Get
-									</div>
-									{benefit[1].map((item, idx) => (
-										<div
-											className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
-											key={idx}
-										>
-											<div className='flex flex-col'>
-												<div className='inline-flex items-center'>
-													<CustomImage
-														className='w-[35px] h-[35px] '
-														src={'/tick.png'}
-														alt=''
-													/>
-													<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
-														{item.title}
-													</h5>
-												</div>
-												<p className='mt-3'>{item.content}</p>
-											</div>
+								<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col justify-between'>
+									<div>
+										<div className='text-center text-[30px] font-semibold mb-7'>
+											What Organisation Get
 										</div>
-									))}
-									<div className='text-center justify-end mt-[3em]'>
+										{benefit[1].map((item, idx) => (
+											<div
+												className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
+												key={idx}
+											>
+												<div className='flex flex-col'>
+													<div className='inline-flex items-center'>
+														<CustomImage
+															className='w-[35px] h-[35px] '
+															src={'/tick.png'}
+															alt=''
+														/>
+														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
+															{item.title}
+														</h5>
+													</div>
+													<p className='mt-3'>{item.content}</p>
+												</div>
+											</div>
+										))}
+									</div>
+									<div className='text-center'>
 										<Button
 											href={'/for-organisation'}
 											bgColor='bg-[#0075FF]'

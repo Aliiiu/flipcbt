@@ -15,32 +15,58 @@ const ForSchool = () => {
 	return (
 		<Fragment>
 			<Navbar />
-			<div className='ForSchool mt-[75px] md:px-20 xl:px-0 px-5'>
+			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
-					<div className='mobile:text-center py-[5em] md:pb-[5em] mobile:mt-0'>
-						<h1 className='mobile:text-[28px] md:text-white md:text-[35px] lg:text-[50px] font-bold lg:leading-[62px]'>
-							Get Yourself <br className='mobile:hidden md:hidden lg:block' />{' '}
-							Prepared For <br className='mobile:hidden md:hidden lg:block' />{' '}
-							CBT Exams
-						</h1>
-						<p className='md:text-white mobile:mt-6 mobile:mb-[5em] mb-[2em] md:mt-[2em] lg:mb-[2em] lg:mt-[1em] xl:mb-[4opx] xl:mt-[2em]'>
-							Flip is a CBT software as a source to provide tests,{' '}
-							<br className='mobile:hidden md:hidden lg:block' />
-							examination management and quick grading system and{' '}
-							<br className='mobile:hidden md:hidden lg:block' />
-							collation of results instead of the use of pen and paper.
-						</p>
-						<div className='flex mobile:mt-10 mobile:justify-center md:justify-start lg:justify-start'>
-							<Button
-								href={'/get-started'}
-								content='Get Started'
-								bgColor='bg-[#0075FF]'
-							/>
-						</div>
+					<div className='relative md:px-[8em] px-7'>
+						<section className=''>
+							<div className='flex justify-between'>
+								<div className='mt-0 md:mt-5 w-full md:w-1/2'>
+									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
+										<h1 className='lg:text-[50px] md:text-[40px] lg:mb-[0px] xl:mb-[5px] mobile:text-[32px] font-bold leading-[62px] mobile:leading-[40px]'>
+											USe The Right{' '}
+											<br className='mobile:hidden md:hidden lg:block' /> Tool
+											To Conduct{' '}
+											<br className='mobile:hidden md:hidden lg:block' />A
+											stress-free{' '}
+											<br className='mobile:hidden md:hidden lg:block' />
+											Assessment.
+										</h1>
+										<p className='md:mt-3 mobile:my-[24px]'>
+											Teaching many students different subjects and{' '}
+											<br className='mobile:hidden md:hidden lg:block' />
+											courses is quite demanding and tasking already.{' '}
+											<br className='mobile:hidden md:hidden lg:block' />{' '}
+											Setting up a terminal assessment for them should{' '}
+											<br className='mobile:hidden md:hidden lg:block' />
+											not be worrisome, including marking scripts and{' '}
+											<br className='mobile:hidden md:hidden lg:block' />{' '}
+											collation of results.
+										</p>
+										<div className='flex justify-start md:mt-[24px] '>
+											<Button
+												href={'/get-started'}
+												content='Get Started'
+												bgColor='bg-[#0075FF]'
+											/>
+										</div>
+									</div>
+								</div>
+								<div className='w-1/2 lg:block mobile:hidden'>
+									<div className='md:mt-[61px] h-full'>
+										<div className=''>
+											<img
+												src='/schoolBg.png'
+												alt='customer'
+												className='bg-image-boy'
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 					</div>
 				</div>
 			</div>
-			<section className='md:pt-[8em] mobile:pt-[1em]  text-center container'></section>
 			<FeatureForSchool />
 			<GettingStartedForSchool />
 			<section className="md:px-20 mobile:px-4 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
