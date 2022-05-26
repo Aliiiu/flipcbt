@@ -55,13 +55,11 @@ const BenefitOrganisation = () => {
 								/>
 
 								<div className='ml-[20px] mobile:ml-[10px]'>
-									<h2 className='font-semibold text-[20px] md:text-[32px] leading-[41.6px]'>
+									<h2 className='font-semibold text-[20px] md:text-[24px]'>
 										{item.title}
 									</h2>
 									<p
-										className={`md:mt-4 mt-1 ${
-											idx === 0 ? 'md:w-[85%]' : 'md:w-full'
-										}`}
+										className={`mt-1 ${idx === 0 ? 'md:w-[85%]' : 'md:w-full'}`}
 									>
 										{item.content}
 									</p>
