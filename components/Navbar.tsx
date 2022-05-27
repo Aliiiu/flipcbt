@@ -19,8 +19,9 @@ const Navbar = () => {
 		html.style.overflow = 'auto';
 		ShowNav(false);
 	};
+	//
 	return (
-		<nav className='fixed top-0 left-0 z-50 navbar'>
+		<nav className='fixed top-0 left-0 bg-white w-full z-50'>
 			<div className='container md:py-5'>
 				<div className='md:px-[8em] mobile:flex mobile:justify-between mobile:py-5 mobile:px-7'>
 					<div className='flex justify-between items-center'>
@@ -31,6 +32,7 @@ const Navbar = () => {
 									alt='flipcbt logo'
 									layout='fill'
 									objectFit='contain'
+									className='cursor-pointer'
 								/>
 							</Link>
 						</div>
@@ -95,8 +97,8 @@ const Navbar = () => {
 							</button>
 						)}
 						{nav && (
-							<div className=' bg-white mobile-nav px-7 py-9 inset-0 overflow-hidden'>
-								<div className='flex flex-col justify-between h-[90%]'>
+							<div className=' bg-white mobile-nav px-7 pt-[100px] pb-[46px] inset-0 overflow-hidden'>
+								<div className='flex flex-col justify-between h-full'>
 									<div className='flex flex-col justify-between'>
 										<Link href='/'>
 											<a

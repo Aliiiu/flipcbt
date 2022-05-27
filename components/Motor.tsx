@@ -79,7 +79,7 @@ const Motor = () => {
 								</p>
 								<div className='flex mobile:mt-10 justify-start'>
 									<Button
-										href={'/school'}
+										href={'/marketing/register'}
 										content='Yes, I Want to Earn'
 										bgColor={'btn-border bg-[#0075FF]'}
 									/>

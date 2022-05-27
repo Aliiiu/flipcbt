@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const GetStarted = () => {
 	const [active, setActive] = useState<boolean>(false);
@@ -27,10 +27,10 @@ const GetStarted = () => {
 		setOrganisationActive(false);
 	};
 
-	useEffect(() => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'auto';
-	});
+	// useEffect(() => {
+	// 	const html = document.getElementById('mainHtml') as HTMLElement;
+	// 	html.style.overflow = 'auto';
+	// });
 	return (
 		<div className='gs_Bg'>
 			<div className='container'>
@@ -57,7 +57,7 @@ const GetStarted = () => {
 						<Link href={'/school/register'} passHref>
 							<div
 								onClick={schoolHandler}
-								className={`flex flex-col items-center gs_card hover:border-2 hover:border-[#0075FF] ${
+								className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
 									active ? 'card_select' : null
 								} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
 							>
@@ -78,7 +78,7 @@ const GetStarted = () => {
 						<Link href={'/organisation/register'} passHref>
 							<div
 								onClick={organisationHandler}
-								className={`flex flex-col items-center gs_card hover:border-2 hover:border-[#0075FF] ${
+								className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
 									organisationActive ? 'card_select' : null
 								} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
 							>
@@ -100,7 +100,7 @@ const GetStarted = () => {
 						<Link href={'/marketing/register'} passHref>
 							<div
 								onClick={marketingHandler}
-								className={`flex flex-col items-center gs_card hover:border-2 hover:border-[#0075FF] ${
+								className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
 									marketingActive ? 'card_select' : null
 								} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
 							>

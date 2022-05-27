@@ -58,10 +58,10 @@ const Footer = () => {
 							<div className='flex space-x-6'>
 								<a href='https://www.linkedin.com/company/flipcbt/'>
 									<Image
-										src='/fb-icon.png'
+										src='/linkedin.svg'
 										alt='Facebook icon'
-										width='20px'
-										height='30px'
+										width='32px'
+										height='32px'
 									/>
 								</a>
 								<a href='https://twitter.com/flipcbt'>

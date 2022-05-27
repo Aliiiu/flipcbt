@@ -49,6 +49,11 @@ img {
 	margin: 0 auto;
 }
 
+.reg_container {
+	width: 100%;
+	max-width: 675px;
+}
+
 .blue-glow {
 	box-shadow: 0px 30px 60px rgba(0, 117, 255, 0.3);
 }
@@ -216,18 +221,17 @@ img {
 	}
 
 	.navbar.fixed {
-		z-index: 999;
+		z-index: 4;
 	}
 	.mobile-nav {
 		position: fixed;
-		height: 95vh;
+		height: 100vh;
 		width: 100%;
-		margin-top: 82px;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
-		z-index: 999;
+		z-index: -1;
 		overscroll-behavior: none;
 	}
 

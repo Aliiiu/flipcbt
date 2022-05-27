@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
 import BenefitOrganisation from '../components/BenefitOrganisation';
 import Button from '../components/Button';
 import FeatureOrganisation from '../components/FeatureOrganisation';
@@ -7,10 +7,10 @@ import Guarantee from '../components/Guarantee';
 import Navbar from '../components/Navbar';
 
 const ForOrganisation = () => {
-	useEffect(() => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'auto';
-	});
+	// useEffect(() => {
+	// 	const html = document.getElementById('mainHtml') as HTMLElement;
+	// 	html.style.overflow = 'auto';
+	// });
 	return (
 		<Fragment>
 			<Navbar />

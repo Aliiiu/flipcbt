@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
 import Benefit from '../components/Benefit';
 import Button from '../components/Button';
 import Faqs from '../components/Faqs';
@@ -11,10 +11,10 @@ import Motor from '../components/Motor';
 import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
-	useEffect(() => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'auto';
-	});
+	// useEffect(() => {
+	// 	const html = document.getElementById('mainHtml') as HTMLElement;
+	// 	html.style.overflow = 'auto';
+	// });
 	return (
 		<Fragment>
 			<Head>

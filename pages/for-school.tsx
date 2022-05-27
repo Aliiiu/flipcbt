@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
 import Button from '../components/Button';
 import FeatureForSchool from '../components/FeatureForSchool';
 import Footer from '../components/Footer';
@@ -7,10 +7,10 @@ import Guarantee from '../components/Guarantee';
 import Navbar from '../components/Navbar';
 
 const ForSchool = () => {
-	useEffect(() => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'auto';
-	});
+	// useEffect(() => {
+	// 	const html = document.getElementById('mainHtml') as HTMLElement;
+	// 	html.style.overflow = 'auto';
+	// });
 	return (
 		<Fragment>
 			<Navbar />
