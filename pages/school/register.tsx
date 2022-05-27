@@ -40,7 +40,7 @@ const Register = () => {
 					</div>
 					<div className='md:w-1/2 w-full pt-[116px] pb-[154px]'>
 						<div className='md:flex justify-center items-center mobile:px-7'>
-							<div className='w-[70%]'>
+							<div className='md:w-[70%]'>
 								<h2 className='text-[30px] font-bold mobile:text-center'>
 									Get Started
 								</h2>
