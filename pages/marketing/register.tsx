@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../components/Button';
@@ -6,6 +7,9 @@ import Navbar from '../../components/Navbar';
 const Register = () => {
 	return (
 		<div className=''>
+			<Head>
+				<title>Flip CBT | Marketers-Form</title>
+			</Head>
 			<div className='md:hidden'>
 				<Navbar />
 			</div>

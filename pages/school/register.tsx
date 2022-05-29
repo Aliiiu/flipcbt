@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
@@ -11,6 +12,9 @@ const Register = () => {
 	});
 	return (
 		<div className=''>
+			<Head>
+				<title>Flip CBT | School-Form</title>
+			</Head>
 			<div className='md:hidden'>
 				<Navbar />
 			</div>

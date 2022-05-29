@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Fragment } from 'react';
 import BenefitOrganisation from '../components/BenefitOrganisation';
 import Button from '../components/Button';
@@ -13,6 +14,9 @@ const ForOrganisation = () => {
 	// });
 	return (
 		<Fragment>
+			<Head>
+				<title>Flip CBT | Organization</title>
+			</Head>
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>

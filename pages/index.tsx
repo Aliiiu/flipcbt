@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 	return (
 		<Fragment>
 			<Head>
-				<title>Flip CBT</title>
+				<title>Flip CBT | Home Page</title>
 			</Head>
 			<Navbar />
 			<main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Fragment } from 'react';
 import Button from '../components/Button';
 import FeatureForSchool from '../components/FeatureForSchool';
@@ -13,6 +14,9 @@ const ForSchool = () => {
 	// });
 	return (
 		<Fragment>
+			<Head>
+				<title>Flip CBT | Student</title>
+			</Head>
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
