@@ -13,7 +13,7 @@ const Register = () => {
 	return (
 		<div className=''>
 			<Head>
-				<title>Flip CBT | School-Form</title>
+				<title>School-Form | register</title>
 			</Head>
 			<div className='md:hidden'>
 				<Navbar />
@@ -21,7 +21,7 @@ const Register = () => {
 			<div className='container'>
 				<div className='md:flex '>
 					<div className='w-1/2 mobile:hidden md:hidden gs_register flex justify-center lg:inline-flex bg-[#0075FF]'>
-						<div className='flex flex-col justify-between h-full'>
+						<div className='flex flex-col justify-between h-full w-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
@@ -33,16 +33,21 @@ const Register = () => {
 									/>
 								</Link>
 							</div>
-							<div>
-								<img
+							<div className='relative h-full w-full'>
+								<Image
+									src={'/reg_bg.png'}
+									alt='get started image'
+									layout='fill'
+								/>
+								{/* <img
 									src='/reg_bg.png'
 									alt='get started image'
 									className='get-started-img'
-								/>
+								/> */}
 							</div>
 						</div>
 					</div>
-					<div className='md:w-1/2 w-full pt-[116px] pb-[154px]'>
+					<div className='md:w-1/2 w-full pt-[116px] md:pb-[135px] pb-[129px] '>
 						<div className='md:flex justify-center items-center mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='text-[30px] font-bold mobile:text-center'>

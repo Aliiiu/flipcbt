@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 const GetStarted = () => {
 	const [active, setActive] = useState<boolean>(false);
@@ -28,14 +28,14 @@ const GetStarted = () => {
 		setOrganisationActive(false);
 	};
 
-	// useEffect(() => {
-	// 	const html = document.getElementById('mainHtml') as HTMLElement;
-	// 	html.style.overflow = 'auto';
-	// });
+	useEffect(() => {
+		const html = document.getElementById('mainHtml') as HTMLElement;
+		html.style.overflow = 'auto';
+	});
 	return (
 		<Fragment>
 			<Head>
-				<title>Flip CBT | Get Started</title>
+				<title>Get Started | Flip CBT</title>
 			</Head>
 			<div className='gs_Bg'>
 				<div className='container'>

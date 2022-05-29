@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { Fragment } from 'react';
+import Image from 'next/image';
+import { Fragment, useEffect } from 'react';
 import BenefitOrganisation from '../components/BenefitOrganisation';
 import Button from '../components/Button';
 import FeatureOrganisation from '../components/FeatureOrganisation';
@@ -8,14 +9,14 @@ import Guarantee from '../components/Guarantee';
 import Navbar from '../components/Navbar';
 
 const ForOrganisation = () => {
-	// useEffect(() => {
-	// 	const html = document.getElementById('mainHtml') as HTMLElement;
-	// 	html.style.overflow = 'auto';
-	// });
+	useEffect(() => {
+		const html = document.getElementById('mainHtml') as HTMLElement;
+		html.style.overflow = 'auto';
+	});
 	return (
 		<Fragment>
 			<Head>
-				<title>Flip CBT | Organization</title>
+				<title>Organization | Flip CBT</title>
 			</Head>
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
@@ -50,13 +51,18 @@ const ForOrganisation = () => {
 									</div>
 								</div>
 								<div className='w-1/2 lg:block mobile:hidden'>
-									<div className='md:mt-[91px] h-full'>
-										<div className=''>
-											<img
+									<div className='relative md:mt-[91px] h-full'>
+										<div className='bg-image-boy'>
+											<Image
+												src={'/orgBg2.png'}
+												alt='organization illustration'
+												layout='fill'
+											/>
+											{/* <img
 												src='/orgBg.png'
 												alt='customer'
 												className='bg-image-boy'
-											/>
+											/> */}
 										</div>
 									</div>
 								</div>

@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { Fragment } from 'react';
+import Image from 'next/image';
+import { Fragment, useEffect } from 'react';
 import Button from '../components/Button';
 import FeatureForSchool from '../components/FeatureForSchool';
 import Footer from '../components/Footer';
@@ -8,14 +9,14 @@ import Guarantee from '../components/Guarantee';
 import Navbar from '../components/Navbar';
 
 const ForSchool = () => {
-	// useEffect(() => {
-	// 	const html = document.getElementById('mainHtml') as HTMLElement;
-	// 	html.style.overflow = 'auto';
-	// });
+	useEffect(() => {
+		const html = document.getElementById('mainHtml') as HTMLElement;
+		html.style.overflow = 'auto';
+	});
 	return (
 		<Fragment>
 			<Head>
-				<title>Flip CBT | Student</title>
+				<title>Student | Flip CBT</title>
 			</Head>
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
@@ -55,13 +56,19 @@ const ForSchool = () => {
 									</div>
 								</div>
 								<div className='w-1/2 lg:block mobile:hidden'>
-									<div className='md:mt-[61px] h-full'>
-										<div className=''>
-											<img
+									<div className='relative md:mt-[61px] h-full'>
+										<div className='bg-image-boy'>
+											<Image
+												src={'/studentBg.png'}
+												alt='student illustration'
+												layout='fill'
+												className=''
+											/>
+											{/* <img
 												src='/schoolBg.png'
 												alt='customer'
-												className='bg-image-boy'
-											/>
+												
+											/> */}
 										</div>
 									</div>
 								</div>

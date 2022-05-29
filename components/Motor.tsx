@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Button from './Button';
 const Motor = () => {
 	return (
@@ -61,13 +62,14 @@ const Motor = () => {
 							</div>
 						</div>
 						<div className='flex justify-between mobile:flex-col-reverse mobile:mt-[4em] md:mt-[10em]'>
-							<div className='relative md:w-1/2 mobile:w-full mobile:mt-9 mobile:h-[246px] marketing rounded-[20px] overflow-hidden'>
-								{/* <Image
-									src='/marketing.png'
+							<div className='relative md:w-1/2 mobile:w-full mobile:mt-9 mobile:h-[266px] rounded-[20px] overflow-hidden'>
+								<Image
+									src='/marketer-img.png'
 									layout='fill'
 									alt='marketing illustration'
-									objectFit='contain'
-								/> */}
+									objectFit='cover'
+									objectPosition={'center'}
+								/>
 							</div>
 							<div className='md:w-[43%] mobile:w-full text-left md:py-[4em] md:my-auto'>
 								<h2 className='text-[40px] mobile:text-[24px] font-semibold leading-[125%]'>
@@ -83,11 +85,6 @@ const Motor = () => {
 										content='Yes, I Want to Earn'
 										bgColor={'btn-border bg-[#0075FF]'}
 									/>
-									{/* <Link href='/get-started'>
-										<a className='py-3 text-white bg-[#0075FF] btn-border px-[3rem] md:py-5'>
-											GET STARTED
-										</a>
-									</Link> */}
 								</div>
 							</div>
 						</div>

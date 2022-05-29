@@ -23,12 +23,13 @@ const QA = [
 ];
 const Faqs = () => {
 	const [active, setActive] = useState<boolean>(false);
-	const [currQuestion, setCurrQuestion] = useState<number>(0);
+	const [currQuestion, setCurrQuestion] = useState<number | null>(0);
 
 	const handleClick = (e: React.MouseEvent, index: number) => {
 		e.preventDefault();
-		// setActive(true);
-		setActive((prevState) => !prevState);
+		if (currQuestion === index) {
+			return setCurrQuestion(null);
+		}
 		setCurrQuestion(index);
 	};
 
@@ -65,7 +66,7 @@ const Faqs = () => {
 									>
 										{item.question}
 									</h3>
-									{active && currQuestion === index ? (
+									{currQuestion === index ? (
 										<button className='text-3xl font-bold bg-transparent border-none text-purple'>
 											<Image
 												src='/minus.svg'
@@ -86,7 +87,7 @@ const Faqs = () => {
 									)}
 								</a>
 
-								{active && currQuestion === index ? (
+								{currQuestion === index ? (
 									<>
 										<hr className='mt-7 mobile:mt-4' />
 										<div className='flex flex-wrap pt-7 mobile:pt-4'>

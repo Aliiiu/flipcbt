@@ -93,12 +93,6 @@ img {
 	object-fit: cover;
 }
 
-.bg-image-boy {
-	height: auto;
-	width: 100%;
-	object-fit: contain;
-}
-
 .gs_Bg {
 	background-image: url('/gsBg.png');
 	background-size: contain;

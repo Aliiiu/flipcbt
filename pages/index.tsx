@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Fragment } from 'react';
+import Image from 'next/image';
+import { Fragment, useEffect } from 'react';
 import Benefit from '../components/Benefit';
 import Button from '../components/Button';
 import Faqs from '../components/Faqs';
@@ -11,14 +12,14 @@ import Motor from '../components/Motor';
 import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
-	// useEffect(() => {
-	// 	const html = document.getElementById('mainHtml') as HTMLElement;
-	// 	html.style.overflow = 'auto';
-	// });
+	useEffect(() => {
+		const html = document.getElementById('mainHtml') as HTMLElement;
+		html.style.overflow = 'auto';
+	});
 	return (
 		<Fragment>
 			<Head>
-				<title>Flip CBT | Home Page</title>
+				<title>Home Page | Flip CBT</title>
 			</Head>
 			<Navbar />
 			<main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>
@@ -52,13 +53,19 @@ const Home: NextPage = () => {
 									</div>
 								</div>
 								<div className='w-1/2 lg:block md:flex justify-end mobile:hidden'>
-									<div className='md:mt-[140px]'>
-										<div>
-											<img
+									<div className='relative h-full w-full md:mt-[100px]'>
+										<div className=''>
+											<Image
+												src={'/bg.png'}
+												alt='excitment illustration'
+												layout='fill'
+												objectFit='contain'
+											/>
+											{/* <img
 												src='/bg.png'
 												alt='customer'
 												className='bg-image-girl'
-											/>
+											/> */}
 										</div>
 									</div>
 								</div>

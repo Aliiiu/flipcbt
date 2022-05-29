@@ -8,7 +8,7 @@ const Register = () => {
 	return (
 		<div className=''>
 			<Head>
-				<title>Flip CBT | Marketers-Form</title>
+				<title>Marketers-Form | register</title>
 			</Head>
 			<div className='md:hidden'>
 				<Navbar />
@@ -16,7 +16,7 @@ const Register = () => {
 			<div className='container'>
 				<div className='md:flex'>
 					<div className='w-full mobile:hidden md:hidden gs_register flex justify-center lg:inline-flex bg-[#0075FF]'>
-						<div className='flex flex-col justify-between h-full'>
+						<div className='flex flex-col justify-between h-full w-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
@@ -28,16 +28,21 @@ const Register = () => {
 									/>
 								</Link>
 							</div>
-							<div>
-								<img
+							<div className='relative w-[90%] mx-auto h-full'>
+								<Image
+									src={'/reg_mark.png'}
+									alt='get started iamge'
+									layout='fill'
+								/>
+								{/* <img
 									src='/reg_mark.png'
 									alt='get started image'
 									className='get-started-img'
-								/>
+								/> */}
 							</div>
 						</div>
 					</div>
-					<div className='md:w-full block md:pt-[116px] pt-[124px] mobile:pb-[200px]'>
+					<div className='md:w-full block md:pt-[116px] pt-[124px] pb-[207px] md:pb-[156px]'>
 						<div className='md:flex justify-center items-center mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='md:text-[40px] text-[32px] font-bold mobile:text-center'>
