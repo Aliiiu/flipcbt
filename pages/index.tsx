@@ -54,7 +54,7 @@ const Home: NextPage = () => {
 								</div>
 								<div className='w-1/2 lg:block md:flex justify-end mobile:hidden'>
 									<div className='relative h-full w-full md:mt-[100px]'>
-										<div className=''>
+										<div className='bg-image'>
 											<Image
 												src={'/bg.png'}
 												alt='excitment illustration'

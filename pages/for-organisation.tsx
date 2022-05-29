@@ -52,7 +52,7 @@ const ForOrganisation = () => {
 								</div>
 								<div className='w-1/2 lg:block mobile:hidden'>
 									<div className='relative md:mt-[91px] h-full'>
-										<div className='bg-image-boy'>
+										<div className='bg-image'>
 											<Image
 												src={'/orgBg2.png'}
 												alt='organization illustration'

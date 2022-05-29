@@ -57,12 +57,11 @@ const ForSchool = () => {
 								</div>
 								<div className='w-1/2 lg:block mobile:hidden'>
 									<div className='relative md:mt-[61px] h-full'>
-										<div className='bg-image-boy'>
+										<div className='bg-image'>
 											<Image
 												src={'/studentBg.png'}
 												alt='student illustration'
 												layout='fill'
-												className=''
 											/>
 											{/* <img
 												src='/schoolBg.png'
