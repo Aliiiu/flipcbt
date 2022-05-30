@@ -33,6 +33,7 @@ const Register = () => {
 									src={'/reg_mark.png'}
 									alt='get started iamge'
 									layout='fill'
+									objectFit='contain'
 								/>
 								{/* <img
 									src='/reg_mark.png'

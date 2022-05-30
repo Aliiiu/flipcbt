@@ -26,7 +26,7 @@ const ForOrganisation = () => {
 							<div className='flex justify-between'>
 								<div className='mt-0 md:mt-5 w-full md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
-										<h1 className='lg:text-[50px] md:text-[40px] lg:mb-[0px] xl:mb-[5px] mobile:text-[32px] font-bold leading-[55px] mobile:leading-[40px]'>
+										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold leading-[62px] mobile:leading-[40px]'>
 											You Don’t Need <br className='mobile:hidden' /> To Sweat
 											Up <br className='mobile:hidden' /> While Setting{' '}
 											<br className='mobile:hidden' /> Up Assessments

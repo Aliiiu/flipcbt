@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 							<div className='flex justify-between'>
 								<div className='w-full md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[106px] mobile:pt-[3em] mobile:pb-[6em]'>
-										<h1 className='lg:text-[45px] md:text-[35px] mobile:text-[32px] font-bold'>
+										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold leading-[68.09px]'>
 											Setting Up and <br /> Preparing For <br /> Assessment{' '}
 											<br className='md:hidden' /> Without{' '}
 											<br className='mobile:hidden md' /> Stress.

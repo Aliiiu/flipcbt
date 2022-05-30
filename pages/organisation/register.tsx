@@ -38,6 +38,7 @@ const Register = () => {
 									src={'/reg_org.png'}
 									alt='get started image'
 									layout='fill'
+									objectFit='contain'
 								/>
 								{/* <img
 									src='/reg_org.png'
