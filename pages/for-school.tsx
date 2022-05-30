@@ -24,9 +24,9 @@ const ForSchool = () => {
 					<div className='relative md:px-[8em] px-7'>
 						<section className=''>
 							<div className='flex justify-between'>
-								<div className='mt-0 md:mt-5 w-full md:w-1/2'>
+								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
-										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold leading-[62px] mobile:leading-[40px]'>
+										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px]'>
 											USe The Right{' '}
 											<br className='mobile:hidden md:hidden lg:block' /> Tool
 											To Conduct{' '}
@@ -84,7 +84,7 @@ const ForSchool = () => {
 					<h2 className='font-bold text-[40px] mobile:text-[28px] text-white'>
 						Ready to get started?
 					</h2>
-					<p className='text-white w-7/12 mobile:w-full'>
+					<p className='w-7/12 text-white mobile:w-full'>
 						Greater Efficiency Is Undeniable. All Reports are{' '}
 						<br className='mobile:hidden' /> Saved and Can Be Accessed At Any
 						Time.

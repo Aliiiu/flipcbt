@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 							<div className='flex justify-between'>
 								<div className='w-full md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[106px] mobile:pt-[3em] mobile:pb-[6em]'>
-										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold leading-[68.09px]'>
+										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[68.09px]'>
 											Setting Up and <br /> Preparing For <br /> Assessment{' '}
 											<br className='md:hidden' /> Without{' '}
 											<br className='mobile:hidden md' /> Stress.
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 											instead of the use of pen and{' '}
 											<br className='mobile:hidden' /> paper.
 										</p>
-										<div className='flex mobile:mt-1 justify-start'>
+										<div className='flex justify-start mobile:mt-1'>
 											<Button
 												href={'/get-started'}
 												content='Get Started'
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 										</div>
 									</div>
 								</div>
-								<div className='w-1/2 lg:block md:flex justify-end mobile:hidden'>
+								<div className='justify-end w-1/2 lg:block md:flex mobile:hidden'>
 									<div className='relative h-full w-full md:mt-[100px]'>
 										<div className='bg-image'>
 											<Image

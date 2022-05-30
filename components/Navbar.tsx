@@ -21,10 +21,10 @@ const Navbar = () => {
 	};
 	//
 	return (
-		<nav className='fixed top-0 left-0 bg-white w-full z-50'>
+		<nav className='fixed top-0 left-0 z-50 w-full bg-white'>
 			<div className='container md:py-5'>
 				<div className='md:px-[8em] mobile:flex mobile:justify-between mobile:py-5 mobile:px-7'>
-					<div className='flex justify-between items-center'>
+					<div className='flex items-center justify-between'>
 						<div className='relative w-[82px] h-[58px] mobile:w-[70px] mobile:h-[40px]'>
 							<Link href='/' passHref>
 								<Image
@@ -76,7 +76,7 @@ const Navbar = () => {
 							bgColor={'bg-[#0075ff] mobile:hidden'}
 						/>
 					</div>
-					<div className='hidden text-white mobile:block overflow-hidden'>
+					<div className='hidden overflow-hidden text-white mobile:block'>
 						{nav ? (
 							<button onClick={closeNavHandler}>
 								<Image
