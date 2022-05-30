@@ -62,6 +62,7 @@ const ForSchool = () => {
 												src={'/studentBg.png'}
 												alt='student illustration'
 												layout='fill'
+												objectFit='contain'
 											/>
 											{/* <img
 												src='/schoolBg.png'

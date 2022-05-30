@@ -57,6 +57,7 @@ const ForOrganisation = () => {
 												src={'/orgBg2.png'}
 												alt='organisation illustration'
 												layout='fill'
+												objectFit='contain'
 											/>
 											{/* <img
 												src='/orgBg.png'
