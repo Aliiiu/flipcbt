@@ -4,9 +4,9 @@ import styles from '../styles/home.module.css';
 
 const Data = [
 	{
-		heading: 'Improved Organization’s Productivity.',
+		heading: 'Improved organisation’s Productivity.',
 		content: `FLIP is the powerhouse of all assessment providers,
-							taking your organization to the next level.`,
+							taking your organisation to the next level.`,
 		alt: 'Productivity Illustration',
 		image: '/feature1.png',
 	},
@@ -37,7 +37,7 @@ const FeatureOrganisation = () => {
 								<h2 className='inline-block md:text-[40px] text-[24px] text-center font-semibold md:leading-[52px] mobile:leading-[32.68px]'>
 									FLIP is built with guaranteed <br className='mobile:hidden' />{' '}
 									advantages for your <br className='mobile:hidden' />
-									organization.
+									organisation.
 								</h2>
 							</div>
 							{Data.map((item, index) => (

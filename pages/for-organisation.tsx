@@ -16,7 +16,7 @@ const ForOrganisation = () => {
 	return (
 		<Fragment>
 			<Head>
-				<title>Organization | Flip CBT</title>
+				<title>organisation | Flip CBT</title>
 			</Head>
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
@@ -32,14 +32,14 @@ const ForOrganisation = () => {
 											<br className='mobile:hidden' /> Up Assessments
 										</h1>
 										<p className='md:mt-3 mobile:my-[24px]'>
-											FlipCBT for organizations allows potential individuals{' '}
+											FlipCBT for organisations allows potential individuals{' '}
 											<br className='mobile:hidden' /> to take their respective
 											assessments remotely. We <br className='mobile:hidden' />{' '}
 											believe that taking an assessment, interview, or test{' '}
 											<br className='mobile:hidden' /> with zero stress
 											contributes to the success rate of{' '}
 											<br className='mobile:hidden' /> such individuals and
-											organizations.
+											organisations.
 										</p>
 										<div className='flex justify-start md:mt-[24px] '>
 											<Button
@@ -55,7 +55,7 @@ const ForOrganisation = () => {
 										<div className='bg-image'>
 											<Image
 												src={'/orgBg2.png'}
-												alt='organization illustration'
+												alt='organisation illustration'
 												layout='fill'
 											/>
 											{/* <img

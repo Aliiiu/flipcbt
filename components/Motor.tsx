@@ -13,13 +13,13 @@ const Motor = () => {
 										<h2 className='inline-block z-10 font-semibold text-[40px] mb-4 mobile:text-[25px]'>
 											Great for Schools,
 											<br />
-											Loved By Organizations.
+											Loved By organisations.
 										</h2>
 									</div>
 								</div>
 								<p>
 									Essential in secondary schools, universities and even
-									organizations <br className='mobile:hidden' /> for assessment
+									organisations <br className='mobile:hidden' /> for assessment
 									of all kinds.
 								</p>
 							</div>
@@ -49,7 +49,7 @@ const Motor = () => {
 											</h2>
 											<p className='mb-8 text-white'>
 												Guaranteed advantages for your{' '}
-												<br className='mobile:hidden' /> organization.
+												<br className='mobile:hidden' /> organisation.
 											</p>
 											<Button
 												href={'/for-organisation'}

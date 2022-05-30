@@ -13,7 +13,7 @@ const Register = () => {
 	return (
 		<div className=''>
 			<Head>
-				<title>Organization-Form | register</title>
+				<title>organisation-Form | register</title>
 			</Head>
 			<div className='md:hidden'>
 				<Navbar />
