@@ -16,7 +16,7 @@ const ForSchool = () => {
 	return (
 		<Fragment>
 			<Head>
-				<title>Student | Flip CBT</title>
+				<title>School - Flip CBT</title>
 			</Head>
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
@@ -26,7 +26,7 @@ const ForSchool = () => {
 							<div className='flex justify-between'>
 								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
-										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px]'>
+										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px] capitalize'>
 											USe The Right{' '}
 											<br className='mobile:hidden md:hidden lg:block' /> Tool
 											To Conduct{' '}
@@ -81,7 +81,7 @@ const ForSchool = () => {
 			<GettingStartedForSchool />
 			<section className="md:px-20 mobile:px-4 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
 				<div className='container flex flex-col items-center justify-center text-center space-y-7'>
-					<h2 className='font-bold text-[40px] mobile:text-[28px] text-white'>
+					<h2 className='font-bold text-[40px] mobile:text-[28px] text-white capitalize'>
 						Ready to get started?
 					</h2>
 					<p className='w-7/12 text-white mobile:w-full'>

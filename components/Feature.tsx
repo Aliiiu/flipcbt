@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Feature = () => {
 	return (
 		<section className='md:pt-[6rem] mobile:pt-[4rem]'>
-			<div className='vector-1 container'>
+			<div className='container vector-1'>
 				<div className='vector-2'>
 					<div className='mobile:w-auto px-[8em] mobile:px-7 flex flex-col w-full mobile:mx-0'>
 						<div className='text-center md:pt-9 md:mb-[8em] mb-[5rem]'>
@@ -13,7 +13,7 @@ const Feature = () => {
 							<p>
 								Preparing for exams, tests or interviews is very tedious
 								normally, <br className='mobile:hidden' />
-								But writing assessments should be comfortable.
+								but writing assessments should be comfortable.
 							</p>
 						</div>
 						<div className='grid md:grid-cols-3 mobile:grid-cols-1 md:mb-[9rem] md:space-x-6 mobile:flex-col mobile:mb-2'>
@@ -42,7 +42,7 @@ const Feature = () => {
 								<p>
 									The amount of time consumed in curating question papers,
 									arranging supplies, and evaluating scripts can be avoided as
-									FLIP automates the entire process, increasing your
+									Flip automates the entire process, increasing your
 									productivity 100% better.{' '}
 								</p>
 							</div>
@@ -98,8 +98,8 @@ const Feature = () => {
 									Cost-Effective
 								</h3>
 								<p>
-									You don’t need to break the bank before you can use FLIP. Save
-									up to 60% of your expenditures while using FLIP.
+									You don’t need to break the bank before you can use Flip. Save
+									up to 60% of your expenditures while using Flip.
 								</p>
 							</div>
 						</div>

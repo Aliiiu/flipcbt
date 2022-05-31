@@ -1,14 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment, useEffect } from 'react';
-import BenefitOrganisation from '../components/BenefitOrganisation';
+import Benefitorganization from '../components/BenefitOrganization';
 import Button from '../components/Button';
-import FeatureOrganisation from '../components/FeatureOrganisation';
+import Featureorganization from '../components/FeatureOrganization';
 import Footer from '../components/Footer';
 import Guarantee from '../components/Guarantee';
 import Navbar from '../components/Navbar';
 
-const ForOrganisation = () => {
+const Fororganization = () => {
 	useEffect(() => {
 		const html = document.getElementById('mainHtml') as HTMLElement;
 		html.style.overflow = 'auto';
@@ -16,7 +16,7 @@ const ForOrganisation = () => {
 	return (
 		<Fragment>
 			<Head>
-				<title>organisation | Flip CBT</title>
+				<title>Organization - Flip CBT</title>
 			</Head>
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
@@ -26,20 +26,20 @@ const ForOrganisation = () => {
 							<div className='flex justify-between'>
 								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
-										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px]'>
+										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px] capitalize'>
 											You Don’t Need <br className='mobile:hidden' /> To Sweat
 											Up <br className='mobile:hidden' /> While Setting{' '}
 											<br className='mobile:hidden' /> Up Assessments
 										</h1>
 										<p className='md:mt-3 mobile:my-[24px]'>
-											FlipCBT for organisations allows potential individuals{' '}
+											FlipCBT for organizations allows potential individuals{' '}
 											<br className='mobile:hidden' /> to take their respective
 											assessments remotely. We <br className='mobile:hidden' />{' '}
 											believe that taking an assessment, interview, or test{' '}
 											<br className='mobile:hidden' /> with zero stress
 											contributes to the success rate of{' '}
 											<br className='mobile:hidden' /> such individuals and
-											organisations.
+											organizations.
 										</p>
 										<div className='flex justify-start md:mt-[24px] '>
 											<Button
@@ -55,15 +55,10 @@ const ForOrganisation = () => {
 										<div className='bg-image'>
 											<Image
 												src={'/orgBg2.png'}
-												alt='organisation illustration'
+												alt='organization illustration'
 												layout='fill'
 												objectFit='contain'
 											/>
-											{/* <img
-												src='/orgBg.png'
-												alt='customer'
-												className='bg-image-boy'
-											/> */}
 										</div>
 									</div>
 								</div>
@@ -72,11 +67,11 @@ const ForOrganisation = () => {
 					</div>
 				</div>
 			</div>
-			<FeatureOrganisation />
-			<BenefitOrganisation />
+			<Featureorganization />
+			<Benefitorganization />
 			<section className="md:px-[8em] mobile:px-7 py-20 mobile:py-[70px] bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
 				<div className='container flex flex-col items-center justify-center text-center'>
-					<h2 className='font-bold text-[40px] mobile:text-[24px] mb-[10px] mobile:mb-[20px]  text-white'>
+					<h2 className='font-bold text-[40px] mobile:text-[24px] mb-[10px] mobile:mb-[20px] capitalize text-white'>
 						Ready to get started?
 					</h2>
 					<p className='text-white  mobile:w-[90%]'>
@@ -105,4 +100,4 @@ const ForOrganisation = () => {
 	);
 };
 
-export default ForOrganisation;
+export default Fororganization;

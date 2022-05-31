@@ -6,7 +6,7 @@ const GettingStartedForSchool = () => {
 			<div className='md:px-[8em] md:pt-[6em] pt-[78px] pb-[131px] md:pb-[181px] mobile:w-auto mobile:px-7'>
 				<div className='mobile:mx-0'>
 					<div className='text-center'>
-						<h2 className='font-semibold text-[32px] md:text-[40px] mb-[2rem]'>
+						<h2 className='font-semibold text-[32px] md:text-[40px] mb-[2rem] capitalize'>
 							Getting started is free and easy
 						</h2>
 					</div>

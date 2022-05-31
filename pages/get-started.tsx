@@ -6,26 +6,26 @@ import { Fragment, useEffect, useState } from 'react';
 
 const GetStarted = () => {
 	const [active, setActive] = useState<boolean>(false);
-	const [organisationActive, setOrganisationActive] = useState<boolean>(false);
+	const [organizationActive, setorganizationActive] = useState<boolean>(false);
 	const [marketingActive, setMarketingActive] = useState<boolean>(false);
 	const router = useRouter();
 
 	const schoolHandler = () => {
 		setActive(true);
 		setMarketingActive(false);
-		setOrganisationActive(false);
+		setorganizationActive(false);
 	};
 
-	const organisationHandler = () => {
+	const organizationHandler = () => {
 		setActive(false);
 		setMarketingActive(false);
-		setOrganisationActive(true);
+		setorganizationActive(true);
 	};
 
 	const marketingHandler = () => {
 		setActive(false);
 		setMarketingActive(true);
-		setOrganisationActive(false);
+		setorganizationActive(false);
 	};
 
 	useEffect(() => {
@@ -56,7 +56,7 @@ const GetStarted = () => {
 							<h1 className='text-[40px] mobile:text-[32px] font-bold'>
 								Get Started
 							</h1>
-							<p>What do you want to use flip for?</p>
+							<p>What do you want to use Flip for?</p>
 						</div>
 						<div className='grid grid-cols-3 mobile:grid-cols-1 mobile:gap-y-[50px] gap-x-9 '>
 							<Link href={'/school/register'} passHref>
@@ -80,25 +80,25 @@ const GetStarted = () => {
 									</p>
 								</div>
 							</Link>
-							<Link href={'/organisation/register'} passHref>
+							<Link href={'/organization/register'} passHref>
 								<div
-									onClick={organisationHandler}
+									onClick={organizationHandler}
 									className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
-										organisationActive ? 'card_select' : null
+										organizationActive ? 'card_select' : null
 									} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
 								>
 									<Image
-										src='/gs_organisation.png'
+										src='/gs_organization.png'
 										alt='Flip Cbt Logo'
 										width='160px'
 										height='140px'
 									/>
 									<h2 className='text-[25px] mobile:text-[25px] font-semibold mt-[40px]'>
-										Organisation
+										Organization
 									</h2>
 									<p className='text-center'>
 										I want to market for <br className='mobile:hidden' /> my
-										organisation
+										organization
 									</p>
 								</div>
 							</Link>

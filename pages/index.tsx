@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 	return (
 		<Fragment>
 			<Head>
-				<title>Home Page | Flip CBT</title>
+				<title>Enhanced Assessment Platform</title>
 			</Head>
 			<Navbar />
 			<main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>
@@ -29,13 +29,13 @@ const Home: NextPage = () => {
 							<div className='flex justify-between'>
 								<div className='w-full md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[106px] mobile:pt-[3em] mobile:pb-[6em]'>
-										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[68.09px]'>
+										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[68.09px] capitalize'>
 											Setting Up and <br /> Preparing For <br /> Assessment{' '}
 											<br className='md:hidden' /> Without{' '}
 											<br className='mobile:hidden md' /> Stress.
 										</h1>
 										<p className='md:mt-3 mobile:mt-6 mb-[2em] lg:mb-[30px]'>
-											FLIP is an enhanced assessment platform that{' '}
+											Flip is an enhanced assessment platform that{' '}
 											<br className='mobile:hidden' /> provides computerized
 											tests, examination <br className='mobile:hidden' />{' '}
 											management, quick grading systems, and{' '}

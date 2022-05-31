@@ -13,7 +13,7 @@ const Register = () => {
 	return (
 		<div className=''>
 			<Head>
-				<title>School-Form | register</title>
+				<title>School-Form</title>
 			</Head>
 			<div className='md:hidden'>
 				<Navbar />
@@ -21,7 +21,7 @@ const Register = () => {
 			<div className='container'>
 				<div className='md:flex '>
 					<div className='w-1/2 mobile:hidden md:hidden gs_register flex justify-center lg:inline-flex bg-[#0075FF]'>
-						<div className='flex flex-col justify-between h-full w-full'>
+						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
@@ -33,7 +33,7 @@ const Register = () => {
 									/>
 								</Link>
 							</div>
-							<div className='relative h-full w-full'>
+							<div className='relative w-full h-full'>
 								<Image
 									src={'/reg_bg.png'}
 									alt='get started image'
@@ -49,7 +49,7 @@ const Register = () => {
 						</div>
 					</div>
 					<div className='md:w-1/2 w-full pt-[116px] md:pb-[135px] pb-[129px] '>
-						<div className='md:flex justify-center items-center mobile:px-7'>
+						<div className='items-center justify-center md:flex mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='text-[30px] font-bold mobile:text-center'>
 									Get Started
@@ -95,7 +95,7 @@ const Register = () => {
 											<option>200 - 500 Students</option>
 											<option>More than 500 Students</option>
 										</select>
-										<div className='pointer-events-none absolute inset-y-0 right-2 bottom-4 flex justify-center items-center px-2'>
+										<div className='absolute inset-y-0 flex items-center justify-center px-2 pointer-events-none right-2 bottom-4'>
 											<Image
 												src={'/Expand_down.png'}
 												alt='expand button'
@@ -104,7 +104,7 @@ const Register = () => {
 											/>
 										</div>
 									</div>
-									<div className='mt-4 w-full'>
+									<div className='w-full mt-4'>
 										<Button
 											href={'/get-started'}
 											content='Get Started'

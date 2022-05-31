@@ -8,7 +8,7 @@ const Register = () => {
 	return (
 		<div className=''>
 			<Head>
-				<title>Marketers-Form | register</title>
+				<title>Marketers-Form</title>
 			</Head>
 			<div className='md:hidden'>
 				<Navbar />
@@ -16,7 +16,7 @@ const Register = () => {
 			<div className='container'>
 				<div className='md:flex'>
 					<div className='w-full mobile:hidden md:hidden gs_register flex justify-center lg:inline-flex bg-[#0075FF]'>
-						<div className='flex flex-col justify-between h-full w-full'>
+						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
@@ -44,7 +44,7 @@ const Register = () => {
 						</div>
 					</div>
 					<div className='md:w-full block md:pt-[116px] pt-[124px] pb-[207px] md:pb-[156px]'>
-						<div className='md:flex justify-center items-center mobile:px-7'>
+						<div className='items-center justify-center md:flex mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='md:text-[40px] text-[32px] font-bold mobile:text-center'>
 									Get Started
@@ -81,7 +81,7 @@ const Register = () => {
 									<div className='relative'>
 										<select className='block px-4 py-4 mb-[30px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
 											<option>Degree</option>
-											<option>Organisation Size</option>
+											<option>organization Size</option>
 											<option>School Size</option>
 										</select>
 										<div className='pointer-events-none absolute inset-y-0 right-2 h-[58px] flex flex-col justify-center items-center px-2 text-gray-700'>

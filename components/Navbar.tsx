@@ -47,16 +47,16 @@ const Navbar = () => {
 									Home
 								</a>
 							</Link>
-							<Link href='/for-organisation'>
+							<Link href='/for-organization'>
 								<a
 									id='navLink'
 									className={`text-[#06042C] inline-flex ${
-										router.pathname === '/for-organisation'
+										router.pathname === '/for-organization'
 											? 'text-blue-400'
 											: null
 									} hover:text-blue-500 active:text-blue-500 `}
 								>
-									Organisation
+									For Organization
 								</a>
 							</Link>
 							<Link href='/for-school'>
@@ -66,7 +66,7 @@ const Navbar = () => {
 										router.pathname === '/for-school' ? 'text-blue-400' : null
 									} hover:text-blue-500 active:text-blue-500`}
 								>
-									Student
+									For Student
 								</a>
 							</Link>
 						</div>
@@ -108,12 +108,12 @@ const Navbar = () => {
 												Home
 											</a>
 										</Link>
-										<Link href='/for-organisation'>
+										<Link href='/for-organization'>
 											<a
 												onClick={() => ShowNav(false)}
 												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
 											>
-												For Organisation
+												For Organization
 											</a>
 										</Link>
 										<Link href='/for-school'>
@@ -121,7 +121,7 @@ const Navbar = () => {
 												onClick={() => ShowNav(false)}
 												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
 											>
-												For School
+												For Student
 											</a>
 										</Link>
 									</div>

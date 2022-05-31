@@ -8,7 +8,7 @@ type BenefitObject = {
 	alt: string;
 	image: ImageProps['src'];
 };
-const BenefitOrganisation = () => {
+const Benefitorganization = () => {
 	const benefit: BenefitObject[] = [
 		{
 			title: 'Sign up in 5 minutes',
@@ -19,13 +19,13 @@ const BenefitOrganisation = () => {
 		{
 			title: 'Set-up Questions and Instructions For Assessment',
 			content: `Input the candidate's assessment questions, guidelines,
-								and other necessary data while FLIP processes the rest. `,
+								and other necessary data while Flip processes the rest. `,
 			alt: 'questions and instruction illustration',
 			image: '/questions.png',
 		},
 		{
 			title: 'Easy Access and Full Transparency',
-			content: `FLIP allows free access to your admin portal, 
+			content: `Flip allows free access to your admin portal, 
 								ensuring complete honesty and stringent security.`,
 			alt: 'easy access illustration',
 			image: '/easy-access.png',
@@ -42,7 +42,7 @@ const BenefitOrganisation = () => {
 		<section className='container'>
 			<div className='md:px-[8em] mobile:px-5 md:pt-[60px] mobile:pt-[40px] pb-[95px]'>
 				<h1 className='text-center font-semibold mobile:text-[32px] md:text-[40px] mobile:mb-[33px] mb-[90px]'>
-					Start Your FLIP Journey In Four Steps
+					Start Your Flip Journey In Four Steps
 				</h1>
 				<div className=''>
 					<div className='grid md:grid-cols-2 grid-cols-1 gap-y-[30px] md:gap-x-[103px] md:gap-y-[47px]'>
@@ -55,7 +55,7 @@ const BenefitOrganisation = () => {
 								/>
 
 								<div className='ml-[20px] mobile:ml-[10px]'>
-									<h2 className='font-semibold text-[20px] md:text-[24px]'>
+									<h2 className='font-semibold text-[20px] md:text-[24px] capitalize'>
 										{item.title}
 									</h2>
 									<p
@@ -81,4 +81,4 @@ const BenefitOrganisation = () => {
 	);
 };
 
-export default BenefitOrganisation;
+export default Benefitorganization;

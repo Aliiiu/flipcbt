@@ -38,8 +38,8 @@ const FeatureForSchool = () => {
 					<div className='vector-9'>
 						<div className='px-7 md:px-[8em]'>
 							<div className='flex justify-center md:mb-[120px] mobile:mb-[65px]'>
-								<h2 className='inline-block md:text-[40px] text-[24px] text-center font-semibold md:leading-[52px] mobile:leading-[32.68px]'>
-									FLIP has recorded over 80% success{' '}
+								<h2 className='inline-block md:text-[40px] text-[24px] text-center font-semibold md:leading-[52px] capitalize mobile:leading-[32.68px]'>
+									Flip has recorded over 80% success{' '}
 									<br className='mobile:hidden' /> rate in schools for
 									conducting <br className='mobile:hidden' /> and taking
 									assessments.
@@ -66,7 +66,7 @@ const FeatureForSchool = () => {
 											/>
 										</div>
 										<div>
-											<h3 className='font-semibold md:leading-[52px]'>
+											<h3 className='font-semibold md:leading-[52px] capitalize'>
 												{item.heading}
 											</h3>
 											<p className='mt-[18px] md:w-[95%]'>{item.content}</p>

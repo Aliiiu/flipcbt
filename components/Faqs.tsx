@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const QA = [
 	{
-		question: 'What is flip?',
+		question: 'What is Flip?',
 		answer: `Flip is a CBT software as a source to provide tests, examination management and a quick grading
 						 system and collation of results instead of the use of pen and paper.`,
 	},
@@ -12,13 +12,13 @@ const QA = [
 		answer: `Yes, your data is secure, and provisions have been made to enable confidentiality and security.`,
 	},
 	{
-		question: 'How accesible is FLIP?',
-		answer: `FLIP is very accessible and can be used by both secondary schools and organisations.`,
+		question: 'How accesible is Flip?',
+		answer: `Flip is very accessible and can be used by both secondary schools and organizations.`,
 	},
 	{
 		question: 'Do I need the internet to use the app?',
-		answer: `FLIP has been designed with free internet software for fair usage for secondary
-							schools while organisations need to use the internet.`,
+		answer: `Flip has been designed with free internet software for fair usage for secondary
+							schools while organizations need to use the internet.`,
 	},
 ];
 const Faqs = () => {
@@ -40,14 +40,14 @@ const Faqs = () => {
 					<div className='text-center pt-[6rem] mb-[2em] mobile:mx-5'>
 						<div className='flex justify-center'>
 							<div className=''>
-								<h2 className='font-semibold text-[40px] text-[#06042C] mobile:text-[28px]'>
-									FAQs
+								<h2 className='font-semibold text-[40px] text-[#06042C] mobile:text-[28px] capitalize'>
+									Faqs
 								</h2>
 							</div>
 						</div>
 						<p className='mx-auto md:w-7/12 mobile:mt-2'>
 							We have carefully prepared a list of the most frequent inquiries
-							for you. This will give you more insights on how to use FLIP
+							for you. This will give you more insights on how to use Flip
 						</p>
 					</div>
 					<div className='grid grid-cols-1 gap-7 justify-items-center'>
@@ -62,7 +62,7 @@ const Faqs = () => {
 									className='flex items-center justify-between'
 								>
 									<h3
-										className={`font-semibold w-full border-[#E0E0E0] text-[#06042C]`}
+										className={`font-semibold w-full border-[#E0E0E0] text-[#06042C] capitalize`}
 									>
 										{item.question}
 									</h3>

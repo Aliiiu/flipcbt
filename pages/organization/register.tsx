@@ -13,7 +13,7 @@ const Register = () => {
 	return (
 		<div className=''>
 			<Head>
-				<title>organisation-Form | register</title>
+				<title>organization-Form</title>
 			</Head>
 			<div className='md:hidden'>
 				<Navbar />
@@ -21,7 +21,7 @@ const Register = () => {
 			<div className='container'>
 				<div className='md:flex'>
 					<div className='w-1/2 mobile:hidden md:hidden flex justify-center gs_register lg:inline-flex bg-[#0075FF]'>
-						<div className='flex flex-col justify-between h-full w-full'>
+						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
@@ -49,7 +49,7 @@ const Register = () => {
 						</div>
 					</div>
 					<div className='md:w-1/2 w-full block md:pt-[116px] pt-[124px] pb-[116px] md:pb-[150px]'>
-						<div className='md:flex justify-center items-center mobile:px-7'>
+						<div className='items-center justify-center md:flex mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='md:text-[40px] text-[32px] text-[#06042C] font-bold mobile:text-center'>
 									Create Account!
@@ -62,12 +62,12 @@ const Register = () => {
 									<form className='flex flex-col'>
 										<input
 											type='text'
-											placeholder='Organisation Name'
+											placeholder='organization Name'
 											className='px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border mobile:border-black w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
 											type='email'
-											placeholder='Organisation Email'
+											placeholder='organization Email'
 											className='px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
@@ -77,13 +77,13 @@ const Register = () => {
 										/>
 										<input
 											type='text'
-											placeholder='Organisation Address'
+											placeholder='organization Address'
 											className='px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<div className='relative'>
 											<select className='block px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'>
 												<option className=''>Purpose</option>
-												<option>Organisation Size</option>
+												<option>organization Size</option>
 												<option>School Size</option>
 											</select>
 											<div className='pointer-events-none absolute inset-y-0 right-2 bottom-4 flex justify-center h-[57px] items-center px-2 text-gray-700'>
@@ -95,7 +95,7 @@ const Register = () => {
 												/>
 											</div>
 										</div>
-										<textarea
+										{/* <textarea
 											className='
 																		block
 																		resize-y
@@ -110,8 +110,8 @@ const Register = () => {
 																		m-0'
 											placeholder='Message'
 											rows={4}
-										></textarea>
-										<div className='mt-[2em] mobile:items-center mobile:text-center'>
+										></textarea> */}
+										<div className='mt-[0px] mobile:items-center mobile:text-center'>
 											<div>
 												<Button
 													href={'/get-started'}

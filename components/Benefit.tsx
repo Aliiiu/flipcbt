@@ -10,30 +10,30 @@ type ArrayObject = {
 const benefit: ArrayObject[][] = [
 	[
 		{
-			title: 'Automatically generates exam numbers for students',
+			title: 'Automatically Generates Exam Numbers For Students',
 			content: `Discard the manual method of giving out examination numbers. Embrace 
-								FLIP to immediately generate unique numbers for students.
+								Flip to immediately generate unique numbers for students.
 `,
 		},
 		{
-			title: 'Randomly assigns generated questions for each student.',
-			content: ` FLIP distributes shuffled questions for each student
+			title: 'Randomly Assigns Generated Questions For Each Student.',
+			content: ` Flip distributes shuffled questions for each student
 									with a completely different question arrangement.`,
 		},
 		{
 			title: 'Advanced Security Features To Avoid Examination Malpractices.',
-			content: `There are standard security protocols inherent in FLIP to 
+			content: `There are standard security protocols inherent in Flip to 
 								ensure that the assessment integrity is maintained. `,
 		},
 		{
 			title: 'Retains Data For Future Use.',
-			content: `FLIP helps to save academic records including scores of assessment
+			content: `Flip helps to save academic records including scores of assessment
 								of students for easy accessibility in the future.This implies that
-								FLIP provides these records instantly when needed for reference purposes.`,
+								Flip provides these records instantly when needed for reference purposes.`,
 		},
 		{
-			title: 'Easy Grading And  Collation Of Results.',
-			content: `FLIP helps eliminate the scope of human error and the hassle of assigning
+			title: 'Easy Grading and Collation of Results.',
+			content: `Flip helps eliminate the scope of human error and the hassle of assigning
 								script marking responsibilities to teachers. In addition, multiple-choice
 								questions can also be graded easily.`,
 		},
@@ -41,30 +41,30 @@ const benefit: ArrayObject[][] = [
 	[
 		{
 			title: 'Remote Friendly.',
-			content: `FLIP allows organisations to conduct assessments that can be 
+			content: `Flip allows organizations to conduct assessments that can be 
 								easily assessed by different candidates at their respective locations.`,
 		},
 		{
 			title: 'Seamless Assessment Flow.',
-			content: `FLIP frowns at any kind of hindrance while taking an assessment. 
+			content: `Flip frowns at any kind of hindrance while taking an assessment. 
 								Flip is very responsive and doesn’t give room for hitches so far 
 								the assessment taker has a stable internet connection.`,
 		},
 		{
 			title: 'Real-time processing of results for candidates.',
-			content: `FLIP eliminates the anxiety of assessment takers after taking an 
+			content: `Flip eliminates the anxiety of assessment takers after taking an 
 								assessment. Results and performance of each person are displayed 
 								immediately after the assessment is over.`,
 		},
 		{
 			title: 'Reliable and Flexible to Use.',
-			content: `FLIP can be used on any device (mobile device, desktop, or laptop)
+			content: `Flip can be used on any device (mobile device, desktop, or laptop)
 								and can be set up on any operating system (Windows, Mac, Linux).`,
 		},
 		{
 			title: 'Security Protocol Enabled.',
 			content: `It is extremely difficult for assessment takers to override the security 
-								protocols fully enabled on FLIP. With FLIP, you can rest assured that every 
+								protocols fully enabled on Flip. With Flip, you can rest assured that every 
 								piece of data is extremely secure.`,
 		},
 	],
@@ -76,7 +76,7 @@ const Benefit = () => {
 	const ForSchool = (): void => {
 		setCurrTab(0);
 	};
-	const ForOrganisation = (): void => {
+	const Fororganization = (): void => {
 		setCurrTab(1);
 	};
 
@@ -90,7 +90,7 @@ const Benefit = () => {
 								<div className='bg-white flex flex-col justify-between w-[45%] rounded-[30px] p-[3em]'>
 									<div>
 										<div className='text-center text-[30px] font-semibold mb-7'>
-											What School Get
+											What Schools Get
 										</div>
 										{benefit[0].map((item, idx) => (
 											<div
@@ -104,11 +104,11 @@ const Benefit = () => {
 															src={'/tick.png'}
 															alt=''
 														/>
-														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
+														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
 															{item.title}
 														</h5>
 													</div>
-													<p className='mt-3	'>{item.content}</p>
+													<p className='mt-3 '>{item.content}</p>
 												</div>
 											</div>
 										))}
@@ -124,7 +124,7 @@ const Benefit = () => {
 								<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col justify-between'>
 									<div>
 										<div className='text-center text-[30px] font-semibold mb-7'>
-											What Organisation Get
+											What Organizations Get
 										</div>
 										{benefit[1].map((item, idx) => (
 											<div
@@ -138,7 +138,7 @@ const Benefit = () => {
 															src={'/tick.png'}
 															alt=''
 														/>
-														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
+														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
 															{item.title}
 														</h5>
 													</div>
@@ -149,7 +149,7 @@ const Benefit = () => {
 									</div>
 									<div className='text-center'>
 										<Button
-											href={'/for-organisation'}
+											href={'/for-organization'}
 											bgColor='bg-[#0075FF]'
 											content={'Get Started'}
 										/>
@@ -158,7 +158,7 @@ const Benefit = () => {
 							</div>
 							<div className='md:hidden mobile:w-full'>
 								<div className='flex justify-between w-full mb-8'>
-									<div className='py-5 header-card cursor-pointer whitespace-nowrap'>
+									<div className='py-5 cursor-pointer header-card whitespace-nowrap'>
 										<button
 											className={`text-xl text-left font-semibold ${
 												currTab === 0 ? 'text-[#06042C]' : 'text-[#BABABA]'
@@ -169,15 +169,15 @@ const Benefit = () => {
 											What <br /> Schools <br /> Get
 										</button>
 									</div>
-									<div className='header-card py-5 whitespace-nowrap cursor-pointer'>
+									<div className='py-5 cursor-pointer header-card whitespace-nowrap'>
 										<button
 											className={`text-xl text-left font-semibold ${
 												currTab === 1 ? 'text-[#06042C]' : 'text-[#BABABA]'
 											}`}
 											type='button'
-											onClick={ForOrganisation}
+											onClick={Fororganization}
 										>
-											What <br /> Organisations <br /> Get
+											What <br /> Organizations <br /> Get
 										</button>
 									</div>
 								</div>
@@ -220,61 +220,3 @@ const Benefit = () => {
 };
 
 export default Benefit;
-
-{
-	/* <div className='w-full'>
-	<div className='flex overflow-x-hidden mb-9'>
-		<div className='py-5 cursor-pointer whitespace-nowrap'>
-			<button
-				className={`text-xl font-semibold ${
-					currTab === 0 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'
-				}`}
-				type='button'
-				onClick={ForSchool}
-			>
-				What Schools Get
-			</button>
-			<div
-				className={`${
-					currTab === 0 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'
-				} mt-3 h-1`}
-			></div>
-		</div>
-		<div className='mobile:pl-[3rem] md:px-[8rem] py-5 whitespace-nowrap cursor-pointer'>
-			<button
-				className={`text-xl font-semibold mobile:w-[15rem] ${
-					currTab === 1 ? 'text-[#0075FF]' : 'text-[#BDBDBD]'
-				}`}
-				type='button'
-				onClick={ForOrganisation}
-			>
-				What Organisations Get
-			</button>
-			<div
-				className={`${
-					currTab === 1 ? 'bg-[#0075FF]' : 'bg-[#BDBDBD]'
-				} mt-3 w-full h-1`}
-			></div>
-		</div>
-	</div>
-	{benefit[currTab].map((item, idx) => (
-		<div className='flex flex-col justify-between pr-1 mb-6 md:mb-8' key={idx}>
-			<div className='flex flex-col'>
-				<div className='flex'>
-					<Image src='/Tick-Square.svg' alt='tick' width='20px' height='20px' />
-					<h2 className='ml-5 font-semibold text-[18px] md:text-[20px]'>
-						{item.title}
-					</h2>
-				</div>
-				<p className='mt-4'>{item.content}</p>
-			</div>
-		</div>
-	))}
-
-	{/* <div className='mobile:pt-9 pt-9'>
-                <Link href=''>
-                  <a className='py-3 text-white bg-blue-500 px-[4rem] md:py-5 btn-border'> GET STARTED</a>
-                </Link>
-              </div> */
-}
-// </div>; */}
