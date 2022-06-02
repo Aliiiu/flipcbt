@@ -43,7 +43,7 @@ const Register = () => {
 							</div>
 						</div>
 					</div>
-					<div className='lg:w-1/2 md:pt-[116px] pt-[124px] pb-[207px] md:pb-[156px]'>
+					<div className='lg:w-1/2 w-full md:pt-[116px] pt-[124px] pb-[207px] md:pb-[156px]'>
 						<div className='items-center justify-center md:flex mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='md:text-[40px] text-[32px] font-bold mobile:text-center'>
