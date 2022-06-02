@@ -66,7 +66,7 @@ const Navbar = () => {
 										router.pathname === '/for-school' ? 'text-blue-400' : null
 									} hover:text-blue-500 active:text-blue-500`}
 								>
-									For Student
+									For School
 								</a>
 							</Link>
 						</div>
@@ -121,7 +121,7 @@ const Navbar = () => {
 												onClick={() => ShowNav(false)}
 												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
 											>
-												For Student
+												For School
 											</a>
 										</Link>
 									</div>

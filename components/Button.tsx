@@ -9,12 +9,12 @@ interface IButton {
 
 const Button: FC<IButton> = ({ href, content, bgColor }) => {
 	return (
-		<Link href={href} passHref>
-			<button
+		<Link href={href}>
+			<a
 				className={`py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] ${bgColor} text-white`}
 			>
 				{content}
-			</button>
+			</a>
 		</Link>
 	);
 };

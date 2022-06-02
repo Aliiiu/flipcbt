@@ -15,7 +15,7 @@ const Register = () => {
 			</div>
 			<div className='container'>
 				<div className='md:flex'>
-					<div className='w-full mobile:hidden md:hidden gs_register flex justify-center lg:inline-flex bg-[#0075FF]'>
+					<div className='lg:w-1/2 mobile:hidden md:hidden gs_register flex justify-center lg:inline-flex bg-[#0075FF]'>
 						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
@@ -28,7 +28,7 @@ const Register = () => {
 									/>
 								</Link>
 							</div>
-							<div className='relative w-[90%] mx-auto h-full'>
+							<div className='relative w-full h-full mx-auto'>
 								<Image
 									src={'/reg_mark.png'}
 									alt='get started iamge'
@@ -43,43 +43,43 @@ const Register = () => {
 							</div>
 						</div>
 					</div>
-					<div className='md:w-full block md:pt-[116px] pt-[124px] pb-[207px] md:pb-[156px]'>
+					<div className='lg:w-1/2 md:pt-[116px] pt-[124px] pb-[207px] md:pb-[156px]'>
 						<div className='items-center justify-center md:flex mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='md:text-[40px] text-[32px] font-bold mobile:text-center'>
 									Get Started
 								</h2>
-								<p className='text-[16px] mb-[50px] mobile:text-center'>
+								<p className='text-[16px] mb-[40px] mobile:text-center'>
 									Marketing Information
 								</p>
 								<form className='flex flex-col'>
 									<input
 										type='text'
 										placeholder='Name'
-										className='px-4 py-4 mb-[30px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
+										className='px-4 py-4 mb-[20px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
 									/>
 									<input
 										type='text'
 										placeholder='School Name'
-										className='px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										type='email'
 										placeholder='Email'
-										className='px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										type='text'
 										placeholder='Phone Number'
-										className='px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										type='text'
 										placeholder='Address'
-										className='px-4 py-4 mb-[30px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<div className='relative'>
-										<select className='block px-4 py-4 mb-[30px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
+										<select className='block px-4 py-4 mb-[20px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
 											<option>Degree</option>
 											<option>organization Size</option>
 											<option>School Size</option>
@@ -100,7 +100,7 @@ const Register = () => {
 										<p>Tap here to upload cover letter</p>
 										<input id='dropzone-file' type='file' className='hidden' />
 									</label>
-									<div className='mt-[30px] w-full'>
+									<div className='inline-flex text-center mt-[25px] w-full'>
 										<Button
 											href={'/get-started'}
 											content='Get Started'
