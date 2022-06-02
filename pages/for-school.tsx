@@ -27,12 +27,8 @@ const ForSchool = () => {
 								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:pt-[70px] mobile:pb-[90px] '>
 										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px] capitalize'>
-											USe The Right{' '}
-											<br className='mobile:hidden md:hidden lg:block' /> Tool
-											To Conduct{' '}
-											<br className='mobile:hidden md:hidden lg:block' />A
-											stress-free{' '}
-											<br className='mobile:hidden md:hidden lg:block' />
+											Use The Right <br /> Tool To Conduct <br />A stress-free{' '}
+											<br />
 											Assessment.
 										</h1>
 										<p className='md:mt-3 mobile:my-[24px]'>

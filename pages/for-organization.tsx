@@ -27,9 +27,8 @@ const Fororganization = () => {
 								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
 									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
 										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px] capitalize'>
-											You Don’t Need <br className='mobile:hidden' /> To Sweat
-											Up <br className='mobile:hidden' /> While Setting{' '}
-											<br className='mobile:hidden' /> Up Assessments
+											You Don’t Need <br /> To Sweat Up <br /> While Setting{' '}
+											<br /> Up Assessments
 										</h1>
 										<p className='md:mt-3 mobile:my-[24px]'>
 											FlipCBT for organizations allows potential individuals{' '}
