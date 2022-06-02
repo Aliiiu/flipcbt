@@ -44,6 +44,16 @@ function MyApp({ Component, pageProps }: AppProps) {
 					href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap'
 					rel='stylesheet'
 				/>
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-N22LKF3SEW"></script>
+				<script dangerouslySetInnerHTML={ {
+					__html: `
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+					
+						gtag('config', 'G-N22LKF3SEW');`
+					}
+				} />
 			</Head>
 
 			<Component {...pageProps} />
