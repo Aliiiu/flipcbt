@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Feature = () => {
 	return (
-		<section className='md:pt-[6rem] mobile:pt-[4rem]'>
+		<section className='md:pt-[6rem] mobile:pt-[60px]'>
 			<div className='container vector-1'>
 				<div className='vector-2'>
 					<div className='mobile:w-auto px-[8em] mobile:px-7 flex flex-col w-full mobile:mx-0'>

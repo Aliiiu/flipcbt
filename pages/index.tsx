@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 						<section className=''>
 							<div className='flex justify-between'>
 								<div className='w-full md:w-1/2'>
-									<div className='flex mobile:w-full flex-col md:mt-[106px] mobile:pt-[3em] mobile:pb-[6em]'>
+									<div className='flex mobile:w-full flex-col md:mt-[106px] mobile:py-[70px]'>
 										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[68.09px] capitalize'>
 											Setting Up and <br /> Preparing For <br /> Assessment{' '}
 											<br className='md:hidden' /> Without{' '}
