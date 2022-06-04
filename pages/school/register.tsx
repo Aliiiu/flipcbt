@@ -2,8 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Button from '../../components/Button';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/Layout/Navbar';
 
 const Register = () => {
 	useEffect(() => {
@@ -25,7 +24,7 @@ const Register = () => {
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
-										src={'/Flip_Cbt_WhiteLogo.png'}
+										src={'../../images/whiteLogo.png'}
 										alt='flip logo'
 										width={'200px'}
 										height='200px'
@@ -35,16 +34,12 @@ const Register = () => {
 							</div>
 							<div className='relative w-full h-full'>
 								<Image
-									src={'/reg_bg.png'}
+									src={'../../images/reg_bg.png'}
 									alt='get started image'
 									layout='fill'
 									objectFit='contain'
 								/>
-								{/* <img
-									src='/reg_bg.png'
-									alt='get started image'
-									className='get-started-img'
-								/> */}
+								{/* <img src='/reg_bg' alt='new' width={'700px'} height='650px' /> */}
 							</div>
 						</div>
 					</div>
@@ -57,59 +52,61 @@ const Register = () => {
 								<p className='text-[16px] mobile:text-center'>
 									School Information
 								</p>
-								<form className='flex flex-col mt-[40px]'>
+								<form className='flex flex-col mt-[50px]'>
 									<input
+										required
 										type='text'
 										placeholder='Name'
-										className='px-4 py-4 mb-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
+										required
 										type='text'
 										placeholder='School Name'
-										className='px-4 py-4 mb-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
+										required
 										type='email'
 										placeholder='Email'
-										className='px-4 py-4 mb-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
+										required
 										type='text'
 										placeholder='Phone Number'
-										className='px-4 py-4 mb-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										type='text'
 										placeholder='Role at school'
-										className='px-4 py-4 mb-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										type='text'
 										placeholder='School Address'
-										className='px-4 py-4 mb-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
-									<div className='relative'>
-										<select className='block px-4 py-4 mb-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
-											<option>Select School Size</option>
+									<div className='relative mb-[25px]'>
+										<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
+											<option>School Size</option>
 											<option>200 Students</option>
 											<option>200 - 500 Students</option>
 											<option>More than 500 Students</option>
 										</select>
 										<div className='absolute inset-y-0 flex items-center justify-center px-2 pointer-events-none right-2 bottom-4'>
 											<Image
-												src={'/Expand_down.png'}
+												src={'../../images/expandDown.png'}
 												alt='expand button'
 												width='19.17px'
 												height='18.33px'
 											/>
 										</div>
 									</div>
-									<div className='inline-flex w-full bg-orange-100 '>
-										<Button
-											href={'/get-started'}
-											content='Get Started'
-											bgColor='bg-[#0075FF] w-full text-center'
-										/>
+									<div className='w-full text-center'>
+										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-[50%] bg-[#0075FF] text-white'>
+											Submit
+										</button>
 									</div>
 								</form>
 							</div>

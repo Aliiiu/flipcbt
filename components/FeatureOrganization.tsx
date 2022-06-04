@@ -8,21 +8,21 @@ const Data = [
 		content: `Flip is the powerhouse of all assessment providers,
 							taking your organization to the next level.`,
 		alt: 'Productivity Illustration',
-		image: '/feature1.png',
+		image: '/images/feature1.png',
 	},
 	{
 		heading: 'Responsible access controlled by you',
 		content: `Flip grants you complete authority over your data. This means that you
 							have total access to your e-records whenever you need them.`,
 		alt: 'High security Illustration',
-		image: '/feature2.png',
+		image: '/images/feature2.png',
 	},
 	{
 		heading: 'Hitch Free Process.',
 		content: `Flip has been designed to eliminate all difficulties you might
 							encounter while conducting assessments.`,
 		alt: 'Hitch Free Process Illustration',
-		image: '/feature3.png',
+		image: '/images/feature3.png',
 	},
 ];
 

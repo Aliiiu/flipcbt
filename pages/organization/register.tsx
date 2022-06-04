@@ -2,8 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Button from '../../components/Button';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/Layout/Navbar';
 
 const Register = () => {
 	useEffect(() => {
@@ -25,7 +24,7 @@ const Register = () => {
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
-										src={'/Flip_Cbt_WhiteLogo.png'}
+										src={'../../images/whiteLogo.png'}
 										alt='flip logo'
 										width={'200px'}
 										height='200px'
@@ -35,7 +34,7 @@ const Register = () => {
 							</div>
 							<div className='relative h-full w-[100%] mx-auto'>
 								<Image
-									src={'/reg_org.png'}
+									src={'../../images/reg_org.png'}
 									alt='get started image'
 									layout='fill'
 									objectFit='contain'
@@ -54,41 +53,45 @@ const Register = () => {
 								<h2 className='md:text-[40px] text-[32px] text-[#06042C] font-bold mobile:text-center'>
 									Create Account!
 								</h2>
-								<p className='text-[16px] text-[#06042C] mb-[40px] mobile:text-center'>
+								<p className='text-[16px] text-[#06042C] mb-[50px] mobile:text-center'>
 									For the purpose of industry regulation, your details are
 									required.
 								</p>
 								<div className=''>
 									<form className='flex flex-col'>
 										<input
+											required
 											type='text'
 											placeholder='organization Name'
-											className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border mobile:border-black w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'
+											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border mobile:border-black w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
+											required
 											type='email'
 											placeholder='organization Email'
-											className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
+											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
+											required
 											type='text'
 											placeholder='Password'
-											className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow bg-transparent appearance-none leading-tight rounded-[10px]'
+											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow bg-transparent appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
+											required
 											type='text'
 											placeholder='organization Address'
-											className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
+											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
-										<div className='relative'>
-											<select className='block px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'>
+										<div className='relative mb-[25px]'>
+											<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'>
 												<option className=''>Purpose</option>
 												<option>organization Size</option>
 												<option>School Size</option>
 											</select>
 											<div className='pointer-events-none absolute inset-y-0 right-2 bottom-4 flex justify-center h-[57px] items-center px-2 text-gray-700'>
 												<Image
-													src={'/Expand_down.png'}
+													src={'../../images/expandDown.png'}
 													alt='expand button'
 													width='19.17px'
 													height='18.33px'
@@ -111,12 +114,10 @@ const Register = () => {
 											placeholder='Message'
 											rows={4}
 										></textarea> */}
-										<div className='mt-[0px] flex text-center'>
-											<Button
-												href={'/get-started'}
-												content='Get Started'
-												bgColor='bg-[#0075FF] w-full'
-											/>
+										<div className='mt-[0px] text-center'>
+											<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-[50%] bg-[#0075FF] text-white'>
+												Submit
+											</button>
 											{/* <div className='mt-4 text-center mobile:w-full'>
 												<p>
 													Alreadly have an account?{' '}

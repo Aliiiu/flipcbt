@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Button from './Button';
-import CustomImage from './Image';
+import Button from './UI/Button';
+import CustomImage from './UI/Image';
 
 type ArrayObject = {
 	title: string;
@@ -101,7 +101,7 @@ const Benefit = () => {
 													<div className='inline-flex items-center'>
 														<CustomImage
 															className='w-[35px] h-[35px] '
-															src={'/tick.png'}
+															src={'/images/tick.png'}
 															alt=''
 														/>
 														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
@@ -113,7 +113,7 @@ const Benefit = () => {
 											</div>
 										))}
 									</div>
-									<div className='text-center'>
+									<div className='text-center md:mt-[15px]'>
 										<Button
 											href={'/for-school'}
 											bgColor='bg-[#FFAD4A]'
@@ -135,7 +135,7 @@ const Benefit = () => {
 													<div className='inline-flex items-center'>
 														<CustomImage
 															className='w-[35px] h-[35px] '
-															src={'/tick.png'}
+															src={'/images/tick.png'}
 															alt=''
 														/>
 														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
@@ -190,7 +190,7 @@ const Benefit = () => {
 											<div className='inline-flex items-center'>
 												<CustomImage
 													className='w-[35px] h-[35px] '
-													src={'/tick.png'}
+													src={'/images/tick.png'}
 													alt=''
 												/>
 												<h5 className='ml-5 font-semibold text-[18px] md:text-[20px]'>

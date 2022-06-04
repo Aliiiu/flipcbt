@@ -14,7 +14,7 @@ const GettingStartedForSchool = () => {
 						<div className='bg-white flex flex-col items-center h-[249px] card'>
 							<div>
 								<Image
-									src='/icon_plus.png'
+									src='/images/icon_plus.png'
 									alt='Add Question illustration'
 									width='92px'
 									height='92px'
@@ -27,7 +27,7 @@ const GettingStartedForSchool = () => {
 						<div className='bg-white flex flex-col items-center h-[280px] card'>
 							<div>
 								<Image
-									src='/device.png'
+									src='/images/device.png'
 									alt='illustration'
 									width='92px'
 									height='92px'
@@ -41,7 +41,7 @@ const GettingStartedForSchool = () => {
 						<div className=' bg-white flex flex-col items-center h-[249px] card'>
 							<div>
 								<Image
-									src='/instant.png'
+									src='/images/instant.png'
 									alt='Instant illustration'
 									width='92px'
 									height='92px'

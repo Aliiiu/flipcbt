@@ -21,7 +21,7 @@ const Feature = () => {
 								<div className='absolute top-[-50px] mobile:top-[-40px] right-0 left-0 m-auto'>
 									<div className='mobile:hidden'>
 										<Image
-											src='/time.png'
+											src='/images/time.png'
 											alt='Time management illustration'
 											width={100}
 											height={100}
@@ -29,7 +29,7 @@ const Feature = () => {
 									</div>
 									<div className='md:hidden'>
 										<Image
-											src='/time.png'
+											src='/images/time.png'
 											alt='Time management illustration'
 											width={80}
 											height={80}
@@ -50,7 +50,7 @@ const Feature = () => {
 								<div className='absolute top-[-50px] mobile:top-[-40px] right-0 left-0 m-auto'>
 									<div className='mobile:hidden'>
 										<Image
-											src='/convenience.png'
+											src='/images/convenience.png'
 											alt='convenience illustration'
 											width={100}
 											height={100}
@@ -58,7 +58,7 @@ const Feature = () => {
 									</div>
 									<div className='md:hidden'>
 										<Image
-											src='/convenience.png'
+											src='/images/convenience.png'
 											alt='convenience illustration'
 											width={80}
 											height={80}
@@ -79,7 +79,7 @@ const Feature = () => {
 								<div className='absolute top-[-50px] mobile:top-[-40px] right-0 left-0 m-auto'>
 									<div className='mobile:hidden'>
 										<Image
-											src='/speed.png'
+											src='/images/speed.png'
 											alt='Speed illustration'
 											width={100}
 											height={100}
@@ -87,7 +87,7 @@ const Feature = () => {
 									</div>
 									<div className='md:hidden'>
 										<Image
-											src='/speed.png'
+											src='/images/speed.png'
 											alt='Speed illustration'
 											width={80}
 											height={80}

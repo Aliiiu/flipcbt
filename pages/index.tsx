@@ -3,13 +3,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment, useEffect } from 'react';
 import Benefit from '../components/Benefit';
-import Button from '../components/Button';
-import Faqs from '../components/Faqs';
 import Feature from '../components/Feature';
-import Footer from '../components/Footer';
 import Guarantee from '../components/Guarantee';
+import Faqs from '../components/Layout/Faqs';
+import Footer from '../components/Layout/Footer';
+import Navbar from '../components/Layout/Navbar';
 import Motor from '../components/Motor';
-import Navbar from '../components/Navbar';
+import Button from '../components/UI/Button';
 
 const Home: NextPage = () => {
 	useEffect(() => {
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
 									<div className='relative h-full w-full md:mt-[100px]'>
 										<div className='bg-image'>
 											<Image
-												src={'/bg.png'}
+												src={'/images/hmpageBg.png'}
 												alt='excitment illustration'
 												layout='fill'
 												objectFit='contain'
@@ -76,7 +76,6 @@ const Home: NextPage = () => {
 				<Feature />
 				<Benefit />
 				<Motor />
-				{/* <Marketing /> */}
 				<Guarantee />
 				<Faqs />
 			</main>

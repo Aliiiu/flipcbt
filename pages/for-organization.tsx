@@ -2,11 +2,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment, useEffect } from 'react';
 import Benefitorganization from '../components/BenefitOrganization';
-import Button from '../components/Button';
 import Featureorganization from '../components/FeatureOrganization';
-import Footer from '../components/Footer';
 import Guarantee from '../components/Guarantee';
-import Navbar from '../components/Navbar';
+import Footer from '../components/Layout/Footer';
+import Navbar from '../components/Layout/Navbar';
+import Button from '../components/UI/Button';
 
 const Fororganization = () => {
 	useEffect(() => {
@@ -53,7 +53,7 @@ const Fororganization = () => {
 									<div className='relative md:mt-[91px] h-full'>
 										<div className='bg-image'>
 											<Image
-												src={'/orgBg2.png'}
+												src={'/images/orgBg2.png'}
 												alt='organization illustration'
 												layout='fill'
 												objectFit='contain'

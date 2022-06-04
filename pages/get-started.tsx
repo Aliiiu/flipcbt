@@ -44,7 +44,7 @@ const GetStarted = () => {
 							<Link href={'/'}>
 								<a>
 									<Image
-										src='/Flip Cbt.png'
+										src='/images/FlipCbt.png'
 										alt='Flip Cbt Logo'
 										width='100px'
 										height='50px'
@@ -67,7 +67,7 @@ const GetStarted = () => {
 									} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
 								>
 									<Image
-										src='/gs_school.png'
+										src='/images/gs_school.png'
 										alt='Flip Cbt Logo'
 										width='230px'
 										height='140px'
@@ -88,7 +88,7 @@ const GetStarted = () => {
 									} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
 								>
 									<Image
-										src='/gs_organization.png'
+										src='/images/gs_organization.png'
 										alt='Flip Cbt Logo'
 										width='160px'
 										height='140px'
@@ -110,7 +110,7 @@ const GetStarted = () => {
 									} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
 								>
 									<Image
-										src='/gs_market.png'
+										src='/images/gs_market.png'
 										alt='Flip Cbt Logo'
 										width='168px'
 										height='139px'

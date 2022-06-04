@@ -175,21 +175,21 @@ img {
 }
 
 .motor-forStudent {
-	background-image: url('/forSchool.png');
+	background-image: url('/images/forSchool.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
 .motor-fororganization {
-	background-image: url('/fororganization.png');
+	background-image: url('/images/fororganization.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
 .marketing {
-	background-image: url('/marketing.png');
+	background-image: url('/images/marketing.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: contain;

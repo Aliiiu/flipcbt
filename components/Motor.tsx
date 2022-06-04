@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from './Button';
+import Button from './UI/Button';
 const Motor = () => {
 	return (
 		<section className='flex flex-col container mobile:pt-0 mobile:pb-[8em] py-[10em] text-center'>
@@ -26,7 +26,6 @@ const Motor = () => {
 							<div>
 								<div className='grid grid-cols-2 mobile:grid-cols-1 md:gap-x-[1em] lg:gap-x-[4em] mobile:gap-y-5 md:mx-auto md:w-full'>
 									<div className='text-center bg-opacity-20 rounded-3xl motor-forStudent py-[5em]'>
-										{/* <Image src='/forSchool.png' alt='student image' layout='fill' /> */}
 										<div className=''>
 											<h2 className='text-[32px] font-semibold mt-3 text-white'>
 												For Students
@@ -62,9 +61,9 @@ const Motor = () => {
 							</div>
 						</div>
 						<div className='flex justify-between mobile:flex-col-reverse mobile:mt-[4em] md:mt-[10em]'>
-							<div className='relative md:w-1/2 mobile:w-full mobile:mt-9 mobile:h-[266px] rounded-[20px] overflow-hidden'>
+							<div className='relative md:w-1/2 mobile:w-full mobile:mt-9 mobile:h-[266px] marketing rounded-[20px] overflow-hidden'>
 								<Image
-									src='/marketer-img.png'
+									src='/images/marketer-img.png'
 									layout='fill'
 									alt='marketing illustration'
 									objectFit='cover'
@@ -82,7 +81,7 @@ const Motor = () => {
 								<div className='flex justify-start mobile:mt-10'>
 									<Button
 										href={'/marketing/register'}
-										content='Yes, I Want to Earn'
+										content='Apply Now'
 										bgColor={'btn-border bg-[#0075FF]'}
 									/>
 								</div>

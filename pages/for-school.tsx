@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment, useEffect } from 'react';
-import Button from '../components/Button';
 import FeatureForSchool from '../components/FeatureForSchool';
-import Footer from '../components/Footer';
 import GettingStartedForSchool from '../components/GettingStartedForSchool';
 import Guarantee from '../components/Guarantee';
-import Navbar from '../components/Navbar';
+import Footer from '../components/Layout/Footer';
+import Navbar from '../components/Layout/Navbar';
+import Button from '../components/UI/Button';
 
 const ForSchool = () => {
 	useEffect(() => {
@@ -55,7 +55,7 @@ const ForSchool = () => {
 									<div className='relative md:mt-[61px] h-full'>
 										<div className='bg-image'>
 											<Image
-												src={'/studentBg.png'}
+												src={'/images/studentBg.png'}
 												alt='student illustration'
 												layout='fill'
 												objectFit='contain'

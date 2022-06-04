@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '../../components/Button';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/Layout/Navbar';
 
 const Register = () => {
 	return (
@@ -20,7 +19,7 @@ const Register = () => {
 							<div className=''>
 								<Link href={'/'} passHref>
 									<Image
-										src={'/Flip_Cbt_WhiteLogo.png'}
+										src={'../../images/whiteLogo.png'}
 										alt='flip logo'
 										width={'200px'}
 										height='200px'
@@ -30,7 +29,7 @@ const Register = () => {
 							</div>
 							<div className='relative w-full h-full mx-auto'>
 								<Image
-									src={'/reg_mark.png'}
+									src={'../../images/reg_mark.png'}
 									alt='get started iamge'
 									layout='fill'
 									objectFit='contain'
@@ -49,44 +48,49 @@ const Register = () => {
 								<h2 className='md:text-[40px] text-[32px] font-bold mobile:text-center'>
 									Get Started
 								</h2>
-								<p className='text-[16px] mb-[40px] mobile:text-center'>
+								<p className='text-[16px] mb-[50px] mobile:text-center'>
 									Marketing Information
 								</p>
 								<form className='flex flex-col'>
 									<input
+										required
 										type='text'
 										placeholder='Name'
-										className='px-4 py-4 mb-[20px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
+										className='px-4 py-4 mb-[25px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
 									/>
 									<input
+										required
 										type='text'
 										placeholder='School Name'
-										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
+										required
 										type='email'
 										placeholder='Email'
-										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
+										required
 										type='text'
 										placeholder='Phone Number'
-										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
+										required
 										type='text'
 										placeholder='Address'
-										className='px-4 py-4 mb-[20px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<div className='relative'>
-										<select className='block px-4 py-4 mb-[20px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
+										<select className='block px-4 py-4 mb-[25px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
 											<option>Degree</option>
 											<option>organization Size</option>
 											<option>School Size</option>
 										</select>
 										<div className='pointer-events-none absolute inset-y-0 right-2 h-[58px] flex flex-col justify-center items-center px-2 text-gray-700'>
 											<Image
-												src={'/Expand_down.png'}
+												src={'../../images/expandDown.png'}
 												alt='expand button'
 												width='19.17px'
 												height='18.33px'
@@ -100,12 +104,10 @@ const Register = () => {
 										<p>Tap here to upload cover letter</p>
 										<input id='dropzone-file' type='file' className='hidden' />
 									</label>
-									<div className='inline-flex text-center mt-[25px] w-full'>
-										<Button
-											href={'/get-started'}
-											content='Get Started'
-											bgColor='bg-[#0075FF] w-full'
-										/>
+									<div className='mt-[25px] text-center w-full'>
+										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-[50%] bg-[#0075FF] text-white'>
+											Submit
+										</button>
 									</div>
 								</form>
 							</div>

@@ -9,7 +9,7 @@ const Data = [
             and with earnipay’s flexible salary payment solutions, productivity isn’t a demand anymore, it’s a
             lifestyle.`,
 		alt: 'Data Analytics Illustration',
-		image: '/data-analytics.png',
+		image: '/images/data_analytics.png',
 	},
 	{
 		heading:
@@ -18,7 +18,7 @@ const Data = [
           to our success and with earnipay’s flexible salary payment solutions, 
           productivity isn’t a demand anymore, it’s a lifestyle.`,
 		alt: 'Remote Friendly Illustration',
-		image: '/friendly.png',
+		image: '/images/friendly.png',
 	},
 	{
 		heading: 'All reports are saved and can be accessed at any time',
@@ -26,7 +26,7 @@ const Data = [
             and with earnipay’s flexible salary payment solutions, productivity isn’t a demand anymore, it’s a
             lifestyle.`,
 		alt: 'Book Kepping Illustration',
-		image: '/cloud-storage.png',
+		image: '/images/cloud-storage.png',
 	},
 ];
 

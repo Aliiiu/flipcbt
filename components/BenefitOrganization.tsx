@@ -1,6 +1,6 @@
 import { ImageProps } from 'next/image';
-import Button from './Button';
-import CustomImage from './Image';
+import Button from './UI/Button';
+import CustomImage from './UI/Image';
 
 type BenefitObject = {
 	title: string;
@@ -14,28 +14,28 @@ const Benefitorganization = () => {
 			title: 'Sign up in 5 minutes',
 			content: `Input your details and sign up for free`,
 			alt: 'sign up time illustration',
-			image: '/sign-up.png',
+			image: '/images/sign-up.png',
 		},
 		{
 			title: 'Set-up Questions and Instructions For Assessment',
 			content: `Input the candidate's assessment questions, guidelines,
 								and other necessary data while Flip processes the rest. `,
 			alt: 'questions and instruction illustration',
-			image: '/questions.png',
+			image: '/images/questions.png',
 		},
 		{
 			title: 'Easy Access and Full Transparency',
 			content: `Flip allows free access to your admin portal, 
 								ensuring complete honesty and stringent security.`,
 			alt: 'easy access illustration',
-			image: '/easy-access.png',
+			image: '/images/easy-access.png',
 		},
 		{
 			title: 'Get Resources and Support',
 			content: `Our support team is always available to assist 
 								you and provide answers to your inquiries.`,
 			alt: 'support illustration',
-			image: '/support.png',
+			image: '/images/support.png',
 		},
 	];
 	return (
