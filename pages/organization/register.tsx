@@ -62,32 +62,28 @@ const Register = () => {
 										<input
 											required
 											type='text'
-											placeholder='organization Name'
+											placeholder='Organization Name'
 											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border mobile:border-black w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
 											required
 											type='email'
-											placeholder='organization Email'
+											placeholder='Organization Email'
 											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
 											required
 											type='text'
-											placeholder='Password'
-											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow bg-transparent appearance-none leading-tight rounded-[10px]'
-										/>
-										<input
-											required
-											type='text'
-											placeholder='organization Address'
+											placeholder='Organization Address'
 											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<div className='relative mb-[25px]'>
 											<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'>
-												<option className=''>Purpose</option>
-												<option>organization Size</option>
-												<option>School Size</option>
+												<option>Purpose</option>
+												<option>Aptitude Test</option>
+												<option>Quiz</option>
+												<option>Poll</option>
+												<option>Others</option>
 											</select>
 											<div className='pointer-events-none absolute inset-y-0 right-2 bottom-4 flex justify-center h-[57px] items-center px-2 text-gray-700'>
 												<Image
@@ -115,7 +111,7 @@ const Register = () => {
 											rows={4}
 										></textarea> */}
 										<div className='mt-[0px] text-center'>
-											<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-[50%] bg-[#0075FF] text-white'>
+											<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
 												Submit
 											</button>
 											{/* <div className='mt-4 text-center mobile:w-full'>

@@ -46,10 +46,10 @@ const Register = () => {
 						<div className='items-center justify-center md:flex mobile:px-7'>
 							<div className='md:w-[70%]'>
 								<h2 className='md:text-[40px] text-[32px] font-bold mobile:text-center'>
-									Get Started
+									Become a Marketer
 								</h2>
 								<p className='text-[16px] mb-[50px] mobile:text-center'>
-									Marketing Information
+									Kindly provide us your information
 								</p>
 								<form className='flex flex-col'>
 									<input
@@ -60,19 +60,13 @@ const Register = () => {
 									/>
 									<input
 										required
-										type='text'
-										placeholder='School Name'
-										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
-									/>
-									<input
-										required
 										type='email'
 										placeholder='Email'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										required
-										type='text'
+										type='tel'
 										placeholder='Phone Number'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
@@ -85,8 +79,9 @@ const Register = () => {
 									<div className='relative'>
 										<select className='block px-4 py-4 mb-[25px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
 											<option>Degree</option>
-											<option>organization Size</option>
-											<option>School Size</option>
+											<option>Bsc</option>
+											<option>HND</option>
+											<option>Others</option>
 										</select>
 										<div className='pointer-events-none absolute inset-y-0 right-2 h-[58px] flex flex-col justify-center items-center px-2 text-gray-700'>
 											<Image
@@ -105,7 +100,7 @@ const Register = () => {
 										<input id='dropzone-file' type='file' className='hidden' />
 									</label>
 									<div className='mt-[25px] text-center w-full'>
-										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-[50%] bg-[#0075FF] text-white'>
+										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
 											Submit
 										</button>
 									</div>

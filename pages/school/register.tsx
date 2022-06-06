@@ -77,11 +77,24 @@ const Register = () => {
 										placeholder='Phone Number'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
-									<input
-										type='text'
-										placeholder='Role at school'
-										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
-									/>
+									<div className='relative mb-[25px]'>
+										<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
+											<option>Role at School</option>
+											<option> School Owner </option>
+											<option>Principal</option>
+											<option>Admin</option>
+											<option>Teacher</option>
+											<option>Others</option>
+										</select>
+										<div className='absolute inset-y-0 flex items-center justify-center px-2 pointer-events-none right-2'>
+											<Image
+												src={'../../images/expandDown.png'}
+												alt='expand button'
+												width='19.17px'
+												height='18.33px'
+											/>
+										</div>
+									</div>
 									<input
 										type='text'
 										placeholder='School Address'
@@ -90,11 +103,12 @@ const Register = () => {
 									<div className='relative mb-[25px]'>
 										<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
 											<option>School Size</option>
-											<option>200 Students</option>
-											<option>200 - 500 Students</option>
-											<option>More than 500 Students</option>
+											<option> &lt; 200 </option>
+											<option>200 - 500</option>
+											<option>500 - 1000</option>
+											<option>1000 &gt;</option>
 										</select>
-										<div className='absolute inset-y-0 flex items-center justify-center px-2 pointer-events-none right-2 bottom-4'>
+										<div className='absolute inset-y-0 flex flex-col justify-center px-2 pointer-events-none right-2'>
 											<Image
 												src={'../../images/expandDown.png'}
 												alt='expand button'
@@ -104,7 +118,7 @@ const Register = () => {
 										</div>
 									</div>
 									<div className='w-full text-center'>
-										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-[50%] bg-[#0075FF] text-white'>
+										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
 											Submit
 										</button>
 									</div>
