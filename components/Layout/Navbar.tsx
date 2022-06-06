@@ -27,13 +27,15 @@ const Navbar = () => {
 					<div className='flex items-center justify-between'>
 						<div className='relative w-[82px] h-[58px] mobile:w-[70px] mobile:h-[40px]'>
 							<Link href='/' passHref>
-								<Image
-									src='../../images/FlipCbt.png'
-									alt='flipcbt logo'
-									layout='fill'
-									objectFit='contain'
-									className='cursor-pointer'
-								/>
+								<a>
+									<Image
+										src='../../images/FlipCbt.png'
+										alt='flipcbt logo'
+										layout='fill'
+										objectFit='contain'
+										className='cursor-pointer'
+									/>
+								</a>
 							</Link>
 						</div>
 						<div className='mobile:hidden flex justify-between w-[40%]'>

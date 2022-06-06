@@ -60,7 +60,7 @@ const GetStarted = () => {
 						</div>
 						<div className='grid grid-cols-3 mobile:grid-cols-1 mobile:gap-y-[50px] gap-x-9 '>
 							<Link href={'/school/register'} passHref>
-								<div
+								<a
 									onClick={schoolHandler}
 									className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
 										active ? 'card_select' : null
@@ -78,10 +78,10 @@ const GetStarted = () => {
 									<p className='text-center'>
 										I want Flip for <br className='mobile:hidden' /> my school
 									</p>
-								</div>
+								</a>
 							</Link>
 							<Link href={'/organization/register'} passHref>
-								<div
+								<a
 									onClick={organizationHandler}
 									className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
 										organizationActive ? 'card_select' : null
@@ -100,10 +100,10 @@ const GetStarted = () => {
 										I want to market for <br className='mobile:hidden' /> my
 										organization
 									</p>
-								</div>
+								</a>
 							</Link>
 							<Link href={'/marketing/register'} passHref>
-								<div
+								<a
 									onClick={marketingHandler}
 									className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
 										marketingActive ? 'card_select' : null
@@ -121,7 +121,7 @@ const GetStarted = () => {
 									<p className='text-center'>
 										I want to market <br className='mobile:hidden' /> for Flip
 									</p>
-								</div>
+								</a>
 							</Link>
 						</div>
 						{/* <div className='mt-[7em] flex flex-col items-start mobile:items-center mobile:text-center'>

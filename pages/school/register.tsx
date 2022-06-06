@@ -23,13 +23,15 @@ const Register = () => {
 						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
-									<Image
-										src={'../../images/whiteLogo.png'}
-										alt='flip logo'
-										width={'200px'}
-										height='200px'
-										className='cursor-pointer'
-									/>
+									<a>
+										<Image
+											src={'../../images/whiteLogo.png'}
+											alt='flip logo'
+											width={'180px'}
+											height='180px'
+											className='cursor-pointer'
+										/>
+									</a>
 								</Link>
 							</div>
 							<div className='relative w-full h-full'>

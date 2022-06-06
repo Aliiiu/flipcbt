@@ -18,13 +18,15 @@ const Register = () => {
 						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
-									<Image
-										src={'../../images/whiteLogo.png'}
-										alt='flip logo'
-										width={'200px'}
-										height='200px'
-										className='cursor-pointer'
-									/>
+									<a>
+										<Image
+											src={'../../images/whiteLogo.png'}
+											alt='flip logo'
+											width={'180px'}
+											height='180px'
+											className='cursor-pointer'
+										/>
+									</a>
 								</Link>
 							</div>
 							<div className='relative w-full h-full mx-auto'>
@@ -92,14 +94,20 @@ const Register = () => {
 											/>
 										</div>
 									</div>
-									<label
+									<input
+										required
+										type='url'
+										placeholder='Drop link to cover letter'
+										className='px-4 py-4 mb-[25px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
+									/>
+									{/* <label
 										htmlFor='dropzone-file'
 										className='flex flex-col justify-center items-center w-full py-4 rounded-[10px] bg-white border-2 border-[#06042C] border-dashed cursor-pointer'
 									>
 										<p>Tap here to upload cover letter</p>
 										<input id='dropzone-file' type='file' className='hidden' />
-									</label>
-									<div className='mt-[25px] text-center w-full'>
+									</label> */}
+									<div className='text-center w-full'>
 										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
 											Submit
 										</button>
