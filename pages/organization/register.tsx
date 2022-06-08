@@ -80,21 +80,25 @@ const Register = () => {
 											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<div className='relative mb-[25px]'>
-											<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'>
+											<select
+												multiple
+												size={1}
+												className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'
+											>
 												<option>Purpose</option>
 												<option>Aptitude Test</option>
 												<option>Quiz</option>
 												<option>Poll</option>
 												<option>Others</option>
 											</select>
-											<div className='pointer-events-none absolute inset-y-0 right-2 bottom-4 flex justify-center h-[57px] items-center px-2 text-gray-700'>
+											{/* <div className='pointer-events-none absolute inset-y-0 right-2 bottom-4 flex justify-center h-[57px] items-center px-2 text-gray-700'>
 												<Image
 													src={'../../images/expandDown.png'}
 													alt='expand button'
 													width='19.17px'
 													height='18.33px'
 												/>
-											</div>
+											</div> */}
 										</div>
 										{/* <textarea
 											className='

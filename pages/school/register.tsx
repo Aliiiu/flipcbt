@@ -108,7 +108,7 @@ const Register = () => {
 											<option> &lt; 200 </option>
 											<option>200 - 500</option>
 											<option>500 - 1000</option>
-											<option>1000 &gt;</option>
+											<option>&gt; 1000</option>
 										</select>
 										<div className='absolute inset-y-0 flex flex-col justify-center px-2 pointer-events-none right-2'>
 											<Image
