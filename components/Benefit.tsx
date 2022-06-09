@@ -42,7 +42,7 @@ const benefit: ArrayObject[][] = [
 		{
 			title: 'Remote Friendly.',
 			content: `Flip allows organizations to conduct assessments that can be 
-								easily assessed by different candidates at their respective locations.`,
+								easily accessed by different candidates at their respective locations.`,
 		},
 		{
 			title: 'Seamless Assessment Flow.',
