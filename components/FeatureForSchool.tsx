@@ -4,27 +4,23 @@ import styles from '../styles/home.module.css';
 
 const Data = [
 	{
-		heading: 'Turn student engagement into meaningful data',
-		content: `Running a business can be demanding, having motivated employees is paramount to our success 
-            and with earnipay’s flexible salary payment solutions, productivity isn’t a demand anymore, it’s a
-            lifestyle.`,
+		heading: 'Improves Students Time Management Ability',
+		content: `FLIP helps to enable students to work at a 
+							faster rate thereby helping them become better at time management.`,
 		alt: 'Data Analytics Illustration',
 		image: '/images/data_analytics.png',
 	},
 	{
-		heading:
-			'Remote friendly - no need for participants to juggle tabs. They see questions on their own device',
-		content: `Running a business can be demanding, having motivated employees is paramount 
-          to our success and with earnipay’s flexible salary payment solutions, 
-          productivity isn’t a demand anymore, it’s a lifestyle.`,
+		heading: 'Reduces Teachers Marking Responsibilities',
+		content: `The post examination process such as marking of scripts is equally time consuming and tedious as well, 
+							but all these processes are automated and streamlined efficiently using FLIP.`,
 		alt: 'Remote Friendly Illustration',
 		image: '/images/friendly.png',
 	},
 	{
-		heading: 'All reports are saved and can be accessed at any time',
-		content: `Running a business can be demanding, having motivated employees is paramount to our success 
-            and with earnipay’s flexible salary payment solutions, productivity isn’t a demand anymore, it’s a
-            lifestyle.`,
+		heading: 'Quick and Easy Access to Results',
+		content: `With FLIP, students can access their grades
+							and know their performance and how best to improve it.`,
 		alt: 'Book Kepping Illustration',
 		image: '/images/cloud-storage.png',
 	},

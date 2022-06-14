@@ -10,32 +10,32 @@ type ArrayObject = {
 const benefit: ArrayObject[][] = [
 	[
 		{
-			title: 'Automatically Generates Exam Numbers For Students',
-			content: `Discard the manual method of giving out examination numbers. Embrace 
-								Flip to immediately generate unique numbers for students.
+			title: 'Advanced Security Features To Avoid Examination Malpractices.',
+			content: `There are standard security protocols inherent in
+								FLIP to ensure that the assessment integrity is maintained. 
 `,
 		},
 		{
-			title: 'Randomly Assigns Generated Questions For Each Student.',
-			content: ` Flip distributes shuffled questions for each student
-									with a completely different question arrangement.`,
-		},
-		{
-			title: 'Advanced Security Features To Avoid Examination Malpractices.',
-			content: `There are standard security protocols inherent in Flip to 
-								ensure that the assessment integrity is maintained. `,
-		},
-		{
 			title: 'Retains Data For Future Use.',
-			content: `Flip helps to save academic records including scores of assessment
-								of students for easy accessibility in the future.This implies that
-								Flip provides these records instantly when needed for reference purposes.`,
+			content: ` FLIP helps to save academic records including scores of
+								assessment of students for easy accessibility in the future.
+								This implies that FLIP provides these records instantly when needed for reference purposes.`,
 		},
 		{
-			title: 'Easy Grading and Collation of Results.',
-			content: `Flip helps eliminate the scope of human error and the hassle of assigning
-								script marking responsibilities to teachers. In addition, multiple-choice
-								questions can also be graded easily.`,
+			title: 'Automatic Grading.',
+			content: `FLIP helps to score students immediately after the assessment 
+								has been taken which in turn relieves the teachers of the stress. `,
+		},
+		{
+			title: 'Easy Collation Of Results.',
+			content: `FLIP helps eliminate the scope of human error and the hassle
+								of assigning script marking responsibilities
+								to teachers. In addition, multiple-choice questions can also be graded easily.`,
+		},
+		{
+			title: 'Accuracy of Results.',
+			content: `With FLIP, you can be rest assured that precise 
+								scores are alloted to students after the assessment is conducted.`,
 		},
 	],
 	[
@@ -46,26 +46,24 @@ const benefit: ArrayObject[][] = [
 		},
 		{
 			title: 'Seamless Assessment Flow.',
-			content: `Flip frowns at any kind of hindrance while taking an assessment. 
-								Flip is very responsive and doesn’t give room for hitches so far 
-								the assessment taker has a stable internet connection.`,
+			content: `FLIP frowns at any kind of hindrance while taking an assessment. Flip is very responsive and doesn’t 
+								give room for hitches so far the assessment taker has a stable internet connection.`,
 		},
 		{
 			title: 'Real-time processing of results for candidates.',
-			content: `Flip eliminates the anxiety of assessment takers after taking an 
-								assessment. Results and performance of each person are displayed 
-								immediately after the assessment is over.`,
+			content: `FLIP eliminates the anxiety of candidates after taking an assessment. 
+								Results and performance of each person are displayed immediately after the assessment is over.`,
 		},
 		{
 			title: 'Reliable and Flexible to Use.',
-			content: `Flip can be used on any device (mobile device, desktop, or laptop)
-								and can be set up on any operating system (Windows, Mac, Linux).`,
+			content: `FLIP can be used on any device (mobile device, desktop, or laptop) 
+								and can be set up on any operating system (Windows, Mac, Linux). `,
 		},
 		{
 			title: 'Security Protocol Enabled.',
-			content: `It is extremely difficult for assessment takers to override the security 
-								protocols fully enabled on Flip. With Flip, you can rest assured that every 
-								piece of data is extremely secure.`,
+			content: `It is extremely difficult for assessment takers to override the 
+								security protocols fully enabled on FLIP.
+								With FLIP, you can rest assured that every piece of data is safe`,
 		},
 	],
 ];
