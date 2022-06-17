@@ -1,14 +1,61 @@
+import axios from 'axios';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import Navbar from '../../components/Layout/Navbar';
 
-const Register = () => {
+type User = {
+	name: string;
+	schoolName: string;
+	email: string;
+	phoneNumber: string;
+	role: string;
+	schoolAddress: string;
+	schoolSize: string;
+};
+
+const Register: React.FC = () => {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+		reset,
+	} = useForm<User>();
+
 	useEffect(() => {
 		const html = document.getElementById('mainHtml') as HTMLElement;
 		html.style.overflow = 'auto';
 	});
+
+	const onSubmit: SubmitHandler<User> = async (data) => {
+		// console.log(JSON.stringify(data));
+		let config = {
+			method: 'POST',
+			url: `https://webservice.flipcbt.com/v1/school/register`,
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			data: JSON.stringify(data),
+		};
+		let error: any;
+		try {
+			const res = await axios(config);
+			if (res.status === 200) {
+				console.log('done');
+				reset();
+			}
+		} catch (err) {
+			console.log(err);
+			error = err;
+			if (error.response.status === 409) {
+				alert(error.response.data.error.message);
+			} else {
+				alert('something went wrong');
+			}
+		}
+	};
 	return (
 		<div className=''>
 			<Head>
@@ -54,39 +101,50 @@ const Register = () => {
 								<p className='text-[16px] mobile:text-center'>
 									School Information
 								</p>
-								<form className='flex flex-col mt-[50px]'>
+								<form
+									onSubmit={handleSubmit(onSubmit)}
+									className='flex flex-col mt-[50px]'
+								>
 									<input
 										required
 										type='text'
+										{...register('name')}
 										placeholder='Name'
-										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
+										className={`${
+											errors?.name ? 'border border-red-500' : null
+										} px-4 py-4 mb-[25px] text-[18px] rounded-[10px] outline-none placeholder-[#06042C] border border-[#828282] w-full shadow appearance-none leading-tight`}
 									/>
 									<input
 										required
 										type='text'
+										{...register('schoolName')}
 										placeholder='School Name'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										required
 										type='email'
+										{...register('email')}
 										placeholder='Email'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
-										required
 										type='text'
+										{...register('phoneNumber')}
 										placeholder='Phone Number'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<div className='relative mb-[25px]'>
-										<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
+										<select
+											{...register('role')}
+											className='block px-4 py-4 bg-white text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'
+										>
 											<option>Role at School</option>
-											<option> School Owner </option>
-											<option>Principal</option>
-											<option>Admin</option>
-											<option>Teacher</option>
-											<option>Others</option>
+											<option>owner</option>
+											<option>principal</option>
+											<option>administrator</option>
+											<option>teacher</option>
+											<option>others</option>
 										</select>
 										<div className='absolute inset-y-0 flex items-center justify-center px-2 pointer-events-none right-2'>
 											<Image
@@ -99,16 +157,20 @@ const Register = () => {
 									</div>
 									<input
 										type='text'
+										{...register('schoolAddress')}
 										placeholder='School Address'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<div className='relative mb-[25px]'>
-										<select className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
+										<select
+											{...register('schoolSize')}
+											className='block px-4 py-4 bg-white text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'
+										>
 											<option>School Size</option>
-											<option> &lt; 200 </option>
-											<option>200 - 500</option>
-											<option>500 - 1000</option>
-											<option>&gt; 1000</option>
+											<option> less_than_200 </option>
+											<option>200_to_500</option>
+											<option>500_to_1000</option>
+											<option>greater_than_1000</option>
 										</select>
 										<div className='absolute inset-y-0 flex flex-col justify-center px-2 pointer-events-none right-2'>
 											<Image

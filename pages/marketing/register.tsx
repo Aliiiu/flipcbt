@@ -1,9 +1,55 @@
+import axios from 'axios';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import Navbar from '../../components/Layout/Navbar';
 
+type User = {
+	name: string;
+	email: string;
+	phoneNumber: string;
+	marketerAddress: string;
+	marketerDegree: string;
+	coverLetterUri: string;
+};
+
 const Register = () => {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+		reset,
+	} = useForm<User>();
+
+	const onSubmit: SubmitHandler<User> = async (data) => {
+		// console.log(JSON.stringify(data));
+		let config = {
+			method: 'POST',
+			url: `https://webservice.flipcbt.com/v1/marketer/register/`,
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			data: JSON.stringify(data),
+		};
+		let error: any;
+		try {
+			const res = await axios(config);
+			if (res.status === 200) {
+				console.log('done');
+				reset();
+			}
+		} catch (err) {
+			console.log(err);
+			error = err;
+			if (error.response.status === 409) {
+				alert(error.response.data.error.message);
+			} else {
+				alert('something went wrong');
+			}
+		}
+	};
+
 	return (
 		<div className=''>
 			<Head>
@@ -53,37 +99,47 @@ const Register = () => {
 								<p className='text-[16px] mb-[50px] mobile:text-center'>
 									Kindly provide us your information
 								</p>
-								<form className='flex flex-col'>
+								<form
+									onSubmit={handleSubmit(onSubmit)}
+									className='flex flex-col'
+								>
 									<input
 										required
+										{...register('name')}
 										type='text'
 										placeholder='Name'
 										className='px-4 py-4 mb-[25px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
 									/>
 									<input
 										required
+										{...register('email')}
 										type='email'
 										placeholder='Email'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										required
+										{...register('phoneNumber')}
 										type='tel'
 										placeholder='Phone Number'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<input
 										required
+										{...register('marketerAddress')}
 										type='text'
 										placeholder='Address'
 										className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border w-full shadow appearance-none leading-tight'
 									/>
 									<div className='relative'>
-										<select className='block px-4 py-4 mb-[25px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'>
+										<select
+											{...register('marketerDegree')}
+											className='block px-4 bg-white py-4 mb-[25px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'
+										>
 											<option>Degree</option>
 											<option>Bsc</option>
 											<option>HND</option>
-											<option>Others</option>
+											<option>others</option>
 										</select>
 										<div className='pointer-events-none absolute inset-y-0 right-2 h-[58px] flex flex-col justify-center items-center px-2 text-gray-700'>
 											<Image
@@ -96,6 +152,7 @@ const Register = () => {
 									</div>
 									<input
 										required
+										{...register('coverLetterUri')}
 										type='url'
 										placeholder='Drop link to cover letter'
 										className='px-4 py-4 mb-[25px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
@@ -107,7 +164,7 @@ const Register = () => {
 										<p>Tap here to upload cover letter</p>
 										<input id='dropzone-file' type='file' className='hidden' />
 									</label> */}
-									<div className='text-center w-full'>
+									<div className='w-full text-center'>
 										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
 											Submit
 										</button>

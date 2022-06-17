@@ -1,10 +1,49 @@
+import axios from 'axios';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import Navbar from '../../components/Layout/Navbar';
 
+type User = {
+	organizationName: string;
+	organizationEmail: string;
+	assessmentType: string;
+	organizationAddress: string;
+};
+
 const Register = () => {
+	const { register, handleSubmit, reset } = useForm<User>();
+
+	const onSubmit: SubmitHandler<User> = async (data) => {
+		// console.log(JSON.stringify(data));
+		let config = {
+			method: 'POST',
+			url: `https://webservice.flipcbt.com/v1/organization/register/`,
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			data: JSON.stringify(data),
+		};
+		let error: any;
+		try {
+			const res = await axios(config);
+			if (res.status === 200) {
+				console.log('done');
+				reset();
+			}
+		} catch (err) {
+			console.log(err);
+			error = err;
+			if (error.response.status === 409) {
+				alert(error.response.data.error.message);
+			} else {
+				alert('something went wrong');
+			}
+		}
+	};
+
 	useEffect(() => {
 		const html = document.getElementById('mainHtml') as HTMLElement;
 		html.style.overflow = 'auto';
@@ -60,74 +99,55 @@ const Register = () => {
 									required.
 								</p>
 								<div className=''>
-									<form className='flex flex-col'>
+									<form
+										onSubmit={handleSubmit(onSubmit)}
+										className='flex flex-col'
+									>
 										<input
 											required
 											type='text'
+											{...register('organizationName')}
 											placeholder='Organization Name'
 											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border mobile:border-black w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
 											required
 											type='email'
+											{...register('organizationEmail')}
 											placeholder='Organization Email'
 											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<input
 											required
 											type='text'
+											{...register('organizationAddress')}
 											placeholder='Organization Address'
 											className='px-4 py-4 mb-[25px] text-[18px] placeholder-[#06042C] input_border bg-transparent w-full shadow appearance-none leading-tight rounded-[10px]'
 										/>
 										<div className='relative mb-[25px]'>
 											<select
-												multiple
-												size={1}
+												{...register('assessmentType')}
 												className='block px-4 py-4 text-[18px] placeholder-[#06042C] input_border w-full bg-transparent shadow appearance-none leading-tight rounded-[10px]'
 											>
 												<option>Purpose</option>
-												<option>Aptitude Test</option>
-												<option>Quiz</option>
-												<option>Poll</option>
-												<option>Others</option>
+												<option>aptitude</option>
+												<option>quiz</option>
+												<option>poll</option>
+												<option>others</option>
 											</select>
-											{/* <div className='pointer-events-none absolute inset-y-0 right-2 bottom-4 flex justify-center h-[57px] items-center px-2 text-gray-700'>
+											<div className='absolute inset-y-0 flex items-center justify-center px-2 pointer-events-none right-2'>
 												<Image
 													src={'../../images/expandDown.png'}
 													alt='expand button'
 													width='19.17px'
 													height='18.33px'
 												/>
-											</div> */}
+											</div>
 										</div>
-										{/* <textarea
-											className='
-																		block
-																		resize-y
-																		w-full
-																		px-3
-																		py-2
-															text-[18px] placeholder-[#06042C]
-																		bg-transparent bg-clip-padding
-																		input_border
-																		transition
-																		ease-in-out
-																		m-0'
-											placeholder='Message'
-											rows={4}
-										></textarea> */}
 										<div className='mt-[0px] text-center'>
 											<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
 												Submit
 											</button>
-											{/* <div className='mt-4 text-center mobile:w-full'>
-												<p>
-													Alreadly have an account?{' '}
-													<span className='text-[#0075FF] font-bold'>
-														Sign in
-													</span>{' '}
-												</p>
-											</div> */}
 										</div>
 									</form>
 								</div>
