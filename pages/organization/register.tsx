@@ -2,9 +2,10 @@ import axios from 'axios';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import Navbar from '../../components/Layout/Navbar';
+import Modal from '../../components/UI/Modal';
 
 type User = {
 	organizationName: string;
@@ -14,6 +15,7 @@ type User = {
 };
 
 const Register = () => {
+	const [showModal, setShowModal] = useState<boolean>(false);
 	const { register, handleSubmit, reset } = useForm<User>();
 
 	const onSubmit: SubmitHandler<User> = async (data) => {
@@ -31,6 +33,7 @@ const Register = () => {
 			const res = await axios(config);
 			if (res.status === 200) {
 				console.log('done');
+				setShowModal(true);
 				reset();
 			}
 		} catch (err) {
@@ -56,6 +59,9 @@ const Register = () => {
 			<div className='md:hidden'>
 				<Navbar />
 			</div>
+			{showModal && (
+				<Modal selector={'overlay-root'} onClick={() => setShowModal(false)} />
+			)}
 			<div className='container'>
 				<div className='md:flex'>
 					<div className='lg:w-1/2 mobile:hidden md:hidden flex justify-center gs_register lg:inline-flex bg-[#0075FF]'>
