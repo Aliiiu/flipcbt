@@ -27,10 +27,9 @@ const benefit: ArrayObject[][] = [
 								has been taken which in turn relieves the teachers of the stress. `,
 		},
 		{
-			title: 'Easy Collation Of Results.',
-			content: `FLIP helps eliminate the scope of human error and the hassle
-								of assigning script marking responsibilities
-								to teachers. In addition, multiple-choice questions can also be graded easily.`,
+			title: 'Randomly Assigns Generated Questions For Each Student.',
+			content: ` FLIP distributes shuffled questions for each student 
+									with a completely different question arrangement.`,
 		},
 		{
 			title: 'Accuracy of Results.',
