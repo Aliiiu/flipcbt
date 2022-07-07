@@ -61,7 +61,7 @@ const Motor = () => {
 							</div>
 						</div>
 						<div className='flex justify-between mobile:flex-col-reverse mobile:mt-[4em] md:mt-[10em]'>
-							<div className='relative md:w-1/2 mobile:w-full mobile:mt-9 mobile:h-[266px] marketing rounded-[20px] overflow-hidden'>
+							<div className='relative md:w-1/2 mobile:w-full mobile:mt-9 mobile:h-[266px] rounded-[20px] overflow-hidden'>
 								<Image
 									src='/images/marketer-img.png'
 									layout='fill'

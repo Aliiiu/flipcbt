@@ -53,20 +53,14 @@ const Home: NextPage = () => {
 									</div>
 								</div>
 								<div className='justify-end w-1/2 lg:block md:flex mobile:hidden'>
-									<div className='relative h-full w-full md:mt-[100px]'>
-										<div className='bg-image'>
-											<Image
-												src={'/images/hmpageBg.png'}
-												alt='excitment illustration'
-												layout='fill'
-												objectFit='contain'
-											/>
-											{/* <img
-												src='/bg.png'
-												alt='customer'
-												className='bg-image-girl'
-											/> */}
-										</div>
+									<div className='relative h-full w-full bg-image md:mt-[100px]'>
+										<Image
+											src={'/images/hmpageBg.png'}
+											alt='excitment illustration'
+											layout='fill'
+											objectFit='contain'
+										/>
+										{/* <div className=''></div> */}
 									</div>
 								</div>
 							</div>

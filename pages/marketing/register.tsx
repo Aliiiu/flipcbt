@@ -13,6 +13,7 @@ type User = {
 	phoneNumber: string;
 	marketerAddress: string;
 	marketerDegree: string;
+	marketerState: string;
 	coverLetterUri: string;
 };
 
@@ -43,7 +44,7 @@ const Register = () => {
 				reset();
 			}
 		} catch (err) {
-			console.log(err);
+			// console.log(err);
 			error = err;
 			if (error.response.status === 409) {
 				alert(error.response.data.error.message);
@@ -74,9 +75,9 @@ const Register = () => {
 										<Image
 											src={'../../images/whiteLogo.png'}
 											alt='flip logo'
-											width={'180px'}
-											height='180px'
-											className='cursor-pointer'
+											width={'150px'}
+											height='150px'
+											className='object-contain cursor-pointer'
 										/>
 									</a>
 								</Link>
@@ -146,6 +147,24 @@ const Register = () => {
 											<option>Bsc</option>
 											<option>HND</option>
 											<option>others</option>
+										</select>
+										<div className='pointer-events-none absolute inset-y-0 right-2 h-[58px] flex flex-col justify-center items-center px-2 text-gray-700'>
+											<Image
+												src={'../../images/expandDown.png'}
+												alt='expand button'
+												width='19.17px'
+												height='18.33px'
+											/>
+										</div>
+									</div>
+									<div className='relative'>
+										<select
+											{...register('marketerState')}
+											className='block px-4 bg-white py-4 mb-[25px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'
+										>
+											<option>Lagos</option>
+											<option>Ogun</option>
+											<option>Osun</option>
 										</select>
 										<div className='pointer-events-none absolute inset-y-0 right-2 h-[58px] flex flex-col justify-center items-center px-2 text-gray-700'>
 											<Image

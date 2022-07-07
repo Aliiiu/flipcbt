@@ -25,9 +25,9 @@ const Navbar = () => {
 			<div className='container md:py-5'>
 				<div className='md:px-[8em] mobile:flex mobile:justify-between mobile:py-5 mobile:px-7'>
 					<div className='flex items-center justify-between'>
-						<div className='relative w-[82px] h-[58px] mobile:w-[70px] mobile:h-[40px]'>
-							<Link href='/' passHref>
-								<a>
+						<Link href='/' passHref>
+							<a className=''>
+								<div className='relative w-[82px] h-[58px] mobile:w-[70px] mobile:h-[40px]'>
 									<Image
 										src='../../images/FlipCbt.png'
 										alt='flipcbt logo'
@@ -35,9 +35,9 @@ const Navbar = () => {
 										objectFit='contain'
 										className='cursor-pointer'
 									/>
-								</a>
-							</Link>
-						</div>
+								</div>
+							</a>
+						</Link>
 						<div className='mobile:hidden flex justify-between w-[40%]'>
 							<Link href='/'>
 								<a
@@ -73,7 +73,7 @@ const Navbar = () => {
 							</Link>
 						</div>
 						<Button
-							href={'get-started'}
+							href={'/get-started'}
 							content='Get Started'
 							bgColor={'bg-[#0075ff] mobile:hidden'}
 						/>

@@ -9,18 +9,20 @@ const Footer = () => {
 					<div className='mobile:pt-[4em] mobile:pb-[3em] md:mr-[8em]'>
 						<div className='relative w-[130px] h-[70px] mobile:w-[95px] mobile:h-[60px]'>
 							<Link href='/' passHref>
-								<Image
-									src='/images/FlipCbt.png'
-									alt='flipcbt logo'
-									layout='fill'
-									objectFit='contain'
-								/>
+								<a>
+									<Image
+										src='/images/FlipCbt.png'
+										alt='flipcbt logo'
+										layout='fill'
+										objectFit='contain'
+									/>
+								</a>
 							</Link>
 						</div>
 					</div>
-					<div className='mobile:grid flex justify-between w-full mobile:grid-cols-2'>
+					<div className='flex justify-between w-full mobile:grid mobile:grid-cols-2'>
 						<div className='space-y-5 mobile:mb-8'>
-							<p className='text-white font-semibold'>Company</p>
+							<p className='font-semibold text-white'>Company</p>
 							<p className='font-thin'>
 								<a className='text-white' href='#'>
 									Our Blog
@@ -33,7 +35,7 @@ const Footer = () => {
 							</p>
 						</div>
 						<div className='space-y-5'>
-							<p className='text-white font-semibold'>Resources</p>
+							<p className='font-semibold text-white'>Resources</p>
 							<p className='font-thin'>
 								<a className='text-white' href='#'>
 									Terms of use
@@ -46,7 +48,7 @@ const Footer = () => {
 							</p>
 						</div>
 						<div className='mb-[5rem] space-y-5 mobile:mt-5'>
-							<p className='text-white font-semibold'>Contact</p>
+							<p className='font-semibold text-white'>Contact</p>
 							<p className='font-thin'>
 								<a
 									href='mailto:hello@intrapair.com?subject=FlipCBT'

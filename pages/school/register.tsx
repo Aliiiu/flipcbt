@@ -79,9 +79,9 @@ const Register: React.FC = () => {
 										<Image
 											src={'../../images/whiteLogo.png'}
 											alt='flip logo'
-											width={'180px'}
-											height='180px'
-											className='cursor-pointer'
+											width={'150px'}
+											height='150px'
+											className='object-contain cursor-pointer'
 										/>
 									</a>
 								</Link>

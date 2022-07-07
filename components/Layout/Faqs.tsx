@@ -3,13 +3,12 @@ import React, { useState } from 'react';
 
 const QA = [
 	{
-		question: 'What is Flip?',
-		answer: `Flip is a CBT software as a source to provide tests, examination management and a quick grading
-						 system and collation of results instead of the use of pen and paper.`,
+		question: 'Why should I use FLIP?',
+		answer: `FLIP is economical and provides accurate results.`,
 	},
 	{
 		question: 'Is my data secured?',
-		answer: `Yes, your data is secure, and provisions have been made to enable confidentiality and security.`,
+		answer: `Yes, your data is secured, with confidentiality and transparency.`,
 	},
 	{
 		question: 'How accesible is Flip?',
