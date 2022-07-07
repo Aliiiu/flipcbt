@@ -1,27 +1,70 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-const QA = [
+interface QATypes {
+	question: string;
+	answer: string | JSX.Element;
+}
+const QA: QATypes[] = [
 	{
-		question: 'Why should I use FLIP?',
-		answer: `FLIP is economical and provides accurate results.`,
+		question: 'How does the software work?',
+		answer: `Flip is a cbt software that allows the Admin to input assessment questions into its database
+							and the questions are then imported from the database to conduct assessment. `,
 	},
 	{
-		question: 'Is my data secured?',
-		answer: `Yes, your data is secured, with confidentiality and transparency.`,
+		question: 'Does the software need internet connection?.',
+		answer: `Flip for School does not require internet access while Flip for organization requires internet access. `,
 	},
 	{
-		question: 'How accesible is Flip?',
-		answer: `Flip is very accessible and can be used by both secondary schools and organizations.`,
+		question: 'Who can use the software',
+		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
 	},
 	{
-		question: 'Do I need the internet to use the app?',
-		answer: `Flip has been designed with free internet software for fair usage for secondary
-							schools while organizations need to use the internet.`,
+		question:
+			'What are the minimum system requirements to install the product  ',
+		answer: (
+			<>
+				<ul>
+					<li>
+						<b>Supported platforms:</b> Windows 7, Windows 8, Windows 8.1 ,
+						Windows 10 (32bit/64 bit).{' '}
+					</li>
+					<li>
+						<b>Installation requirements:</b> 50 MB free space 1GHz CPU 256 MB
+						RAM 800x600 screen resolution
+					</li>
+				</ul>
+			</>
+		),
+	},
+	{
+		question: 'How do I report a bug?',
+		answer: (
+			<>
+				We work hard to keep Flip secure, and make every effort to keep on top
+				of the latest threats by working with our inhouse security team. If you
+				think we&apos;ve made a security mistake or have a vulnerability, please
+				share with us right away at{' '}
+				<a className='text-[#0075FF]' href='mailto:security@flipcbt.com'>
+					security@flipcbt.com
+				</a>
+			</>
+		),
+	},
+	{
+		question: 'How do I report a complaint?',
+		answer: (
+			<>
+				Our support team are available to receive any complaint, kindly send a
+				mail of your complaint to{' '}
+				<a className='text-[#0075FF]' href='mailto:support@flipcbt.com'>
+					support@flipcbt.com
+				</a>
+			</>
+		),
 	},
 ];
 const Faqs = () => {
-	const [active, setActive] = useState<boolean>(false);
 	const [currQuestion, setCurrQuestion] = useState<number | null>(0);
 
 	const handleClick = (e: React.MouseEvent, index: number) => {

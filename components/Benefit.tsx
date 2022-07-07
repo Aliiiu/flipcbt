@@ -12,8 +12,12 @@ const benefit: ArrayObject[][] = [
 		{
 			title: 'Advanced Security Features To Avoid Examination Malpractices.',
 			content: `There are standard security protocols inherent in
-								FLIP to ensure that the assessment integrity is maintained. 
-`,
+								FLIP to ensure that the assessment integrity is maintained.`,
+		},
+		{
+			title: 'Randomly Assigns Generated Questions For Each Student.',
+			content: ` FLIP distributes shuffled questions for each student 
+									with a completely different question arrangement.`,
 		},
 		{
 			title: 'Retains Data For Future Use.',
@@ -26,11 +30,7 @@ const benefit: ArrayObject[][] = [
 			content: `FLIP helps to score students immediately after the assessment 
 								has been taken which in turn relieves the teachers of the stress. `,
 		},
-		{
-			title: 'Randomly Assigns Generated Questions For Each Student.',
-			content: ` FLIP distributes shuffled questions for each student 
-									with a completely different question arrangement.`,
-		},
+
 		{
 			title: 'Accuracy of Results.',
 			content: `With FLIP, you can be rest assured that precise 
