@@ -162,9 +162,10 @@ const Register = () => {
 											{...register('marketerState')}
 											className='block px-4 bg-white py-4 mb-[25px] text-[18px] text-[#06042C] input_border w-full shadow appearance-none leading-tight rounded-[10px]'
 										>
+											<option>State</option>
 											<option>Lagos</option>
 											<option>Ogun</option>
-											<option>Osun</option>
+											<option>Oyo</option>
 										</select>
 										<div className='pointer-events-none absolute inset-y-0 right-2 h-[58px] flex flex-col justify-center items-center px-2 text-gray-700'>
 											<Image
