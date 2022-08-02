@@ -3,7 +3,7 @@ import { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import useSwiperRef from '../hook/useSwiperRef';
+import useSwiperRef from '../../hook/useSwiperRef';
 
 type dataObject = {
 	content: string;

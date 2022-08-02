@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from './UI/Button';
+import Button from '../UI/Button';
 const Motor = () => {
 	return (
 		<section className='flex flex-col container mobile:pt-0 mobile:pb-[8em] py-[10em] text-center'>
@@ -28,7 +28,7 @@ const Motor = () => {
 									<div className='text-center bg-opacity-20 rounded-3xl motor-forStudent py-[5em]'>
 										<div className=''>
 											<h2 className='text-[32px] font-semibold mt-3 text-white'>
-												For Students
+												For School
 											</h2>
 											<p className='mb-8 text-white'>
 												Management of resources and cost-{' '}

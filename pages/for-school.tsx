@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Fragment, useEffect } from 'react';
 import FeatureForSchool from '../components/FeatureForSchool';
 import GettingStartedForSchool from '../components/GettingStartedForSchool';
-import Guarantee from '../components/Guarantee';
+import Guarantee from '../components/Sections/Guarantee';
 import Footer from '../components/Layout/Footer';
 import Navbar from '../components/Layout/Navbar';
 import Button from '../components/UI/Button';

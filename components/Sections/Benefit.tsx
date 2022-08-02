@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Button from './UI/Button';
-import CustomImage from './UI/Image';
+import Button from '../UI/Button';
+import CustomImage from '../UI/Image';
 
 type ArrayObject = {
 	title: string;

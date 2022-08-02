@@ -2,13 +2,13 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment, useEffect } from 'react';
-import Benefit from '../components/Benefit';
-import Feature from '../components/Feature';
-import Guarantee from '../components/Guarantee';
+import Benefit from '../components/Sections/Benefit';
+import Feature from '../components/Sections/Feature';
+import Guarantee from '../components/Sections/Guarantee';
 import Faqs from '../components/Layout/Faqs';
 import Footer from '../components/Layout/Footer';
 import Navbar from '../components/Layout/Navbar';
-import Motor from '../components/Motor';
+import Motor from '../components/Sections/Motor';
 import Button from '../components/UI/Button';
 
 const Home: NextPage = () => {
