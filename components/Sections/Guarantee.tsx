@@ -28,13 +28,15 @@ const Guarantee = () => {
 
 	const data: dataObject[] = [
 		{
-			content: `Running a business can be demanding, having motivated
-              employees is paramount to our success and with
-              earnipay's flexible salary payment solutions,
-              productivity isn't a demand anymore, it's a
-              lifestyle.`,
-			name: 'Courtney Henry',
-			role: 'Founder of Easy Secondary School',
+			content: `I happen to be one
+			 					the few people that used and still using the CBT App for students and 
+			 					professionals alike. The application has been a great aid towards effective
+			  				learning and teaching. It reduces rigorousness of marking and compiling of
+				 				results for teachers. Through the CBT App, teachers with little or no
+				 			 	knowledge in computer operation were incorporated into the IT world
+					 			as it became an integral part of the school examination and management system.`,
+			name: 'Mr. Saiyd Bhadmos.',
+			role: 'computer instructor and CBT center manager',
 		},
 		{
 			content: `Running a business can be demanding, having motivated
@@ -58,7 +60,7 @@ const Guarantee = () => {
 			content: `Running a business can be demanding, having motivated
               employees is paramount to our success and with
               earnipay's flexible salary payment solutions,
-              productivity isn't a demand anymore, it&#39;s a
+              productivity isn't a demand anymore, it's a
               lifestyle.`,
 			name: 'Leslie Alexander',
 			role: 'Founder of Easy Secondary School',
@@ -125,8 +127,8 @@ const Guarantee = () => {
 								loop
 							>
 								{data.map((item, index) => (
-									<SwiperSlide key={index}>
-										<div className='p-7 bg-white m-4 rounded-[30px] mobile:flex mobile:flex-col-reverse shadow-[0px_8px_16px_rgba(0,0,0,0.08)]'>
+									<SwiperSlide key={index} className='flex justify-center'>
+										<div className='p-7 bg-white m-4 rounded-[30px] flex flex-col justify-between mobile:flex mobile:flex-col-reverse shadow-[0px_8px_16px_rgba(0,0,0,0.08)]'>
 											<p>{item.content}</p>
 											<div className='mb-2 md:mt-8'>
 												<h2 className='font-bold text-[20px]'>{item.name}</h2>
