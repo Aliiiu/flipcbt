@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import Navbar from '../../components/Layout/Navbar';
+import Loader from '../../components/UI/Loader';
 import Modal from '../../components/UI/Modal';
 
 type User = {
@@ -18,6 +19,7 @@ type User = {
 };
 
 const Register = () => {
+	const [showLoader, setShowLoader] = useState(false);
 	const [showModal, setShowModal] = useState<boolean>(false);
 	const {
 		register,
@@ -28,6 +30,7 @@ const Register = () => {
 
 	const onSubmit: SubmitHandler<User> = async (data) => {
 		// console.log(JSON.stringify(data));
+		setShowLoader(true);
 		let config = {
 			method: 'POST',
 			url: `https://webservice.flipcbt.com/v1/marketer/register/`,
@@ -40,11 +43,13 @@ const Register = () => {
 		try {
 			const res = await axios(config);
 			if (res.status === 200) {
+				setShowLoader(false);
 				setShowModal(true);
 				reset();
 			}
 		} catch (err) {
 			// console.log(err);
+			setShowLoader(false);
 			error = err;
 			if (error.response.status === 409) {
 				alert(error.response.data.error.message);
@@ -183,16 +188,9 @@ const Register = () => {
 										placeholder='Drop link to cover letter'
 										className='px-4 py-4 mb-[25px] appearance-none text-[18px] placeholder-[#06042C] input_border w-full shadow leading-tight'
 									/>
-									{/* <label
-										htmlFor='dropzone-file'
-										className='flex flex-col justify-center items-center w-full py-4 rounded-[10px] bg-white border-2 border-[#06042C] border-dashed cursor-pointer'
-									>
-										<p>Tap here to upload cover letter</p>
-										<input id='dropzone-file' type='file' className='hidden' />
-									</label> */}
 									<div className='w-full text-center'>
-										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
-											Submit
+										<button className='py-[10px] px-[20px] flex justify-center md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
+											{showLoader ? <Loader /> : 'Submit'}
 										</button>
 									</div>
 								</form>

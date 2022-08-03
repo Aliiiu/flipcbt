@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import Navbar from '../../components/Layout/Navbar';
+import Loader from '../../components/UI/Loader';
 import Modal from '../../components/UI/Modal';
 
 type User = {
@@ -18,6 +19,7 @@ type User = {
 };
 
 const Register: React.FC = () => {
+	const [showLoader, setShowLoader] = useState(false);
 	const [showModal, setShowModal] = useState<boolean>(false);
 	const {
 		register,
@@ -33,6 +35,7 @@ const Register: React.FC = () => {
 
 	const onSubmit: SubmitHandler<User> = async (data) => {
 		// console.log(JSON.stringify(data));
+		setShowLoader(true);
 		let config = {
 			method: 'POST',
 			url: `https://webservice.flipcbt.com/v1/school/register`,
@@ -45,10 +48,12 @@ const Register: React.FC = () => {
 		try {
 			const res = await axios(config);
 			if (res.status === 200) {
+				setShowLoader(false);
 				setShowModal(true);
 				reset();
 			}
 		} catch (err) {
+			setShowLoader(false);
 			console.log(err);
 			error = err;
 			if (error.response.status === 409) {
@@ -71,7 +76,7 @@ const Register: React.FC = () => {
 			)}
 			<div className='container'>
 				<div className='md:flex '>
-					<div className='lg:w-1/2 mobile:hidden md:hidden gs_register flex justify-center lg:inline-flex bg-[#0075FF]'>
+					<div className='lg:w-1/2 mobile:hidden md:hidden gs_register lg:block bg-[#0075FF]'>
 						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>
 								<Link href={'/'} passHref>
@@ -92,6 +97,7 @@ const Register: React.FC = () => {
 									alt='get started image'
 									layout='fill'
 									objectFit='contain'
+									objectPosition={'bottom'}
 								/>
 								{/* <img src='/reg_bg' alt='new' width={'700px'} height='650px' /> */}
 							</div>
@@ -187,8 +193,8 @@ const Register: React.FC = () => {
 										</div>
 									</div>
 									<div className='w-full text-center'>
-										<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
-											Submit
+										<button className='py-[10px] flex justify-center px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
+											{showLoader ? <Loader /> : 'Submit'}
 										</button>
 									</div>
 								</form>

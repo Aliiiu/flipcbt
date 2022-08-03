@@ -44,7 +44,7 @@ const Motor = () => {
 									<div className='text-center motor-fororganization bg-opacity-20 rounded-3xl py-[5em] overflow-hidden'>
 										<div className=''>
 											<h2 className='text-[32px] text-white font-semibold mt-3'>
-												For organizations
+												For Organizations
 											</h2>
 											<p className='mb-8 text-white'>
 												Guaranteed advantages for your{' '}

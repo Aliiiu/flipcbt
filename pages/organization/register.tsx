@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import Navbar from '../../components/Layout/Navbar';
+import Loader from '../../components/UI/Loader';
 import Modal from '../../components/UI/Modal';
 
 type User = {
@@ -16,10 +17,12 @@ type User = {
 
 const Register = () => {
 	const [showModal, setShowModal] = useState<boolean>(false);
+	const [showLoader, setShowLoader] = useState(false);
 	const { register, handleSubmit, reset } = useForm<User>();
 
 	const onSubmit: SubmitHandler<User> = async (data) => {
 		// console.log(JSON.stringify(data));
+		setShowLoader(true);
 		let config = {
 			method: 'POST',
 			url: `https://webservice.flipcbt.com/v1/organization/register/`,
@@ -32,11 +35,13 @@ const Register = () => {
 		try {
 			const res = await axios(config);
 			if (res.status === 200) {
-				console.log('done');
+				setShowLoader(false);
+				// console.log('done');
 				setShowModal(true);
 				reset();
 			}
 		} catch (err) {
+			setShowLoader(false);
 			console.log(err);
 			error = err;
 			if (error.response.status === 409) {
@@ -86,11 +91,6 @@ const Register = () => {
 									layout='fill'
 									objectFit='contain'
 								/>
-								{/* <img
-									src='/reg_org.png'
-									alt='get started image'
-									className='get-started-img'
-								/> */}
 							</div>
 						</div>
 					</div>
@@ -151,8 +151,8 @@ const Register = () => {
 											</div>
 										</div>
 										<div className='mt-[0px] text-center'>
-											<button className='py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
-												Submit
+											<button className='py-[10px] px-[20px] flex justify-center md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] w-full bg-[#0075FF] text-white'>
+												{showLoader ? <Loader /> : 'Submit'}
 											</button>
 										</div>
 									</form>
