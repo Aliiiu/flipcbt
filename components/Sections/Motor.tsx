@@ -28,7 +28,7 @@ const Motor = () => {
 									<div className='text-center bg-opacity-20 rounded-3xl motor-forStudent py-[5em]'>
 										<div className=''>
 											<h2 className='text-[32px] font-semibold mt-3 text-white'>
-												For School
+												For Schools
 											</h2>
 											<p className='mb-8 text-white'>
 												Management of resources and cost-{' '}
