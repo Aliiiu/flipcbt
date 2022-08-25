@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 const Footer = () => {
 	return (
-		<footer className='md:pt-20 bg-[#06042C]'>
+		<footer className='lg:pt-20 bg-[#06042C]'>
 			<div className='container'>
-				<div className='md:px-[8em] mobile:px-7 flex justify-between mobile:flex-col'>
+				<div className='lg:px-[8em] md:px-[4em] px-7 flex justify-between mobile:flex-col'>
 					<div className='mobile:pt-[4em] mobile:pb-[3em] md:mr-[8em]'>
 						<div className='relative w-[130px] h-[70px] mobile:w-[95px] mobile:h-[60px]'>
 							<Link href='/' passHref>

@@ -21,7 +21,7 @@ const ForSchool = () => {
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
-					<div className='relative md:px-[8em] px-7'>
+					<div className='relative lg:px-[8em] md:px-[4em] px-7'>
 						<section className=''>
 							<div className='flex justify-between'>
 								<div className='w-full mt-0 md:mt-5 md:w-1/2'>

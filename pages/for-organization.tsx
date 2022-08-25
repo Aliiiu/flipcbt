@@ -19,9 +19,9 @@ const Fororganization = () => {
 				<title>Organization - Flip CBT</title>
 			</Head>
 			<Navbar />
-			<div className=' mt-[78px] mobile:mt-[83px]'>
+			<div className='mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
-					<div className='relative md:px-[8em] px-7'>
+					<div className='relative md:px-[4em] lg:px-[8em] px-7'>
 						<section className=''>
 							<div className='flex justify-between'>
 								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
@@ -32,12 +32,13 @@ const Fororganization = () => {
 										</h1>
 										<p className='md:mt-3 mobile:my-[24px]'>
 											FlipCBT for organizations allows potential individuals{' '}
-											<br className='mobile:hidden' /> to take their respective
-											assessments remotely. We <br className='mobile:hidden' />{' '}
-											believe that taking an assessment, interview, or test{' '}
-											<br className='mobile:hidden' /> with zero stress
+											<br className='hidden lg:block' /> to take their
+											respective assessments remotely. We{' '}
+											<br className='hidden lg:block' /> believe that taking an
+											assessment, interview, or test{' '}
+											<br className='hidden lg:block' /> with zero stress
 											contributes to the success rate of{' '}
-											<br className='mobile:hidden' /> such individuals and
+											<br className='hidden lg:block' /> such individuals and
 											organizations.
 										</p>
 										<div className='flex justify-start md:mt-[24px] '>

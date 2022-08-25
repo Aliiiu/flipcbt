@@ -22,8 +22,8 @@ const Navbar = () => {
 	//
 	return (
 		<nav className='fixed top-0 left-0 z-50 w-full bg-white'>
-			<div className='container md:py-5'>
-				<div className='md:px-[8em] mobile:flex mobile:justify-between mobile:py-5 mobile:px-7'>
+			<div className='container'>
+				<div className='lg:px-[8em] md:px-[4em] mobile:flex mobile:justify-between py-5 px-7'>
 					<div className='flex items-center justify-between'>
 						<Link href='/' passHref>
 							<a className=''>
@@ -99,7 +99,7 @@ const Navbar = () => {
 							</button>
 						)}
 						{nav && (
-							<div className=' bg-white mobile-nav px-7 pt-[100px] pb-[46px] inset-0 overflow-hidden'>
+							<div className=' bg-white mobile-nav px-7 md:px-[4em] pt-[100px] pb-[46px] inset-0 overflow-hidden'>
 								<div className='flex flex-col justify-between h-[90%]'>
 									<div className='flex flex-col justify-between'>
 										<Link href='/'>

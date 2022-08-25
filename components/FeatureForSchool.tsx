@@ -32,9 +32,9 @@ const FeatureForSchool = () => {
 			<section className='container md:mt-[142px] mobile:mt-[58px]'>
 				<div className='vector-8'>
 					<div className='vector-9'>
-						<div className='px-7 md:px-[8em]'>
+						<div className='px-7 md:px-[4em] lg:px-[8em]'>
 							<div className='flex justify-center md:mb-[120px] mobile:mb-[65px]'>
-								<h2 className='inline-block md:text-[40px] text-[24px] text-center font-semibold md:leading-[52px] capitalize mobile:leading-[32.68px]'>
+								<h2 className='inline-block lg:text-[40px] md:text-[30px] text-[24px] text-center font-semibold md:leading-[52px] capitalize mobile:leading-[32.68px]'>
 									Flip has recorded over 80% success{' '}
 									<br className='mobile:hidden' /> rate in schools for
 									conducting <br className='mobile:hidden' /> and taking

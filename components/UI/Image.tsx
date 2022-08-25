@@ -7,7 +7,7 @@ interface IImage {
 	alt: string;
 }
 
-const Image: FC<IImage> = ({ className, src, alt = '' }) => {
+const CustomImage: FC<IImage> = ({ className, src, alt = '' }) => {
 	return (
 		<div className={`relative flex-shrink-0 ${className}`}>
 			<NextImage src={src} alt={alt} layout='fill' className='object-cover' />
@@ -15,4 +15,4 @@ const Image: FC<IImage> = ({ className, src, alt = '' }) => {
 	);
 };
 
-export default Image;
+export default CustomImage;

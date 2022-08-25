@@ -5,7 +5,7 @@ const Motor = () => {
 		<section className='flex flex-col container mobile:pt-0 mobile:pb-[8em] py-[10em] text-center'>
 			<div className='vector-3'>
 				<div className='vector-4'>
-					<div className='mobile:px-7 md:px-[8em]'>
+					<div className='px-7 md:px-[4em] lg:px-[8em]'>
 						<div>
 							<div className='mb-[3rem]'>
 								<div className='flex justify-center'>
@@ -25,7 +25,7 @@ const Motor = () => {
 							</div>
 							<div>
 								<div className='grid grid-cols-2 mobile:grid-cols-1 md:gap-x-[1em] lg:gap-x-[4em] mobile:gap-y-5 md:mx-auto md:w-full'>
-									<div className='text-center bg-opacity-20 rounded-3xl motor-forStudent py-[5em]'>
+									<div className='text-center bg-opacity-20 rounded-3xl motor-forStudent py-[5em] hover:scale-[1.1]'>
 										<div className=''>
 											<h2 className='text-[32px] font-semibold mt-3 text-white'>
 												For Schools
@@ -37,11 +37,13 @@ const Motor = () => {
 											<Button
 												href={'/for-school'}
 												content='Learn More'
-												bgColor={'btn-border hover:bg-[#0075FF] hover:border-0'}
+												bgColor={
+													'btn-border hover:bg-[#0075FF] hover:border-0 hover:opacity-[100%]'
+												}
 											/>
 										</div>
 									</div>
-									<div className='text-center motor-fororganization bg-opacity-20 rounded-3xl py-[5em] overflow-hidden'>
+									<div className='text-center motor-fororganization bg-opacity-20 rounded-3xl py-[5em] overflow-hidden hover:scale-[1.1]'>
 										<div className=''>
 											<h2 className='text-[32px] text-white font-semibold mt-3'>
 												For Organizations
@@ -53,7 +55,9 @@ const Motor = () => {
 											<Button
 												href={'/for-organization'}
 												content='Learn More'
-												bgColor={'btn-border hover:bg-[#0075FF] hover:border-0'}
+												bgColor={
+													'btn-border hover:bg-[#0075FF] hover:border-0 hover:opacity-[100%]'
+												}
 											/>
 										</div>
 									</div>

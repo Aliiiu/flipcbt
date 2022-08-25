@@ -82,9 +82,9 @@ const Benefit = () => {
 			<div className='container vector-5'>
 				<div className='vector-6'>
 					<div className='vector-7'>
-						<div className='md:px-[8em] mobile:px-7 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
+						<div className='lg:px-[8em] md:px-[4em] mobile:px-7 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
 							<div className='flex justify-between mobile:hidden'>
-								<div className='bg-white flex flex-col justify-between w-[45%] rounded-[30px] p-[3em]'>
+								<div className='bg-white flex flex-col justify-between w-[45%] md:w-[48%] lg:w-[45%] rounded-[30px] p-[2em] lg:p-[3em]'>
 									<div>
 										<div className='text-center text-[30px] font-semibold mb-7'>
 											What Schools Get
@@ -118,7 +118,7 @@ const Benefit = () => {
 										/>
 									</div>
 								</div>
-								<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col justify-between'>
+								<div className='bg-white w-[45%] md:w-[48%] lg:w-[45%] rounded-[30px] p-[2em] lg:p-[3em] flex flex-col justify-between'>
 									<div>
 										<div className='text-center text-[30px] font-semibold mb-7'>
 											What Organizations Get

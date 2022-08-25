@@ -40,7 +40,7 @@ const Benefitorganization = () => {
 	];
 	return (
 		<section className='container'>
-			<div className='md:px-[8em] mobile:px-5 md:pt-[60px] mobile:pt-[40px] pb-[95px]'>
+			<div className='md:px-[4em] lg:px-[8em] mobile:px-5 md:pt-[60px] mobile:pt-[40px] pb-[95px]'>
 				<h1 className='text-center font-semibold mobile:text-[32px] md:text-[40px] mobile:mb-[33px] mb-[90px]'>
 					Start Your Flip Journey In Four Steps
 				</h1>
@@ -51,7 +51,7 @@ const Benefitorganization = () => {
 								<CustomImage
 									src={item.image}
 									alt={item.alt}
-									className='w-[135px] h-[125px] mobile:w-[55px] mobile:h-[51px]'
+									className='lg:w-[135px] lg:h-[125px] w-[55px] h-[51px]'
 								/>
 
 								<div className='ml-[20px] mobile:ml-[10px]'>

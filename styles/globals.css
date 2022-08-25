@@ -269,10 +269,9 @@ img {
 	.bg-image {
 		display: none;
 	}
-	/* 
-	.bg-image-girl {
-		display: none;
-	} */
+	.card {
+		padding: 20px 20px 40px;
+	}
 }
 @media only screen and (min-width: 1110px) {
 	.vector-1 {
