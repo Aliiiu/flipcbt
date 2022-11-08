@@ -32,7 +32,7 @@ const FeatureForSchool = () => {
 			<section className='container md:mt-[142px] mobile:mt-[58px]'>
 				<div className='vector-8'>
 					<div className='vector-9'>
-						<div className='px-7 md:px-[8em]'>
+						<div className='px-7 xl:px-[8em]'>
 							<div className='flex justify-center md:mb-[120px] mobile:mb-[65px]'>
 								<h2 className='inline-block md:text-[40px] text-[24px] text-center font-semibold md:leading-[52px] capitalize mobile:leading-[32.68px]'>
 									Flip has recorded over 80% success{' '}
@@ -44,9 +44,7 @@ const FeatureForSchool = () => {
 							{Data.map((item, index) => (
 								<div
 									key={index}
-									className={`${
-										index % 2 === 0 ? styles.bigfeatleft : styles.bigfeatright
-									} w-full mobile:w-auto md:flex flex-row md:mb-[88px] justify-between items-center ${
+									className={`w-full mobile:w-auto md:flex flex-row md:mb-[88px] justify-between items-center ${
 										index === 1 && 'flex-row-reverse'
 									}`}
 								>
@@ -62,7 +60,11 @@ const FeatureForSchool = () => {
 											/>
 										</div>
 										<div>
-											<h3 className='font-semibold md:leading-[52px] capitalize'>
+											<h3
+												className={`${
+													index % 2 === 0 ? '' : ''
+												} font-semibold text-2xl md:text-4xl capitalize`}
+											>
 												{item.heading}
 											</h3>
 											<p className='mt-[18px] md:w-[95%]'>{item.content}</p>

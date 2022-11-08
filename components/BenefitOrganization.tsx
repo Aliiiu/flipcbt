@@ -40,8 +40,8 @@ const Benefitorganization = () => {
 	];
 	return (
 		<section className='container'>
-			<div className='md:px-[8em] mobile:px-5 md:pt-[60px] mobile:pt-[40px] pb-[95px]'>
-				<h1 className='text-center font-semibold mobile:text-[32px] md:text-[40px] mobile:mb-[33px] mb-[90px]'>
+			<div className='xl:px-[8em] px-5 lg:pt-[60px] pt-[40px] pb-[95px]'>
+				<h1 className='text-center font-semibold text-[32px] lg:text-[40px] mobile:mb-[33px] mb-[90px]'>
 					Start Your Flip Journey In Four Steps
 				</h1>
 				<div className=''>
@@ -55,7 +55,7 @@ const Benefitorganization = () => {
 								/>
 
 								<div className='ml-[20px] mobile:ml-[10px]'>
-									<h2 className='font-semibold text-[20px] md:text-[24px] capitalize'>
+									<h2 className='font-semibold text-2xl lg:text-4xl capitalize'>
 										{item.title}
 									</h2>
 									<p

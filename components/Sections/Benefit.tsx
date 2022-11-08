@@ -79,12 +79,12 @@ const Benefit = () => {
 
 	return (
 		<section className=' md:bg-[#0075FF]'>
-			<div className='container vector-5'>
+			<div className='vector-5'>
 				<div className='vector-6'>
-					<div className='vector-7'>
-						<div className='md:px-[8em] mobile:px-7 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
+					<div className='vector-7 container'>
+						<div className='xl:px-[8em] px-7 mobile:py-[6em] md:pt-[10em] md:pb-[10em]'>
 							<div className='flex justify-between mobile:hidden'>
-								<div className='bg-white flex flex-col justify-between w-[45%] rounded-[30px] p-[3em]'>
+								<div className='bg-white flex flex-col justify-between w-[45%] rounded-[30px] p-[2rem] xl:p-[3em]'>
 									<div>
 										<div className='text-center text-[30px] font-semibold mb-7'>
 											What Schools Get
@@ -118,7 +118,7 @@ const Benefit = () => {
 										/>
 									</div>
 								</div>
-								<div className='bg-white w-[45%] rounded-[30px] p-[3em] flex flex-col justify-between'>
+								<div className='bg-white w-[45%] rounded-[30px] p-[2em] xl:p-[3em] flex flex-col justify-between'>
 									<div>
 										<div className='text-center text-[30px] font-semibold mb-7'>
 											What Organizations Get
@@ -163,7 +163,7 @@ const Benefit = () => {
 											type='button'
 											onClick={ForSchool}
 										>
-											What <br /> Schools <br /> Get
+											What <br className='' /> Schools <br className='' /> Get
 										</button>
 									</div>
 									<div className='py-5 cursor-pointer header-card whitespace-nowrap'>
@@ -174,7 +174,8 @@ const Benefit = () => {
 											type='button'
 											onClick={Fororganization}
 										>
-											What <br /> Organizations <br /> Get
+											What <br className='' /> Organizations <br className='' />{' '}
+											Get
 										</button>
 									</div>
 								</div>

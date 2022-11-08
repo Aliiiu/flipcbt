@@ -277,39 +277,46 @@ img {
 @media only screen and (min-width: 1110px) {
 	.vector-1 {
 		background-image: url(/vector-1.png);
+		background-size: 150px;
 		background-position: top left;
 		background-repeat: no-repeat;
 	}
 
 	.vector-3 {
 		background-image: url(/vector-1.png);
+		background-size: 150px;
 		background-position: center left;
 		background-repeat: no-repeat;
 	}
 
 	.vector-2 {
 		background-image: url(/vector-2.png);
+		background-size: 150px;
 		background-position: top right;
 		background-repeat: no-repeat;
 	}
 
 	.vector-4 {
 		background-image: url(/vector-2.png);
+		background-size: 150px;
 		background-position: center right;
 		background-repeat: no-repeat;
 	}
 	.vector-5 {
 		background-image: url(/vector-5.png);
+		background-size: 150px;
 		background-position: top left;
 		background-repeat: no-repeat;
 	}
 	.vector-6 {
 		background-image: url(/vector-6.png);
+		background-size: 150px;
 		background-position: top right;
 		background-repeat: no-repeat;
 	}
 	.vector-7 {
 		background-image: url(/vector-7.png);
+		background-size: 150px;
 		background-position: bottom center;
 		background-repeat: no-repeat;
 	}

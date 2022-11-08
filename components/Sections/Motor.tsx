@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Button from '../UI/Button';
 const Motor = () => {
 	return (
-		<section className='flex flex-col container mobile:pt-0 mobile:pb-[8em] py-[10em] text-center'>
-			<div className='vector-3'>
-				<div className='vector-4'>
-					<div className='mobile:px-7 md:px-[8em]'>
+		<section className='flex flex-col vector-3 mobile:pt-0 mobile:pb-[8em] py-[10em] text-center'>
+			<div className='vector-4'>
+				<div className='container '>
+					<div className='px-7 xl:px-[8em]'>
 						<div>
 							<div className='mb-[3rem]'>
 								<div className='flex justify-center'>

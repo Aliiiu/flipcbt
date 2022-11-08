@@ -3,9 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Fragment, useEffect, useState } from 'react';
+import AppModal from '../components/widget/Modal/Modal';
 
 const GetStarted = () => {
 	const [active, setActive] = useState<boolean>(false);
+	const [open, setOpen] = useState(false);
 	const [organizationActive, setorganizationActive] = useState<boolean>(false);
 	const [marketingActive, setMarketingActive] = useState<boolean>(false);
 	const router = useRouter();
@@ -20,6 +22,7 @@ const GetStarted = () => {
 		setActive(false);
 		setMarketingActive(false);
 		setorganizationActive(true);
+		setOpen(true);
 	};
 
 	const marketingHandler = () => {
@@ -37,6 +40,31 @@ const GetStarted = () => {
 			<Head>
 				<title>Get Started | Flip CBT</title>
 			</Head>
+			<AppModal
+				open={open}
+				onClose={() => setOpen(false)}
+				content={
+					<div
+						className={`flex flex-col items-center gap-3 w-full md:w-[50vh] cursor-pointer gs_card hover:border-2`}
+					>
+						<Image
+							src='/images/gs_organization.png'
+							alt='Flip Cbt Logo'
+							width='160px'
+							height='140px'
+						/>
+						<p className='text-center w-[200px]'>
+							Flip For Organization Is Coming Soon!
+						</p>
+						<button
+							className='bg-[#0075FF] text-white py-2 px-6 rounded-2xl'
+							onClick={() => setOpen(false)}
+						>
+							return
+						</button>
+					</div>
+				}
+			/>
 			<div className='gs_Bg'>
 				<div className='container'>
 					<div className='flex flex-col md:pt-[40px] pt-[22px] pb-[80px] md:pb-[263px] md:px-[8em] px-7'>
@@ -80,7 +108,7 @@ const GetStarted = () => {
 									</p>
 								</a>
 							</Link>
-							<Link href={'/organization/register'} passHref>
+							<div>
 								<a
 									onClick={organizationHandler}
 									className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
@@ -101,7 +129,7 @@ const GetStarted = () => {
 										organization
 									</p>
 								</a>
-							</Link>
+							</div>
 							<Link href={'/marketing/register'} passHref>
 								<a
 									onClick={marketingHandler}

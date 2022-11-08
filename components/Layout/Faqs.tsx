@@ -76,9 +76,9 @@ const Faqs = () => {
 	};
 
 	return (
-		<section className='bg-white container pb-[8em] md:pb-[10em] md:pt-3'>
-			<div className='vector-1'>
-				<div className='vector-2 md:px-[8em] mobile:px-7'>
+		<section className='vector-1 bg-white pb-[8em] md:pb-[10em] md:pt-3'>
+			<div className='vector-2'>
+				<div className='container md:px-[8em] mobile:px-7'>
 					<div className='text-center pt-[6rem] mb-[2em] mobile:mx-5'>
 						<div className='flex justify-center'>
 							<div className=''>

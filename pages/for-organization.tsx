@@ -7,6 +7,7 @@ import Guarantee from '../components/Sections/Guarantee';
 import Footer from '../components/Layout/Footer';
 import Navbar from '../components/Layout/Navbar';
 import Button from '../components/UI/Button';
+import HeroContainer from '../components/UI/HeroContainer';
 
 const Fororganization = () => {
 	useEffect(() => {
@@ -21,49 +22,14 @@ const Fororganization = () => {
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
-					<div className='relative md:px-[8em] px-7'>
-						<section className=''>
-							<div className='flex justify-between'>
-								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
-									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:py-[70px] '>
-										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px] capitalize'>
-											You Don’t Need <br /> To Sweat Up <br /> While Setting{' '}
-											<br /> Up Assessments
-										</h1>
-										<p className='md:mt-3 mobile:my-[24px]'>
-											FlipCBT for organizations allows potential individuals{' '}
-											<br className='mobile:hidden' /> to take their respective
-											assessments remotely. We <br className='mobile:hidden' />{' '}
-											believe that taking an assessment, interview, or test{' '}
-											<br className='mobile:hidden' /> with zero stress
-											contributes to the success rate of{' '}
-											<br className='mobile:hidden' /> such individuals and
-											organizations.
-										</p>
-										<div className='flex justify-start md:mt-[24px] '>
-											<Button
-												href={'/get-started'}
-												content='Get Started'
-												bgColor='bg-[#0075FF]'
-											/>
-										</div>
-									</div>
-								</div>
-								<div className='w-1/2 lg:block mobile:hidden'>
-									<div className='relative md:mt-[91px] h-full'>
-										<div className='bg-image'>
-											<Image
-												src={'/images/orgBg2.png'}
-												alt='organization illustration'
-												layout='fill'
-												objectFit='contain'
-											/>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
+					<HeroContainer
+						src={'/images/orgBg2.png'}
+						alt='organization illustration'
+						title='We Design and Implement an online computer-based test system.'
+						content='FLIP serves as a source to provide tests, examination
+management, quick grading of systems and collation of
+results instead of the use of pen and paper.'
+					/>
 				</div>
 			</div>
 			<Featureorganization />

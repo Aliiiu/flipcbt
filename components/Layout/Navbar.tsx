@@ -23,7 +23,7 @@ const Navbar = () => {
 	return (
 		<nav className='fixed top-0 left-0 z-50 w-full bg-white'>
 			<div className='container md:py-5'>
-				<div className='md:px-[8em] mobile:flex mobile:justify-between mobile:py-5 mobile:px-7'>
+				<div className='xl:px-[8em] mobile:flex mobile:justify-between mobile:py-5 px-7'>
 					<div className='flex items-center justify-between'>
 						<Link href='/' passHref>
 							<a className=''>

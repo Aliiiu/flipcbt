@@ -7,6 +7,7 @@ import Guarantee from '../components/Sections/Guarantee';
 import Footer from '../components/Layout/Footer';
 import Navbar from '../components/Layout/Navbar';
 import Button from '../components/UI/Button';
+import HeroContainer from '../components/UI/HeroContainer';
 
 const ForSchool = () => {
 	useEffect(() => {
@@ -21,56 +22,14 @@ const ForSchool = () => {
 			<Navbar />
 			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
-					<div className='relative md:px-[8em] px-7'>
-						<section className=''>
-							<div className='flex justify-between'>
-								<div className='w-full mt-0 md:mt-5 md:w-1/2'>
-									<div className='flex mobile:w-full flex-col md:mt-[92px] mobile:pt-[70px] mobile:pb-[90px] '>
-										<h1 className='lg:text-[50px] md:text-[40px] mobile:text-[32px] font-bold md:leading-[62px] capitalize'>
-											Use The Right <br /> Tool To Conduct <br />A stress-free{' '}
-											<br />
-											Assessment.
-										</h1>
-										<p className='md:mt-3 mobile:my-[24px]'>
-											Teaching many students different subjects and{' '}
-											<br className='mobile:hidden md:hidden lg:block' />
-											courses is quite demanding and tasking already.{' '}
-											<br className='mobile:hidden md:hidden lg:block' />{' '}
-											Setting up a terminal assessment for them should{' '}
-											<br className='mobile:hidden md:hidden lg:block' />
-											not be worrisome, including marking scripts and{' '}
-											<br className='mobile:hidden md:hidden lg:block' />{' '}
-											collation of results.
-										</p>
-										<div className='flex justify-start md:mt-[24px] '>
-											<Button
-												href={'/get-started'}
-												content='Get Started'
-												bgColor='bg-[#0075FF]'
-											/>
-										</div>
-									</div>
-								</div>
-								<div className='w-1/2 lg:block mobile:hidden'>
-									<div className='relative md:mt-[61px] h-full'>
-										<div className='bg-image'>
-											<Image
-												src={'/images/studentBg.png'}
-												alt='student illustration'
-												layout='fill'
-												objectFit='contain'
-											/>
-											{/* <img
-												src='/schoolBg.png'
-												alt='customer'
-												
-											/> */}
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
+					<HeroContainer
+						src={'/images/studentBg.png'}
+						title='Use The Right Tool To Conduct A Stress-Free Assessment'
+						alt='student illustration'
+						content='Teaching many students different subjects and courses is quite demanding
+						 and tasking already. Setting up a terminal assessment for them should not be 
+						 worrisome, including marking scripts and collation of results.'
+					/>
 				</div>
 			</div>
 			<FeatureForSchool />

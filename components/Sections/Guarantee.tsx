@@ -69,7 +69,7 @@ const Guarantee = () => {
 	return (
 		<section className='flex flex-col space-y-8 bg-[#0075FF] bg-opacity-10'>
 			<div className='container'>
-				<div className='md:px-[8em] py-[6em] mobile:px-7'>
+				<div className='xl:px-[8em] py-[6em] px-7'>
 					<div className='flex items-center justify-between mb-[3rem]'>
 						<h2 className='font-semibold text-[40px] mobile:text-[28px] capitalize'>
 							Don&#39;t just take our word for it.
