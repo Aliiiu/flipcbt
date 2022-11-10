@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Fragment } from 'react';
+import CustomImage from './UI/Image';
 // import styles from '../styles/home.module.css';
 
 const Data = [
@@ -43,44 +44,37 @@ const Featureorganization = () => {
 							{Data.map((item, index) => (
 								<div
 									key={index}
-									className={`w-full mobile:w-auto md:flex flex-row md:mb-[88px] justify-between items-center ${
+									className={`w-full flex flex-col md:flex-row md:mb-[88px] justify-between items-center ${
 										index === 1 && 'flex-row-reverse'
 									}`}
 								>
 									<div
-										className={`w-1/2 mobile:w-full mobile:flex flex-col-reverse mobile:mb-[50px] `}
+										className={`flex-1 ${
+											index === 1 && 'lg:flex flex-col items-end'
+										}`}
 									>
-										<div className='hidden mx-auto mobile:block'>
-											<Image
-												src={item.image}
-												alt={item.alt}
-												width='316px'
-												height='316px'
-											/>
-										</div>
-										<div>
-											<h3
-												className={`${
-													index % 2 === 0 ? '' : ''
-												} font-semibold text-2xl md:text-4xl leading-none capitalize`}
-											>
-												{item.heading}
-											</h3>
-											<p
-												className={`${index % 2 === 0 ? '' : ''} mt-[18px]  ${
-													index !== 1 ? 'md:w-[85%]' : 'md:w-[95%]'
-												}`}
-											>
-												{item.content}
-											</p>
-										</div>
+										<h3
+											className={`${
+												index % 2 === 0 ? '' : ''
+											} font-semibold text-2xl md:text-3xl lg:text-4xl leading-none lg:w-[75%] capitalize`}
+										>
+											{item.heading}
+										</h3>
+										<p
+											className={`${index % 2 === 0 ? '' : ''} mt-[18px]  ${
+												index !== 1 ? 'md:w-[58%]' : 'md:w-[75%]'
+											}`}
+										>
+											{item.content}
+										</p>
 									</div>
-									<div className='mobile:hidden'>
-										<Image
+									<div
+										className={`flex-1  ${index !== 1 && 'flex justify-end'}`}
+									>
+										<CustomImage
 											src={item.image}
 											alt={item.alt}
-											width='316px'
-											height='316px'
+											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
 										/>
 									</div>
 								</div>

@@ -115,6 +115,7 @@ const Benefit = () => {
 											href={'/for-school'}
 											bgColor='bg-[#FFAD4A]'
 											content={'Get Started'}
+											hover='hover:border-2 hover:text-secondary transition-colors ease-in-out duration-500 hover:border-secondary'
 										/>
 									</div>
 								</div>

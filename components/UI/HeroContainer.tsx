@@ -8,12 +8,14 @@ interface HeroTypes {
 	title: string;
 	alt: string;
 	maxWidth?: string;
+	btnAction?: string;
 }
 const HeroContainer: FC<HeroTypes> = ({
 	src,
 	content,
 	alt,
 	maxWidth,
+	btnAction,
 	title,
 }) => {
 	return (
@@ -35,7 +37,7 @@ const HeroContainer: FC<HeroTypes> = ({
 							<div className='flex justify-start mobile:mt-1'>
 								<Button
 									href={'/get-started'}
-									content='Get Started'
+									content={btnAction ? btnAction : 'Book A Demo'}
 									bgColor='bg-[#0075FF]'
 								/>
 							</div>

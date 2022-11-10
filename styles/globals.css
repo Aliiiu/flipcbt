@@ -194,6 +194,8 @@ img {
 }
 
 .motor-forStudent {
+	position: absolute;
+	width: 1000%;
 	background-image: url('/images/forSchool.png');
 	background-size: cover;
 	background-repeat: no-repeat;

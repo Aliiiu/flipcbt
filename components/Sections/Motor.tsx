@@ -25,8 +25,16 @@ const Motor = () => {
 							</div>
 							<div>
 								<div className='grid grid-cols-2 mobile:grid-cols-1 md:gap-x-[1em] lg:gap-x-[4em] mobile:gap-y-5 md:mx-auto md:w-full'>
-									<div className='text-center bg-opacity-20 rounded-3xl motor-forStudent py-[5em]'>
-										<div className=''>
+									<div className='relative flex-1 h-full lg:h-[364px] text-center overflow-hidden rounded-3xl'>
+										{/* <div className='motor-forStudent'></div> */}
+										<Image
+											src={'/images/forSchool.png'}
+											alt=''
+											layout='fill'
+											objectFit='cover'
+											objectPosition={'center'}
+										/>
+										<div className='py-20 absolute bg-[#06042c87] hover:backdrop-blur-lg w-full h-full'>
 											<h2 className='text-[32px] font-semibold mt-3 text-white'>
 												For Schools
 											</h2>
@@ -37,12 +45,20 @@ const Motor = () => {
 											<Button
 												href={'/for-school'}
 												content='Learn More'
-												bgColor={'btn-border hover:bg-[#0075FF] hover:border-0'}
+												bgColor={'border-2 border-white'}
+												hover='hover:text-white hover:bg-blue-500 hover:border-none transition-colors ease-in-out duration-500'
 											/>
 										</div>
 									</div>
-									<div className='text-center motor-fororganization bg-opacity-20 rounded-3xl py-[5em] overflow-hidden'>
-										<div className=''>
+									<div className='relative flex-1 h-full lg:h-[364px] text-center rounded-3xl overflow-hidden'>
+										<Image
+											src={'/images/forOrganization.png'}
+											alt=''
+											layout='fill'
+											objectFit='cover'
+											objectPosition={'center'}
+										/>
+										<div className='py-20 absolute bg-[#06042c87] hover:backdrop-blur-lg w-full h-full'>
 											<h2 className='text-[32px] text-white font-semibold mt-3'>
 												For Organizations
 											</h2>
@@ -53,7 +69,8 @@ const Motor = () => {
 											<Button
 												href={'/for-organization'}
 												content='Learn More'
-												bgColor={'btn-border hover:bg-[#0075FF] hover:border-0'}
+												bgColor={'btn-border'}
+												hover='hover:text-white hover:bg-[#0075FF] hover:border-0 transition-colors ease-in-out duration-500'
 											/>
 										</div>
 									</div>
