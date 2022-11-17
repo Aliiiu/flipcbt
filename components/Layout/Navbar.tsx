@@ -109,7 +109,7 @@ const Navbar = () => {
 							</button>
 						)}
 						{nav && (
-							<div className=' bg-white mobile-nav px-7 pt-[100px] pb-[46px] inset-0 overflow-hidden'>
+							<div className=' bg-white mobile-nav px-7 md:px-[4em] pt-[100px] pb-[46px] inset-0 overflow-hidden'>
 								<div className='flex flex-col justify-between h-[90%]'>
 									<div className='flex flex-col justify-between'>
 										<Link href='/'>

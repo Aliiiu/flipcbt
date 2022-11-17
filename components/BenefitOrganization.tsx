@@ -51,7 +51,7 @@ const Benefitorganization = () => {
 								<CustomImage
 									src={item.image}
 									alt={item.alt}
-									className='w-[135px] h-[125px] mobile:w-[55px] mobile:h-[51px]'
+									className='lg:w-[135px] lg:h-[125px] w-[55px] h-[51px]'
 								/>
 
 								<div className='ml-[20px] mobile:ml-[10px]'>

@@ -10,8 +10,8 @@ const GettingStartedForSchool = () => {
 							Getting started is free and easy
 						</h2>
 					</div>
-					<div className='grid grid-cols-3 mobile:grid-cols-1 gap-y-[60px] gap-x-[45px]'>
-						<div className='bg-white flex flex-col items-center h-[249px] card'>
+					<div className='grid lg:grid-cols-3 grid-cols-1 gap-y-[60px] gap-x-[45px]'>
+						<div className='bg-white flex flex-col items-center w-[100%] md:w-[400px] lg:w-[100%] h-[249px] card mx-auto'>
 							<div>
 								<Image
 									src='/images/icon_plus.png'
@@ -20,11 +20,11 @@ const GettingStartedForSchool = () => {
 									height='92px'
 								/>
 							</div>
-							<h3 className='font-semibold mt-[24px] text-[24px]'>
+							<h3 className='font-semibold mt-[24px] text-center text-[24px] md:text-[20px] lg:text-[24px]'>
 								Add Questions
 							</h3>
 						</div>
-						<div className='bg-white flex flex-col items-center h-[280px] card'>
+						<div className='bg-white flex flex-col items-center w-[100%] md:w-[400px] lg:w-[100%] h-[280px] card mx-auto'>
 							<div>
 								<Image
 									src='/images/device.png'
@@ -33,12 +33,12 @@ const GettingStartedForSchool = () => {
 									height='92px'
 								/>
 							</div>
-							<h3 className='font-semibold mt-[24px] text-center text-[24px]'>
+							<h3 className='font-semibold mt-[24px] text-center text-[24px] md:text-[20px] lg:text-[24px]'>
 								Participant Engage <br className='mobile:hidden' /> Using Any
 								Device
 							</h3>
 						</div>
-						<div className=' bg-white flex flex-col items-center h-[249px] card'>
+						<div className=' bg-white flex flex-col items-center w-[100%] md:w-[400px] lg:w-[100%] h-[249px] card mx-auto'>
 							<div>
 								<Image
 									src='/images/instant.png'
@@ -47,7 +47,7 @@ const GettingStartedForSchool = () => {
 									height='92px'
 								/>
 							</div>
-							<h3 className='font-semibold mt-[24px] text-[24px]'>
+							<h3 className='font-semibold mt-[24px] text-center text-[24px] md:text-[20px] lg:text-[24px]'>
 								Get Instant Result
 							</h3>
 						</div>

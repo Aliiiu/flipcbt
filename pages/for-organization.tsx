@@ -20,7 +20,7 @@ const Fororganization = () => {
 				<title>Organization - Flip CBT</title>
 			</Head>
 			<Navbar />
-			<div className=' mt-[78px] mobile:mt-[83px]'>
+			<div className='mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
 					<HeroContainer
 						src={'/images/orgBg.png'}

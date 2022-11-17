@@ -72,7 +72,7 @@ const Guarantee = () => {
 				<div className='xl:px-[8em] py-[6em] px-7'>
 					<div className='flex items-center justify-between mb-[3rem]'>
 						<h2 className='font-semibold text-[40px] mobile:text-[28px] capitalize'>
-							Don&#39;t just take our word for it.
+							Don&#39;t just take our <br className='lg:hidden' /> word for it.
 						</h2>
 						<div className='flex items-center space-x-3'>
 							<button
