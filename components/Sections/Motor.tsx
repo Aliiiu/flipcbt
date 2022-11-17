@@ -46,7 +46,7 @@ const Motor = () => {
 												href={'/for-school'}
 												content='Learn More'
 												bgColor={'border-2 border-white'}
-												hover='hover:text-white hover:bg-blue-500 hover:border-none transition-colors ease-in-out duration-500'
+												hover='hover:text-white hover:bg-primary hover:border-none transition-colors ease-in-out duration-500'
 											/>
 										</div>
 									</div>
@@ -70,7 +70,7 @@ const Motor = () => {
 												href={'/for-organization'}
 												content='Learn More'
 												bgColor={'btn-border'}
-												hover='hover:text-white hover:bg-[#0075FF] hover:border-0 transition-colors ease-in-out duration-500'
+												hover='hover:text-white hover:bg-primary hover:border-0 transition-colors ease-in-out duration-500'
 											/>
 										</div>
 									</div>
