@@ -23,7 +23,7 @@ const Fororganization = () => {
 			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
 					<HeroContainer
-						src={'/images/orgBg2.png'}
+						src={'/images/orgBg.png'}
 						alt='organization illustration'
 						btnAction='Get Started'
 						title='We Design and Implement an online computer-based test system.'

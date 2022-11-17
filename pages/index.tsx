@@ -42,7 +42,7 @@ const Home: NextPage = () => {
 			<main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
 					<HeroContainer
-						src={'/images/hmpageBg.png'}
+						src={'/images/hmPage.png'}
 						alt='excitment illustration'
 						title='Setting Up and Preparing For Assessment Without Stress.'
 						content='FLIP is an enhanced assessment platform that provides

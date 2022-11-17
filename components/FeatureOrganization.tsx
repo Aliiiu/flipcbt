@@ -35,7 +35,7 @@ const Featureorganization = () => {
 					<div className='vector-9'>
 						<div className='px-7 xl:px-[8em]'>
 							<div className='flex justify-center md:mb-[120px] mobile:mb-[65px]'>
-								<h2 className='inline-block md:text-[40px] text-[24px] text-center capitalize font-semibold md:leading-[52px]'>
+								<h2 className='inline-block md:text-3xl lg:text-[40px] text-[24px] text-center capitalize font-semibold md:leading-[52px]'>
 									Flip is built with guaranteed <br className='mobile:hidden' />{' '}
 									advantages for your <br className='mobile:hidden' />
 									organization.
@@ -44,8 +44,8 @@ const Featureorganization = () => {
 							{Data.map((item, index) => (
 								<div
 									key={index}
-									className={`w-full flex flex-col md:flex-row md:mb-[88px] justify-between items-center ${
-										index === 1 && 'flex-row-reverse'
+									className={`w-full flex flex-col md:flex-row md:mb-[68px] justify-between items-center ${
+										index === 1 && 'md:flex-row-reverse w-full'
 									}`}
 								>
 									<div
@@ -54,15 +54,13 @@ const Featureorganization = () => {
 										}`}
 									>
 										<h3
-											className={`${
-												index % 2 === 0 ? '' : ''
-											} font-semibold text-2xl md:text-3xl lg:text-4xl leading-none lg:w-[75%] capitalize`}
+											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
 										>
 											{item.heading}
 										</h3>
 										<p
-											className={`${index % 2 === 0 ? '' : ''} mt-[18px]  ${
-												index !== 1 ? 'md:w-[58%]' : 'md:w-[75%]'
+											className={`mt-[18px]  ${
+												index !== 1 ? 'md:w-[58%]' : 'md:w-[85%]'
 											}`}
 										>
 											{item.content}

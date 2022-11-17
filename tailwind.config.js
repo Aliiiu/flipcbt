@@ -6,9 +6,16 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'deep-blue': '#06042C',
+				flipDark: '#06042C',
+				primaryBlue: '#F9FBFE',
+				secondaryBlue: '#ADD0F9',
 				primary: '#0075FF',
 				secondary: '#FFAD4A',
+			},
+			gridTemplateRows: {
+				// Simple 8 row grid
+				10: 'repeat(10, minmax(0, 60px))',
+				layout: '200px minmax(900px, 1fr) 100px',
 			},
 			animation: {
 				'fade-in': 'fadeIn 2s ease-in-out',

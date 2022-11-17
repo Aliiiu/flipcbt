@@ -3,7 +3,7 @@ import NextImage from 'next/image';
 
 const VideoStream = () => {
 	return (
-		<div className='relative'>
+		<div className='relative py-14 lg:py-0'>
 			<div className='absolute hidden xl:block left-[-80px] top-[-100px]'>
 				<NextImage
 					src={'/images/videosvg.svg'}
@@ -32,7 +32,7 @@ const VideoStream = () => {
 				loop
 				autoPlay
 				muted
-				className='mx-auto rounded-[50px] w-full xl:h-[493px] shadow-2xl'
+				className='mx-auto rounded-[50px] w-full h-full xl:h-[493px] shadow-2xl'
 			></video>
 		</div>
 	);

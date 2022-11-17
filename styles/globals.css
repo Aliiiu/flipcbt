@@ -332,4 +332,15 @@ img {
 		background-position: top right;
 		background-repeat: no-repeat;
 	}
+	.sketch-1,
+	.sketch-2 {
+		background-position: bottom left;
+		background-repeat: no-repeat;
+	}
+	.sketch-1 {
+		background-image: url(/svgs/sketch-vector.svg);
+	}
+	.sketch-2 {
+		background-image: url(/svgs/sketch-vector-2.svg);
+	}
 }

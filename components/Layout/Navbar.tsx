@@ -38,7 +38,7 @@ const Navbar = () => {
 								</div>
 							</a>
 						</Link>
-						<div className='mobile:hidden flex justify-between w-[40%]'>
+						<div className='mobile:hidden flex gap-4 justify-between lg:w-[40%]'>
 							<Link href='/'>
 								<a
 									id='navLink'
@@ -69,6 +69,16 @@ const Navbar = () => {
 									} hover:text-blue-500 active:text-blue-500`}
 								>
 									For School
+								</a>
+							</Link>
+							<Link href='/marketers'>
+								<a
+									id='navLink'
+									className={`text-[#06042C] inline-flex ${
+										router.pathname === '/marketers' ? 'text-blue-400' : null
+									} hover:text-blue-500 active:text-blue-500`}
+								>
+									Marketers
 								</a>
 							</Link>
 						</div>
@@ -124,6 +134,14 @@ const Navbar = () => {
 												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
 											>
 												For School
+											</a>
+										</Link>
+										<Link href='/for-school'>
+											<a
+												onClick={() => ShowNav(false)}
+												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'
+											>
+												Marketers
 											</a>
 										</Link>
 									</div>

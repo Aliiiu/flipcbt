@@ -23,7 +23,7 @@ const ForSchool = () => {
 			<div className=' mt-[78px] mobile:mt-[83px]'>
 				<div className='container'>
 					<HeroContainer
-						src={'/images/studentBg.png'}
+						src={'/images/schoolBg.png'}
 						title='Use The Right Tool To Conduct A Stress-Free Assessment'
 						alt='student illustration'
 						content='Teaching many students different subjects and courses is quite demanding
