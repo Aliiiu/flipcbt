@@ -322,11 +322,13 @@ img {
 		background-repeat: no-repeat;
 	}
 	.vector-8 {
+		background-size: 100px;
 		background-image: url(/vector-8.png);
 		background-position: top left;
 		background-repeat: no-repeat;
 	}
 	.vector-9 {
+		background-size: 100px;
 		background-image: url(/vector-9.png);
 		background-position: top right;
 		background-repeat: no-repeat;

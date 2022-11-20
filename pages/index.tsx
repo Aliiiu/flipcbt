@@ -14,6 +14,7 @@ import YouTube, { YouTubeProps } from 'react-youtube';
 import Image from '../components/UI/Image';
 import HeroContainer from '../components/UI/HeroContainer';
 import VideoStream from '../components/Sections/VideoStream';
+import { PopupButton } from 'react-calendly';
 
 const Home: NextPage = () => {
 	useEffect(() => {

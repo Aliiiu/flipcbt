@@ -39,6 +39,7 @@ const HeroContainer: FC<HeroTypes> = ({
 									href={'/get-started'}
 									content={btnAction ? btnAction : 'Book A Demo'}
 									bgColor='bg-[#0075FF]'
+									pop={true}
 								/>
 							</div>
 						</div>
@@ -51,7 +52,6 @@ const HeroContainer: FC<HeroTypes> = ({
 								layout='fill'
 								objectFit='contain'
 							/>
-							{/* <div className=''></div> */}
 						</div>
 					</div>
 				</div>

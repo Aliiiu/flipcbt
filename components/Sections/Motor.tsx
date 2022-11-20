@@ -24,8 +24,8 @@ const Motor = () => {
 								</p>
 							</div>
 							<div>
-								<div className='grid grid-cols-2 mobile:grid-cols-1 md:gap-x-[1em] lg:gap-x-[4em] mobile:gap-y-5 md:mx-auto md:w-full'>
-									<div className='relative flex-1 h-full lg:h-[364px] text-center overflow-hidden rounded-3xl'>
+								<div className='grid md:grid-cols-2 md:gap-x-[1em] lg:gap-x-[4em] mobile:gap-y-5 md:mx-auto md:w-full'>
+									<div className='relative flex-1 h-[300px] lg:h-[364px] text-center overflow-hidden rounded-3xl'>
 										{/* <div className='motor-forStudent'></div> */}
 										<Image
 											src={'/images/forSchool.png'}
@@ -50,7 +50,7 @@ const Motor = () => {
 											/>
 										</div>
 									</div>
-									<div className='relative flex-1 h-full lg:h-[364px] text-center rounded-3xl overflow-hidden'>
+									<div className='relative flex-1 h-[300px] lg:h-[364px] text-center rounded-3xl overflow-hidden'>
 										<Image
 											src={'/images/forOrganization.png'}
 											alt=''

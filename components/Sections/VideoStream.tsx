@@ -27,13 +27,23 @@ const VideoStream = () => {
 							className='w-[175px] h-[175px] absolute'
 							alt=''
 						/> */}
-			<video
+			{/* <video
 				src='/videos/flipcbt.mp4'
 				loop
 				autoPlay
 				muted
 				className='mx-auto rounded-[50px] w-full h-full xl:h-[493px] shadow-2xl'
-			></video>
+			></video> */}
+			<iframe
+				// width='560'
+				// height='315'
+				className='mx-auto rounded-2xl md:rounded-[50px] md:w-[700px] xl:w-[900px] h-[250px] md:h-[393px] xl:h-[493px] shadow-2xl'
+				src='https://www.youtube.com/embed/izAM8cIhPpU'
+				title='YouTube video player'
+				frameBorder='0'
+				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+				allowFullScreen
+			></iframe>
 		</div>
 	);
 };

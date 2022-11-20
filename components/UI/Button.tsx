@@ -1,27 +1,59 @@
 import Link, { LinkProps } from 'next/link';
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
+import { PopupButton } from 'react-calendly';
 
 interface IButton {
 	href: LinkProps['href'];
-	content: String;
-	bgColor: String;
+	content: string;
+	bgColor: string;
 	hover?: string;
-	isHover?: boolean;
+	pop?: boolean;
 }
 
-const Button: FC<IButton> = ({ href, content, bgColor, hover, isHover }) => {
+const Button: FC<IButton> = ({ href, content, bgColor, hover, pop }) => {
+	const [mounted, setMounted] = useState<boolean>(false);
+	useEffect(() => {
+		setMounted(true);
+		return () => setMounted(false);
+	}, []);
 	return (
-		<Link href={href}>
-			<a
-				className={`py-[10px] px-[20px] md:px-[40px] md:py-[16px] text-[16px] rounded-[15px] ${bgColor} text-white ${
-					hover
-						? hover
-						: ' hover:bg-transparent hover:border-2 hover:text-primary transition-colors ease-in-out duration-500 hover:border-[#0075FF]'
-				}`}
-			>
-				{content}
-			</a>
-		</Link>
+		<>
+			{pop ? (
+				<button
+					className={`py-3 px-5 rounded-2xl ${bgColor} text-white ${
+						hover
+							? hover
+							: ' hover:bg-transparent hover:border-2 hover:text-primary transition-colors ease-in-out duration-500 hover:border-[#0075FF]'
+					}`}
+				>
+					{mounted && (
+						<PopupButton
+							url='https://calendly.com/flipcbt/online-demo'
+							/*
+							 * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+							 * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+							 */
+							rootElement={
+								document.getElementById('overlay-root') as HTMLElement
+							}
+							text={content}
+						/>
+					)}
+				</button>
+			) : (
+				<Link href={href}>
+					<a
+						className={`py-3 px-5 rounded-2xl ${bgColor} text-white ${
+							hover
+								? hover
+								: ' hover:bg-transparent hover:border-2 hover:text-primary transition-colors ease-in-out duration-500 hover:border-[#0075FF]'
+						}`}
+					>
+						{content}
+					</a>
+				</Link>
+			)}
+		</>
 	);
 };
 

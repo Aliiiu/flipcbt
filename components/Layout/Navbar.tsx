@@ -21,7 +21,7 @@ const Navbar = () => {
 	};
 	//
 	return (
-		<nav className='fixed top-0 left-0 z-50 w-full bg-white'>
+		<nav className='fixed top-0 left-0 z-50 w-full bg-[#ffffff33] backdrop-blur-lg '>
 			<div className='container md:py-5'>
 				<div className='xl:px-[8em] mobile:flex mobile:justify-between mobile:py-5 px-7'>
 					<div className='flex items-center justify-between'>
@@ -58,7 +58,7 @@ const Navbar = () => {
 											: null
 									} hover:text-blue-500 active:text-blue-500 `}
 								>
-									For Organization
+									Organization
 								</a>
 							</Link>
 							<Link href='/for-school'>
@@ -68,7 +68,7 @@ const Navbar = () => {
 										router.pathname === '/for-school' ? 'text-blue-400' : null
 									} hover:text-blue-500 active:text-blue-500`}
 								>
-									For School
+									School
 								</a>
 							</Link>
 							<Link href='/marketers'>
@@ -86,6 +86,7 @@ const Navbar = () => {
 							href={'/get-started'}
 							content='Get Started'
 							bgColor={'bg-[#0075ff] mobile:hidden'}
+							pop={true}
 						/>
 					</div>
 					<div className='hidden overflow-hidden text-white mobile:block'>
@@ -150,6 +151,7 @@ const Navbar = () => {
 											href={'/get-started'}
 											content='Get Started'
 											bgColor='bg-[#0075FF]'
+											pop={true}
 										/>
 									</div>
 								</div>

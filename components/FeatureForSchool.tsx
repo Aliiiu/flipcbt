@@ -30,10 +30,10 @@ const Data = [
 const FeatureForSchool = () => {
 	return (
 		<Fragment>
-			<section className='container md:mt-[142px] mobile:mt-[58px]'>
+			<section className='md:mt-[142px] mobile:mt-[58px]'>
 				<div className='vector-8'>
 					<div className='vector-9'>
-						<div className='px-7 xl:px-[8em]'>
+						<div className='container px-7 xl:px-[8em]'>
 							<div className='flex justify-center md:mb-[120px] mobile:mb-[65px]'>
 								<h2 className='inline-block md:text-3xl lg:text-[40px] text-[24px] text-center font-semibold md:leading-[52px] capitalize mobile:leading-[32.68px]'>
 									Flip has recorded over 80% success{' '}
