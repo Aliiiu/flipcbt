@@ -45,6 +45,8 @@ const Home: NextPage = () => {
 					<HeroContainer
 						src={'/images/hmPage.png'}
 						alt='excitment illustration'
+						pop={true}
+						hrefLink=''
 						title='Setting Up and Preparing For Assessment Without Stress.'
 						content='FLIP is an enhanced assessment platform that provides
 											computerized tests, examination management, quick grading

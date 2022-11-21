@@ -28,6 +28,8 @@ const Marketers = () => {
 						src={'/images/marketersBg.png'}
 						title='Earn Up To 20% For Every School You Get To Partner With Flip'
 						btnAction='Join Our Affiliate Team'
+						pop={false}
+						hrefLink='/marketing/register'
 						alt='marketer illustration'
 						content='The FLIP Affiliate program is for every person interested in pitching 
             our product to potential schools while getting rewarded with an attractive 

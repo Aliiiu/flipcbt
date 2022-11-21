@@ -26,6 +26,8 @@ const ForSchool = () => {
 						src={'/images/schoolBg.png'}
 						title='Use The Right Tool To Conduct A Stress-Free Assessment'
 						alt='student illustration'
+						hrefLink={''}
+						pop={true}
 						content='Teaching many students different subjects and courses is quite demanding
 						 and tasking already. Setting up a terminal assessment for them should not be 
 						 worrisome, including marking scripts and collation of results.'

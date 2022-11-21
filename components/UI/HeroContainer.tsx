@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Button from './Button';
 import NextImage, { ImageProps } from 'next/image';
+import { LinkProps } from 'next/link';
 
 interface HeroTypes {
 	src: ImageProps['src'];
@@ -9,11 +10,15 @@ interface HeroTypes {
 	alt: string;
 	maxWidth?: string;
 	btnAction?: string;
+	pop: boolean;
+	hrefLink: LinkProps['href'];
 }
 const HeroContainer: FC<HeroTypes> = ({
 	src,
 	content,
+	pop,
 	alt,
+	hrefLink,
 	maxWidth,
 	btnAction,
 	title,
@@ -36,10 +41,10 @@ const HeroContainer: FC<HeroTypes> = ({
 							</p>
 							<div className='flex justify-start mobile:mt-1'>
 								<Button
-									href={'/get-started'}
+									href={btnAction ? hrefLink : ''}
 									content={btnAction ? btnAction : 'Book A Demo'}
 									bgColor='bg-[#0075FF]'
-									pop={true}
+									pop={pop}
 								/>
 							</div>
 						</div>

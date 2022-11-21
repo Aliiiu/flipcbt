@@ -25,7 +25,9 @@ const Fororganization = () => {
 					<HeroContainer
 						src={'/images/orgBg.png'}
 						alt='organization illustration'
+						hrefLink={'/get-started'}
 						btnAction='Get Started'
+						pop={false}
 						title='We Design and Implement an online computer-based test system.'
 						content='FLIP serves as a source to provide tests, examination
 management, quick grading of systems and collation of

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Fragment, useEffect, useState } from 'react';
+import { PopupModal } from 'react-calendly';
 import AppModal from '../components/widget/Modal/Modal';
 
 const GetStarted = () => {
@@ -11,11 +12,18 @@ const GetStarted = () => {
 	const [organizationActive, setorganizationActive] = useState<boolean>(false);
 	const [marketingActive, setMarketingActive] = useState<boolean>(false);
 	const router = useRouter();
+	const [openMeet, setOpenMeet] = useState(false);
+	const [mounted, setMounted] = useState<boolean>(false);
+	useEffect(() => {
+		setMounted(true);
+		return () => setMounted(false);
+	}, []);
 
 	const schoolHandler = () => {
 		setActive(true);
 		setMarketingActive(false);
 		setorganizationActive(false);
+		setOpenMeet(true);
 	};
 
 	const organizationHandler = () => {
@@ -65,6 +73,18 @@ const GetStarted = () => {
 					</div>
 				}
 			/>
+			{mounted && (
+				<PopupModal
+					url='https://calendly.com/flipcbt/online-demo'
+					onModalClose={() => setOpenMeet(false)}
+					open={openMeet}
+					/*
+					 * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+					 * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+					 */
+					rootElement={document.getElementById('overlay-root') as HTMLElement}
+				/>
+			)}
 			<div className='gs_Bg'>
 				<div className='container'>
 					<div className='flex flex-col md:pt-[40px] pt-[22px] pb-[80px] md:pb-[263px] md:px-[8em] px-7'>
@@ -87,27 +107,25 @@ const GetStarted = () => {
 							<p>What do you want to use Flip for?</p>
 						</div>
 						<div className='grid grid-cols-3 mobile:grid-cols-1 mobile:gap-y-[50px] gap-x-9 '>
-							<Link href={'/school/register'} passHref>
-								<a
-									onClick={schoolHandler}
-									className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
-										active ? 'card_select' : null
-									} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
-								>
-									<Image
-										src='/images/gs_school.png'
-										alt='Flip Cbt Logo'
-										width='230px'
-										height='140px'
-									/>
-									<h2 className='text-[25px] mobile:text-[25px] font-semibold mt-[40px]'>
-										School
-									</h2>
-									<p className='text-center'>
-										I want Flip for <br className='mobile:hidden' /> my school
-									</p>
-								</a>
-							</Link>
+							<a
+								onClick={schoolHandler}
+								className={`flex flex-col items-center cursor-pointer gs_card hover:border-2 hover:border-[#0075FF] ${
+									active ? 'card_select' : null
+								} shadow-[0px_4px_50px_rgba(0,0,0,0.1)]`}
+							>
+								<Image
+									src='/images/gs_school.png'
+									alt='Flip Cbt Logo'
+									width='230px'
+									height='140px'
+								/>
+								<h2 className='text-[25px] mobile:text-[25px] font-semibold mt-[40px]'>
+									School
+								</h2>
+								<p className='text-center'>
+									I want Flip for <br className='mobile:hidden' /> my school
+								</p>
+							</a>
 							<div>
 								<a
 									onClick={organizationHandler}

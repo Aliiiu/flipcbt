@@ -86,7 +86,6 @@ const Navbar = () => {
 							href={'/get-started'}
 							content='Get Started'
 							bgColor={'bg-[#0075ff] mobile:hidden'}
-							pop={true}
 						/>
 					</div>
 					<div className='hidden overflow-hidden text-white mobile:block'>
@@ -151,7 +150,6 @@ const Navbar = () => {
 											href={'/get-started'}
 											content='Get Started'
 											bgColor='bg-[#0075FF]'
-											pop={true}
 										/>
 									</div>
 								</div>
