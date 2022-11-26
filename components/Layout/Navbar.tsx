@@ -136,7 +136,7 @@ const Navbar = () => {
 												For School
 											</a>
 										</Link>
-										<Link href='/for-school'>
+										<Link href='/marketers'>
 											<a
 												onClick={() => ShowNav(false)}
 												className='mt-5 mb-5 text-[20px] font-semibold no-underline text-[#06042C]'

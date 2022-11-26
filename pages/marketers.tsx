@@ -27,7 +27,7 @@ const Marketers = () => {
 					<HeroContainer
 						src={'/images/marketersBg.png'}
 						title='Earn Up To 20% For Every School You Get To Partner With Flip'
-						btnAction='Join Our Affiliate Team'
+						btnAction='Apply Now'
 						pop={false}
 						hrefLink='/marketing/register'
 						alt='marketer illustration'
