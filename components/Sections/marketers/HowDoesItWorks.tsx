@@ -33,7 +33,7 @@ const merits = [
 		id: 4,
 		icon: '/svgs/earn.svg',
 		title: 'Earn',
-		content: `Earn as much as you secure more partnerships of schools with FLIP. Gain a 20% commission on every school that partners with FLIP via your affiliate link.
+		content: `Earn as much as you secure more partnerships of schools with FLIP. Gain a 10% commission on every school that partners with FLIP via your affiliate link.
 `,
 	},
 ];

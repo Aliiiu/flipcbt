@@ -37,7 +37,7 @@ const VideoStream = () => {
 			<iframe
 				// width='560'
 				// height='315'
-				className='mx-auto rounded-2xl md:rounded-[50px] md:w-[700px] xl:w-[900px] h-[250px] md:h-[393px] xl:h-[493px] shadow-2xl'
+				className='mx-auto rounded-2xl md:rounded-[50px] md:w-[700px] xl:w-[900px] h-[200px] md:h-[393px] xl:h-[493px] shadow-2xl'
 				src='https://www.youtube.com/embed/izAM8cIhPpU'
 				title='YouTube video player'
 				frameBorder='0'

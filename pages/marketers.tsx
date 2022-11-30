@@ -26,7 +26,7 @@ const Marketers = () => {
 				<div className='container'>
 					<HeroContainer
 						src={'/images/marketersBg.png'}
-						title='Earn Up To 20% For Every School You Get To Partner With Flip'
+						title='Earn Up To 10% For Every School You Get To Partner With Flip'
 						btnAction='Apply Now'
 						pop={false}
 						hrefLink='/marketing/register'
