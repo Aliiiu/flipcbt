@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import { Fragment } from 'react';
 import styles from '../styles/home.module.css';
-import CustomImage from './UI/Image';
+import CustomImage from '../../UI/Image';
+import InViewAnimateLeft from '../../../transition/InViewAnimateLeft';
+import InViewAnimateRight from '../../../transition/InViewAnimateRight';
 
 const Data = [
 	{
@@ -42,7 +44,7 @@ const FeatureForSchool = () => {
 									assessments.
 								</h2>
 							</div>
-							{Data.map((item, index) => (
+							{/* {Data.map((item, index) => (
 								<div
 									key={index}
 									className={`w-full flex flex-col md:flex-row md:mb-[68px] justify-between items-center ${
@@ -77,7 +79,70 @@ const FeatureForSchool = () => {
 										/>
 									</div>
 								</div>
-							))}
+							))} */}
+							<InViewAnimateLeft>
+								<div
+									className={`w-full flex flex-col md:flex-row md:mb-[68px] justify-between items-center`}
+								>
+									<div className={`flex-1 `}>
+										<h3
+											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
+										>
+											{Data[0].heading}
+										</h3>
+										<p className={`mt-[18px]`}>{Data[0].content}</p>
+									</div>
+									<div className={`flex-1 flex justify-end`}>
+										<CustomImage
+											src={Data[0].image}
+											alt={Data[0].alt}
+											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
+										/>
+									</div>
+								</div>
+							</InViewAnimateLeft>
+							<InViewAnimateRight>
+								<div
+									className={`w-full flex flex-col md:flex-row-reverse md:mb-[68px] justify-between items-center`}
+								>
+									<div className={`flex-1 `}>
+										<h3
+											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
+										>
+											{Data[1].heading}
+										</h3>
+										<p className={`mt-[18px]`}>{Data[1].content}</p>
+									</div>
+									<div className={`flex-1`}>
+										<CustomImage
+											src={Data[1].image}
+											alt={Data[1].alt}
+											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
+										/>
+									</div>
+								</div>
+							</InViewAnimateRight>
+							<InViewAnimateLeft>
+								<div
+									className={`w-full flex flex-col md:flex-row md:mb-[68px] justify-between items-center`}
+								>
+									<div className={`flex-1 `}>
+										<h3
+											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
+										>
+											{Data[2].heading}
+										</h3>
+										<p className={`mt-[18px]`}>{Data[2].content}</p>
+									</div>
+									<div className={`flex-1 flex justify-end`}>
+										<CustomImage
+											src={Data[2].image}
+											alt={Data[2].alt}
+											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
+										/>
+									</div>
+								</div>
+							</InViewAnimateLeft>
 						</div>
 					</div>
 				</div>

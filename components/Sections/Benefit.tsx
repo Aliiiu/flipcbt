@@ -1,6 +1,11 @@
-import { useState } from 'react';
+import { motion, useAnimation, useCycle } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import InViewAnimateGrow from '../../transition/InViewAnimateGrow';
+import InViewAnimateLeft from '../../transition/InViewAnimateLeft';
+import InViewAnimateRight from '../../transition/InViewAnimateRight';
 import Button from '../UI/Button';
 import CustomImage from '../UI/Image';
+import { useInView } from 'react-intersection-observer';
 
 type ArrayObject = {
 	title: string;
@@ -69,6 +74,72 @@ const benefit: ArrayObject[][] = [
 
 const Benefit = () => {
 	const [currTab, setCurrTab] = useState<number>(0);
+	const [isOpen, toggleOpen] = useCycle(false, true);
+	const { ref, inView } = useInView();
+	const animation = useAnimation();
+
+	useEffect(() => {
+		if (!inView) {
+			animation.start('visible');
+		}
+		if (inView) {
+			animation.start('hidden');
+		}
+	});
+
+	const tabVariants = {
+		active: {
+			scale: 1.1,
+			textShadow: '0px 0px 8px rgb(255,255,255)',
+			boxShadow: '0px 0px 8px rgb(255,255,255)',
+			transition: {
+				duration: 0.3,
+				yoyo: Infinity,
+			},
+		},
+	};
+
+	const buttonVariants = {
+		hidden: {
+			// clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+			x: '-100vw',
+			// scale: 1.2,
+		},
+		visible: {
+			x: 0,
+			// scale: 0.3,
+			transition: {
+				delay: 0.5,
+				when: 'beforeChildren',
+				staggerChildren: 0.1,
+				delayChildren: 0.2,
+			},
+		},
+	};
+
+	const listVariant = {
+		hidden: {
+			x: -10,
+			opacity: 0,
+		},
+		visible: {
+			x: 0,
+			opacity: 1,
+			// staggerChildren: 2.0,
+			// transition: {
+			// 	delay: 3,
+			// },
+		},
+	};
+
+	const childVariants = {
+		open: {
+			transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+		},
+		closed: {
+			transition: { staggerChildren: 0.05, staggerDirection: -1 },
+		},
+	};
 
 	const ForSchool = (): void => {
 		setCurrTab(0);
@@ -86,29 +157,31 @@ const Benefit = () => {
 							<div className='flex justify-between mobile:hidden'>
 								<div className='bg-white flex flex-col justify-between w-[45%] rounded-[30px] p-[2rem] xl:p-[3em]'>
 									<div>
-										<div className='text-center text-[30px] font-semibold mb-7'>
-											What Schools Get
-										</div>
-										{benefit[0].map((item, idx) => (
-											<div
-												className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
-												key={idx}
-											>
-												<div className='flex flex-col'>
-													<div className='inline-flex items-center'>
-														<CustomImage
-															className='w-[35px] h-[35px] '
-															src={'/images/tick.png'}
-															alt=''
-														/>
-														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
-															{item.title}
-														</h5>
-													</div>
-													<p className='mt-3 '>{item.content}</p>
-												</div>
+										<InViewAnimateGrow>
+											<div className='text-center text-[30px] font-semibold mb-7'>
+												What Schools Get
 											</div>
-										))}
+											{benefit[0].map((item, idx) => (
+												<div
+													className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
+													key={idx}
+												>
+													<div className='flex flex-col'>
+														<div className='inline-flex items-center'>
+															<CustomImage
+																className='w-[35px] h-[35px] '
+																src={'/images/tick.png'}
+																alt=''
+															/>
+															<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
+																{item.title}
+															</h5>
+														</div>
+														<p className='mt-3 '>{item.content}</p>
+													</div>
+												</div>
+											))}
+										</InViewAnimateGrow>
 									</div>
 									<div className='text-center md:mt-[15px]'>
 										<Button
@@ -121,29 +194,31 @@ const Benefit = () => {
 								</div>
 								<div className='bg-white w-[45%] rounded-[30px] p-[2em] xl:p-[3em] flex flex-col justify-between'>
 									<div>
-										<div className='text-center text-[30px] font-semibold mb-7'>
-											What Organizations Get
-										</div>
-										{benefit[1].map((item, idx) => (
-											<div
-												className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
-												key={idx}
-											>
-												<div className='flex flex-col'>
-													<div className='inline-flex items-center'>
-														<CustomImage
-															className='w-[35px] h-[35px] '
-															src={'/images/tick.png'}
-															alt=''
-														/>
-														<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
-															{item.title}
-														</h5>
-													</div>
-													<p className='mt-3'>{item.content}</p>
-												</div>
+										<InViewAnimateGrow>
+											<div className='text-center text-[30px] font-semibold mb-7'>
+												What Organizations Get
 											</div>
-										))}
+											{benefit[1].map((item, idx) => (
+												<div
+													className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
+													key={idx}
+												>
+													<div className='flex flex-col'>
+														<div className='inline-flex items-center'>
+															<CustomImage
+																className='w-[35px] h-[35px] '
+																src={'/images/tick.png'}
+																alt=''
+															/>
+															<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
+																{item.title}
+															</h5>
+														</div>
+														<p className='mt-3'>{item.content}</p>
+													</div>
+												</div>
+											))}
+										</InViewAnimateGrow>
 									</div>
 									<div className='text-center'>
 										<Button
@@ -157,7 +232,9 @@ const Benefit = () => {
 							<div className='md:hidden mobile:w-full'>
 								<div className='flex justify-between w-full mb-8'>
 									<div className='py-5 cursor-pointer header-card whitespace-nowrap'>
-										<button
+										<motion.button
+											variants={tabVariants}
+											animate={currTab !== 0 ? 'active' : ''}
 											className={`text-xl text-left font-semibold ${
 												currTab === 0 ? 'text-[#06042C]' : 'text-[#BABABA]'
 											}`}
@@ -165,27 +242,38 @@ const Benefit = () => {
 											onClick={ForSchool}
 										>
 											What <br className='' /> Schools <br className='' /> Get
-										</button>
+										</motion.button>
 									</div>
 									<div className='py-5 cursor-pointer header-card whitespace-nowrap'>
-										<button
+										<motion.button
+											variants={tabVariants}
+											animate={currTab !== 1 ? 'active' : ''}
 											className={`text-xl text-left font-semibold ${
 												currTab === 1 ? 'text-[#06042C]' : 'text-[#BABABA]'
 											}`}
 											type='button'
-											onClick={Fororganization}
+											onClick={() => {
+												Fororganization();
+											}}
 										>
 											What <br className='' /> Organizations <br className='' />{' '}
 											Get
-										</button>
+										</motion.button>
 									</div>
 								</div>
-								{benefit[currTab].map((item, idx) => (
-									<div
-										className='flex flex-col justify-between pr-1 mb-6 md:mb-8'
-										key={idx}
-									>
-										<div className='flex flex-col'>
+								<motion.ul
+									variants={buttonVariants}
+									// ref={ref}
+									animate={'visible'}
+									initial='hidden'
+									className='flex flex-col justify-between'
+								>
+									{benefit[currTab].map((item, idx) => (
+										<motion.li
+											key={idx}
+											variants={listVariant}
+											className='flex flex-col pr-1 mb-6 md:mb-8'
+										>
 											<div className='inline-flex items-center'>
 												<CustomImage
 													className='w-[35px] h-[35px] '
@@ -197,9 +285,9 @@ const Benefit = () => {
 												</h5>
 											</div>
 											<p className='mt-3'>{item.content}</p>
-										</div>
-									</div>
-								))}
+										</motion.li>
+									))}
+								</motion.ul>
 								<div className='text-center justify-end mt-[3em]'>
 									<Button
 										href={`${

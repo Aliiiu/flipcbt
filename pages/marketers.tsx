@@ -11,6 +11,38 @@ import VideoStream from '../components/Sections/VideoStream';
 import HeroContainer from '../components/UI/HeroContainer';
 import CustomImage from '../components/UI/Image';
 
+interface QATypes {
+	question: string;
+	answer: string | JSX.Element;
+}
+const QA: QATypes[] = [
+	{
+		question: 'Do I share FLIP with both public and private schools?',
+		answer: `Flip is a cbt software that allows the Admin to input assessment questions into its database
+							and the questions are then imported from the database to conduct assessment. `,
+	},
+	{
+		question: 'Would I receive multiple commissions for multiple referrals?',
+		answer: `Flip for School does not require internet access while Flip for organization requires internet access. `,
+	},
+	{
+		question: 'How do I get my affiliate link?',
+		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
+	},
+	{
+		question: 'What is the actual amount I would receive on every referral?',
+		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
+	},
+	{
+		question: 'How much commission can I earn in a month?',
+		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
+	},
+	{
+		question: 'Do I have access to FLIP promotional materials?',
+		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
+	},
+];
+
 const Marketers = () => {
 	useEffect(() => {
 		const html = document.getElementById('mainHtml') as HTMLElement;
@@ -26,7 +58,7 @@ const Marketers = () => {
 				<div className='container'>
 					<HeroContainer
 						src={'/images/marketersBg.png'}
-						title='Earn Up To 10% For Every School You Get To Partner With Flip'
+						title='Earn Up To 20% For Every School You Get To Partner With Flip'
 						btnAction='Apply Now'
 						pop={false}
 						hrefLink='/marketing/register'
@@ -50,7 +82,10 @@ const Marketers = () => {
 				<section className='container xl:px-[8em] px-7'>
 					<Benefit />
 				</section>
-				<Faqs />
+				<Faqs
+					QA={QA}
+					content='We’ve got answers to all your questions and inquiries.'
+				/>
 				<section className='py-10 lg:py-20 bg-primaryBlue lg:mt-10'>
 					<Policies />
 				</section>

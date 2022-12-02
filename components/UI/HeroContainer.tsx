@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import Button from './Button';
 import NextImage, { ImageProps } from 'next/image';
 import { LinkProps } from 'next/link';
+import { motion } from 'framer-motion';
 
 interface HeroTypes {
 	src: ImageProps['src'];
@@ -23,8 +24,27 @@ const HeroContainer: FC<HeroTypes> = ({
 	btnAction,
 	title,
 }) => {
+	const containerVariants = {
+		hidden: {
+			opacity: 0,
+		},
+		visible: {
+			opacity: 1,
+			transition: { duration: 1.5 },
+		},
+		exit: {
+			x: '-100vw',
+			transition: { ease: 'easeInOut' },
+		},
+	};
 	return (
-		<div className='relative xl:px-[8em] px-7'>
+		<motion.div
+			variants={containerVariants}
+			initial='hidden'
+			animate='visible'
+			exit='exit'
+			className='relative xl:px-[8em] px-7'
+		>
 			<section className=''>
 				<div className='flex justify-between'>
 					<div className='w-full md:flex-1'>
@@ -61,7 +81,7 @@ const HeroContainer: FC<HeroTypes> = ({
 					</div>
 				</div>
 			</section>
-		</div>
+		</motion.div>
 	);
 };
 

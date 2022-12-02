@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment, useEffect } from 'react';
-import FeatureForSchool from '../components/FeatureForSchool';
-import GettingStartedForSchool from '../components/GettingStartedForSchool';
+import FeatureForSchool from '../components/Sections/school/FeatureForSchool';
+import GettingStartedForSchool from '../components/Sections/school/GettingStartedForSchool';
 import Guarantee from '../components/Sections/Guarantee';
 import Footer from '../components/Layout/Footer';
 import Navbar from '../components/Layout/Navbar';
 import Button from '../components/UI/Button';
 import HeroContainer from '../components/UI/HeroContainer';
+import ReadyToGetStarted from '../components/Sections/ReadyToGetStarted';
 
 const ForSchool = () => {
 	useEffect(() => {
@@ -37,26 +38,12 @@ const ForSchool = () => {
 			<FeatureForSchool />
 			<GettingStartedForSchool />
 			<section className="md:px-20 mobile:px-4 py-20 bg-[url('/FlipCbtBg2.png')] bg-contain bg-[#0075FF] bg-opacity-90">
-				<div className='container flex flex-col items-center justify-center text-center space-y-7'>
-					<h2 className='font-bold text-[40px] mobile:text-[28px] text-white capitalize'>
-						Ready to get started?
-					</h2>
-					<p className='w-7/12 text-white mobile:w-full'>
-						Greater Efficiency Is Undeniable. All Reports are{' '}
-						<br className='mobile:hidden' /> Saved and Can Be Accessed At Any
-						Time.
-					</p>
-					{/* <Link href='#'>
-						<a className='text-white bg-black btn-border px-12 py-4 text-[14px]'>
-							CLICK HERE
-						</a>
-					</Link> */}
-					<Button
-						href={'/marketing/register'}
-						content='Get Started'
-						bgColor='bg-[#06042C]'
-					/>
-				</div>
+				<ReadyToGetStarted
+					content={
+						'Greater Efficiency Is Undeniable. All Reports are Saved and Can Be Accessed At Any Time.'
+					}
+					classes='w-4/12'
+				/>
 			</section>
 			<Guarantee />
 			<Footer />
