@@ -19,7 +19,7 @@ const Button: FC<IButton> = ({ href, content, bgColor, hover, pop }) => {
 	return (
 		<>
 			{pop ? (
-				<button
+				<div
 					className={`py-3 px-5 rounded-2xl ${bgColor} text-white ${
 						hover
 							? hover
@@ -39,7 +39,7 @@ const Button: FC<IButton> = ({ href, content, bgColor, hover, pop }) => {
 							text={content}
 						/>
 					)}
-				</button>
+				</div>
 			) : (
 				<Link href={href}>
 					<a

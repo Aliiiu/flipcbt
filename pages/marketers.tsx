@@ -18,28 +18,27 @@ interface QATypes {
 const QA: QATypes[] = [
 	{
 		question: 'Do I share FLIP with both public and private schools?',
-		answer: `Flip is a cbt software that allows the Admin to input assessment questions into its database
-							and the questions are then imported from the database to conduct assessment. `,
+		answer: `Yes, you can tell about FLIP to both public and private schools`,
 	},
 	{
 		question: 'Would I receive multiple commissions for multiple referrals?',
-		answer: `Flip for School does not require internet access while Flip for organization requires internet access. `,
+		answer: `You would receive 30,000 naira for every referral`,
 	},
 	{
 		question: 'How do I get my affiliate link?',
-		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
-	},
-	{
-		question: 'What is the actual amount I would receive on every referral?',
-		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
+		answer: `You would have access to a marketer dashboard as soon as the FLIP team verifies you as a marketer.`,
 	},
 	{
 		question: 'How much commission can I earn in a month?',
-		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
+		answer: `There is no limit to how much you can earn as a marketer so far there are referrals from you.`,
 	},
 	{
 		question: 'Do I have access to FLIP promotional materials?',
-		answer: `Flip can be used by schools or organizations(companies) of any size to conduct assessment.`,
+		answer: `Every verified marketer would have access to FLIP promotional materials`,
+	},
+	{
+		question: 'Can I test the FLIP software?',
+		answer: `Yes, you can view the demo of the FLIP software.`,
 	},
 ];
 
@@ -58,7 +57,7 @@ const Marketers = () => {
 				<div className='container'>
 					<HeroContainer
 						src={'/images/marketersBg.png'}
-						title='Earn Up To 20% For Every School You Get To Partner With Flip'
+						title='Earn Up To 10% When You Tell a School About Flip.'
 						btnAction='Apply Now'
 						pop={false}
 						hrefLink='/marketing/register'

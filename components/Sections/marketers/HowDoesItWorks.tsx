@@ -1,5 +1,7 @@
+import { motion, useAnimation } from 'framer-motion';
 import Image, { ImageProps } from 'next/image';
 import React, { FC, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import Button from '../../UI/Button';
 
 const merits = [
@@ -32,8 +34,8 @@ const merits = [
 	{
 		id: 4,
 		icon: '/svgs/earn.svg',
-		title: 'Earn',
-		content: `Earn as much as you secure more partnerships of schools with FLIP. Gain a 20% commission on every school that partners with FLIP via your affiliate link.
+		title: 'Refer and Earn',
+		content: `Earn 30,000 naira for every school that signs up with FLIP as your referral. You would additionally earn a 10% commission when the referred school eventually pays the one-time payment and uses FLIP.
 `,
 	},
 ];
@@ -43,18 +45,49 @@ interface Props {
 	title: string;
 	content: string | any;
 	classes: string;
+	delay: number;
 }
-const HowDoesItWorkCard: FC<Props> = ({ icon, title, content, classes }) => {
+const HowDoesItWorkCard: FC<Props> = ({
+	icon,
+	title,
+	content,
+	classes,
+	delay,
+}) => {
+	const { ref, inView } = useInView();
+	const animation = useAnimation();
+
+	React.useEffect(() => {
+		if (inView) {
+			animation.start({
+				opacity: 1,
+				transition: {
+					delay: delay,
+					duration: 1.0,
+				},
+			});
+		}
+		if (!inView) {
+			animation.start({
+				opacity: 0,
+			});
+		}
+	});
 	return (
-		<div
-			// key={merit.id}
-			className={` flex flex-col bg-white w-full ease-in-out shadow-sm py-6 px-7 rounded-2xl max-w-[400px] ${classes}`}
-		>
-			<div className={`flex flex-col gap-5 items-start`}>
-				<Image src={icon} alt='' width={56} height={56} />
-				<h3 className='font-semibold text-xl lg:text-2xl'>{title}</h3>
-				<p className='xl:text-xl font-light'>{content}</p>
-			</div>
+		<div ref={ref}>
+			<motion.div
+				animate={animation}
+				// key={merit.id}
+				className={` flex flex-col bg-white w-full ease-in-out shadow-sm py-6 px-7 rounded-2xl max-w-[400px] ${classes}`}
+			>
+				<div className={`flex flex-col gap-5 items-start`}>
+					<Image src={icon} alt='' width={56} height={56} />
+					<h3 className='font-semibold text-xl w-[95%] xl:mt-3 lg:text-2xl'>
+						{title}
+					</h3>
+					<p className='xl:text-xl font-light'>{content}</p>
+				</div>
+			</motion.div>
 		</div>
 	);
 };
@@ -76,31 +109,69 @@ const HowDoesItWork = () => {
 					bgColor='bg-[#0075FF] max-w-max'
 				/>
 			</div>
-			<div className='grid md:grid-cols-2 md:grid-rows-10 gap-4 lg:gap-8'>
+			{/* <div className='grid md:grid-cols-2 md:grid-rows-10 gap-4 lg:gap-8'>
 				<HowDoesItWorkCard
 					icon={merits[0].icon}
 					title={merits[0].title}
 					content={merits[0].content}
 					classes='md:row-span-4 md:col-start-1 md:col-end-2'
+					delay={0.4}
 				/>
 				<HowDoesItWorkCard
 					icon={merits[1].icon}
 					title={merits[1].title}
 					content={merits[1].content}
+					delay={0.8}
 					classes='md:row-start-2 md:row-end-7 md:col-start-2 md:col-end-3'
 				/>
 				<HowDoesItWorkCard
 					icon={merits[2].icon}
 					title={merits[2].title}
 					content={merits[2].content}
+					delay={1.2}
 					classes='md:row-span-5 md:col-start-1 md:col-end-2'
 				/>
 				<HowDoesItWorkCard
 					icon={merits[3].icon}
 					title={merits[3].title}
 					content={merits[3].content}
+					delay={1.6}
 					classes='md:row-span-4 md:col-start-2 md:col-end-3'
 				/>
+			</div> */}
+			<div className='flex flex-col md:flex-row gap-10 justify-between'>
+				<div className='flex flex-col gap-8'>
+					<HowDoesItWorkCard
+						icon={merits[0].icon}
+						title={merits[0].title}
+						content={merits[0].content}
+						classes='md:row-span-4 md:col-start-1 md:h-[357px] md:col-end-2'
+						delay={0.4}
+					/>
+					<HowDoesItWorkCard
+						icon={merits[2].icon}
+						title={merits[2].title}
+						content={merits[2].content}
+						delay={1.2}
+						classes='md:row-start-2 md:row-end-7 md:h-[447px] md:col-start-2 md:col-end-3'
+					/>
+				</div>
+				<div className='flex md:pt-20 flex-col gap-8'>
+					<HowDoesItWorkCard
+						icon={merits[1].icon}
+						title={merits[1].title}
+						content={merits[1].content}
+						delay={0.8}
+						classes='md:row-span-5 md:col-start-1 md:h-[428px] md:col-end-2'
+					/>
+					<HowDoesItWorkCard
+						icon={merits[3].icon}
+						title={merits[3].title}
+						content={merits[3].content}
+						delay={1.6}
+						classes='md:row-span-4 md:col-start-2 md:h-[373px] md:col-end-3'
+					/>
+				</div>
 			</div>
 		</div>
 	);

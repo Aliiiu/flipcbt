@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import InViewAnimateRight from '../../../transition/InViewAnimateRight';
+import InViewAnimateTop from '../../../transition/InViewAnimateTop';
 
 const GettingStartedForSchool = () => {
 	return (
 		<section className='container'>
 			<div className='xl:px-[8em] md:pt-[6em] pt-[78px] pb-[131px] md:pb-[181px] mobile:w-auto px-7'>
-				<InViewAnimateRight>
+				<InViewAnimateTop>
 					<div className='mobile:mx-0'>
 						<div className='text-center'>
 							<h2 className='font-semibold text-[32px] md:text-[40px] mb-[2rem] capitalize'>
@@ -55,7 +56,7 @@ const GettingStartedForSchool = () => {
 							</div>
 						</div>
 					</div>
-				</InViewAnimateRight>
+				</InViewAnimateTop>
 			</div>
 		</section>
 	);

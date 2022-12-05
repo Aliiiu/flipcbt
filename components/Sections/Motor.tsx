@@ -2,6 +2,46 @@ import Image from 'next/image';
 import Button from '../UI/Button';
 import InViewAnimateTop from '../../transition/InViewAnimateTop';
 import InViewAnimateLeft from '../../transition/InViewAnimateLeft';
+import { FC, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
+
+const InViewAnime: FC<{ children: any; delay: number }> = ({
+	children,
+	delay,
+}) => {
+	const { ref, inView } = useInView();
+	const animation = useAnimation();
+
+	useEffect(() => {
+		if (inView) {
+			animation.start({
+				y: 0,
+				opacity: 1,
+				transition: {
+					type: 'tween',
+					duration: 1.5,
+					delay: delay,
+				},
+			});
+		}
+		if (!inView) {
+			animation.start(
+				{
+					y: '10vh',
+					opacity: 0,
+				},
+				[inView]
+			);
+		}
+	});
+
+	return (
+		<div ref={ref}>
+			<motion.div animate={animation}>{children} </motion.div>
+		</div>
+	);
+};
 const Motor = () => {
 	return (
 		<section className='flex flex-col vector-3 mobile:pt-0 mobile:pb-[8em] py-[10em] text-center'>
@@ -26,8 +66,10 @@ const Motor = () => {
 										assessment of all kinds.
 									</p>
 								</div>
-								<div>
-									<div className='grid md:grid-cols-2 md:gap-x-[1em] lg:gap-x-[4em] mobile:gap-y-5 md:mx-auto md:w-full'>
+							</InViewAnimateTop>
+							<div>
+								<div className='grid md:grid-cols-2 md:gap-x-[1em] lg:gap-x-[4em] mobile:gap-y-5 md:mx-auto md:w-full'>
+									<InViewAnime delay={1.0}>
 										<div className='relative flex-1 h-[300px] lg:h-[364px] text-center overflow-hidden rounded-3xl'>
 											{/* <div className='motor-forStudent'></div> */}
 											<Image
@@ -53,6 +95,8 @@ const Motor = () => {
 												/>
 											</div>
 										</div>
+									</InViewAnime>
+									<InViewAnime delay={1.2}>
 										<div className='relative flex-1 h-[300px] lg:h-[364px] text-center rounded-3xl overflow-hidden'>
 											<Image
 												src={'/images/forOrganization.png'}
@@ -77,11 +121,11 @@ const Motor = () => {
 												/>
 											</div>
 										</div>
-									</div>
+									</InViewAnime>
 								</div>
-							</InViewAnimateTop>
+							</div>
 						</div>
-						<InViewAnimateLeft>
+						<InViewAnimateTop>
 							<div className='flex justify-between mobile:flex-col-reverse mobile:mt-[4em] md:mt-[10em]'>
 								<div className='relative md:w-1/2 mobile:w-full mobile:mt-9 mobile:h-[266px] rounded-[20px] overflow-hidden'>
 									<Image
@@ -109,7 +153,7 @@ const Motor = () => {
 									</div>
 								</div>
 							</div>
-						</InViewAnimateLeft>
+						</InViewAnimateTop>
 					</div>
 				</div>
 			</div>

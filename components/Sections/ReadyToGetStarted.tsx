@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import InViewAnimateLeft from '../../transition/InViewAnimateLeft';
+import InViewAnimateTop from '../../transition/InViewAnimateTop';
 import Button from '../UI/Button';
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 }
 const ReadyToGetStarted: FC<Props> = ({ content, content2, classes }) => {
 	return (
-		<InViewAnimateLeft>
+		<InViewAnimateTop>
 			<div className='container flex flex-col items-center justify-center text-center'>
 				<h2 className='font-bold text-[40px] mobile:text-[24px] mb-[10px] mobile:mb-[20px] capitalize text-white'>
 					Ready to get started?
@@ -22,7 +23,7 @@ const ReadyToGetStarted: FC<Props> = ({ content, content2, classes }) => {
 					bgColor='bg-[#06042C]'
 				/>
 			</div>
-		</InViewAnimateLeft>
+		</InViewAnimateTop>
 	);
 };
 

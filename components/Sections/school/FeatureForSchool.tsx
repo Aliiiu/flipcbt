@@ -4,6 +4,7 @@ import styles from '../styles/home.module.css';
 import CustomImage from '../../UI/Image';
 import InViewAnimateLeft from '../../../transition/InViewAnimateLeft';
 import InViewAnimateRight from '../../../transition/InViewAnimateRight';
+import SchoolFeatureCard from '../Cards/SchoolFeatureCard';
 
 const Data = [
 	{
@@ -44,105 +45,9 @@ const FeatureForSchool = () => {
 									assessments.
 								</h2>
 							</div>
-							{/* {Data.map((item, index) => (
-								<div
-									key={index}
-									className={`w-full flex flex-col md:flex-row md:mb-[68px] justify-between items-center ${
-										index === 1 && 'md:flex-row-reverse w-full'
-									}`}
-								>
-									<div
-										className={`flex-1 ${
-											index === 1 && 'lg:flex flex-col items-end'
-										}`}
-									>
-										<h3
-											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
-										>
-											{item.heading}
-										</h3>
-										<p
-											className={`mt-[18px]  ${
-												index !== 1 ? 'md:w-[58%]' : 'md:w-[85%]'
-											}`}
-										>
-											{item.content}
-										</p>
-									</div>
-									<div
-										className={`flex-1  ${index !== 1 && 'flex justify-end'}`}
-									>
-										<CustomImage
-											src={item.image}
-											alt={item.alt}
-											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
-										/>
-									</div>
-								</div>
-							))} */}
-							<InViewAnimateLeft>
-								<div
-									className={`w-full flex flex-col md:flex-row md:mb-[68px] justify-between items-center`}
-								>
-									<div className={`flex-1 `}>
-										<h3
-											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
-										>
-											{Data[0].heading}
-										</h3>
-										<p className={`mt-[18px]`}>{Data[0].content}</p>
-									</div>
-									<div className={`flex-1 flex justify-end`}>
-										<CustomImage
-											src={Data[0].image}
-											alt={Data[0].alt}
-											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
-										/>
-									</div>
-								</div>
-							</InViewAnimateLeft>
-							<InViewAnimateRight>
-								<div
-									className={`w-full flex flex-col md:flex-row-reverse md:mb-[68px] justify-between items-center`}
-								>
-									<div className={`flex-1 `}>
-										<h3
-											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
-										>
-											{Data[1].heading}
-										</h3>
-										<p className={`mt-[18px]`}>{Data[1].content}</p>
-									</div>
-									<div className={`flex-1`}>
-										<CustomImage
-											src={Data[1].image}
-											alt={Data[1].alt}
-											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
-										/>
-									</div>
-								</div>
-							</InViewAnimateRight>
-							<InViewAnimateLeft>
-								<div
-									className={`w-full flex flex-col md:flex-row md:mb-[68px] justify-between items-center`}
-								>
-									<div className={`flex-1 `}>
-										<h3
-											className={`font-semibold text-xl md:text-2xl lg:text-4xl leading-none lg:w-[85%] capitalize`}
-										>
-											{Data[2].heading}
-										</h3>
-										<p className={`mt-[18px]`}>{Data[2].content}</p>
-									</div>
-									<div className={`flex-1 flex justify-end`}>
-										<CustomImage
-											src={Data[2].image}
-											alt={Data[2].alt}
-											className='lg:w-[383px] lg:h-[383px] w-[316px] h-[316px] mobile:w-[283px] mobile:h-[283px]'
-										/>
-									</div>
-								</div>
-							</InViewAnimateLeft>
+							<SchoolFeatureCard item={Data[0]} delay={0.8} />
+							<SchoolFeatureCard item={Data[1]} delay={1.0} reverse />
+							<SchoolFeatureCard item={Data[2]} delay={1.2} />
 						</div>
 					</div>
 				</div>

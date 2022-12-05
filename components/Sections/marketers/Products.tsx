@@ -1,10 +1,11 @@
 import React from 'react';
 import InViewAnimateRight from '../../../transition/InViewAnimateRight';
+import InViewAnimateTop from '../../../transition/InViewAnimateTop';
 import CustomImage from '../../UI/Image';
 
 const Products = () => {
 	return (
-		<InViewAnimateRight>
+		<InViewAnimateTop>
 			<div className='flex flex-col gap-14 md:gap-6 container md:flex-row xl:px-[8em] px-7'>
 				<div className='flex-1 flex flex-col justify-center '>
 					<div className=''>
@@ -27,7 +28,7 @@ const Products = () => {
 					/>
 				</div>
 			</div>
-		</InViewAnimateRight>
+		</InViewAnimateTop>
 	);
 };
 

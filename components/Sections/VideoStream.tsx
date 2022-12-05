@@ -1,10 +1,10 @@
 import React from 'react';
 import NextImage from 'next/image';
-import InViewAnimateLeft from '../../transition/InViewAnimateLeft';
+import InViewAnimateTop from '../../transition/InViewAnimateTop';
 
 const VideoStream = () => {
 	return (
-		<InViewAnimateLeft>
+		<InViewAnimateTop>
 			<div className='relative py-14 lg:py-24 xl:py-0'>
 				<div className='absolute hidden xl:block left-[-80px] top-[-100px]'>
 					<NextImage
@@ -47,7 +47,7 @@ const VideoStream = () => {
 					allowFullScreen
 				></iframe>
 			</div>
-		</InViewAnimateLeft>
+		</InViewAnimateTop>
 	);
 };
 

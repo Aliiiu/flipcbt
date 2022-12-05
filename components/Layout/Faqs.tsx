@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React, { FC, useState } from 'react';
 import InViewAnimateRight from '../../transition/InViewAnimateRight';
+import InViewAnimateTop from '../../transition/InViewAnimateTop';
 
 interface QATypes {
 	question: string;
@@ -21,7 +22,7 @@ const Faqs: FC<{ QA: QATypes[]; content: string }> = ({ QA, content }) => {
 	return (
 		<section className='vector-1 bg-white pb-[8em] md:pb-[10em] md:pt-3'>
 			<div className='vector-2'>
-				<InViewAnimateRight>
+				<InViewAnimateTop>
 					<div className='container md:px-[8em] mobile:px-7'>
 						<div className='text-center pt-[6rem] mb-[2em] mobile:mx-5'>
 							<div className='flex justify-center'>
@@ -82,7 +83,7 @@ const Faqs: FC<{ QA: QATypes[]; content: string }> = ({ QA, content }) => {
 							))}
 						</div>
 					</div>
-				</InViewAnimateRight>
+				</InViewAnimateTop>
 			</div>
 		</section>
 	);

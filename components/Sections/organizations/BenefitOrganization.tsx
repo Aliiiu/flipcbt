@@ -1,5 +1,6 @@
 import { ImageProps } from 'next/image';
 import InViewAnimateRight from '../../../transition/InViewAnimateRight';
+import InViewAnimateTop from '../../../transition/InViewAnimateTop';
 import Button from '../../UI/Button';
 import CustomImage from '../../UI/Image';
 
@@ -41,7 +42,7 @@ const Benefitorganization = () => {
 	];
 	return (
 		<section className='container'>
-			<InViewAnimateRight>
+			<InViewAnimateTop>
 				<div className='xl:px-[8em] px-5 lg:pt-[60px] pt-[40px] pb-[95px]'>
 					<h1 className='text-center font-semibold text-[32px] lg:text-[40px] mobile:mb-[33px] mb-[90px]'>
 						Start Your Flip Journey In Four Steps
@@ -81,7 +82,7 @@ const Benefitorganization = () => {
 						</div>
 					</div>
 				</div>
-			</InViewAnimateRight>
+			</InViewAnimateTop>
 		</section>
 	);
 };

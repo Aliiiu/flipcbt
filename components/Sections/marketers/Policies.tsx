@@ -1,6 +1,7 @@
 import React from 'react';
 import InViewAnimateLeft from '../../../transition/InViewAnimateLeft';
 import InViewAnimateRight from '../../../transition/InViewAnimateRight';
+import InViewAnimateTop from '../../../transition/InViewAnimateTop';
 
 const policies = [
 	{
@@ -22,7 +23,7 @@ const policies = [
 
 const Policies = () => {
 	return (
-		<InViewAnimateLeft>
+		<InViewAnimateTop>
 			<div className='flex flex-col items-center container xl:px-[8em] px-7'>
 				<h2 className='text-flipDark font-semibold mb-8 text-3xl lg:text-4xl'>
 					Policies
@@ -40,7 +41,7 @@ const Policies = () => {
 					))}
 				</div>
 			</div>
-		</InViewAnimateLeft>
+		</InViewAnimateTop>
 	);
 };
 

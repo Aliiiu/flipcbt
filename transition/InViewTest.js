@@ -2,16 +2,24 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const InViewTest = ({ children }) => {
+const InViewTest = ({ children, delay }) => {
 	const { ref, inView } = useInView();
 	const animation = useAnimation();
 
 	React.useEffect(() => {
 		if (inView) {
-			animation.start('visible');
+			animation.start({
+				opacity: 1,
+				transition: {
+					delay: delay,
+					duration: 1.0,
+				},
+			});
 		}
 		if (!inView) {
-			animation.start('hidden');
+			animation.start({
+				opacity: 0,
+			});
 		}
 	});
 

@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import useSwiperRef from '../../hook/useSwiperRef';
 import InViewAnimateGrow from '../../transition/InViewAnimateGrow';
+import InViewAnimateTop from '../../transition/InViewAnimateTop';
 
 type dataObject = {
 	content: string;
@@ -69,7 +70,7 @@ const Guarantee = () => {
 	];
 	return (
 		<section className='flex flex-col space-y-8 bg-[#0075FF] bg-opacity-10'>
-			<InViewAnimateGrow>
+			<InViewAnimateTop>
 				<div className='container'>
 					<div className='xl:px-[8em] py-[6em] px-7'>
 						<div className='flex items-center justify-between mb-[3rem]'>
@@ -172,7 +173,7 @@ const Guarantee = () => {
 						</div>
 					</div>
 				</div>
-			</InViewAnimateGrow>
+			</InViewAnimateTop>
 		</section>
 	);
 };
