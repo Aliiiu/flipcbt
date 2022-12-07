@@ -21,6 +21,7 @@ const ReadyToGetStarted: FC<Props> = ({ content, content2, classes }) => {
 					href={'/get-started'}
 					content='Get Started'
 					bgColor='bg-[#06042C]'
+					hover='hover:border-2 hover:bg-transparent hover:text-black transition-colors ease-in-out duration-500 hover:border-black'
 				/>
 			</div>
 		</InViewAnimateTop>

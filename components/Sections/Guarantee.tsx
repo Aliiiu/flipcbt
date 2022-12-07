@@ -135,7 +135,7 @@ const Guarantee = () => {
 								>
 									{data.map((item, index) => (
 										<SwiperSlide key={index} className='flex justify-center'>
-											<div className='p-7 bg-white m-4 rounded-[30px] flex flex-col justify-between mobile:flex mobile:flex-col-reverse shadow-[0px_8px_16px_rgba(0,0,0,0.08)]'>
+											<div className='p-7 bg-white m-4 rounded-[30px] hover:scale-110 flex flex-col justify-between mobile:flex mobile:flex-col-reverse shadow-[0px_8px_16px_rgba(0,0,0,0.08)]'>
 												<p>{item.content}</p>
 												<div className='mb-2 md:mt-8'>
 													<h2 className='font-bold text-[20px]'>{item.name}</h2>
