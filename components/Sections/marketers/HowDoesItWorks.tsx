@@ -34,8 +34,8 @@ const merits = [
 	{
 		id: 4,
 		icon: '/svgs/earn.svg',
-		title: 'Refer and Earn',
-		content: `Earn 30,000 naira for every school that signs up with FLIP as your referral. You would additionally earn a 10% commission when the referred school eventually pays the one-time payment and uses FLIP.
+		title: 'Secure Partnership and Earn',
+		content: `You would earn a 10% commission when your prospects eventually pay the one-time payment and use Flip. 
 `,
 	},
 ];
@@ -109,36 +109,6 @@ const HowDoesItWork = () => {
 					bgColor='bg-[#0075FF] max-w-max'
 				/>
 			</div>
-			{/* <div className='grid md:grid-cols-2 md:grid-rows-10 gap-4 lg:gap-8'>
-				<HowDoesItWorkCard
-					icon={merits[0].icon}
-					title={merits[0].title}
-					content={merits[0].content}
-					classes='md:row-span-4 md:col-start-1 md:col-end-2'
-					delay={0.4}
-				/>
-				<HowDoesItWorkCard
-					icon={merits[1].icon}
-					title={merits[1].title}
-					content={merits[1].content}
-					delay={0.8}
-					classes='md:row-start-2 md:row-end-7 md:col-start-2 md:col-end-3'
-				/>
-				<HowDoesItWorkCard
-					icon={merits[2].icon}
-					title={merits[2].title}
-					content={merits[2].content}
-					delay={1.2}
-					classes='md:row-span-5 md:col-start-1 md:col-end-2'
-				/>
-				<HowDoesItWorkCard
-					icon={merits[3].icon}
-					title={merits[3].title}
-					content={merits[3].content}
-					delay={1.6}
-					classes='md:row-span-4 md:col-start-2 md:col-end-3'
-				/>
-			</div> */}
 			<div className='flex flex-col md:flex-row gap-10 justify-between'>
 				<div className='flex flex-col gap-8'>
 					<HowDoesItWorkCard
@@ -169,7 +139,7 @@ const HowDoesItWork = () => {
 						title={merits[3].title}
 						content={merits[3].content}
 						delay={1.6}
-						classes='md:row-span-4 md:col-start-2 md:h-[373px] md:col-end-3'
+						classes='md:row-span-4 md:col-start-2 md:h-[333px] md:col-end-3'
 					/>
 				</div>
 			</div>

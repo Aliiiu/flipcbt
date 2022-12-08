@@ -19,44 +19,26 @@ const tabContent = {
 	Schools: [
 		{
 			id: 1,
-			title: 'Advanced Security Features To Avoid Examination Malpractices',
-			content: `There are standard security protocols inherent in
-								FLIP to ensure that the assessment integrity is maintained.`,
-		},
-		{
-			id: 2,
-			title: 'Randomly Assigns Programmed Questions for Each Student',
-			content: ` FLIP distributes shuffled questions for each student 
-									with a completely different question arrangement.`,
-		},
-		{
-			id: 3,
 			title: 'Retains Data For Future Use',
 			content: `Flip helps to save academic records including scores of students' assessments for easy accessibility in the future. This implies that Flip provides these records instantly when needed for reference purposes.`,
 		},
 		{
-			id: 4,
-			title: 'Automatic Grading',
-			content: `Flip is designed to grade students immediately after the assessment has been taken which in turn relieves the stress of teachers.`,
-		},
-
-		{
-			id: 5,
+			id: 2,
 			title: 'Accuracy of Results',
 			content: `With Flip, you can be rest assured that precise and error-free scores are allocated to students after the assessment is conducted.`,
 		},
 		{
-			id: 6,
+			id: 3,
 			title: 'Online Checking of Results',
 			content: `Student results can now be assessed online using Flip. This allows easier access to individual results.`,
 		},
 		{
-			id: 7,
+			id: 4,
 			title: 'Swift Organization of Broadsheet ',
 			content: `Flip provides a suitable platform to record academic broadsheets for retaining scores of each student's subjects. This further amplifies the teacher’s productivity and the school’s performance.`,
 		},
 		{
-			id: 8,
+			id: 5,
 			title: 'Appropriate Timetable Management',
 			content: `Flip monitors and manages the programmed timetable for respective assessment schedules. This feature of Flip prevents schedule mixups between students and teachers. `,
 		},
