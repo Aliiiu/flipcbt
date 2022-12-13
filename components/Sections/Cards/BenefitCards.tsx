@@ -43,10 +43,10 @@ const BenefitCards: FC<{ item: any; delay: number }> = ({ item, delay }) => {
 							alt=''
 						/>
 						<h5 className='ml-5 font-semibold text-[18px] md:text-[20px] capitalize'>
-							{item.title}
+							{item?.title}
 						</h5>
 					</div>
-					<p className='mt-3 '>{item.content}</p>
+					<p className='mt-3 '>{item?.content}</p>
 				</div>
 			</motion.div>
 		</div>

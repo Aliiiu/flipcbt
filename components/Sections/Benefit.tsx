@@ -136,9 +136,6 @@ const Benefit = () => {
 											<BenefitCards item={tabs['Schools'][2]} delay={0.9} />
 											<BenefitCards item={tabs['Schools'][3]} delay={1.2} />
 											<BenefitCards item={tabs['Schools'][4]} delay={1.5} />
-											<BenefitCards item={tabs['Schools'][5]} delay={1.8} />
-											<BenefitCards item={tabs['Schools'][6]} delay={2.1} />
-											<BenefitCards item={tabs['Schools'][7]} delay={2.4} />
 										</>
 									</div>
 									<div className='text-center md:mt-[15px]'>

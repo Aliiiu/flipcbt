@@ -41,31 +41,19 @@ const Guarantee = () => {
 			role: 'computer instructor and CBT center manager',
 		},
 		{
-			content: `Running a business can be demanding, having motivated
-              employees is paramount to our success and with
-              earnipay's flexible salary payment solutions,
-              productivity isn't a demand anymore, its a
-              lifestyle.`,
-			name: 'Leslie Alexander',
-			role: 'Founder of Easy Secondary School',
+			content: `I introduced Flip into school settings and ever since I haven’t regretted that decision. Flip has helped to reduce assessment stress and it helps to preserve all school records without fear of loosing any data. The Software is also very flexible and it has a beautiful interface .`,
+			name: 'Mrs Adeeko Funmilayo',
+			role: 'School Proprietress',
 		},
 		{
-			content: `Running a business can be demanding, having motivated
-              employees is paramount to our success and with
-              earnipay's flexible salary payment solutions,
-              productivity isn't a demand anymore, it's a
-              lifestyle.`,
-			name: 'Stephen Madagascar',
-			role: 'Founder of Easy Secondary School',
+			content: `Using Flip since I introduced to the School has been seamless and there has been less or no issue for the past years in use. Flip make it easy for teachers to set assessment questions without worrying about saving as it automatically save each question when created. `,
+			name: 'Mr Timothy',
+			role: 'School Teacher',
 		},
 		{
-			content: `Running a business can be demanding, having motivated
-              employees is paramount to our success and with
-              earnipay's flexible salary payment solutions,
-              productivity isn't a demand anymore, it's a
-              lifestyle.`,
-			name: 'Leslie Alexander',
-			role: 'Founder of Easy Secondary School',
+			content: `The part I love about Flip is the creation of report card for each student as we teachers do not have to bother about manually set student’s report card. Flip has made it easy to create a standard report card for each student and the students can check their result on Flip’s platform`,
+			name: 'Mrs Bolanle Ojo',
+			role: 'School Teacher',
 		},
 	];
 	return (

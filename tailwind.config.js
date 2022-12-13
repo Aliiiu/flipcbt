@@ -11,6 +11,7 @@ module.exports = {
 				secondaryBlue: '#ADD0F9',
 				primary: '#0075FF',
 				secondary: '#FFAD4A',
+				flipGreen: '#E6F9F3',
 			},
 			gridTemplateRows: {
 				// Simple 8 row grid

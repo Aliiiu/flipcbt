@@ -5,8 +5,10 @@ import Footer from '../components/Layout/Footer';
 import Navbar from '../components/Layout/Navbar';
 import Benefit from '../components/Sections/marketers/Benefit';
 import HowDoesItWork from '../components/Sections/marketers/HowDoesItWorks';
+import HowItWorks from '../components/Sections/marketers/HowItWorks';
 import Policies from '../components/Sections/marketers/Policies';
 import Products from '../components/Sections/marketers/Products';
+import ReferEarn from '../components/Sections/marketers/ReferEarn';
 import VideoStream from '../components/Sections/VideoStream';
 import HeroContainer from '../components/UI/HeroContainer';
 import CustomImage from '../components/UI/Image';
@@ -74,8 +76,16 @@ const Marketers = () => {
 					<VideoStream />
 				</section>
 				<section className='bg-[#00be7e1a] sketch-1'>
-					<div className='container xl:px-[8em] py-32 px-7'>
+					<div className='container xl:px-[8em] py-16 lg:py-32 px-7'>
 						<HowDoesItWork />
+					</div>
+				</section>
+				<section className='container py-12 lg:py-24 xl:px-[8em] px-7'>
+					<ReferEarn />
+				</section>
+				<section className="bg-flipGreen bg-[url('/images/bgVector.png')] bg-contain">
+					<div className='container py-12 lg:py-24 xl:px-[8em] px-7'>
+						<HowItWorks />
 					</div>
 				</section>
 				<section className='container xl:px-[8em] px-7'>

@@ -97,7 +97,7 @@ const HowDoesItWork = () => {
 	return (
 		<div className='flex flex-col lg:flex-row gap-7 justify-between'>
 			<div className='flex self-center flex-col lg:max-w-[275px] gap-3 lg:gap-5'>
-				<h4 className='text-2xl md:text-3xl lg:text-[40px] leading-tight animate-fade-in capitalize font-semibold'>
+				<h4 className='text-3xl md:text-4xl lg:text-[40px] leading-tight animate-fade-in capitalize font-semibold'>
 					How Does It Work?
 				</h4>
 				<p className='text-sm text-black text-opacity-70 lg:text-base'>
