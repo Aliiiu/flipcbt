@@ -30,13 +30,7 @@ const Guarantee = () => {
 
 	const data: dataObject[] = [
 		{
-			content: `I happen to be one
-			 					the few people that used and still using the CBT App for students and 
-			 					professionals alike. The application has been a great aid towards effective
-			  				learning and teaching. It reduces rigorousness of marking and compiling of
-				 				results for teachers. Through the CBT App, teachers with little or no
-				 			 	knowledge in computer operation were incorporated into the IT world
-					 			as it became an integral part of the school examination and management system.`,
+			content: `As a computer instructor and CBT center manager, the software has been a great aid towards effective learning and teaching. It reduces the rigorousness of marking and compiling results for teachers. Through Flip, teachers with little or no knowledge of computer operation find it easy to understand the software because of its simplicity. `,
 			name: 'Mr. Saiyd Bhadmos.',
 			role: 'computer instructor and CBT center manager',
 		},
@@ -134,7 +128,7 @@ const Guarantee = () => {
 									))}
 								</Swiper>
 							</div>
-							<div className='flex mobile-slider mobile:space-y-7 md:mx-auto shadow-[0px_8px_16px_rgba(0,0,0,0.08)] rounded-[30px]'>
+							<div className='flex mobile-slider mobile:space-y-7 md:mx-auto rounded-[30px]'>
 								<Swiper
 									modules={[Navigation]}
 									navigation={{

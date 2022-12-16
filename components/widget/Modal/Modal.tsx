@@ -1,21 +1,11 @@
-import React, { Fragment, useRef } from 'react';
+import React, { Fragment, useRef, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { ModalHeader } from './modal.style';
 
-const HeaderView = (props: any) => (
-	<ModalHeader className='rounded-2xl mx-6 mt-4'>
-		<div className='title'>
-			<span className='text-2xl font-semibold text-white'>{props.title}</span>
-		</div>
-		<div className='sub-title'>
-			<small className='font-normal text-white text-sm'>
-				{props.sub_title}
-			</small>
-		</div>
-	</ModalHeader>
-);
+// import { AppButton } from "../Button/AppButton";
+// import { ExclamationIcon } from "@heroicons/react/outline";
 
-const AppModal = (props: any) => {
+const AppModal = ({ ...props }) => {
 	const cancelButtonRef = useRef(null);
 
 	return (
@@ -26,7 +16,7 @@ const AppModal = (props: any) => {
 				initialFocus={cancelButtonRef}
 				onClose={props.onClose}
 			>
-				<div className='min-h-screen px-4 flex justify-center items-center'>
+				<div className='flex items-center justify-center min-h-screen sm:block sm:p-0'>
 					<Transition.Child
 						as={Fragment}
 						enter='ease-out duration-300'
@@ -59,12 +49,6 @@ const AppModal = (props: any) => {
 							onClick={props.onClose}
 							className='inline-block align-top overflow-hidden transform transition-all sm:my-8 sm:align-middle'
 						>
-							{!props.isDelete && props.add_header && (
-								<HeaderView
-									title={props.modal_data}
-									sub_title={props.sub_title}
-								/>
-							)}
 							{props.content}
 						</div>
 					</Transition.Child>
