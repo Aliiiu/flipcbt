@@ -75,7 +75,7 @@ const Register: React.FC = () => {
 				<Modal selector={'overlay-root'} onClick={() => setShowModal(false)} />
 			)}
 			<div className='container'>
-				<div className='md:flex '>
+				<div className='md:flex'>
 					<div className='lg:w-1/2 mobile:hidden md:hidden gs_register lg:block bg-[#0075FF]'>
 						<div className='flex flex-col justify-between w-full h-full'>
 							<div className=''>

@@ -39,10 +39,6 @@ const GetStarted = () => {
 		setorganizationActive(false);
 	};
 
-	useEffect(() => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'auto';
-	});
 	return (
 		<Fragment>
 			<Head>

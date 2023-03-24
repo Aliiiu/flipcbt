@@ -8,20 +8,20 @@ const Navbar = () => {
 	const [nav, ShowNav] = useState<boolean>(false);
 	const router = useRouter();
 
-	const showNavHandler = () => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'hidden';
-		ShowNav(true);
-	};
+	// const showNavHandler = () => {
+	// 	const html = document.getElementById('mainHtml') as HTMLElement;
+	// 	html.style.overflow = 'hidden';
+	// 	ShowNav(true);
+	// };
 
-	const closeNavHandler = () => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'auto';
-		ShowNav(false);
-	};
+	// const closeNavHandler = () => {
+	// 	const html = document.getElementById('mainHtml') as HTMLElement;
+	// 	html.style.overflow = 'auto';
+	// 	ShowNav(false);
+	// };
 	//
 	return (
-		<nav className='fixed top-0 left-0 z-50 w-full bg-[#ffffff33] backdrop-blur-lg '>
+		<nav className='fixed top-0 left-0 z-50 w-full bg-[#ffffff33] backdrop-blur-lg'>
 			<div className='container md:py-5'>
 				<div className='xl:px-[8em] mobile:flex mobile:justify-between mobile:py-5 px-7'>
 					<div className='flex items-center justify-between'>
@@ -90,7 +90,9 @@ const Navbar = () => {
 					</div>
 					<div className='hidden overflow-hidden text-white mobile:block'>
 						{nav ? (
-							<button onClick={closeNavHandler}>
+							<button
+							// onClick={closeNavHandler}
+							>
 								<Image
 									src='../../svgs/x.svg'
 									alt='close logo'
@@ -99,7 +101,9 @@ const Navbar = () => {
 								/>
 							</button>
 						) : (
-							<button onClick={showNavHandler}>
+							<button
+							// onClick={showNavHandler}
+							>
 								<Image
 									src='../../images/hamburger.png'
 									alt='menu logo'

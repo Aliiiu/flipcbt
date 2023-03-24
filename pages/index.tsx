@@ -16,6 +16,8 @@ import HeroContainer from '../components/UI/HeroContainer';
 import VideoStream from '../components/Sections/VideoStream';
 import { PopupButton } from 'react-calendly';
 import { motion } from 'framer-motion';
+import Topbar from '../components/Layout/topbar/Topbar';
+import Layout from '../components/Layout/Layout';
 
 interface QATypes {
 	question: string;
@@ -82,44 +84,40 @@ const QA: QATypes[] = [
 ];
 
 const Home: NextPage = () => {
-	useEffect(() => {
-		const html = document.getElementById('mainHtml') as HTMLElement;
-		html.style.overflow = 'auto';
-	});
 	return (
 		<div>
 			<Head>
 				<title>Enhanced Assessment Platform</title>
 			</Head>
-			<Navbar />
-			<main className='mt-[78px] md:mt-[78px] mobile:mt-[83px]'>
-				<div className='container'>
-					<HeroContainer
-						src={'/images/hmPage.png'}
-						alt='excitment illustration'
-						pop={true}
-						hrefLink=''
-						title='Setting Up and Preparing For Assessment Without Stress.'
-						content='FLIP is an enhanced assessment platform that provides
-											computerized tests, examination management, quick grading
-											systems, and collation of results instead of the use of
-											pen and paper.'
+			<Layout>
+				<main className=''>
+					<div className='container'>
+						<HeroContainer
+							src={'/images/hmPage.png'}
+							alt='excitment illustration'
+							pop={true}
+							hrefLink=''
+							title='Setting Up and Preparing For Assessment Without Stress.'
+							content='FLIP is an enhanced assessment platform that provides
+												computerized tests, examination management, quick grading
+												systems, and collation of results instead of the use of
+												pen and paper.'
+						/>
+					</div>
+					<section className='flex justify-center md:py-8 px-7 xl:px-0 xl:py-[150px]'>
+						<VideoStream />
+					</section>
+					<Feature />
+					<Benefit />
+					<Motor />
+					<Guarantee />
+					<Faqs
+						QA={QA}
+						content='We have carefully prepared a list of the most frequent inquiries
+									for you. This will give you more insights on how to use Flip'
 					/>
-				</div>
-				<section className='flex justify-center md:py-8 px-7 xl:px-0 xl:py-[150px]'>
-					<VideoStream />
-				</section>
-				<Feature />
-				<Benefit />
-				<Motor />
-				<Guarantee />
-				<Faqs
-					QA={QA}
-					content='We have carefully prepared a list of the most frequent inquiries
-								for you. This will give you more insights on how to use Flip'
-				/>
-			</main>
-			<Footer />
+				</main>
+			</Layout>
 		</div>
 	);
 };

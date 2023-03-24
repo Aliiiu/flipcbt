@@ -1,9 +1,10 @@
 import React from 'react';
+import InViewAnimateTop from '../../../transition/InViewAnimateTop';
 import CustomImage from '../../UI/Image';
 
 const ReferEarn = () => {
 	return (
-		<div>
+		<InViewAnimateTop>
 			<div className='flex flex-col gap-6 md:gap-0 md:flex-row items-center'>
 				<CustomImage
 					src={'/images/referNearn.png'}
@@ -31,7 +32,7 @@ const ReferEarn = () => {
 					</button>
 				</div>
 			</div>
-		</div>
+		</InViewAnimateTop>
 	);
 };
 
